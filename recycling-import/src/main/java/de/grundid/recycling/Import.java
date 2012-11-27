@@ -1,8 +1,9 @@
 package de.grundid.recycling;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.osmtools.dataimport.ImportHandler;
 import org.osmtools.dataimport.SimpleImporter;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Import {
 

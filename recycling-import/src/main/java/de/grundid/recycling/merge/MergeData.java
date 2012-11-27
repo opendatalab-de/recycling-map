@@ -7,8 +7,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.util.StringUtils;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import de.gonam.openinghours.WeeklyTimeInterval;
 import de.gonam.openinghours.WeeklyTimeIntervalViewModel;
