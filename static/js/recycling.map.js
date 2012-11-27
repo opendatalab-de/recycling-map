@@ -5,19 +5,25 @@
 		init: function() {
 			L.Icon.Default.imagePath = 'css/images';
 			
-			var map = L.map('map', {
+			this.map = L.map('map', {
 				maxZoom: 18
 			}).setView([49.15, 9.22], 11);
 			
-			map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+			this.map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
                 maxZoom: 18
 			}));
 			
-			var data = rc.filteredData();
+			var data = rc.filteredData(this.map.getCenter());
 			for (var index in data) {
 				var amenity = data[index];
-				L.marker([amenity.lat, amenity.lon]).addTo(map);
+				L.marker([amenity.lat, amenity.lon]).addTo(this.map);
 			}
+		},
+		getCenter : function() {
+			return this.map.getCenter();
+		},
+		on : function(eventName, handler) {
+			this.map.on(eventName, handler);
 		}
 	};
 }(rc));

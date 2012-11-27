@@ -42,6 +42,9 @@
 		init: function() {
 			var template = Handlebars.compile(document.getElementById('list-template').innerHTML);
 			document.getElementsByClassName('amenity-list')[0].innerHTML = template({ amenities: rc.filteredData() });
+			rc.map.on("moveend", function(event) {
+				document.getElementsByClassName('amenity-list')[0].innerHTML = template({ amenities: rc.filteredData(rc.map.getCenter()) });
+			});
 		}
 	};
 }(rc));
