@@ -27,7 +27,7 @@
 			return elements;
 		},
 		currentTime: function() {
-			var current = rc.serviceHours.weekMinutes.getCurrent();
+			var current = rc.openingHours.weekMinutes.getCurrent();
 			if(current <= (24*60*6-1)) {
 				var left = Math.round(current * this.factor);
 				return '<div class="timeline-current" style="left:' + left + 'px;"></div>';
@@ -38,15 +38,19 @@
 	Handlebars.registerHelper('timelineWeeklyIntervals', rc.proxy(timelineHelper.weeklyIntervals, timelineHelper));
 	Handlebars.registerHelper('timelineHighlightCurrent', rc.proxy(timelineHelper.currentTime, timelineHelper));
 	
+	var template;
+	var render = function(center) {
+		document.getElementsByClassName('amenity-list')[0].innerHTML = template({ amenities: rc.filteredData(rc.map.getCenter()) });
+	};
+	
 	rc.list = {
 		init: function() {
-			rc.serviceHours.init();
+			rc.openingHours.init();
+			template = Handlebars.compile(document.getElementById('list-template').innerHTML);
 			
-			var template = Handlebars.compile(document.getElementById('list-template').innerHTML);
-			document.getElementsByClassName('amenity-list')[0].innerHTML = template({ amenities: rc.filteredData() });
-			
+			render();
 			rc.map.on("moveend", function(event) {
-				document.getElementsByClassName('amenity-list')[0].innerHTML = template({ amenities: rc.filteredData(rc.map.getCenter()) });
+				render(rc.map.getCenter());
 			});
 		}
 	};

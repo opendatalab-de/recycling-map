@@ -111,12 +111,12 @@
 	
 	var templates = {};
 
-	rc.serviceHours = {
+	rc.openingHours = {
 		today: proxy(todayHelper),
 		compactOffer: proxy(compactOfferHelper),
+		offerHandler: offerHandler,
 		weekMinutes: weekMinutes,
 		weekday: weekday,
-		modelHandler: modelHandler,
 		init: function() {
 			Handlebars.registerPartial('timeIntervals', Handlebars.compile(document.getElementById('timeintervals-template').innerHTML));
 			templates.serviceHoursToday = Handlebars.compile(document.getElementById('service-hours-today-template').innerHTML);
@@ -124,6 +124,6 @@
 		}
 	};
 	
-	Handlebars.registerHelper('serviceHoursToday', rc.serviceHours.today);
-	Handlebars.registerHelper('compactOffer', rc.serviceHours.compactOffer);
+	Handlebars.registerHelper('serviceHoursToday', rc.openingHours.today);
+	Handlebars.registerHelper('compactOffer', rc.openingHours.compactOffer);
 }(rc, _, Handlebars));

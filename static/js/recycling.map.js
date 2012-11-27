@@ -24,12 +24,11 @@
 				var marker = new L.Marker(amenity.pos);
 				marker.amenity = amenity;
 				marker.on("mouseover", function() {
-					var elem = document.getElementById(amenity.id);
+					var elem = document.getElementById(this.amenity.id);
 					elem.classList.add("highlight");
-					console.log(elem.innerHTML);
 				});
 				marker.on("mouseout", function() {
-					var elem = document.getElementById(amenity.id);
+					var elem = document.getElementById(this.amenity.id);
 					elem.classList.remove("highlight");
 				});
 				marker.addTo(this.map);
