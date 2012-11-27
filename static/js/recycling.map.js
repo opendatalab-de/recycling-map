@@ -16,7 +16,8 @@
 			var data = rc.filteredData(this.map.getCenter());
 			for (var index in data) {
 				var amenity = data[index];
-				L.marker([amenity.lat, amenity.lon]).addTo(this.map);
+				var marker = new L.Marker(amenity.pos);
+				marker.addTo(this.map);
 			}
 		},
 		getCenter : function() {
