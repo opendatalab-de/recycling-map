@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Recyclinghöfe</title>
-	<meta name="description" content="Recyclinghöfe in Deutschland">
+	<title>Recyclinghöfe in Heilbronn</title>
+	<meta name="description" content="Recyclinghöfe in Heilbronn und Landkreis Heilbronn">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -22,31 +22,32 @@
 	</div>
 	
 	<script id="list-template" type="text/x-handlebars-template">
-		<div class="timeline-container">
-			<div class="timeline-mo">Mo</div>
-			<div class="timeline-tu">Di</div>
-			<div class="timeline-we">Mi</div>
-			<div class="timeline-th">Do</div>
-			<div class="timeline-fr">Fr</div>
-			<div class="timeline-sa">Sa</div>
-		</div>
-		
+		<h1>Recyclinghöfe in Heilbronn</h1>
 		{{#each amenities}}
 			<div class="amenity" id="{{id}}">
-				{{#if keyValues.name}}
-					{{keyValues.name}}
-				{{else}}
-					Recycling
-					{{#if keyValues.city}}
-						in {{keyValues.city}}
+				<strong class="amenity-name">
+					{{#if keyValues.name}}
+						{{keyValues.name}}
+					{{else}}
+						Recycling
+						{{#if keyValues.city}}
+							in {{keyValues.city}}
+						{{/if}}
 					{{/if}}
-				{{/if}}
+				</strong>
+				<p class="opening-hours">Öffnungszeiten:</p>
 				{{{compactOffer openingHours}}}
 				{{{countdown openingHours}}}
 				<div class="timeline-container">
-					<div class="timeline-tu"></div>
-					<div class="timeline-th"></div>
-					<div class="timeline-sa"></div>
+					<div class="timeline-mo">Mo</div>
+					<div class="timeline-tu">Di</div>
+					<div class="timeline-tu-bar"></div>
+					<div class="timeline-we">Mi</div>
+					<div class="timeline-th">Do</div>
+					<div class="timeline-th-bar"></div>
+					<div class="timeline-fr">Fr</div>
+					<div class="timeline-sa">Sa</div>
+					<div class="timeline-sa-bar"></div>
 					{{{timelineWeeklyIntervals openingHours}}}
 					{{{timelineHighlightCurrent}}}
 				</div>
@@ -87,11 +88,7 @@
 				unvollständige Daten für heute
 			{{/if}}
 		{{else}}
-			{{#if note}}
-				{{note}}
-			{{else}}
-				keine Daten eingetragen
-			{{/if}}		
+			keine Daten eingetragen
 		{{/if}}
 	</script>
 	<script id="timeintervals-template" type="text/x-handlebars-template">

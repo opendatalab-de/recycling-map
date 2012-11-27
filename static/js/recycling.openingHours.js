@@ -27,13 +27,20 @@
 		isOffer: true,
 		hasData: function() {
 			return this.wI && this.wI.length > 0;
+		},
+		isClosedToday: function() {
+			if(this.wI) {
+				var interval = this.getInterval(weekday.getCurrent());
+				return !interval || !interval.tI;
+			}
+			return true;
 		}
 	};
 	
 	var proxy = function(target) {
 		return function() {
 			var obj = {
-				wI: this.openingHours
+				wI: this.openingHours ? this.openingHours : arguments[0]
 			};
 			arguments[0] = _.extend({}, obj, offerHandler);
 			return target.apply(this, arguments);
@@ -81,20 +88,85 @@
 			} else {
 				return 7 - fromDayIndex + toDayIndex;
 			}
+		},
+		getNextWeekMinutes: function(offer, current) {
+			var nonstop = false;
+			var undefinedMinute = 24*60*60; 
+			var next = {
+				from: {
+					label: '',
+					value: undefinedMinute
+				},
+				to: {
+					label: '',
+					value: undefinedMinute
+				},
+				isLower: function(key, interval) {
+					return interval[key] > current && interval[key] < this[key].value;
+				},
+				set: function(key, interval, timeInterval) {
+					if(this.isLower(key, interval)) {
+						this[key] = {
+							label: timeInterval[key],
+							value: interval[key]
+						};
+					}
+					return this;
+				}
+			};
+			var lowest = _.extend({}, next, {
+				isLower: function(key, interval) {
+					return interval[key] < this[key].value;
+				}
+			});
+			
+			_.each(offer.wI, function(weeklyInterval) {
+				_.each(weeklyInterval.tI, function(timeInterval) {
+					if(timeInterval.wM) {
+						_.each(timeInterval.wM, function(interval) {
+							interval = { from: interval[0], to: interval[1] };
+							if(interval.from === 0 && interval.to >= weekMinutes.max) {
+								nonstop = true;
+							}
+							lowest.set('to', interval, timeInterval).set('from', interval, timeInterval);
+							next.set('to', interval, timeInterval).set('from', interval, timeInterval);
+						});
+					}
+				});
+			});
+			
+			if(next.from.value === undefinedMinute && next.to.value === undefinedMinute) {
+				return null;
+			}
+			else {
+				var result = next.from.value <= next.to.value ? next.from : next.to;
+				if(result.value > weekMinutes.max) {
+					result = lowest.from.value <= lowest.to.value ? lowest.from : lowest.to;
+				}
+				return {
+					'value': result.value,
+					'label': result.label,
+					'inInterval': (result.value === next.to.value || result.value === lowest.to.value),
+					'nonstop': nonstop
+				};
+			}
+		},
+		isActive: function(offer) {
+			var next = weekMinutes.getNextWeekMinutes(offer, weekMinutes.getCurrent());
+			return next && next.inInterval ? true : false;
 		}
 	}; 
 	
 	/**
 	 * HELPER
 	 */
+	var templates;
 	var todayHelper = function(offer) {
 		var interval = offer.getInterval(weekday.getCurrent());
 		
 		var tmplData = {
 			tI: interval.tI,
-			isClosedToday: model.isClosedToday(),
-			offerId: offerId,
-			note: offer.note,
+			isClosedToday: offer.isClosedToday(),
 			hasData: offer.hasData()
 		};
 		tmplData.hasDataForToday = (tmplData.tI || tmplData.isClosedToday) ? true : false;
@@ -109,18 +181,21 @@
 		return templates.compactOffer(tmplData);
 	};
 	
-	var templates = {};
-
 	rc.openingHours = {
 		today: proxy(todayHelper),
 		compactOffer: proxy(compactOfferHelper),
+		isOpen: proxy(weekMinutes.isActive),
 		offerHandler: offerHandler,
 		weekMinutes: weekMinutes,
 		weekday: weekday,
 		init: function() {
-			Handlebars.registerPartial('timeIntervals', Handlebars.compile(document.getElementById('timeintervals-template').innerHTML));
-			templates.serviceHoursToday = Handlebars.compile(document.getElementById('service-hours-today-template').innerHTML);
-			templates.compactOffer = Handlebars.compile(document.getElementById('compact-offer-template').innerHTML);
+			if(!templates) {
+				Handlebars.registerPartial('timeIntervals', Handlebars.compile(document.getElementById('timeintervals-template').innerHTML));
+				templates = {
+					serviceHoursToday: Handlebars.compile(document.getElementById('service-hours-today-template').innerHTML),
+					compactOffer: Handlebars.compile(document.getElementById('compact-offer-template').innerHTML)
+				}
+			}
 		}
 	};
 	

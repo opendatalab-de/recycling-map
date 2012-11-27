@@ -9,6 +9,11 @@ body, html {
 	right: 304px;
 }
 
+h1 {
+	font-size: 20px;
+	margin-bottom: -1em;
+}
+
 .amenity-list {
 	position: absolute;
 	top: 0;
@@ -23,65 +28,84 @@ body, html {
 
 .amenity {
 	width: 100%;
+	margin-top: 2.5em;
+}
+.amenity-name {
+	display: block;
+	width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	margin-top: 2em;
+}
+.opening-hours {
+	margin: .25em 0 0 0;
+}
+.compact-offer {
+	margin: 0;
 }
 
 .timeline-container {
 	position: relative;
 	width: 288px;
 	height: 1.4em;
-	background: #6db4f1;
+	background: #3d92db;
+	margin-top: .25em;
+	color: #FFF;
 }
 .timeline-container div { 
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	z-index: 10;
-	background: #1e8e00;
+	background: #5bc82b;
 }
 div.timeline-current {
 	background: red;
 	width: 1px;
+	z-index: 30;
 }
+div.timeline-tu-bar,
+div.timeline-th-bar,
+div.timeline-sa-bar {
+	z-index: 5;
+	width: 48px;
+	background: #1e77c3;
+}
+
 div.timeline-mo,
 div.timeline-tu,
 div.timeline-we,
 div.timeline-th,
 div.timeline-fr,
 div.timeline-sa {
-	z-index: 5;
+	z-index: 20;
 	width: 48px;
 	text-align: center;
 	font-size: 10px;
-	line-height: 19px;
+	line-height: 21px;
 	font-weight: bold;
 	vertical-align: top;
 	background: transparent;
 }
-div.timeline-tu,
-div.timeline-th,
-div.timeline-sa {
-	background: #9dccf4; 
-}
 .timeline-mo {
 	left: 0px;
 }
-.timeline-tu {
+.timeline-tu,
+.timeline-tu-bar {
 	left: 48px;
 }
 .timeline-we {
 	left: 96px;
 }
-.timeline-th {
+.timeline-th,
+.timeline-th-bar {
 	left: 144px;
 }
 .timeline-fr {
 	left: 192px;
 }
-.timeline-sa {
+.timeline-sa,
+.timeline-sa-bar {
 	left: 240px;
 }
 .highlight {
