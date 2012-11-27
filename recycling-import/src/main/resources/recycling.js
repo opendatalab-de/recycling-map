@@ -1,4 +1,5 @@
-var nodes = [
+{"recyclingData": 
+[
 		{
 			"nodeId" : 25346165,
 			"lon" : 8.3928252,
@@ -3983,7 +3984,7 @@ var nodes = [
 			"keyValues" : {
 				"amenity" : "recycling",
 				"name" : "Recyclinghof Einsingen",
-				"opening_hours" : "Mo,Tu,Th 16:00-18:00; We 16:00-19:00 Uhr; Fr 13:00-18:00; Sa 8:00-18:00",
+				"opening_hours" : "Mo,Tu,Th 16:00-18:00; We 16:00-19:00; Fr 13:00-18:00; Sa 8:00-18:00",
 				"operator" : "EBU Ulm",
 				"recycling_type" : "centre"
 			}
@@ -4728,7 +4729,7 @@ var nodes = [
 			"lat" : 48.82306,
 			"keyValues" : {
 				"amenity" : "recycling",
-				"opening_hours" : "Di: 15:00-17:00; Fr: 14:00-17:00; Sa 10:00-12:00",
+				"opening_hours" : "Tu 15:00-17:00; Fr 14:00-17:00; Sa 10:00-12:00",
 				"operator" : "ZAW-SR",
 				"recycling_type" : "centre"
 			}
@@ -4742,4 +4743,5 @@ var nodes = [
 				"name" : "Bauhof Bad Schönborn",
 				"recycling_type" : "centre"
 			}
-		} ];
+		} ]
+}

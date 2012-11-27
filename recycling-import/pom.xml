@@ -32,6 +32,15 @@
 			<artifactId>htmlunit</artifactId>
 			<version>2.11</version>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
