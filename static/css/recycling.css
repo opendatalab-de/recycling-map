@@ -1,39 +1,46 @@
+body, html {
+	height: 100%;
+}
 #map {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
-	right: 0;
+	right: 304px;
 }
 
 .amenity-list {
-	max-width: 768px;
-	padding: 1em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 304px;
+	height: 100%;
+	padding: 0 8px;
+	background: #F0F0F0;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
+
 .amenity {
-	text-align: right;
-}
-.amenity span {
-	display: inline-block;
-	padding-right: 2em;
-	width: 200px;
+	width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	margin-top: 2em;
 }
 
 .timeline-container {
 	position: relative;
 	width: 288px;
-	height: 1em;
-	background: #E0E0E0;
+	height: 1.4em;
+	background: #6db4f1;
 }
 .timeline-container div { 
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	z-index: 10;
-	background: green;
+	background: #1e8e00;
 }
 div.timeline-current {
 	background: red;
@@ -49,7 +56,7 @@ div.timeline-sa {
 	width: 48px;
 	text-align: center;
 	font-size: 10px;
-	line-height: 16px;
+	line-height: 19px;
 	font-weight: bold;
 	vertical-align: top;
 	background: transparent;
@@ -57,7 +64,7 @@ div.timeline-sa {
 div.timeline-tu,
 div.timeline-th,
 div.timeline-sa {
-	background: #CCC; 
+	background: #9dccf4; 
 }
 .timeline-mo {
 	left: 0px;

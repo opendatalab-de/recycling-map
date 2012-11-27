@@ -22,7 +22,7 @@
 	</div>
 	
 	<script id="list-template" type="text/x-handlebars-template">
-		<div class="pull-right timeline-container">
+		<div class="timeline-container">
 			<div class="timeline-mo">Mo</div>
 			<div class="timeline-tu">Di</div>
 			<div class="timeline-we">Mi</div>
@@ -30,21 +30,18 @@
 			<div class="timeline-fr">Fr</div>
 			<div class="timeline-sa">Sa</div>
 		</div>
-		<br />
 		
 		{{#each amenities}}
 			<div class="amenity">
-				<span>
-					{{#if keyValues.name}}
-						{{keyValues.name}}
-					{{else}}
-						Recycling
-						{{#if keyValues.city}}
-							in {{keyValues.city}}
-						{{/if}}
+				{{#if keyValues.name}}
+					{{keyValues.name}}
+				{{else}}
+					Recycling
+					{{#if keyValues.city}}
+						in {{keyValues.city}}
 					{{/if}}
-				</span>
-				<div class="pull-right timeline-container">
+				{{/if}}
+				<div class="timeline-container">
 					<div class="timeline-tu"></div>
 					<div class="timeline-th"></div>
 					<div class="timeline-sa"></div>
@@ -65,7 +62,7 @@
 	<script type="text/javascript" src="js/recycling.list.js"></script>
 	<script type="text/javascript">
 		rc.map.init();
-		//rc.list.init();
+		rc.list.init();
 	</script>
 </body>
 </html>
