@@ -8085,10 +8085,12 @@
 	var filtered = [];
 	rc.filteredData = function(centerPos) {
 		if (filtered.length === 0) {
+			var id = 0;
 			for ( var index in rc.data) {
 				if (rc.data[index].openingHours && rc.data[index].openingHours.length > 0) {
 					var reData = rc.data[index];
 					reData.pos = new L.LatLng(reData.lat, reData.lon);
+					reData.id = "id"+id++;
 					filtered.push(reData);
 				}
 			}
