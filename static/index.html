@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recyclinghöfe</title>
+	<meta name="description" content="Recyclinghöfe in Deutschland">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+	<link type="text/css" href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link type="text/css" href="css/leaflet.css" rel="stylesheet" />
+	<link type="text/css" href="css/recycling.css" rel="stylesheet" />
+	<!--[if gte IE 8]>
+		<link type="text/css" href="css/leaflet.ie.css" rel="stylesheet" />
+	<![endif]-->
+</head>
+<body>
+	<div class="amenity-list">
+	</div>
+	
+	<script id="list-template" type="text/x-handlebars-template">
+		<div class="pull-right timeline-container">
+			<div class="timeline-mo">Mo</div>
+			<div class="timeline-tu">Di</div>
+			<div class="timeline-we">Mi</div>
+			<div class="timeline-th">Do</div>
+			<div class="timeline-fr">Fr</div>
+			<div class="timeline-sa">Sa</div>
+		</div>
+		<br /><br />
+		
+		{{#each amenities}}
+			<div class="amenity">
+				<span>{{name}}</span>
+				<div class="pull-right timeline-container">
+					<div class="timeline-tu"></div>
+					<div class="timeline-th"></div>
+					<div class="timeline-sa"></div>
+					{{{timelineWeeklyIntervals openingHours}}}
+					{{{timelineHighlightCurrent}}}
+				</div>
+			</div>
+		{{/each}}
+	</script>
+
+	<script type="text/javascript" src="js/require.js"></script>
+	<script type="text/javascript" src="js/class.js"></script>
+	<script type="text/javascript" src="js/handlebars.js"></script>
+	<script type="text/javascript" src="js/leaflet.js"></script>
+	<script type="text/javascript" src="js/recycling.js"></script>
+	<script type="text/javascript" src="js/recycling.data.js"></script>
+	<script type="text/javascript" src="js/recycling.list.js"></script>
+	<script type="text/javascript">
+		rc.list.init();
+	</script>
+</body>
+</html>

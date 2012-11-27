@@ -1,0 +1,66 @@
+.amenity-list {
+	max-width: 768px;
+	padding: 1em;
+}
+.amenity {
+	text-align: right;
+}
+.amenity span {
+	padding-right: 2em;
+}
+
+.timeline-container {
+	position: relative;
+	width: 288px;
+	height: 1em;
+	background: #E0E0E0;
+}
+.timeline-container div { 
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	background: green;
+}
+div.timeline-current {
+	background: red;
+	width: 2px;
+}
+div.timeline-mo,
+div.timeline-tu,
+div.timeline-we,
+div.timeline-th,
+div.timeline-fr,
+div.timeline-sa {
+	z-index: 5;
+	width: 48px;
+	text-align: center;
+	font-size: 10px;
+	line-height: 16px;
+	font-weight: bold;
+	vertical-align: top;
+	background: transparent;
+}
+div.timeline-tu,
+div.timeline-th,
+div.timeline-sa {
+	background: #CCC; 
+}
+.timeline-mo {
+	left: 0px;
+}
+.timeline-tu {
+	left: 48px;
+}
+.timeline-we {
+	left: 96px;
+}
+.timeline-th {
+	left: 144px;
+}
+.timeline-fr {
+	left: 192px;
+}
+.timeline-sa {
+	left: 240px;
+}
