@@ -8114,4 +8114,16 @@
 					"opening_hours" : "Fr 13.30 - 16.30  ;Sa 09.00 - 13.00 "
 				}
 			} ];
+	
+	var filtered = [];
+	rc.filteredData = function() {
+		if(filtered.length === 0) {
+			for (var index in rc.data) {
+				if(rc.data[index].openingHours && rc.data[index].openingHours.length > 0) {
+					filtered.push(rc.data[index]);
+				}
+			}
+		}
+		return filtered;
+	};
 }(rc));

@@ -38,20 +38,10 @@
 	Handlebars.registerHelper('timelineWeeklyIntervals', rc.proxy(timelineHelper.weeklyIntervals, timelineHelper));
 	Handlebars.registerHelper('timelineHighlightCurrent', rc.proxy(timelineHelper.currentTime, timelineHelper));
 	
-	var filterData = function(data) {
-		var filtered = [];
-		for (var index in data) {
-			if(data[index].openingHours && data[index].openingHours.length > 0) {
-				filtered.push(data[index]);
-			}
-		}
-		return filtered;
-	};
-	
 	rc.list = {
 		init: function() {
 			var template = Handlebars.compile(document.getElementById('list-template').innerHTML);
-			document.getElementsByClassName('amenity-list')[0].innerHTML = template({ amenities: filterData(rc.data) });
+			document.getElementsByClassName('amenity-list')[0].innerHTML = template({ amenities: rc.filteredData() });
 		}
 	};
 }(rc));

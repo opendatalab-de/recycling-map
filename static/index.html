@@ -16,6 +16,8 @@
 	<![endif]-->
 </head>
 <body>
+	<div id="map"></div>
+
 	<div class="amenity-list">
 	</div>
 	
@@ -28,7 +30,7 @@
 			<div class="timeline-fr">Fr</div>
 			<div class="timeline-sa">Sa</div>
 		</div>
-		<br /><br />
+		<br />
 		
 		{{#each amenities}}
 			<div class="amenity">
@@ -59,9 +61,11 @@
 	<script type="text/javascript" src="js/leaflet.js"></script>
 	<script type="text/javascript" src="js/recycling.js"></script>
 	<script type="text/javascript" src="js/recycling.data.js"></script>
+	<script type="text/javascript" src="js/recycling.map.js"></script>
 	<script type="text/javascript" src="js/recycling.list.js"></script>
 	<script type="text/javascript">
-		rc.list.init();
+		rc.map.init();
+		//rc.list.init();
 	</script>
 </body>
 </html>

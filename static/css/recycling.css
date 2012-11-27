@@ -1,3 +1,11 @@
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
 .amenity-list {
 	max-width: 768px;
 	padding: 1em;
@@ -6,7 +14,12 @@
 	text-align: right;
 }
 .amenity span {
+	display: inline-block;
 	padding-right: 2em;
+	width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .timeline-container {
