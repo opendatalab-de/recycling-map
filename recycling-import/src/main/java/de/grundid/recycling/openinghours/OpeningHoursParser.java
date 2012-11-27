@@ -18,7 +18,7 @@ import de.gonam.openinghours.WeeklyTimeInterval;
 
 public class OpeningHoursParser {
 
-	private String[] monthNames = { "Mar", "Apr", "Sep", "Oct" };
+	private String[] monthNames = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
 	private static final Map<DayOfWeek, String> DAYS_MAP = new HashMap<DayOfWeek, String>();
 
 	static {

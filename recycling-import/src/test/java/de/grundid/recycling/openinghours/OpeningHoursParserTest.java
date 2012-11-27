@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import java.util.List;
 import java.util.Set;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import de.gonam.openinghours.DayOfWeek;
@@ -14,6 +15,14 @@ import de.gonam.openinghours.WeeklyTimeInterval;
 public class OpeningHoursParserTest {
 
 	private OpeningHoursParser parser = new OpeningHoursParser();
+
+	@Test
+	@Ignore
+	public void testParse5() throws Exception {
+		String pattern = "Nov - Feb: Sa 13:00-15:00; Mar - Oct: Sa 12:00-15:00";
+		List<WeeklyTimeInterval> result = parser.parse(pattern);
+		assertNotNull(result);
+	}
 
 	@Test
 	public void testParse1() throws Exception {
