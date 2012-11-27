@@ -32,7 +32,16 @@
 		
 		{{#each amenities}}
 			<div class="amenity">
-				<span>{{name}}</span>
+				<span>
+					{{#if keyValues.name}}
+						{{keyValues.name}}
+					{{else}}
+						Recycling
+						{{#if keyValues.city}}
+							in {{keyValues.city}}
+						{{/if}}
+					{{/if}}
+				</span>
 				<div class="pull-right timeline-container">
 					<div class="timeline-tu"></div>
 					<div class="timeline-th"></div>
