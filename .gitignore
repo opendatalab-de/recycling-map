@@ -1,0 +1,8 @@
+**.project
+**.classpath
+**.settings
+**.springBeans
+/**/target/
+/**/bin
+target/**
+jetty-env.xml
