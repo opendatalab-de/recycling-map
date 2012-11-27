@@ -41,6 +41,7 @@
 						in {{keyValues.city}}
 					{{/if}}
 				{{/if}}
+				{{{compactOffer openingHours}}}
 				<div class="timeline-container">
 					<div class="timeline-tu"></div>
 					<div class="timeline-th"></div>
@@ -51,12 +52,75 @@
 			</div>
 		{{/each}}
 	</script>
+	<script id="compact-offer-template" type="text/x-handlebars-template">
+		{{#if wI}}
+			<ul class="compact-offer unstyled">
+				{{#each wI}}
+					<li>
+						{{#if highlight}}
+							<strong>
+						{{/if}}
+						
+						<span class="days">{{#foreach cW}}{{#unless isFirst}}{{#if range}}&#8201;–&#8201;{{else}}, {{/if}}{{/unless}}{{weekday}}{{/foreach}}</span>
+						<span class="time-intervals">{{> timeIntervals}}</span>
+						
+						{{#if highlight}}
+							</strong>
+						{{/if}}
+					</li>
+				{{/each}}
+			</ul>
+		{{else}}
+			{{#unless note}}keine eingetragen{{/unless}}
+		{{/if}}
+	</script>
+	<script id="service-hours-today-template" type="text/x-handlebars-template">
+		{{#if hasData}}
+			{{#if hasDataForToday}}
+				{{#if isClosedToday}}
+					heute geschlossen
+				{{else}}
+					heute {{> timeIntervals}}
+				{{/if}}
+			{{else}}
+				unvollständige Daten für heute
+			{{/if}}
+		{{else}}
+			{{#if note}}
+				{{note}}
+			{{else}}
+				keine Daten eingetragen
+			{{/if}}		
+		{{/if}}
+	</script>
+	<script id="timeintervals-template" type="text/x-handlebars-template">
+		{{#foreach tI}}
+			{{#if ../printMicrodata}}
+				<time itemprop="openingHours" datetime="{{microdata}}">
+			{{/if}}
+			
+			{{#if to}}
+				von <strong>{{from}}</strong>&#8201;–&#8201;<strong>{{to}}</strong>
+			{{else}}
+				ab <strong>{{from}}</strong>
+			{{/if}}
+			
+			{{#if ../printMicrodata}}
+				</time>
+			{{/if}}
+			
+			{{#if hasNext}}
+				und
+			{{/if}}
+		{{/foreach}}
+	</script>
 
 	<script type="text/javascript" src="js/require.js"></script>
-	<script type="text/javascript" src="js/class.js"></script>
+	<script type="text/javascript" src="js/underscore.js"></script>
 	<script type="text/javascript" src="js/handlebars.js"></script>
 	<script type="text/javascript" src="js/leaflet.js"></script>
 	<script type="text/javascript" src="js/recycling.js"></script>
+	<script type="text/javascript" src="js/recycling.serviceHours.js"></script>
 	<script type="text/javascript" src="js/recycling.data.js"></script>
 	<script type="text/javascript" src="js/recycling.map.js"></script>
 	<script type="text/javascript" src="js/recycling.list.js"></script>
