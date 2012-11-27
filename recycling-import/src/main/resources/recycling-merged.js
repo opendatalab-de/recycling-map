@@ -76,33 +76,27 @@ var data = {
 				"lat" : 47.9870706,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-16:00",
-						"from" : "09:00",
-						"to" : "16:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 8160
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY" ],
+					"wD" : [ 4 ],
 					"tI" : [ {
 						"microdata" : "Th 08:00-16:00",
 						"from" : "08:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 4800,
-							"to" : 5280
-						} ]
+						"wM" : [ [ 4800, 5280 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-16:00",
+						"from" : "09:00",
+						"to" : "16:00",
+						"wM" : [ [ 7740, 8160 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -125,39 +119,30 @@ var data = {
 				"lat" : 47.6603996,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-11:30",
-						"from" : "09:00",
-						"to" : "11:30",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7890
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					}, {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY", "FRIDAY" ],
+					"wD" : [ 2, 5 ],
 					"tI" : [ {
 						"microdata" : "Tu,Fr 16:00-17:00",
 						"from" : "16:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 2400,
-							"to" : 2460
-						}, {
-							"from" : 6720,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 2400, 2460 ], [ 6720, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-11:30",
+						"from" : "09:00",
+						"to" : "11:30",
+						"wM" : [ [ 7740, 7890 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -239,80 +224,49 @@ var data = {
 				"nodeId" : 199042127,
 				"lon" : 11.7394066,
 				"lat" : 48.1735985,
-				"openingHours" : [ {
-					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 08:00-13:00",
-						"from" : "08:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7680,
-							"to" : 7980
-						} ]
-					}, {
-						"microdata" : "Sa 15:00-18:00",
-						"from" : "15:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 8100,
-							"to" : 8280
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					}, {
-						"weekday" : "Fr",
-						"range" : true
-					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo-Fr 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 720
+				"openingHours" : [
+						{
+							"cW" : [ {
+								"weekday" : "Mo",
+								"range" : false
+							}, {
+								"weekday" : "Fr",
+								"range" : true
+							} ],
+							"wD" : [ 1, 2, 3, 4, 5 ],
+							"tI" : [
+									{
+										"microdata" : "Mo-Fr 08:00-12:00",
+										"from" : "08:00",
+										"to" : "12:00",
+										"wM" : [ [ 480, 720 ], [ 1920, 2160 ], [ 3360, 3600 ],
+												[ 4800, 5040 ], [ 6240, 6480 ] ]
+									},
+									{
+										"microdata" : "Mo-Fr 13:00-20:00",
+										"from" : "13:00",
+										"to" : "20:00",
+										"wM" : [ [ 780, 1200 ], [ 2220, 2640 ], [ 3660, 4080 ],
+												[ 5100, 5520 ], [ 6540, 6960 ] ]
+									} ]
 						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						}, {
-							"from" : 6240,
-							"to" : 6480
-						} ]
-					}, {
-						"microdata" : "Mo-Fr 13:00-20:00",
-						"from" : "13:00",
-						"to" : "20:00",
-						"wM" : [ {
-							"from" : 780,
-							"to" : 1200
-						}, {
-							"from" : 2220,
-							"to" : 2640
-						}, {
-							"from" : 3660,
-							"to" : 4080
-						}, {
-							"from" : 5100,
-							"to" : 5520
-						}, {
-							"from" : 6540,
-							"to" : 6960
-						} ]
-					} ]
-				} ],
+							"cW" : [ {
+								"weekday" : "Sa",
+								"range" : false
+							} ],
+							"wD" : [ 6 ],
+							"tI" : [ {
+								"microdata" : "Sa 08:00-13:00",
+								"from" : "08:00",
+								"to" : "13:00",
+								"wM" : [ [ 7680, 7980 ] ]
+							}, {
+								"microdata" : "Sa 15:00-18:00",
+								"from" : "15:00",
+								"to" : "18:00",
+								"wM" : [ [ 8100, 8280 ] ]
+							} ]
+						} ],
 				"keyValues" : {
 					"amenity" : "recycling",
 					"name" : "Wertstoffhof Kirchheim",
@@ -343,52 +297,36 @@ var data = {
 				"nodeId" : 249717390,
 				"lon" : 13.731857,
 				"lat" : 51.083685,
-				"openingHours" : [ {
-					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7680,
-							"to" : 7920
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					}, {
-						"weekday" : "Fr",
-						"range" : true
-					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo-Fr 12:00-19:00",
-						"from" : "12:00",
-						"to" : "19:00",
-						"wM" : [ {
-							"from" : 720,
-							"to" : 1140
+				"openingHours" : [
+						{
+							"cW" : [ {
+								"weekday" : "Mo",
+								"range" : false
+							}, {
+								"weekday" : "Fr",
+								"range" : true
+							} ],
+							"wD" : [ 1, 2, 3, 4, 5 ],
+							"tI" : [ {
+								"microdata" : "Mo-Fr 12:00-19:00",
+								"from" : "12:00",
+								"to" : "19:00",
+								"wM" : [ [ 720, 1140 ], [ 2160, 2580 ], [ 3600, 4020 ],
+										[ 5040, 5460 ], [ 6480, 6900 ] ]
+							} ]
 						}, {
-							"from" : 2160,
-							"to" : 2580
-						}, {
-							"from" : 3600,
-							"to" : 4020
-						}, {
-							"from" : 5040,
-							"to" : 5460
-						}, {
-							"from" : 6480,
-							"to" : 6900
-						} ]
-					} ]
-				} ],
+							"cW" : [ {
+								"weekday" : "Sa",
+								"range" : false
+							} ],
+							"wD" : [ 6 ],
+							"tI" : [ {
+								"microdata" : "Sa 08:00-12:00",
+								"from" : "08:00",
+								"to" : "12:00",
+								"wM" : [ [ 7680, 7920 ] ]
+							} ]
+						} ],
 				"keyValues" : {
 					"amenity" : "recycling",
 					"name" : "Wertstoffhof abfallGut e. V.",
@@ -635,30 +573,24 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ]
+						"wM" : [ [ 7740, 7920 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 3720,
-							"to" : 3900
-						} ]
+						"wM" : [ [ 3720, 3900 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -749,39 +681,30 @@ var data = {
 				"lat" : 53.9009751,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 08:00-13:00",
-						"from" : "08:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7680,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					}, {
 						"weekday" : "Do",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY", "THURSDAY" ],
+					"wD" : [ 2, 4 ],
 					"tI" : [ {
 						"microdata" : "Tu,Th 08:00-17:00",
 						"from" : "08:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 1920,
-							"to" : 2460
-						}, {
-							"from" : 4800,
-							"to" : 5340
-						} ]
+						"wM" : [ [ 1920, 2460 ], [ 4800, 5340 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 08:00-13:00",
+						"from" : "08:00",
+						"to" : "13:00",
+						"wM" : [ [ 7680, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -887,21 +810,6 @@ var data = {
 				"lat" : 54.8014553,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 08:00-13:00",
-						"from" : "08:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7680,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Mo",
 						"range" : false
 					}, {
@@ -914,24 +822,24 @@ var data = {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "THURSDAY", "FRIDAY" ],
+					"wD" : [ 1, 2, 4, 5 ],
 					"tI" : [ {
 						"microdata" : "Mo,Tu,Th,Fr 08:00-17:00",
 						"from" : "08:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 1020
-						}, {
-							"from" : 1920,
-							"to" : 2460
-						}, {
-							"from" : 4800,
-							"to" : 5340
-						}, {
-							"from" : 6240,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 480, 1020 ], [ 1920, 2460 ], [ 4800, 5340 ], [ 6240, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 08:00-13:00",
+						"from" : "08:00",
+						"to" : "13:00",
+						"wM" : [ [ 7680, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -1037,18 +945,15 @@ var data = {
 				"lat" : 48.1822122,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
+						"weekday" : "Mo",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 1 ],
 					"tI" : [ {
-						"microdata" : "Sa 07:30-15:00",
-						"from" : "07:30",
-						"to" : "15:00",
-						"wM" : [ {
-							"from" : 7650,
-							"to" : 8100
-						} ]
+						"microdata" : "Mo 10:30-19:00",
+						"from" : "10:30",
+						"to" : "19:00",
+						"wM" : [ [ 630, 1140 ] ]
 					} ]
 				}, {
 					"cW" : [ {
@@ -1058,39 +963,24 @@ var data = {
 						"weekday" : "Fr",
 						"range" : true
 					} ],
-					"wD" : [ "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"wD" : [ 2, 3, 4, 5 ],
 					"tI" : [ {
 						"microdata" : "Tu-Fr 08:00-18:00",
 						"from" : "08:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 1920,
-							"to" : 2520
-						}, {
-							"from" : 3360,
-							"to" : 3960
-						}, {
-							"from" : 4800,
-							"to" : 5400
-						}, {
-							"from" : 6240,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 1920, 2520 ], [ 3360, 3960 ], [ 4800, 5400 ], [ 6240, 6840 ] ]
 					} ]
 				}, {
 					"cW" : [ {
-						"weekday" : "Mo",
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "MONDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
-						"microdata" : "Mo 10:30-19:00",
-						"from" : "10:30",
-						"to" : "19:00",
-						"wM" : [ {
-							"from" : 630,
-							"to" : 1140
-						} ]
+						"microdata" : "Sa 07:30-15:00",
+						"from" : "07:30",
+						"to" : "15:00",
+						"wM" : [ [ 7650, 8100 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -1384,36 +1274,6 @@ var data = {
 				"lat" : 50.4674637,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 08:30-13:30",
-						"from" : "08:30",
-						"to" : "13:30",
-						"wM" : [ {
-							"from" : 7710,
-							"to" : 8010
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Do",
-						"range" : false
-					} ],
-					"wD" : [ "THURSDAY" ],
-					"tI" : [ {
-						"microdata" : "Th 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Mo",
 						"range" : false
 					}, {
@@ -1423,24 +1283,36 @@ var data = {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "FRIDAY" ],
+					"wD" : [ 1, 2, 3, 5 ],
 					"tI" : [ {
 						"microdata" : "Mo-We,Fr 08:00-16:00",
 						"from" : "08:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 960
-						}, {
-							"from" : 1920,
-							"to" : 2400
-						}, {
-							"from" : 3360,
-							"to" : 3840
-						}, {
-							"from" : 6240,
-							"to" : 6720
-						} ]
+						"wM" : [ [ 480, 960 ], [ 1920, 2400 ], [ 3360, 3840 ], [ 6240, 6720 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ 4 ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ [ 4800, 5400 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 08:30-13:30",
+						"from" : "08:30",
+						"to" : "13:30",
+						"wM" : [ [ 7710, 8010 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -1670,72 +1542,54 @@ var data = {
 				"lat" : 48.3384512,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Do",
-						"range" : false
-					} ],
-					"wD" : [ "THURSDAY" ],
-					"tI" : [ {
-						"microdata" : "Th 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Mo",
 						"range" : false
 					}, {
 						"weekday" : "Mi",
 						"range" : true
 					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY" ],
+					"wD" : [ 1, 2, 3 ],
 					"tI" : [ {
 						"microdata" : "Mo-We 08:00-15:00",
 						"from" : "08:00",
 						"to" : "15:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 900
-						}, {
-							"from" : 1920,
-							"to" : 2340
-						}, {
-							"from" : 3360,
-							"to" : 3780
-						} ]
+						"wM" : [ [ 480, 900 ], [ 1920, 2340 ], [ 3360, 3780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ 4 ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ [ 4800, 5400 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ]
+						"wM" : [ [ 6240, 6480 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -1941,48 +1795,39 @@ var data = {
 				"lat" : 49.13670835,
 				"openingHours" : [ {
 					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 5 ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ]
+						"wM" : [ [ 7740, 7920 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 14:00-16:00",
 						"from" : "14:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 2280,
-							"to" : 2400
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Fr",
-						"range" : false
-					} ],
-					"wD" : [ "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 2280, 2400 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -2156,72 +2001,54 @@ var data = {
 				"lat" : 48.3080606,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Do",
-						"range" : false
-					} ],
-					"wD" : [ "THURSDAY" ],
-					"tI" : [ {
-						"microdata" : "Th 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Mo",
 						"range" : false
 					}, {
 						"weekday" : "Mi",
 						"range" : true
 					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY" ],
+					"wD" : [ 1, 2, 3 ],
 					"tI" : [ {
 						"microdata" : "Mo-We 08:00-15:00",
 						"from" : "08:00",
 						"to" : "15:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 900
-						}, {
-							"from" : 1920,
-							"to" : 2340
-						}, {
-							"from" : 3360,
-							"to" : 3780
-						} ]
+						"wM" : [ [ 480, 900 ], [ 1920, 2340 ], [ 3360, 3780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ 4 ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ [ 4800, 5400 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ]
+						"wM" : [ [ 6240, 6480 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -2245,15 +2072,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -2318,39 +2142,30 @@ var data = {
 				"lat" : 50.8552722,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7680,
-							"to" : 7920
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					}, {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY", "FRIDAY" ],
+					"wD" : [ 3, 5 ],
 					"tI" : [ {
 						"microdata" : "We,Fr 14:00-18:00",
 						"from" : "14:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 3720,
-							"to" : 3960
-						}, {
-							"from" : 6600,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 3720, 3960 ], [ 6600, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ [ 7680, 7920 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -2409,48 +2224,39 @@ var data = {
 				"lat" : 50.5295392,
 				"openingHours" : [ {
 					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					} ],
+					"wD" : [ 1 ],
+					"tI" : [ {
+						"microdata" : "Mo 10:00-12:00",
+						"from" : "10:00",
+						"to" : "12:00",
+						"wM" : [ [ 600, 720 ] ]
+					} ]
+				}, {
+					"cW" : [ {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 10:00-13:00",
 						"from" : "10:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7800,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7800, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 15:00-18:00",
 						"from" : "15:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 3780,
-							"to" : 3960
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					} ],
-					"wD" : [ "MONDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo 10:00-12:00",
-						"from" : "10:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 600,
-							"to" : 720
-						} ]
+						"wM" : [ [ 3780, 3960 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -2487,67 +2293,6 @@ var data = {
 				"lat" : 48.951645,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Do",
-						"range" : false
-					} ],
-					"wD" : [ "THURSDAY" ],
-					"tI" : [ {
-						"microdata" : "Th 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 4860,
-							"to" : 5040
-						} ]
-					}, {
-						"microdata" : "Th 14:00-18:00",
-						"from" : "14:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 5160,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Di",
-						"range" : false
-					} ],
-					"wD" : [ "TUESDAY" ],
-					"tI" : [ {
-						"microdata" : "Tu 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 1980,
-							"to" : 2160
-						} ]
-					}, {
-						"microdata" : "Tu 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"wM" : [ {
-							"from" : 2280,
-							"to" : 2460
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Mo",
 						"range" : false
 					}, {
@@ -2557,21 +2302,58 @@ var data = {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "MONDAY", "WEDNESDAY", "FRIDAY" ],
+					"wD" : [ 1, 3, 5 ],
 					"tI" : [ {
 						"microdata" : "Mo,We,Fr 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 540,
-							"to" : 720
-						}, {
-							"from" : 3420,
-							"to" : 3600
-						}, {
-							"from" : 6300,
-							"to" : 6480
-						} ]
+						"wM" : [ [ 540, 720 ], [ 3420, 3600 ], [ 6300, 6480 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ 4 ],
+					"tI" : [ {
+						"microdata" : "Th 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ [ 4860, 5040 ] ]
+					}, {
+						"microdata" : "Th 14:00-18:00",
+						"from" : "14:00",
+						"to" : "18:00",
+						"wM" : [ [ 5160, 5400 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ 2 ],
+					"tI" : [ {
+						"microdata" : "Tu 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ [ 1980, 2160 ] ]
+					}, {
+						"microdata" : "Tu 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ [ 2280, 2460 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -2627,86 +2409,68 @@ var data = {
 				"lat" : 48.1840707,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 08:00-13:00",
-						"from" : "08:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7680,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY" ],
+					"wD" : [ 4 ],
 					"tI" : [ {
 						"microdata" : "Th 14:00-19:00",
 						"from" : "14:00",
 						"to" : "19:00",
-						"wM" : [ {
-							"from" : 5160,
-							"to" : 5460
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Di",
-						"range" : false
-					} ],
-					"wD" : [ "TUESDAY" ],
-					"tI" : [ {
-						"microdata" : "Tu 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 1920,
-							"to" : 2160
-						} ]
+						"wM" : [ [ 5160, 5460 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-18:00",
 						"from" : "14:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 6600, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 08:00-13:00",
+						"from" : "08:00",
+						"to" : "13:00",
+						"wM" : [ [ 7680, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 3360,
-							"to" : 3600
-						} ]
+						"wM" : [ [ 3360, 3600 ] ]
 					}, {
 						"microdata" : "We 14:00-19:00",
 						"from" : "14:00",
 						"to" : "19:00",
-						"wM" : [ {
-							"from" : 3720,
-							"to" : 4020
-						} ]
+						"wM" : [ [ 3720, 4020 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ 2 ],
+					"tI" : [ {
+						"microdata" : "Tu 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ [ 1920, 2160 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -3305,15 +3069,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 10:00-12:00",
 						"from" : "10:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7800,
-							"to" : 7920
-						} ]
+						"wM" : [ [ 7800, 7920 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -3387,24 +3148,20 @@ var data = {
 				"lat" : 50.0046336,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Fr",
-						"range" : false
-					}, {
-						"weekday" : "Sa",
+						"weekday" : "Mo",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY", "SATURDAY" ],
+					"wD" : [ 1 ],
 					"tI" : [ {
-						"microdata" : "Fr,Sa 08:00-13:00",
+						"microdata" : "Mo 08:00-12:00",
 						"from" : "08:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 6240,
-							"to" : 6540
-						}, {
-							"from" : 7680,
-							"to" : 7980
-						} ]
+						"to" : "12:00",
+						"wM" : [ [ 480, 720 ] ]
+					}, {
+						"microdata" : "Mo 13:00-18:00",
+						"from" : "13:00",
+						"to" : "18:00",
+						"wM" : [ [ 780, 1080 ] ]
 					} ]
 				}, {
 					"cW" : [ {
@@ -3414,67 +3171,44 @@ var data = {
 						"weekday" : "Do",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY", "THURSDAY" ],
+					"wD" : [ 2, 4 ],
 					"tI" : [ {
 						"microdata" : "Tu,Th 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						} ]
+						"wM" : [ [ 1920, 2160 ], [ 4800, 5040 ] ]
 					}, {
 						"microdata" : "Tu,Th 13:00-16:00",
 						"from" : "13:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 2220,
-							"to" : 2400
-						}, {
-							"from" : 5100,
-							"to" : 5280
-						} ]
+						"wM" : [ [ 2220, 2400 ], [ 5100, 5280 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					}, {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 5, 6 ],
+					"tI" : [ {
+						"microdata" : "Fr,Sa 08:00-13:00",
+						"from" : "08:00",
+						"to" : "13:00",
+						"wM" : [ [ 6240, 6540 ], [ 7680, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 3360,
-							"to" : 3600
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					} ],
-					"wD" : [ "MONDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 720
-						} ]
-					}, {
-						"microdata" : "Mo 13:00-18:00",
-						"from" : "13:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 780,
-							"to" : 1080
-						} ]
+						"wM" : [ [ 3360, 3600 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -3853,33 +3587,27 @@ var data = {
 				"lat" : 49.09236798,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 11:00-12:00",
 						"from" : "11:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 6420,
-							"to" : 6480
-						} ]
+						"wM" : [ [ 6420, 6480 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -3921,24 +3649,15 @@ var data = {
 				"lat" : 50.9309586,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Mi",
-						"range" : false
-					}, {
-						"weekday" : "Sa",
+						"weekday" : "Mo",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY", "SATURDAY" ],
+					"wD" : [ 1 ],
 					"tI" : [ {
-						"microdata" : "We,Sa 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 3420,
-							"to" : 3600
-						}, {
-							"from" : 7740,
-							"to" : 7920
-						} ]
+						"microdata" : "Mo 13:00-18:00",
+						"from" : "13:00",
+						"to" : "18:00",
+						"wM" : [ [ 780, 1080 ] ]
 					} ]
 				}, {
 					"cW" : [ {
@@ -3948,44 +3667,32 @@ var data = {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY", "FRIDAY" ],
+					"wD" : [ 2, 5 ],
 					"tI" : [ {
 						"microdata" : "Tu,Fr 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 1980,
-							"to" : 2160
-						}, {
-							"from" : 6300,
-							"to" : 6480
-						} ]
+						"wM" : [ [ 1980, 2160 ], [ 6300, 6480 ] ]
 					}, {
 						"microdata" : "Tu,Fr 13:00-18:00",
 						"from" : "13:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 2220,
-							"to" : 2520
-						}, {
-							"from" : 6540,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 2220, 2520 ], [ 6540, 6840 ] ]
 					} ]
 				}, {
 					"cW" : [ {
-						"weekday" : "Mo",
+						"weekday" : "Mi",
+						"range" : false
+					}, {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "MONDAY" ],
+					"wD" : [ 3, 6 ],
 					"tI" : [ {
-						"microdata" : "Mo 13:00-18:00",
-						"from" : "13:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 780,
-							"to" : 1080
-						} ]
+						"microdata" : "We,Sa 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ [ 3420, 3600 ], [ 7740, 7920 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -4153,33 +3860,27 @@ var data = {
 				"lat" : 48.1311043,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY" ],
+					"wD" : [ 4 ],
 					"tI" : [ {
 						"microdata" : "Th 16:30-18:30",
 						"from" : "16:30",
 						"to" : "18:30",
-						"wM" : [ {
-							"from" : 5310,
-							"to" : 5430
-						} ]
+						"wM" : [ [ 5310, 5430 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -4209,48 +3910,39 @@ var data = {
 				"lat" : 47.6341769,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-16:00",
-						"from" : "09:00",
-						"to" : "16:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 8160
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 15:00-17:00",
 						"from" : "15:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6660,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6660, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-16:00",
+						"from" : "09:00",
+						"to" : "16:00",
+						"wM" : [ [ 7740, 8160 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 13:00-16:00",
 						"from" : "13:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 3660,
-							"to" : 3840
-						} ]
+						"wM" : [ [ 3660, 3840 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -4393,72 +4085,44 @@ var data = {
 				"nodeId" : 1634969352,
 				"lon" : 10.8980831,
 				"lat" : 48.4200308,
-				"openingHours" : [ {
-					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					}, {
-						"weekday" : "Fr",
-						"range" : true
-					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo-Fr 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 720
+				"openingHours" : [
+						{
+							"cW" : [ {
+								"weekday" : "Mo",
+								"range" : false
+							}, {
+								"weekday" : "Fr",
+								"range" : true
+							} ],
+							"wD" : [ 1, 2, 3, 4, 5 ],
+							"tI" : [
+									{
+										"microdata" : "Mo-Fr 08:00-12:00",
+										"from" : "08:00",
+										"to" : "12:00",
+										"wM" : [ [ 480, 720 ], [ 1920, 2160 ], [ 3360, 3600 ],
+												[ 4800, 5040 ], [ 6240, 6480 ] ]
+									},
+									{
+										"microdata" : "Mo-Fr 13:00-16:00",
+										"from" : "13:00",
+										"to" : "16:00",
+										"wM" : [ [ 780, 960 ], [ 2220, 2400 ], [ 3660, 3840 ],
+												[ 5100, 5280 ], [ 6540, 6720 ] ]
+									} ]
 						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						}, {
-							"from" : 6240,
-							"to" : 6480
-						} ]
-					}, {
-						"microdata" : "Mo-Fr 13:00-16:00",
-						"from" : "13:00",
-						"to" : "16:00",
-						"wM" : [ {
-							"from" : 780,
-							"to" : 960
-						}, {
-							"from" : 2220,
-							"to" : 2400
-						}, {
-							"from" : 3660,
-							"to" : 3840
-						}, {
-							"from" : 5100,
-							"to" : 5280
-						}, {
-							"from" : 6540,
-							"to" : 6720
-						} ]
-					} ]
-				} ],
+							"cW" : [ {
+								"weekday" : "Sa",
+								"range" : false
+							} ],
+							"wD" : [ 6 ],
+							"tI" : [ {
+								"microdata" : "Sa 09:00-12:00",
+								"from" : "09:00",
+								"to" : "12:00",
+								"wM" : [ [ 7740, 7920 ] ]
+							} ]
+						} ],
 				"keyValues" : {
 					"FIXME" : "Position verbessern",
 					"addr:city" : "Augsburg",
@@ -4477,72 +4141,54 @@ var data = {
 				"lat" : 48.3727068,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Do",
-						"range" : false
-					} ],
-					"wD" : [ "THURSDAY" ],
-					"tI" : [ {
-						"microdata" : "Th 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Mo",
 						"range" : false
 					}, {
 						"weekday" : "Mi",
 						"range" : true
 					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY" ],
+					"wD" : [ 1, 2, 3 ],
 					"tI" : [ {
 						"microdata" : "Mo-We 08:00-15:00",
 						"from" : "08:00",
 						"to" : "15:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 900
-						}, {
-							"from" : 1920,
-							"to" : 2340
-						}, {
-							"from" : 3360,
-							"to" : 3780
-						} ]
+						"wM" : [ [ 480, 900 ], [ 1920, 2340 ], [ 3360, 3780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ 4 ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ [ 4800, 5400 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ]
+						"wM" : [ [ 6240, 6480 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -4639,52 +4285,36 @@ var data = {
 				"nodeId" : 1643656701,
 				"lon" : 12.4139325,
 				"lat" : 51.3414054,
-				"openingHours" : [ {
-					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 08:00-15:00",
-						"from" : "08:00",
-						"to" : "15:00",
-						"wM" : [ {
-							"from" : 7680,
-							"to" : 8100
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					}, {
-						"weekday" : "Fr",
-						"range" : true
-					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo-Fr 10:00-18:00",
-						"from" : "10:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 600,
-							"to" : 1080
+				"openingHours" : [
+						{
+							"cW" : [ {
+								"weekday" : "Mo",
+								"range" : false
+							}, {
+								"weekday" : "Fr",
+								"range" : true
+							} ],
+							"wD" : [ 1, 2, 3, 4, 5 ],
+							"tI" : [ {
+								"microdata" : "Mo-Fr 10:00-18:00",
+								"from" : "10:00",
+								"to" : "18:00",
+								"wM" : [ [ 600, 1080 ], [ 2040, 2520 ], [ 3480, 3960 ],
+										[ 4920, 5400 ], [ 6360, 6840 ] ]
+							} ]
 						}, {
-							"from" : 2040,
-							"to" : 2520
-						}, {
-							"from" : 3480,
-							"to" : 3960
-						}, {
-							"from" : 4920,
-							"to" : 5400
-						}, {
-							"from" : 6360,
-							"to" : 6840
-						} ]
-					} ]
-				} ],
+							"cW" : [ {
+								"weekday" : "Sa",
+								"range" : false
+							} ],
+							"wD" : [ 6 ],
+							"tI" : [ {
+								"microdata" : "Sa 08:00-15:00",
+								"from" : "08:00",
+								"to" : "15:00",
+								"wM" : [ [ 7680, 8100 ] ]
+							} ]
+						} ],
 				"keyValues" : {
 					"amenity" : "recycling",
 					"name" : "Wertstoffhof",
@@ -4739,72 +4369,44 @@ var data = {
 				"nodeId" : 1649361182,
 				"lon" : 11.2006767,
 				"lat" : 49.1621381,
-				"openingHours" : [ {
-					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					}, {
-						"weekday" : "Fr",
-						"range" : true
-					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo-Fr 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 540,
-							"to" : 720
+				"openingHours" : [
+						{
+							"cW" : [ {
+								"weekday" : "Mo",
+								"range" : false
+							}, {
+								"weekday" : "Fr",
+								"range" : true
+							} ],
+							"wD" : [ 1, 2, 3, 4, 5 ],
+							"tI" : [
+									{
+										"microdata" : "Mo-Fr 09:00-12:00",
+										"from" : "09:00",
+										"to" : "12:00",
+										"wM" : [ [ 540, 720 ], [ 1980, 2160 ], [ 3420, 3600 ],
+												[ 4860, 5040 ], [ 6300, 6480 ] ]
+									},
+									{
+										"microdata" : "Mo-Fr 12:30-17:00",
+										"from" : "12:30",
+										"to" : "17:00",
+										"wM" : [ [ 750, 1020 ], [ 2190, 2460 ], [ 3630, 3900 ],
+												[ 5070, 5340 ], [ 6510, 6780 ] ]
+									} ]
 						}, {
-							"from" : 1980,
-							"to" : 2160
-						}, {
-							"from" : 3420,
-							"to" : 3600
-						}, {
-							"from" : 4860,
-							"to" : 5040
-						}, {
-							"from" : 6300,
-							"to" : 6480
-						} ]
-					}, {
-						"microdata" : "Mo-Fr 12:30-17:00",
-						"from" : "12:30",
-						"to" : "17:00",
-						"wM" : [ {
-							"from" : 750,
-							"to" : 1020
-						}, {
-							"from" : 2190,
-							"to" : 2460
-						}, {
-							"from" : 3630,
-							"to" : 3900
-						}, {
-							"from" : 5070,
-							"to" : 5340
-						}, {
-							"from" : 6510,
-							"to" : 6780
-						} ]
-					} ]
-				} ],
+							"cW" : [ {
+								"weekday" : "Sa",
+								"range" : false
+							} ],
+							"wD" : [ 6 ],
+							"tI" : [ {
+								"microdata" : "Sa 09:00-12:00",
+								"from" : "09:00",
+								"to" : "12:00",
+								"wM" : [ [ 7740, 7920 ] ]
+							} ]
+						} ],
 				"keyValues" : {
 					"amenity" : "recycling",
 					"contact:phone" : "+4991742187",
@@ -5027,72 +4629,44 @@ var data = {
 				"nodeId" : 1705705996,
 				"lon" : 8.2848134,
 				"lat" : 47.6190886,
-				"openingHours" : [ {
-					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-14:00",
-						"from" : "09:00",
-						"to" : "14:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 8040
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					}, {
-						"weekday" : "Fr",
-						"range" : true
-					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo-Fr 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 720
+				"openingHours" : [
+						{
+							"cW" : [ {
+								"weekday" : "Mo",
+								"range" : false
+							}, {
+								"weekday" : "Fr",
+								"range" : true
+							} ],
+							"wD" : [ 1, 2, 3, 4, 5 ],
+							"tI" : [
+									{
+										"microdata" : "Mo-Fr 08:00-12:00",
+										"from" : "08:00",
+										"to" : "12:00",
+										"wM" : [ [ 480, 720 ], [ 1920, 2160 ], [ 3360, 3600 ],
+												[ 4800, 5040 ], [ 6240, 6480 ] ]
+									},
+									{
+										"microdata" : "Mo-Fr 13:00-17:00",
+										"from" : "13:00",
+										"to" : "17:00",
+										"wM" : [ [ 780, 1020 ], [ 2220, 2460 ], [ 3660, 3900 ],
+												[ 5100, 5340 ], [ 6540, 6780 ] ]
+									} ]
 						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						}, {
-							"from" : 6240,
-							"to" : 6480
-						} ]
-					}, {
-						"microdata" : "Mo-Fr 13:00-17:00",
-						"from" : "13:00",
-						"to" : "17:00",
-						"wM" : [ {
-							"from" : 780,
-							"to" : 1020
-						}, {
-							"from" : 2220,
-							"to" : 2460
-						}, {
-							"from" : 3660,
-							"to" : 3900
-						}, {
-							"from" : 5100,
-							"to" : 5340
-						}, {
-							"from" : 6540,
-							"to" : 6780
-						} ]
-					} ]
-				} ],
+							"cW" : [ {
+								"weekday" : "Sa",
+								"range" : false
+							} ],
+							"wD" : [ 6 ],
+							"tI" : [ {
+								"microdata" : "Sa 09:00-14:00",
+								"from" : "09:00",
+								"to" : "14:00",
+								"wM" : [ [ 7740, 8040 ] ]
+							} ]
+						} ],
 				"keyValues" : {
 					"amenity" : "recycling",
 					"name" : "Recyclinghof Küssaberg",
@@ -5314,15 +4888,12 @@ var data = {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 10:00-18:00",
 						"from" : "10:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 2040,
-							"to" : 2520
-						} ]
+						"wM" : [ [ 2040, 2520 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -5725,21 +5296,6 @@ var data = {
 				"lat" : 48.3523985,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 7680,
-							"to" : 8280
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Mo",
 						"range" : false
 					}, {
@@ -5749,51 +5305,48 @@ var data = {
 						"weekday" : "Do",
 						"range" : false
 					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "THURSDAY" ],
+					"wD" : [ 1, 2, 4 ],
 					"tI" : [ {
 						"microdata" : "Mo,Tu,Th 16:00-18:00",
 						"from" : "16:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 960,
-							"to" : 1080
-						}, {
-							"from" : 2400,
-							"to" : 2520
-						}, {
-							"from" : 5280,
-							"to" : 5400
-						} ]
+						"wM" : [ [ 960, 1080 ], [ 2400, 2520 ], [ 5280, 5400 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 13:00-18:00",
 						"from" : "13:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 6540,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 6540, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ [ 7680, 8280 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 16:00-19:00",
 						"from" : "16:00",
 						"to" : "19:00",
-						"wM" : [ {
-							"from" : 3840,
-							"to" : 4020
-						} ]
+						"wM" : [ [ 3840, 4020 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -6499,64 +6052,34 @@ var data = {
 						"weekday" : "Do",
 						"range" : true
 					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY" ],
+					"wD" : [ 1, 2, 3, 4 ],
 					"tI" : [ {
 						"microdata" : "Mo-Th 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 480,
-							"to" : 720
-						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						} ]
+						"wM" : [ [ 480, 720 ], [ 1920, 2160 ], [ 3360, 3600 ], [ 4800, 5040 ] ]
 					}, {
 						"microdata" : "Mo-Th 13:00-17:00",
 						"from" : "13:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 780,
-							"to" : 1020
-						}, {
-							"from" : 2220,
-							"to" : 2460
-						}, {
-							"from" : 3660,
-							"to" : 3900
-						}, {
-							"from" : 5100,
-							"to" : 5340
-						} ]
+						"wM" : [ [ 780, 1020 ], [ 2220, 2460 ], [ 3660, 3900 ], [ 5100, 5340 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ]
+						"wM" : [ [ 6240, 6480 ] ]
 					}, {
 						"microdata" : "Fr 13:00-15:00",
 						"from" : "13:00",
 						"to" : "15:00",
-						"wM" : [ {
-							"from" : 6540,
-							"to" : 6660
-						} ]
+						"wM" : [ [ 6540, 6660 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -6728,48 +6251,39 @@ var data = {
 				"lat" : 48.82306,
 				"openingHours" : [ {
 					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 5 ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 10:00-12:00",
 						"from" : "10:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7800,
-							"to" : 7920
-						} ]
+						"wM" : [ [ 7800, 7920 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 15:00-17:00",
 						"from" : "15:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 2340,
-							"to" : 2460
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Fr",
-						"range" : false
-					} ],
-					"wD" : [ "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 2340, 2460 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -6797,33 +6311,27 @@ var data = {
 				"lat" : 49.07874682,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY" ],
+					"wD" : [ 4 ],
 					"tI" : [ {
 						"microdata" : "Th 15:30-18:30",
 						"from" : "15:30",
 						"to" : "18:30",
-						"wM" : [ {
-							"from" : 5250,
-							"to" : 5430
-						} ]
+						"wM" : [ [ 5250, 5430 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -6840,45 +6348,30 @@ var data = {
 				"lat" : 49.23008369,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					}, {
 						"weekday" : "Fr",
 						"range" : true
 					} ],
-					"wD" : [ "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"wD" : [ 2, 3, 4, 5 ],
 					"tI" : [ {
 						"microdata" : "Tu-Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 2280,
-							"to" : 2460
-						}, {
-							"from" : 3720,
-							"to" : 3900
-						}, {
-							"from" : 5160,
-							"to" : 5340
-						}, {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 2280, 2460 ], [ 3720, 3900 ], [ 5160, 5340 ], [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -6895,39 +6388,30 @@ var data = {
 				"lat" : 49.21016812,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					}, {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY", "FRIDAY" ],
+					"wD" : [ 3, 5 ],
 					"tI" : [ {
 						"microdata" : "We,Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 3720,
-							"to" : 3900
-						}, {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 3720, 3900 ], [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -6944,48 +6428,39 @@ var data = {
 				"lat" : 49.23575136,
 				"openingHours" : [ {
 					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 5 ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ]
+						"wM" : [ [ 7740, 7920 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 15:00-18:00",
 						"from" : "15:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 2340,
-							"to" : 2520
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Fr",
-						"range" : false
-					} ],
-					"wD" : [ "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 2340, 2520 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7002,33 +6477,27 @@ var data = {
 				"lat" : 49.23024133,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-14:00",
-						"from" : "09:00",
-						"to" : "14:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 8040
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-16:00",
 						"from" : "14:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ]
+						"wM" : [ [ 6600, 6720 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-14:00",
+						"from" : "09:00",
+						"to" : "14:00",
+						"wM" : [ [ 7740, 8040 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7045,48 +6514,39 @@ var data = {
 				"lat" : 49.0358458,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-12:30",
-						"from" : "09:00",
-						"to" : "12:30",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7950
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY" ],
+					"wD" : [ 4 ],
 					"tI" : [ {
 						"microdata" : "Th 16:00-18:00",
 						"from" : "16:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 5280,
-							"to" : 5400
-						} ]
+						"wM" : [ [ 5280, 5400 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-12:30",
+						"from" : "09:00",
+						"to" : "12:30",
+						"wM" : [ [ 7740, 7950 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7103,48 +6563,39 @@ var data = {
 				"lat" : 49.08364834,
 				"openingHours" : [ {
 					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 5 ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ]
+						"wM" : [ [ 7740, 7920 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 14:00-16:00",
 						"from" : "14:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 2280,
-							"to" : 2400
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Fr",
-						"range" : false
-					} ],
-					"wD" : [ "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 2280, 2400 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7161,33 +6612,27 @@ var data = {
 				"lat" : 49.03999902,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-16:00",
 						"from" : "14:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ]
+						"wM" : [ [ 6600, 6720 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7202,72 +6647,44 @@ var data = {
 				"nodeId" : 0,
 				"lon" : 9.33056831,
 				"lat" : 49.18941713,
-				"openingHours" : [ {
-					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-11:30",
-						"from" : "09:00",
-						"to" : "11:30",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7890
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					}, {
-						"weekday" : "Fr",
-						"range" : true
-					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo-Fr 07:45-12:00",
-						"from" : "07:45",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 465,
-							"to" : 720
+				"openingHours" : [
+						{
+							"cW" : [ {
+								"weekday" : "Mo",
+								"range" : false
+							}, {
+								"weekday" : "Fr",
+								"range" : true
+							} ],
+							"wD" : [ 1, 2, 3, 4, 5 ],
+							"tI" : [
+									{
+										"microdata" : "Mo-Fr 07:45-12:00",
+										"from" : "07:45",
+										"to" : "12:00",
+										"wM" : [ [ 465, 720 ], [ 1905, 2160 ], [ 3345, 3600 ],
+												[ 4785, 5040 ], [ 6225, 6480 ] ]
+									},
+									{
+										"microdata" : "Mo-Fr 13:00-16:30",
+										"from" : "13:00",
+										"to" : "16:30",
+										"wM" : [ [ 780, 990 ], [ 2220, 2430 ], [ 3660, 3870 ],
+												[ 5100, 5310 ], [ 6540, 6750 ] ]
+									} ]
 						}, {
-							"from" : 1905,
-							"to" : 2160
-						}, {
-							"from" : 3345,
-							"to" : 3600
-						}, {
-							"from" : 4785,
-							"to" : 5040
-						}, {
-							"from" : 6225,
-							"to" : 6480
-						} ]
-					}, {
-						"microdata" : "Mo-Fr 13:00-16:30",
-						"from" : "13:00",
-						"to" : "16:30",
-						"wM" : [ {
-							"from" : 780,
-							"to" : 990
-						}, {
-							"from" : 2220,
-							"to" : 2430
-						}, {
-							"from" : 3660,
-							"to" : 3870
-						}, {
-							"from" : 5100,
-							"to" : 5310
-						}, {
-							"from" : 6540,
-							"to" : 6750
-						} ]
-					} ]
-				} ],
+							"cW" : [ {
+								"weekday" : "Sa",
+								"range" : false
+							} ],
+							"wD" : [ 6 ],
+							"tI" : [ {
+								"microdata" : "Sa 09:00-11:30",
+								"from" : "09:00",
+								"to" : "11:30",
+								"wM" : [ [ 7740, 7890 ] ]
+							} ]
+						} ],
 				"keyValues" : {
 					"addr:city" : "Eberstadt",
 					"addr:street" : "Müllannahmestelle",
@@ -7282,33 +6699,27 @@ var data = {
 				"lat" : 49.1537275,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 15:00-18:00",
 						"from" : "15:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 6660,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 6660, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7325,21 +6736,6 @@ var data = {
 				"lat" : 49.139502,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-15:00",
-						"from" : "09:00",
-						"to" : "15:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 8100
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					}, {
@@ -7349,21 +6745,24 @@ var data = {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY", "THURSDAY", "FRIDAY" ],
+					"wD" : [ 2, 4, 5 ],
 					"tI" : [ {
 						"microdata" : "Tu,Th,Fr 14:00-18:00",
 						"from" : "14:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 2280,
-							"to" : 2520
-						}, {
-							"from" : 5160,
-							"to" : 5400
-						}, {
-							"from" : 6600,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 2280, 2520 ], [ 5160, 5400 ], [ 6600, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-15:00",
+						"from" : "09:00",
+						"to" : "15:00",
+						"wM" : [ [ 7740, 8100 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7383,15 +6782,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7411,15 +6807,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7439,15 +6832,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7464,33 +6854,27 @@ var data = {
 				"lat" : 49.16512179,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 16:00-18:00",
 						"from" : "16:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 6720,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 6720, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7507,39 +6891,30 @@ var data = {
 				"lat" : 49.1015778,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					}, {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY", "FRIDAY" ],
+					"wD" : [ 4, 5 ],
 					"tI" : [ {
 						"microdata" : "Th,Fr 14:00-16:00",
 						"from" : "14:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 5160,
-							"to" : 5280
-						}, {
-							"from" : 6600,
-							"to" : 6720
-						} ]
+						"wM" : [ [ 5160, 5280 ], [ 6600, 6720 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7556,33 +6931,27 @@ var data = {
 				"lat" : 49.1502294,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7599,33 +6968,27 @@ var data = {
 				"lat" : 49.27500088,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7642,33 +7005,27 @@ var data = {
 				"lat" : 49.06274939,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 13:00-17:00",
 						"from" : "13:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6540,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6540, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7688,15 +7045,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7713,39 +7067,30 @@ var data = {
 				"lat" : 49.054239,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					}, {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY", "FRIDAY" ],
+					"wD" : [ 4, 5 ],
 					"tI" : [ {
 						"microdata" : "Th,Fr 14:00-18:00",
 						"from" : "14:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 5160,
-							"to" : 5400
-						}, {
-							"from" : 6600,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 5160, 5400 ], [ 6600, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7765,30 +7110,24 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 08:00-12:30",
 						"from" : "08:00",
 						"to" : "12:30",
-						"wM" : [ {
-							"from" : 7680,
-							"to" : 7950
-						} ]
+						"wM" : [ [ 7680, 7950 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 15:30-18:00",
 						"from" : "15:30",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 2370,
-							"to" : 2520
-						} ]
+						"wM" : [ [ 2370, 2520 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7808,15 +7147,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7836,30 +7172,24 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 2280,
-							"to" : 2460
-						} ]
+						"wM" : [ [ 2280, 2460 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7879,15 +7209,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7904,39 +7231,30 @@ var data = {
 				"lat" : 49.06316415,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-16:00",
-						"from" : "09:00",
-						"to" : "16:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 8160
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					}, {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY", "FRIDAY" ],
+					"wD" : [ 4, 5 ],
 					"tI" : [ {
 						"microdata" : "Th,Fr 15:00-17:00",
 						"from" : "15:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 5220,
-							"to" : 5340
-						}, {
-							"from" : 6660,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 5220, 5340 ], [ 6660, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-16:00",
+						"from" : "09:00",
+						"to" : "16:00",
+						"wM" : [ [ 7740, 8160 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -7953,48 +7271,39 @@ var data = {
 				"lat" : 49.1478469,
 				"openingHours" : [ {
 					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 5 ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ]
+						"wM" : [ [ 7740, 7920 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 14:00-16:00",
 						"from" : "14:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 2280,
-							"to" : 2400
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Fr",
-						"range" : false
-					} ],
-					"wD" : [ "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 2280, 2400 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8014,15 +7323,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8039,33 +7345,27 @@ var data = {
 				"lat" : 49.171807,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8082,48 +7382,39 @@ var data = {
 				"lat" : 49.32874407,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ [ 7740, 7920 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 13:00-16:00",
 						"from" : "13:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 3660,
-							"to" : 3840
-						} ]
+						"wM" : [ [ 3660, 3840 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8140,48 +7431,39 @@ var data = {
 				"lat" : 49.18139306,
 				"openingHours" : [ {
 					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 5 ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 16:30-19:00",
 						"from" : "16:30",
 						"to" : "19:00",
-						"wM" : [ {
-							"from" : 2430,
-							"to" : 2580
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Fr",
-						"range" : false
-					} ],
-					"wD" : [ "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 2430, 2580 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8201,30 +7483,24 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 13:00-16:00",
 						"from" : "13:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 3660,
-							"to" : 3840
-						} ]
+						"wM" : [ [ 3660, 3840 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8241,33 +7517,27 @@ var data = {
 				"lat" : 49.04273833,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8287,30 +7557,24 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 3720,
-							"to" : 3900
-						} ]
+						"wM" : [ [ 3720, 3900 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8327,48 +7591,39 @@ var data = {
 				"lat" : 49.232683,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 14:00-18:30",
 						"from" : "14:00",
 						"to" : "18:30",
-						"wM" : [ {
-							"from" : 3720,
-							"to" : 3990
-						} ]
+						"wM" : [ [ 3720, 3990 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8385,48 +7640,39 @@ var data = {
 				"lat" : 49.11188853,
 				"openingHours" : [ {
 					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 5 ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-18:00",
+						"from" : "14:00",
+						"to" : "18:00",
+						"wM" : [ [ 6600, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Di",
 						"range" : false
 					} ],
-					"wD" : [ "TUESDAY" ],
+					"wD" : [ 2 ],
 					"tI" : [ {
 						"microdata" : "Tu 17:00-19:00",
 						"from" : "17:00",
 						"to" : "19:00",
-						"wM" : [ {
-							"from" : 2460,
-							"to" : 2580
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Fr",
-						"range" : false
-					} ],
-					"wD" : [ "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Fr 14:00-18:00",
-						"from" : "14:00",
-						"to" : "18:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 2460, 2580 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8443,33 +7689,27 @@ var data = {
 				"lat" : 49.24760303,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-16:00",
 						"from" : "14:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ]
+						"wM" : [ [ 6600, 6720 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8486,33 +7726,27 @@ var data = {
 				"lat" : 49.24236399,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8532,15 +7766,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8560,15 +7791,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8583,72 +7811,44 @@ var data = {
 				"nodeId" : 0,
 				"lon" : 9.02198553,
 				"lat" : 49.1165094,
-				"openingHours" : [ {
-					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-11:30",
-						"from" : "09:00",
-						"to" : "11:30",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7890
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
-						"weekday" : "Mo",
-						"range" : false
-					}, {
-						"weekday" : "Fr",
-						"range" : true
-					} ],
-					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"tI" : [ {
-						"microdata" : "Mo-Fr 07:45-12:00",
-						"from" : "07:45",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 465,
-							"to" : 720
+				"openingHours" : [
+						{
+							"cW" : [ {
+								"weekday" : "Mo",
+								"range" : false
+							}, {
+								"weekday" : "Fr",
+								"range" : true
+							} ],
+							"wD" : [ 1, 2, 3, 4, 5 ],
+							"tI" : [
+									{
+										"microdata" : "Mo-Fr 07:45-12:00",
+										"from" : "07:45",
+										"to" : "12:00",
+										"wM" : [ [ 465, 720 ], [ 1905, 2160 ], [ 3345, 3600 ],
+												[ 4785, 5040 ], [ 6225, 6480 ] ]
+									},
+									{
+										"microdata" : "Mo-Fr 13:00-16:30",
+										"from" : "13:00",
+										"to" : "16:30",
+										"wM" : [ [ 780, 990 ], [ 2220, 2430 ], [ 3660, 3870 ],
+												[ 5100, 5310 ], [ 6540, 6750 ] ]
+									} ]
 						}, {
-							"from" : 1905,
-							"to" : 2160
-						}, {
-							"from" : 3345,
-							"to" : 3600
-						}, {
-							"from" : 4785,
-							"to" : 5040
-						}, {
-							"from" : 6225,
-							"to" : 6480
-						} ]
-					}, {
-						"microdata" : "Mo-Fr 13:00-16:30",
-						"from" : "13:00",
-						"to" : "16:30",
-						"wM" : [ {
-							"from" : 780,
-							"to" : 990
-						}, {
-							"from" : 2220,
-							"to" : 2430
-						}, {
-							"from" : 3660,
-							"to" : 3870
-						}, {
-							"from" : 5100,
-							"to" : 5310
-						}, {
-							"from" : 6540,
-							"to" : 6750
-						} ]
-					} ]
-				} ],
+							"cW" : [ {
+								"weekday" : "Sa",
+								"range" : false
+							} ],
+							"wD" : [ 6 ],
+							"tI" : [ {
+								"microdata" : "Sa 09:00-11:30",
+								"from" : "09:00",
+								"to" : "11:30",
+								"wM" : [ [ 7740, 7890 ] ]
+							} ]
+						} ],
 				"keyValues" : {
 					"addr:city" : "Schwaigern - Stetten a. H.",
 					"addr:street" : "Schwaigern-Stetten - Müllannahmestelle",
@@ -8663,33 +7863,27 @@ var data = {
 				"lat" : 49.09899276,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 14:00-16:00",
 						"from" : "14:00",
 						"to" : "16:00",
-						"wM" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ]
+						"wM" : [ [ 6600, 6720 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8709,30 +7903,24 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"wD" : [ "WEDNESDAY" ],
+					"wD" : [ 3 ],
 					"tI" : [ {
 						"microdata" : "We 14:30-16:30",
 						"from" : "14:30",
 						"to" : "16:30",
-						"wM" : [ {
-							"from" : 3750,
-							"to" : 3870
-						} ]
+						"wM" : [ [ 3750, 3870 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8749,39 +7937,30 @@ var data = {
 				"lat" : 49.08625526,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					}, {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY", "FRIDAY" ],
+					"wD" : [ 4, 5 ],
 					"tI" : [ {
 						"microdata" : "Th,Fr 14:30-17:00",
 						"from" : "14:30",
 						"to" : "17:00",
-						"wM" : [ {
-							"from" : 5190,
-							"to" : 5340
-						}, {
-							"from" : 6630,
-							"to" : 6780
-						} ]
+						"wM" : [ [ 5190, 5340 ], [ 6630, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8797,48 +7976,39 @@ var data = {
 				"lat" : 49.160965,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Do",
 						"range" : false
 					} ],
-					"wD" : [ "THURSDAY" ],
+					"wD" : [ 4 ],
 					"tI" : [ {
 						"microdata" : "Th 16:00-19:00",
 						"from" : "16:00",
 						"to" : "19:00",
-						"wM" : [ {
-							"from" : 5280,
-							"to" : 5460
-						} ]
+						"wM" : [ [ 5280, 5460 ] ]
 					} ]
 				}, {
 					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 15:00-18:00",
 						"from" : "15:00",
 						"to" : "18:00",
-						"wM" : [ {
-							"from" : 6660,
-							"to" : 6840
-						} ]
+						"wM" : [ [ 6660, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ [ 7740, 7920 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8857,15 +8027,12 @@ var data = {
 						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"wD" : [ "SATURDAY" ],
+					"wD" : [ 6 ],
 					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8881,33 +8048,27 @@ var data = {
 				"lat" : 49.06429594,
 				"openingHours" : [ {
 					"cW" : [ {
-						"weekday" : "Sa",
-						"range" : false
-					} ],
-					"wD" : [ "SATURDAY" ],
-					"tI" : [ {
-						"microdata" : "Sa 09:00-13:00",
-						"from" : "09:00",
-						"to" : "13:00",
-						"wM" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ]
-					} ]
-				}, {
-					"cW" : [ {
 						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"wD" : [ "FRIDAY" ],
+					"wD" : [ 5 ],
 					"tI" : [ {
 						"microdata" : "Fr 13:30-16:30",
 						"from" : "13:30",
 						"to" : "16:30",
-						"wM" : [ {
-							"from" : 6570,
-							"to" : 6750
-						} ]
+						"wM" : [ [ 6570, 6750 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
 					} ]
 				} ],
 				"keyValues" : {
@@ -8917,6 +8078,5 @@ var data = {
 					"name" : "Recyclinghof Zaberfeld",
 					"opening_hours" : "Fr 13.30 - 16.30  ;Sa 09.00 - 13.00 "
 				}
-			} ],
-	"recyclingHn" : null
-}
+			} ]
+}}

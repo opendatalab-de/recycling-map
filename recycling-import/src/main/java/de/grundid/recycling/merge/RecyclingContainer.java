@@ -2,8 +2,12 @@ package de.grundid.recycling.merge;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 import de.grundid.recycling.RecyclingData;
 
+@JsonInclude(Include.NON_NULL)
 public class RecyclingContainer {
 
 	private List<RecyclingData> recyclingData;

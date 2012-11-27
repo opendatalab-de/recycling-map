@@ -11,6 +11,7 @@ import org.springframework.util.StringUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import de.gonam.openinghours.OpeningHoursJsonModule;
 import de.gonam.openinghours.WeeklyTimeInterval;
 import de.gonam.openinghours.WeeklyTimeIntervalViewModel;
 import de.grundid.recycling.RecyclingData;
@@ -19,6 +20,10 @@ import de.grundid.recycling.openinghours.OpeningHoursParser;
 public class MergeData {
 
 	private ObjectMapper objectMapper = new ObjectMapper();
+
+	public MergeData() {
+		objectMapper.registerModule(new OpeningHoursJsonModule());
+	}
 
 	public RecyclingContainer read(String filename) {
 		try {
