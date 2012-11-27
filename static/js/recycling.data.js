@@ -241,17 +241,15 @@
 										"microdata" : "Mo-Fr 08:00-12:00",
 										"from" : "08:00",
 										"to" : "12:00",
-										"wM" : [ [ 480, 720 ], [ 1920, 2160 ],
-												[ 3360, 3600 ], [ 4800, 5040 ],
-												[ 6240, 6480 ] ]
+										"wM" : [ [ 480, 720 ], [ 1920, 2160 ], [ 3360, 3600 ],
+												[ 4800, 5040 ], [ 6240, 6480 ] ]
 									},
 									{
 										"microdata" : "Mo-Fr 13:00-20:00",
 										"from" : "13:00",
 										"to" : "20:00",
-										"wM" : [ [ 780, 1200 ], [ 2220, 2640 ],
-												[ 3660, 4080 ], [ 5100, 5520 ],
-												[ 6540, 6960 ] ]
+										"wM" : [ [ 780, 1200 ], [ 2220, 2640 ], [ 3660, 4080 ],
+												[ 5100, 5520 ], [ 6540, 6960 ] ]
 									} ]
 						}, {
 							"cW" : [ {
@@ -315,9 +313,8 @@
 								"microdata" : "Mo-Fr 12:00-19:00",
 								"from" : "12:00",
 								"to" : "19:00",
-								"wM" : [ [ 720, 1140 ], [ 2160, 2580 ],
-										[ 3600, 4020 ], [ 5040, 5460 ],
-										[ 6480, 6900 ] ]
+								"wM" : [ [ 720, 1140 ], [ 2160, 2580 ], [ 3600, 4020 ],
+										[ 5040, 5460 ], [ 6480, 6900 ] ]
 							} ]
 						}, {
 							"cW" : [ {
@@ -813,42 +810,40 @@
 				"nodeId" : 311099614,
 				"lon" : 9.484826,
 				"lat" : 54.8014553,
-				"openingHours" : [
-						{
-							"cW" : [ {
-								"weekday" : "Mo",
-								"range" : false
-							}, {
-								"weekday" : "Di",
-								"range" : false
-							}, {
-								"weekday" : "Do",
-								"range" : false
-							}, {
-								"weekday" : "Fr",
-								"range" : false
-							} ],
-							"wD" : [ 1, 2, 4, 5 ],
-							"tI" : [ {
-								"microdata" : "Mo,Tu,Th,Fr 08:00-17:00",
-								"from" : "08:00",
-								"to" : "17:00",
-								"wM" : [ [ 480, 1020 ], [ 1920, 2460 ],
-										[ 4800, 5340 ], [ 6240, 6780 ] ]
-							} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Sa",
-								"range" : false
-							} ],
-							"wD" : [ 6 ],
-							"tI" : [ {
-								"microdata" : "Sa 08:00-13:00",
-								"from" : "08:00",
-								"to" : "13:00",
-								"wM" : [ [ 7680, 7980 ] ]
-							} ]
-						} ],
+				"openingHours" : [ {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Do",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 1, 2, 4, 5 ],
+					"tI" : [ {
+						"microdata" : "Mo,Tu,Th,Fr 08:00-17:00",
+						"from" : "08:00",
+						"to" : "17:00",
+						"wM" : [ [ 480, 1020 ], [ 1920, 2460 ], [ 4800, 5340 ], [ 6240, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 08:00-13:00",
+						"from" : "08:00",
+						"to" : "13:00",
+						"wM" : [ [ 7680, 7980 ] ]
+					} ]
+				} ],
 				"keyValues" : {
 					"amenity" : "recycling",
 					"name" : "Recyclinghof Gewerbegebiet Kauslund",
@@ -950,49 +945,46 @@
 				"nodeId" : 370790059,
 				"lon" : 11.5933012,
 				"lat" : 48.1822122,
-				"openingHours" : [
-						{
-							"cW" : [ {
-								"weekday" : "Mo",
-								"range" : false
-							} ],
-							"wD" : [ 1 ],
-							"tI" : [ {
-								"microdata" : "Mo 10:30-19:00",
-								"from" : "10:30",
-								"to" : "19:00",
-								"wM" : [ [ 630, 1140 ] ]
-							} ]
-						},
-						{
-							"cW" : [ {
-								"weekday" : "Di",
-								"range" : false
-							}, {
-								"weekday" : "Fr",
-								"range" : true
-							} ],
-							"wD" : [ 2, 3, 4, 5 ],
-							"tI" : [ {
-								"microdata" : "Tu-Fr 08:00-18:00",
-								"from" : "08:00",
-								"to" : "18:00",
-								"wM" : [ [ 1920, 2520 ], [ 3360, 3960 ],
-										[ 4800, 5400 ], [ 6240, 6840 ] ]
-							} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Sa",
-								"range" : false
-							} ],
-							"wD" : [ 6 ],
-							"tI" : [ {
-								"microdata" : "Sa 07:30-15:00",
-								"from" : "07:30",
-								"to" : "15:00",
-								"wM" : [ [ 7650, 8100 ] ]
-							} ]
-						} ],
+				"openingHours" : [ {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					} ],
+					"wD" : [ 1 ],
+					"tI" : [ {
+						"microdata" : "Mo 10:30-19:00",
+						"from" : "10:30",
+						"to" : "19:00",
+						"wM" : [ [ 630, 1140 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ 2, 3, 4, 5 ],
+					"tI" : [ {
+						"microdata" : "Tu-Fr 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ [ 1920, 2520 ], [ 3360, 3960 ], [ 4800, 5400 ], [ 6240, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 07:30-15:00",
+						"from" : "07:30",
+						"to" : "15:00",
+						"wM" : [ [ 7650, 8100 ] ]
+					} ]
+				} ],
 				"keyValues" : {
 					"city" : "München",
 					"addr:country" : "DE",
@@ -1282,51 +1274,49 @@
 				"nodeId" : 530655903,
 				"lon" : 7.243349,
 				"lat" : 50.4674637,
-				"openingHours" : [
-						{
-							"cW" : [ {
-								"weekday" : "Mo",
-								"range" : false
-							}, {
-								"weekday" : "Mi",
-								"range" : true
-							}, {
-								"weekday" : "Fr",
-								"range" : false
-							} ],
-							"wD" : [ 1, 2, 3, 5 ],
-							"tI" : [ {
-								"microdata" : "Mo-We,Fr 08:00-16:00",
-								"from" : "08:00",
-								"to" : "16:00",
-								"wM" : [ [ 480, 960 ], [ 1920, 2400 ],
-										[ 3360, 3840 ], [ 6240, 6720 ] ]
-							} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Do",
-								"range" : false
-							} ],
-							"wD" : [ 4 ],
-							"tI" : [ {
-								"microdata" : "Th 08:00-18:00",
-								"from" : "08:00",
-								"to" : "18:00",
-								"wM" : [ [ 4800, 5400 ] ]
-							} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Sa",
-								"range" : false
-							} ],
-							"wD" : [ 6 ],
-							"tI" : [ {
-								"microdata" : "Sa 08:30-13:30",
-								"from" : "08:30",
-								"to" : "13:30",
-								"wM" : [ [ 7710, 8010 ] ]
-							} ]
-						} ],
+				"openingHours" : [ {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Mi",
+						"range" : true
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 1, 2, 3, 5 ],
+					"tI" : [ {
+						"microdata" : "Mo-We,Fr 08:00-16:00",
+						"from" : "08:00",
+						"to" : "16:00",
+						"wM" : [ [ 480, 960 ], [ 1920, 2400 ], [ 3360, 3840 ], [ 6240, 6720 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ 4 ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ [ 4800, 5400 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 08:30-13:30",
+						"from" : "08:30",
+						"to" : "13:30",
+						"wM" : [ [ 7710, 8010 ] ]
+					} ]
+				} ],
 				"keyValues" : {
 					"opening_hours" : "Mo-We,Fr 8:00-16:00; Th 8:00-18:00; Sa 08:30-13:30",
 					"recycling:aluminium" : "yes",
@@ -4112,17 +4102,15 @@
 										"microdata" : "Mo-Fr 08:00-12:00",
 										"from" : "08:00",
 										"to" : "12:00",
-										"wM" : [ [ 480, 720 ], [ 1920, 2160 ],
-												[ 3360, 3600 ], [ 4800, 5040 ],
-												[ 6240, 6480 ] ]
+										"wM" : [ [ 480, 720 ], [ 1920, 2160 ], [ 3360, 3600 ],
+												[ 4800, 5040 ], [ 6240, 6480 ] ]
 									},
 									{
 										"microdata" : "Mo-Fr 13:00-16:00",
 										"from" : "13:00",
 										"to" : "16:00",
-										"wM" : [ [ 780, 960 ], [ 2220, 2400 ],
-												[ 3660, 3840 ], [ 5100, 5280 ],
-												[ 6540, 6720 ] ]
+										"wM" : [ [ 780, 960 ], [ 2220, 2400 ], [ 3660, 3840 ],
+												[ 5100, 5280 ], [ 6540, 6720 ] ]
 									} ]
 						}, {
 							"cW" : [ {
@@ -4313,9 +4301,8 @@
 								"microdata" : "Mo-Fr 10:00-18:00",
 								"from" : "10:00",
 								"to" : "18:00",
-								"wM" : [ [ 600, 1080 ], [ 2040, 2520 ],
-										[ 3480, 3960 ], [ 4920, 5400 ],
-										[ 6360, 6840 ] ]
+								"wM" : [ [ 600, 1080 ], [ 2040, 2520 ], [ 3480, 3960 ],
+										[ 4920, 5400 ], [ 6360, 6840 ] ]
 							} ]
 						}, {
 							"cW" : [ {
@@ -4399,17 +4386,15 @@
 										"microdata" : "Mo-Fr 09:00-12:00",
 										"from" : "09:00",
 										"to" : "12:00",
-										"wM" : [ [ 540, 720 ], [ 1980, 2160 ],
-												[ 3420, 3600 ], [ 4860, 5040 ],
-												[ 6300, 6480 ] ]
+										"wM" : [ [ 540, 720 ], [ 1980, 2160 ], [ 3420, 3600 ],
+												[ 4860, 5040 ], [ 6300, 6480 ] ]
 									},
 									{
 										"microdata" : "Mo-Fr 12:30-17:00",
 										"from" : "12:30",
 										"to" : "17:00",
-										"wM" : [ [ 750, 1020 ], [ 2190, 2460 ],
-												[ 3630, 3900 ], [ 5070, 5340 ],
-												[ 6510, 6780 ] ]
+										"wM" : [ [ 750, 1020 ], [ 2190, 2460 ], [ 3630, 3900 ],
+												[ 5070, 5340 ], [ 6510, 6780 ] ]
 									} ]
 						}, {
 							"cW" : [ {
@@ -4661,17 +4646,15 @@
 										"microdata" : "Mo-Fr 08:00-12:00",
 										"from" : "08:00",
 										"to" : "12:00",
-										"wM" : [ [ 480, 720 ], [ 1920, 2160 ],
-												[ 3360, 3600 ], [ 4800, 5040 ],
-												[ 6240, 6480 ] ]
+										"wM" : [ [ 480, 720 ], [ 1920, 2160 ], [ 3360, 3600 ],
+												[ 4800, 5040 ], [ 6240, 6480 ] ]
 									},
 									{
 										"microdata" : "Mo-Fr 13:00-17:00",
 										"from" : "13:00",
 										"to" : "17:00",
-										"wM" : [ [ 780, 1020 ], [ 2220, 2460 ],
-												[ 3660, 3900 ], [ 5100, 5340 ],
-												[ 6540, 6780 ] ]
+										"wM" : [ [ 780, 1020 ], [ 2220, 2460 ], [ 3660, 3900 ],
+												[ 5100, 5340 ], [ 6540, 6780 ] ]
 									} ]
 						}, {
 							"cW" : [ {
@@ -5313,63 +5296,61 @@
 				"nodeId" : 1772608993,
 				"lon" : 9.9198447,
 				"lat" : 48.3523985,
-				"openingHours" : [
-						{
-							"cW" : [ {
-								"weekday" : "Mo",
-								"range" : false
-							}, {
-								"weekday" : "Di",
-								"range" : false
-							}, {
-								"weekday" : "Do",
-								"range" : false
-							} ],
-							"wD" : [ 1, 2, 4 ],
-							"tI" : [ {
-								"microdata" : "Mo,Tu,Th 16:00-18:00",
-								"from" : "16:00",
-								"to" : "18:00",
-								"wM" : [ [ 960, 1080 ], [ 2400, 2520 ],
-										[ 5280, 5400 ] ]
-							} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Fr",
-								"range" : false
-							} ],
-							"wD" : [ 5 ],
-							"tI" : [ {
-								"microdata" : "Fr 13:00-18:00",
-								"from" : "13:00",
-								"to" : "18:00",
-								"wM" : [ [ 6540, 6840 ] ]
-							} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Sa",
-								"range" : false
-							} ],
-							"wD" : [ 6 ],
-							"tI" : [ {
-								"microdata" : "Sa 08:00-18:00",
-								"from" : "08:00",
-								"to" : "18:00",
-								"wM" : [ [ 7680, 8280 ] ]
-							} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Mi",
-								"range" : false
-							} ],
-							"wD" : [ 3 ],
-							"tI" : [ {
-								"microdata" : "We 16:00-19:00",
-								"from" : "16:00",
-								"to" : "19:00",
-								"wM" : [ [ 3840, 4020 ] ]
-							} ]
-						} ],
+				"openingHours" : [ {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ 1, 2, 4 ],
+					"tI" : [ {
+						"microdata" : "Mo,Tu,Th 16:00-18:00",
+						"from" : "16:00",
+						"to" : "18:00",
+						"wM" : [ [ 960, 1080 ], [ 2400, 2520 ], [ 5280, 5400 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 5 ],
+					"tI" : [ {
+						"microdata" : "Fr 13:00-18:00",
+						"from" : "13:00",
+						"to" : "18:00",
+						"wM" : [ [ 6540, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ [ 7680, 8280 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mi",
+						"range" : false
+					} ],
+					"wD" : [ 3 ],
+					"tI" : [ {
+						"microdata" : "We 16:00-19:00",
+						"from" : "16:00",
+						"to" : "19:00",
+						"wM" : [ [ 3840, 4020 ] ]
+					} ]
+				} ],
 				"keyValues" : {
 					"amenity" : "recycling",
 					"name" : "Recyclinghof Einsingen",
@@ -6065,49 +6046,44 @@
 				"nodeId" : 1890169625,
 				"lon" : 7.8073573,
 				"lat" : 47.9873545,
-				"openingHours" : [
-						{
-							"cW" : [ {
-								"weekday" : "Mo",
-								"range" : false
-							}, {
-								"weekday" : "Do",
-								"range" : true
-							} ],
-							"wD" : [ 1, 2, 3, 4 ],
-							"tI" : [
-									{
-										"microdata" : "Mo-Th 08:00-12:00",
-										"from" : "08:00",
-										"to" : "12:00",
-										"wM" : [ [ 480, 720 ], [ 1920, 2160 ],
-												[ 3360, 3600 ], [ 4800, 5040 ] ]
-									},
-									{
-										"microdata" : "Mo-Th 13:00-17:00",
-										"from" : "13:00",
-										"to" : "17:00",
-										"wM" : [ [ 780, 1020 ], [ 2220, 2460 ],
-												[ 3660, 3900 ], [ 5100, 5340 ] ]
-									} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Fr",
-								"range" : false
-							} ],
-							"wD" : [ 5 ],
-							"tI" : [ {
-								"microdata" : "Fr 08:00-12:00",
-								"from" : "08:00",
-								"to" : "12:00",
-								"wM" : [ [ 6240, 6480 ] ]
-							}, {
-								"microdata" : "Fr 13:00-15:00",
-								"from" : "13:00",
-								"to" : "15:00",
-								"wM" : [ [ 6540, 6660 ] ]
-							} ]
-						} ],
+				"openingHours" : [ {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Do",
+						"range" : true
+					} ],
+					"wD" : [ 1, 2, 3, 4 ],
+					"tI" : [ {
+						"microdata" : "Mo-Th 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ [ 480, 720 ], [ 1920, 2160 ], [ 3360, 3600 ], [ 4800, 5040 ] ]
+					}, {
+						"microdata" : "Mo-Th 13:00-17:00",
+						"from" : "13:00",
+						"to" : "17:00",
+						"wM" : [ [ 780, 1020 ], [ 2220, 2460 ], [ 3660, 3900 ], [ 5100, 5340 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 5 ],
+					"tI" : [ {
+						"microdata" : "Fr 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ [ 6240, 6480 ] ]
+					}, {
+						"microdata" : "Fr 13:00-15:00",
+						"from" : "13:00",
+						"to" : "15:00",
+						"wM" : [ [ 6540, 6660 ] ]
+					} ]
+				} ],
 				"keyValues" : {
 					"addr:housenumber" : "48",
 					"amenity" : "recycling",
@@ -6372,36 +6348,34 @@
 				"nodeId" : 0,
 				"lon" : 9.1972518,
 				"lat" : 49.23008369,
-				"openingHours" : [
-						{
-							"cW" : [ {
-								"weekday" : "Di",
-								"range" : false
-							}, {
-								"weekday" : "Fr",
-								"range" : true
-							} ],
-							"wD" : [ 2, 3, 4, 5 ],
-							"tI" : [ {
-								"microdata" : "Tu-Fr 14:00-17:00",
-								"from" : "14:00",
-								"to" : "17:00",
-								"wM" : [ [ 2280, 2460 ], [ 3720, 3900 ],
-										[ 5160, 5340 ], [ 6600, 6780 ] ]
-							} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Sa",
-								"range" : false
-							} ],
-							"wD" : [ 6 ],
-							"tI" : [ {
-								"microdata" : "Sa 09:00-13:00",
-								"from" : "09:00",
-								"to" : "13:00",
-								"wM" : [ [ 7740, 7980 ] ]
-							} ]
-						} ],
+				"openingHours" : [ {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ 2, 3, 4, 5 ],
+					"tI" : [ {
+						"microdata" : "Tu-Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ [ 2280, 2460 ], [ 3720, 3900 ], [ 5160, 5340 ], [ 6600, 6780 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-13:00",
+						"from" : "09:00",
+						"to" : "13:00",
+						"wM" : [ [ 7740, 7980 ] ]
+					} ]
+				} ],
 				"keyValues" : {
 					"city" : "Bad Friedrichshall - Jagstfeld",
 					"addr:street" : "Salinenstraße",
@@ -6690,17 +6664,15 @@
 										"microdata" : "Mo-Fr 07:45-12:00",
 										"from" : "07:45",
 										"to" : "12:00",
-										"wM" : [ [ 465, 720 ], [ 1905, 2160 ],
-												[ 3345, 3600 ], [ 4785, 5040 ],
-												[ 6225, 6480 ] ]
+										"wM" : [ [ 465, 720 ], [ 1905, 2160 ], [ 3345, 3600 ],
+												[ 4785, 5040 ], [ 6225, 6480 ] ]
 									},
 									{
 										"microdata" : "Mo-Fr 13:00-16:30",
 										"from" : "13:00",
 										"to" : "16:30",
-										"wM" : [ [ 780, 990 ], [ 2220, 2430 ],
-												[ 3660, 3870 ], [ 5100, 5310 ],
-												[ 6540, 6750 ] ]
+										"wM" : [ [ 780, 990 ], [ 2220, 2430 ], [ 3660, 3870 ],
+												[ 5100, 5310 ], [ 6540, 6750 ] ]
 									} ]
 						}, {
 							"cW" : [ {
@@ -6764,39 +6736,37 @@
 				"nodeId" : 0,
 				"lon" : 8.91347408,
 				"lat" : 49.139502,
-				"openingHours" : [
-						{
-							"cW" : [ {
-								"weekday" : "Di",
-								"range" : false
-							}, {
-								"weekday" : "Do",
-								"range" : false
-							}, {
-								"weekday" : "Fr",
-								"range" : false
-							} ],
-							"wD" : [ 2, 4, 5 ],
-							"tI" : [ {
-								"microdata" : "Tu,Th,Fr 14:00-18:00",
-								"from" : "14:00",
-								"to" : "18:00",
-								"wM" : [ [ 2280, 2520 ], [ 5160, 5400 ],
-										[ 6600, 6840 ] ]
-							} ]
-						}, {
-							"cW" : [ {
-								"weekday" : "Sa",
-								"range" : false
-							} ],
-							"wD" : [ 6 ],
-							"tI" : [ {
-								"microdata" : "Sa 09:00-15:00",
-								"from" : "09:00",
-								"to" : "15:00",
-								"wM" : [ [ 7740, 8100 ] ]
-							} ]
-						} ],
+				"openingHours" : [ {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Do",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ 2, 4, 5 ],
+					"tI" : [ {
+						"microdata" : "Tu,Th,Fr 14:00-18:00",
+						"from" : "14:00",
+						"to" : "18:00",
+						"wM" : [ [ 2280, 2520 ], [ 5160, 5400 ], [ 6600, 6840 ] ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Sa",
+						"range" : false
+					} ],
+					"wD" : [ 6 ],
+					"tI" : [ {
+						"microdata" : "Sa 09:00-15:00",
+						"from" : "09:00",
+						"to" : "15:00",
+						"wM" : [ [ 7740, 8100 ] ]
+					} ]
+				} ],
 				"keyValues" : {
 					"city" : "Eppingen",
 					"addr:street" : "Scheuerlesstraße",
@@ -7858,17 +7828,15 @@
 										"microdata" : "Mo-Fr 07:45-12:00",
 										"from" : "07:45",
 										"to" : "12:00",
-										"wM" : [ [ 465, 720 ], [ 1905, 2160 ],
-												[ 3345, 3600 ], [ 4785, 5040 ],
-												[ 6225, 6480 ] ]
+										"wM" : [ [ 465, 720 ], [ 1905, 2160 ], [ 3345, 3600 ],
+												[ 4785, 5040 ], [ 6225, 6480 ] ]
 									},
 									{
 										"microdata" : "Mo-Fr 13:00-16:30",
 										"from" : "13:00",
 										"to" : "16:30",
-										"wM" : [ [ 780, 990 ], [ 2220, 2430 ],
-												[ 3660, 3870 ], [ 5100, 5310 ],
-												[ 6540, 6750 ] ]
+										"wM" : [ [ 780, 990 ], [ 2220, 2430 ], [ 3660, 3870 ],
+												[ 5100, 5310 ], [ 6540, 6750 ] ]
 									} ]
 						}, {
 							"cW" : [ {
@@ -8004,8 +7972,7 @@
 					"name" : "Recyclinghof Untergruppenbach",
 					"opening_hours" : "Apr-Sep;Th 16.30 - 19.00 ;Oct-Mar;Th 14.30 - 17.00 ;Ganzjährig ;Fr 14.30 - 17.00  ;Sa 09.00 - 13.00 "
 				}
-			},
-			{
+			}, {
 				"nodeId" : 0,
 				"lon" : 9.28548574,
 				"lat" : 49.160965,
@@ -8114,15 +8081,27 @@
 					"opening_hours" : "Fr 13.30 - 16.30  ;Sa 09.00 - 13.00 "
 				}
 			} ];
-	
+
 	var filtered = [];
-	rc.filteredData = function() {
-		if(filtered.length === 0) {
-			for (var index in rc.data) {
-				if(rc.data[index].openingHours && rc.data[index].openingHours.length > 0) {
-					filtered.push(rc.data[index]);
+	rc.filteredData = function(centerPos) {
+		if (filtered.length === 0) {
+			for ( var index in rc.data) {
+				if (rc.data[index].openingHours && rc.data[index].openingHours.length > 0) {
+					var reData = rc.data[index];
+					reData.pos = new L.LatLng(reData.lat, reData.lon);
+					filtered.push(reData);
 				}
 			}
+		}
+		if (centerPos) {
+			var RecyclingComparator = function(r1, r2) {
+				var d1 = centerPos.distanceTo(r1.pos);
+				var d2 = centerPos.distanceTo(r2.pos);
+				return d1 - d2;
+			};
+			
+			filtered.sort(RecyclingComparator);
+
 		}
 		return filtered;
 	};
