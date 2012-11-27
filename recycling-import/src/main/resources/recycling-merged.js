@@ -75,41 +75,33 @@ var data = {
 				"lon" : 7.8069334,
 				"lat" : 47.9870706,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5280
-						} ],
-						"microdata" : "Th 08:00-16:00",
-						"from" : "08:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5280
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 8160
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-16:00",
 						"from" : "09:00",
 						"to" : "16:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 8160
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-16:00",
+						"from" : "08:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 4800,
+							"to" : 5280
 						} ]
 					} ]
 				} ],
@@ -132,50 +124,39 @@ var data = {
 				"lon" : 8.8643893,
 				"lat" : 47.6603996,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "TUESDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2400,
-							"to" : 2460
-						}, {
-							"from" : 6720,
-							"to" : 6780
-						} ],
-						"microdata" : "Tu,Fr 16:00-17:00",
-						"from" : "16:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2400,
-							"to" : 2460
-						}, {
-							"from" : 6720,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7890
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-11:30",
 						"from" : "09:00",
 						"to" : "11:30",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7890
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu,Fr 16:00-17:00",
+						"from" : "16:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 2400,
+							"to" : 2460
+						}, {
+							"from" : 6720,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -259,116 +240,76 @@ var data = {
 				"lon" : 11.7394066,
 				"lat" : 48.1735985,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 720
-						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						}, {
-							"from" : 6240,
-							"to" : 6480
-						} ],
-						"microdata" : "Mo-Fr 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 480,
-							"to" : 720
-						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						}, {
-							"from" : 6240,
-							"to" : 6480
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 780,
-							"to" : 1200
-						}, {
-							"from" : 2220,
-							"to" : 2640
-						}, {
-							"from" : 3660,
-							"to" : 4080
-						}, {
-							"from" : 5100,
-							"to" : 5520
-						}, {
-							"from" : 6540,
-							"to" : 6960
-						} ],
-						"microdata" : "Mo-Fr 13:00-20:00",
-						"from" : "13:00",
-						"to" : "20:00",
-						"internalWeekMinutes" : [ {
-							"from" : 780,
-							"to" : 1200
-						}, {
-							"from" : 2220,
-							"to" : 2640
-						}, {
-							"from" : 3660,
-							"to" : 4080
-						}, {
-							"from" : 5100,
-							"to" : 5520
-						}, {
-							"from" : 6540,
-							"to" : 6960
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7680,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:00-13:00",
 						"from" : "08:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7680,
 							"to" : 7980
 						} ]
 					}, {
-						"weekMinutes" : [ {
-							"from" : 8100,
-							"to" : 8280
-						} ],
 						"microdata" : "Sa 15:00-18:00",
 						"from" : "15:00",
 						"to" : "18:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 8100,
 							"to" : 8280
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-Fr 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 480,
+							"to" : 720
+						}, {
+							"from" : 1920,
+							"to" : 2160
+						}, {
+							"from" : 3360,
+							"to" : 3600
+						}, {
+							"from" : 4800,
+							"to" : 5040
+						}, {
+							"from" : 6240,
+							"to" : 6480
+						} ]
+					}, {
+						"microdata" : "Mo-Fr 13:00-20:00",
+						"from" : "13:00",
+						"to" : "20:00",
+						"wM" : [ {
+							"from" : 780,
+							"to" : 1200
+						}, {
+							"from" : 2220,
+							"to" : 2640
+						}, {
+							"from" : 3660,
+							"to" : 4080
+						}, {
+							"from" : 5100,
+							"to" : 5520
+						}, {
+							"from" : 6540,
+							"to" : 6960
 						} ]
 					} ]
 				} ],
@@ -403,68 +344,48 @@ var data = {
 				"lon" : 13.731857,
 				"lat" : 51.083685,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 720,
-							"to" : 1140
-						}, {
-							"from" : 2160,
-							"to" : 2580
-						}, {
-							"from" : 3600,
-							"to" : 4020
-						}, {
-							"from" : 5040,
-							"to" : 5460
-						}, {
-							"from" : 6480,
-							"to" : 6900
-						} ],
-						"microdata" : "Mo-Fr 12:00-19:00",
-						"from" : "12:00",
-						"to" : "19:00",
-						"internalWeekMinutes" : [ {
-							"from" : 720,
-							"to" : 1140
-						}, {
-							"from" : 2160,
-							"to" : 2580
-						}, {
-							"from" : 3600,
-							"to" : 4020
-						}, {
-							"from" : 5040,
-							"to" : 5460
-						}, {
-							"from" : 6480,
-							"to" : 6900
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7680,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7680,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-Fr 12:00-19:00",
+						"from" : "12:00",
+						"to" : "19:00",
+						"wM" : [ {
+							"from" : 720,
+							"to" : 1140
+						}, {
+							"from" : 2160,
+							"to" : 2580
+						}, {
+							"from" : 3600,
+							"to" : 4020
+						}, {
+							"from" : 5040,
+							"to" : 5460
+						}, {
+							"from" : 6480,
+							"to" : 6900
 						} ]
 					} ]
 				} ],
@@ -710,39 +631,31 @@ var data = {
 				"lon" : 10.8394475,
 				"lat" : 48.2833243,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7920
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
+					"cW" : [ {
+						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3720,
-							"to" : 3900
-						} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3720,
 							"to" : 3900
 						} ]
@@ -835,50 +748,39 @@ var data = {
 				"lon" : 10.8084625,
 				"lat" : 53.9009751,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					}, {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "TUESDAY", "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 1920,
-							"to" : 2460
-						}, {
-							"from" : 4800,
-							"to" : 5340
-						} ],
-						"microdata" : "Tu,Th 08:00-17:00",
-						"from" : "08:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 1920,
-							"to" : 2460
-						}, {
-							"from" : 4800,
-							"to" : 5340
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7680,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:00-13:00",
 						"from" : "08:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7680,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY", "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu,Th 08:00-17:00",
+						"from" : "08:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 1920,
+							"to" : 2460
+						}, {
+							"from" : 4800,
+							"to" : 5340
 						} ]
 					} ]
 				} ],
@@ -984,68 +886,51 @@ var data = {
 				"lon" : 9.484826,
 				"lat" : 54.8014553,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "TUESDAY",
-						"range" : false
-					}, {
-						"weekday" : "THURSDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 1020
-						}, {
-							"from" : 1920,
-							"to" : 2460
-						}, {
-							"from" : 4800,
-							"to" : 5340
-						}, {
-							"from" : 6240,
-							"to" : 6780
-						} ],
-						"microdata" : "Mo,Tu,Th,Fr 08:00-17:00",
-						"from" : "08:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 480,
-							"to" : 1020
-						}, {
-							"from" : 1920,
-							"to" : 2460
-						}, {
-							"from" : 4800,
-							"to" : 5340
-						}, {
-							"from" : 6240,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7680,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:00-13:00",
 						"from" : "08:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7680,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Do",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo,Tu,Th,Fr 08:00-17:00",
+						"from" : "08:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 480,
+							"to" : 1020
+						}, {
+							"from" : 1920,
+							"to" : 2460
+						}, {
+							"from" : 4800,
+							"to" : 5340
+						}, {
+							"from" : 6240,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -1151,79 +1036,58 @@ var data = {
 				"lon" : 11.5933012,
 				"lat" : 48.1822122,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 1920,
-							"to" : 2520
-						}, {
-							"from" : 3360,
-							"to" : 3960
-						}, {
-							"from" : 4800,
-							"to" : 5400
-						}, {
-							"from" : 6240,
-							"to" : 6840
-						} ],
-						"microdata" : "Tu-Fr 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 1920,
-							"to" : 2520
-						}, {
-							"from" : 3360,
-							"to" : 3960
-						}, {
-							"from" : 4800,
-							"to" : 5400
-						}, {
-							"from" : 6240,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7650,
-							"to" : 8100
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 07:30-15:00",
 						"from" : "07:30",
 						"to" : "15:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7650,
 							"to" : 8100
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu-Fr 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 1920,
+							"to" : 2520
+						}, {
+							"from" : 3360,
+							"to" : 3960
+						}, {
+							"from" : 4800,
+							"to" : 5400
+						}, {
+							"from" : 6240,
+							"to" : 6840
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
 						"range" : false
 					} ],
-					"weekdays" : [ "MONDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 630,
-							"to" : 1140
-						} ],
+					"wD" : [ "MONDAY" ],
+					"tI" : [ {
 						"microdata" : "Mo 10:30-19:00",
 						"from" : "10:30",
 						"to" : "19:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 630,
 							"to" : 1140
 						} ]
@@ -1519,84 +1383,63 @@ var data = {
 				"lon" : 7.243349,
 				"lat" : 50.4674637,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ],
-						"microdata" : "Th 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "WEDNESDAY",
-						"range" : true
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 960
-						}, {
-							"from" : 1920,
-							"to" : 2400
-						}, {
-							"from" : 3360,
-							"to" : 3840
-						}, {
-							"from" : 6240,
-							"to" : 6720
-						} ],
-						"microdata" : "Mo-We,Fr 08:00-16:00",
-						"from" : "08:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 480,
-							"to" : 960
-						}, {
-							"from" : 1920,
-							"to" : 2400
-						}, {
-							"from" : 3360,
-							"to" : 3840
-						}, {
-							"from" : 6240,
-							"to" : 6720
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7710,
-							"to" : 8010
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:30-13:30",
 						"from" : "08:30",
 						"to" : "13:30",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7710,
 							"to" : 8010
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 4800,
+							"to" : 5400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Mi",
+						"range" : true
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-We,Fr 08:00-16:00",
+						"from" : "08:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 480,
+							"to" : 960
+						}, {
+							"from" : 1920,
+							"to" : 2400
+						}, {
+							"from" : 3360,
+							"to" : 3840
+						}, {
+							"from" : 6240,
+							"to" : 6720
 						} ]
 					} ]
 				} ],
@@ -1826,94 +1669,72 @@ var data = {
 				"lon" : 10.8650254,
 				"lat" : 48.3384512,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ],
-						"microdata" : "Th 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ],
-						"microdata" : "Fr 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "WEDNESDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 900
-						}, {
-							"from" : 1920,
-							"to" : 2340
-						}, {
-							"from" : 3360,
-							"to" : 3780
-						} ],
-						"microdata" : "Mo-We 08:00-15:00",
-						"from" : "08:00",
-						"to" : "15:00",
-						"internalWeekMinutes" : [ {
-							"from" : 480,
-							"to" : 900
-						}, {
-							"from" : 1920,
-							"to" : 2340
-						}, {
-							"from" : 3360,
-							"to" : 3780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 4800,
+							"to" : 5400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Mi",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-We 08:00-15:00",
+						"from" : "08:00",
+						"to" : "15:00",
+						"wM" : [ {
+							"from" : 480,
+							"to" : 900
+						}, {
+							"from" : 1920,
+							"to" : 2340
+						}, {
+							"from" : 3360,
+							"to" : 3780
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 6240,
+							"to" : 6480
 						} ]
 					} ]
 				} ],
@@ -2119,60 +1940,48 @@ var data = {
 				"lon" : 9.06673551,
 				"lat" : 49.13670835,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2400
-						} ],
-						"microdata" : "Tu 14:00-16:00",
-						"from" : "14:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 14:00-16:00",
+						"from" : "14:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 2280,
+							"to" : 2400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -2346,94 +2155,72 @@ var data = {
 				"lon" : 10.9122383,
 				"lat" : 48.3080606,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ],
-						"microdata" : "Th 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ],
-						"microdata" : "Fr 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "WEDNESDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 900
-						}, {
-							"from" : 1920,
-							"to" : 2340
-						}, {
-							"from" : 3360,
-							"to" : 3780
-						} ],
-						"microdata" : "Mo-We 08:00-15:00",
-						"from" : "08:00",
-						"to" : "15:00",
-						"internalWeekMinutes" : [ {
-							"from" : 480,
-							"to" : 900
-						}, {
-							"from" : 1920,
-							"to" : 2340
-						}, {
-							"from" : 3360,
-							"to" : 3780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 4800,
+							"to" : 5400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Mi",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-We 08:00-15:00",
+						"from" : "08:00",
+						"to" : "15:00",
+						"wM" : [ {
+							"from" : 480,
+							"to" : 900
+						}, {
+							"from" : 1920,
+							"to" : 2340
+						}, {
+							"from" : 3360,
+							"to" : 3780
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 6240,
+							"to" : 6480
 						} ]
 					} ]
 				} ],
@@ -2454,20 +2241,16 @@ var data = {
 				"lon" : 9.07697082,
 				"lat" : 49.27152885,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -2534,50 +2317,39 @@ var data = {
 				"lon" : 13.0803395,
 				"lat" : 50.8552722,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3720,
-							"to" : 3960
-						}, {
-							"from" : 6600,
-							"to" : 6840
-						} ],
-						"microdata" : "We,Fr 14:00-18:00",
-						"from" : "14:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 3720,
-							"to" : 3960
-						}, {
-							"from" : 6600,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7680,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7680,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mi",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "WEDNESDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "We,Fr 14:00-18:00",
+						"from" : "14:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 3720,
+							"to" : 3960
+						}, {
+							"from" : 6600,
+							"to" : 6840
 						} ]
 					} ]
 				} ],
@@ -2636,60 +2408,48 @@ var data = {
 				"lon" : 9.7302368,
 				"lat" : 50.5295392,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7800,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 10:00-13:00",
 						"from" : "10:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7800,
 							"to" : 7980
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
+					"cW" : [ {
+						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"weekdays" : [ "MONDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 600,
-							"to" : 720
-						} ],
-						"microdata" : "Mo 10:00-12:00",
-						"from" : "10:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 600,
-							"to" : 720
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3780,
-							"to" : 3960
-						} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 15:00-18:00",
 						"from" : "15:00",
 						"to" : "18:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3780,
 							"to" : 3960
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					} ],
+					"wD" : [ "MONDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo 10:00-12:00",
+						"from" : "10:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 600,
+							"to" : 720
 						} ]
 					} ]
 				} ],
@@ -2726,121 +2486,91 @@ var data = {
 				"lon" : 9.1261122,
 				"lat" : 48.951645,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 4860,
-							"to" : 5040
-						} ],
-						"microdata" : "Th 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 4860,
-							"to" : 5040
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 5160,
-							"to" : 5400
-						} ],
-						"microdata" : "Th 14:00-18:00",
-						"from" : "14:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 5160,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "WEDNESDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "MONDAY", "WEDNESDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 540,
-							"to" : 720
-						}, {
-							"from" : 3420,
-							"to" : 3600
-						}, {
-							"from" : 6300,
-							"to" : 6480
-						} ],
-						"microdata" : "Mo,We,Fr 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 540,
-							"to" : 720
-						}, {
-							"from" : 3420,
-							"to" : 3600
-						}, {
-							"from" : 6300,
-							"to" : 6480
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 1980,
-							"to" : 2160
-						} ],
-						"microdata" : "Tu 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 1980,
-							"to" : 2160
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2460
-						} ],
-						"microdata" : "Tu 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2460
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 4860,
+							"to" : 5040
+						} ]
+					}, {
+						"microdata" : "Th 14:00-18:00",
+						"from" : "14:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 5160,
+							"to" : 5400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 1980,
+							"to" : 2160
+						} ]
+					}, {
+						"microdata" : "Tu 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 2280,
+							"to" : 2460
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Mi",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "MONDAY", "WEDNESDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo,We,Fr 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 540,
+							"to" : 720
+						}, {
+							"from" : 3420,
+							"to" : 3600
+						}, {
+							"from" : 6300,
+							"to" : 6480
 						} ]
 					} ]
 				} ],
@@ -2896,108 +2626,84 @@ var data = {
 				"lon" : 11.3869996,
 				"lat" : 48.1840707,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 5160,
-							"to" : 5460
-						} ],
-						"microdata" : "Th 14:00-19:00",
-						"from" : "14:00",
-						"to" : "19:00",
-						"internalWeekMinutes" : [ {
-							"from" : 5160,
-							"to" : 5460
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6840
-						} ],
-						"microdata" : "Fr 14:00-18:00",
-						"from" : "14:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 1920,
-							"to" : 2160
-						} ],
-						"microdata" : "Tu 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 1920,
-							"to" : 2160
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7680,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:00-13:00",
 						"from" : "08:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7680,
 							"to" : 7980
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
+					"cW" : [ {
+						"weekday" : "Do",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3360,
-							"to" : 3600
-						} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 14:00-19:00",
+						"from" : "14:00",
+						"to" : "19:00",
+						"wM" : [ {
+							"from" : 5160,
+							"to" : 5460
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 1920,
+							"to" : 2160
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-18:00",
+						"from" : "14:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6840
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mi",
+						"range" : false
+					} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3360,
 							"to" : 3600
 						} ]
 					}, {
-						"weekMinutes" : [ {
-							"from" : 3720,
-							"to" : 4020
-						} ],
 						"microdata" : "We 14:00-19:00",
 						"from" : "14:00",
 						"to" : "19:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3720,
 							"to" : 4020
 						} ]
@@ -3595,20 +3301,16 @@ var data = {
 				"lon" : 8.614989,
 				"lat" : 48.1173282,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7800,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 10:00-12:00",
 						"from" : "10:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7800,
 							"to" : 7920
 						} ]
@@ -3684,72 +3386,19 @@ var data = {
 				"lon" : 8.7911347,
 				"lat" : 50.0046336,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
+					"cW" : [ {
+						"weekday" : "Fr",
 						"range" : false
 					}, {
-						"weekday" : "THURSDAY",
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "TUESDAY", "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						} ],
-						"microdata" : "Tu,Th 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 2220,
-							"to" : 2400
-						}, {
-							"from" : 5100,
-							"to" : 5280
-						} ],
-						"microdata" : "Tu,Th 13:00-16:00",
-						"from" : "13:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2220,
-							"to" : 2400
-						}, {
-							"from" : 5100,
-							"to" : 5280
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
-						"range" : false
-					}, {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "FRIDAY", "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6240,
-							"to" : 6540
-						}, {
-							"from" : 7680,
-							"to" : 7980
-						} ],
+					"wD" : [ "FRIDAY", "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Fr,Sa 08:00-13:00",
 						"from" : "08:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 6240,
 							"to" : 6540
 						}, {
@@ -3758,53 +3407,73 @@ var data = {
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Do",
 						"range" : false
 					} ],
-					"weekdays" : [ "MONDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 720
-						} ],
+					"wD" : [ "TUESDAY", "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu,Th 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 1920,
+							"to" : 2160
+						}, {
+							"from" : 4800,
+							"to" : 5040
+						} ]
+					}, {
+						"microdata" : "Tu,Th 13:00-16:00",
+						"from" : "13:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 2220,
+							"to" : 2400
+						}, {
+							"from" : 5100,
+							"to" : 5280
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mi",
+						"range" : false
+					} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
+						"microdata" : "We 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 3360,
+							"to" : 3600
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					} ],
+					"wD" : [ "MONDAY" ],
+					"tI" : [ {
 						"microdata" : "Mo 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 480,
 							"to" : 720
 						} ]
 					}, {
-						"weekMinutes" : [ {
-							"from" : 780,
-							"to" : 1080
-						} ],
 						"microdata" : "Mo 13:00-18:00",
 						"from" : "13:00",
 						"to" : "18:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 780,
 							"to" : 1080
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3360,
-							"to" : 3600
-						} ],
-						"microdata" : "We 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 3360,
-							"to" : 3600
 						} ]
 					} ]
 				} ],
@@ -4183,41 +3852,33 @@ var data = {
 				"lon" : 9.47803617,
 				"lat" : 49.09236798,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6420,
-							"to" : 6480
-						} ],
-						"microdata" : "Fr 11:00-12:00",
-						"from" : "11:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6420,
-							"to" : 6480
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 11:00-12:00",
+						"from" : "11:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 6420,
+							"to" : 6480
 						} ]
 					} ]
 				} ],
@@ -4259,72 +3920,19 @@ var data = {
 				"lon" : 12.0163202,
 				"lat" : 50.9309586,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
+					"cW" : [ {
+						"weekday" : "Mi",
 						"range" : false
 					}, {
-						"weekday" : "FRIDAY",
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "TUESDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 1980,
-							"to" : 2160
-						}, {
-							"from" : 6300,
-							"to" : 6480
-						} ],
-						"microdata" : "Tu,Fr 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 1980,
-							"to" : 2160
-						}, {
-							"from" : 6300,
-							"to" : 6480
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 2220,
-							"to" : 2520
-						}, {
-							"from" : 6540,
-							"to" : 6840
-						} ],
-						"microdata" : "Tu,Fr 13:00-18:00",
-						"from" : "13:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2220,
-							"to" : 2520
-						}, {
-							"from" : 6540,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
-						"range" : false
-					}, {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "WEDNESDAY", "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3420,
-							"to" : 3600
-						}, {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "WEDNESDAY", "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "We,Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3420,
 							"to" : 3600
 						}, {
@@ -4333,20 +3941,48 @@ var data = {
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"weekdays" : [ "MONDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 780,
-							"to" : 1080
-						} ],
+					"wD" : [ "TUESDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu,Fr 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 1980,
+							"to" : 2160
+						}, {
+							"from" : 6300,
+							"to" : 6480
+						} ]
+					}, {
+						"microdata" : "Tu,Fr 13:00-18:00",
+						"from" : "13:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 2220,
+							"to" : 2520
+						}, {
+							"from" : 6540,
+							"to" : 6840
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					} ],
+					"wD" : [ "MONDAY" ],
+					"tI" : [ {
 						"microdata" : "Mo 13:00-18:00",
 						"from" : "13:00",
 						"to" : "18:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 780,
 							"to" : 1080
 						} ]
@@ -4516,41 +4152,33 @@ var data = {
 				"lon" : 7.8059423,
 				"lat" : 48.1311043,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 5310,
-							"to" : 5430
-						} ],
-						"microdata" : "Th 16:30-18:30",
-						"from" : "16:30",
-						"to" : "18:30",
-						"internalWeekMinutes" : [ {
-							"from" : 5310,
-							"to" : 5430
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 16:30-18:30",
+						"from" : "16:30",
+						"to" : "18:30",
+						"wM" : [ {
+							"from" : 5310,
+							"to" : 5430
 						} ]
 					} ]
 				} ],
@@ -4580,58 +4208,46 @@ var data = {
 				"lon" : 8.3170048,
 				"lat" : 47.6341769,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6660,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 15:00-17:00",
-						"from" : "15:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6660,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 8160
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-16:00",
 						"from" : "09:00",
 						"to" : "16:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 8160
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
+					"cW" : [ {
+						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3660,
-							"to" : 3840
-						} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 15:00-17:00",
+						"from" : "15:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6660,
+							"to" : 6780
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mi",
+						"range" : false
+					} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 13:00-16:00",
 						"from" : "13:00",
 						"to" : "16:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3660,
 							"to" : 3840
 						} ]
@@ -4778,104 +4394,68 @@ var data = {
 				"lon" : 10.8980831,
 				"lat" : 48.4200308,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 720
-						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						}, {
-							"from" : 6240,
-							"to" : 6480
-						} ],
-						"microdata" : "Mo-Fr 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 480,
-							"to" : 720
-						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						}, {
-							"from" : 6240,
-							"to" : 6480
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 780,
-							"to" : 960
-						}, {
-							"from" : 2220,
-							"to" : 2400
-						}, {
-							"from" : 3660,
-							"to" : 3840
-						}, {
-							"from" : 5100,
-							"to" : 5280
-						}, {
-							"from" : 6540,
-							"to" : 6720
-						} ],
-						"microdata" : "Mo-Fr 13:00-16:00",
-						"from" : "13:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 780,
-							"to" : 960
-						}, {
-							"from" : 2220,
-							"to" : 2400
-						}, {
-							"from" : 3660,
-							"to" : 3840
-						}, {
-							"from" : 5100,
-							"to" : 5280
-						}, {
-							"from" : 6540,
-							"to" : 6720
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-Fr 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 480,
+							"to" : 720
+						}, {
+							"from" : 1920,
+							"to" : 2160
+						}, {
+							"from" : 3360,
+							"to" : 3600
+						}, {
+							"from" : 4800,
+							"to" : 5040
+						}, {
+							"from" : 6240,
+							"to" : 6480
+						} ]
+					}, {
+						"microdata" : "Mo-Fr 13:00-16:00",
+						"from" : "13:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 780,
+							"to" : 960
+						}, {
+							"from" : 2220,
+							"to" : 2400
+						}, {
+							"from" : 3660,
+							"to" : 3840
+						}, {
+							"from" : 5100,
+							"to" : 5280
+						}, {
+							"from" : 6540,
+							"to" : 6720
 						} ]
 					} ]
 				} ],
@@ -4896,94 +4476,72 @@ var data = {
 				"lon" : 10.9169285,
 				"lat" : 48.3727068,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ],
-						"microdata" : "Th 08:00-18:00",
-						"from" : "08:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 4800,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ],
-						"microdata" : "Fr 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "WEDNESDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 900
-						}, {
-							"from" : 1920,
-							"to" : 2340
-						}, {
-							"from" : 3360,
-							"to" : 3780
-						} ],
-						"microdata" : "Mo-We 08:00-15:00",
-						"from" : "08:00",
-						"to" : "15:00",
-						"internalWeekMinutes" : [ {
-							"from" : 480,
-							"to" : 900
-						}, {
-							"from" : 1920,
-							"to" : 2340
-						}, {
-							"from" : 3360,
-							"to" : 3780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 08:00-18:00",
+						"from" : "08:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 4800,
+							"to" : 5400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Mi",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-We 08:00-15:00",
+						"from" : "08:00",
+						"to" : "15:00",
+						"wM" : [ {
+							"from" : 480,
+							"to" : 900
+						}, {
+							"from" : 1920,
+							"to" : 2340
+						}, {
+							"from" : 3360,
+							"to" : 3780
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 6240,
+							"to" : 6480
 						} ]
 					} ]
 				} ],
@@ -5082,68 +4640,48 @@ var data = {
 				"lon" : 12.4139325,
 				"lat" : 51.3414054,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 600,
-							"to" : 1080
-						}, {
-							"from" : 2040,
-							"to" : 2520
-						}, {
-							"from" : 3480,
-							"to" : 3960
-						}, {
-							"from" : 4920,
-							"to" : 5400
-						}, {
-							"from" : 6360,
-							"to" : 6840
-						} ],
-						"microdata" : "Mo-Fr 10:00-18:00",
-						"from" : "10:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 600,
-							"to" : 1080
-						}, {
-							"from" : 2040,
-							"to" : 2520
-						}, {
-							"from" : 3480,
-							"to" : 3960
-						}, {
-							"from" : 4920,
-							"to" : 5400
-						}, {
-							"from" : 6360,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7680,
-							"to" : 8100
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:00-15:00",
 						"from" : "08:00",
 						"to" : "15:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7680,
 							"to" : 8100
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-Fr 10:00-18:00",
+						"from" : "10:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 600,
+							"to" : 1080
+						}, {
+							"from" : 2040,
+							"to" : 2520
+						}, {
+							"from" : 3480,
+							"to" : 3960
+						}, {
+							"from" : 4920,
+							"to" : 5400
+						}, {
+							"from" : 6360,
+							"to" : 6840
 						} ]
 					} ]
 				} ],
@@ -5202,104 +4740,68 @@ var data = {
 				"lon" : 11.2006767,
 				"lat" : 49.1621381,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 540,
-							"to" : 720
-						}, {
-							"from" : 1980,
-							"to" : 2160
-						}, {
-							"from" : 3420,
-							"to" : 3600
-						}, {
-							"from" : 4860,
-							"to" : 5040
-						}, {
-							"from" : 6300,
-							"to" : 6480
-						} ],
-						"microdata" : "Mo-Fr 09:00-12:00",
-						"from" : "09:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 540,
-							"to" : 720
-						}, {
-							"from" : 1980,
-							"to" : 2160
-						}, {
-							"from" : 3420,
-							"to" : 3600
-						}, {
-							"from" : 4860,
-							"to" : 5040
-						}, {
-							"from" : 6300,
-							"to" : 6480
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 750,
-							"to" : 1020
-						}, {
-							"from" : 2190,
-							"to" : 2460
-						}, {
-							"from" : 3630,
-							"to" : 3900
-						}, {
-							"from" : 5070,
-							"to" : 5340
-						}, {
-							"from" : 6510,
-							"to" : 6780
-						} ],
-						"microdata" : "Mo-Fr 12:30-17:00",
-						"from" : "12:30",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 750,
-							"to" : 1020
-						}, {
-							"from" : 2190,
-							"to" : 2460
-						}, {
-							"from" : 3630,
-							"to" : 3900
-						}, {
-							"from" : 5070,
-							"to" : 5340
-						}, {
-							"from" : 6510,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-Fr 09:00-12:00",
+						"from" : "09:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 540,
+							"to" : 720
+						}, {
+							"from" : 1980,
+							"to" : 2160
+						}, {
+							"from" : 3420,
+							"to" : 3600
+						}, {
+							"from" : 4860,
+							"to" : 5040
+						}, {
+							"from" : 6300,
+							"to" : 6480
+						} ]
+					}, {
+						"microdata" : "Mo-Fr 12:30-17:00",
+						"from" : "12:30",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 750,
+							"to" : 1020
+						}, {
+							"from" : 2190,
+							"to" : 2460
+						}, {
+							"from" : 3630,
+							"to" : 3900
+						}, {
+							"from" : 5070,
+							"to" : 5340
+						}, {
+							"from" : 6510,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -5526,104 +5028,68 @@ var data = {
 				"lon" : 8.2848134,
 				"lat" : 47.6190886,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 720
-						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						}, {
-							"from" : 6240,
-							"to" : 6480
-						} ],
-						"microdata" : "Mo-Fr 08:00-12:00",
-						"from" : "08:00",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 480,
-							"to" : 720
-						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						}, {
-							"from" : 6240,
-							"to" : 6480
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 780,
-							"to" : 1020
-						}, {
-							"from" : 2220,
-							"to" : 2460
-						}, {
-							"from" : 3660,
-							"to" : 3900
-						}, {
-							"from" : 5100,
-							"to" : 5340
-						}, {
-							"from" : 6540,
-							"to" : 6780
-						} ],
-						"microdata" : "Mo-Fr 13:00-17:00",
-						"from" : "13:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 780,
-							"to" : 1020
-						}, {
-							"from" : 2220,
-							"to" : 2460
-						}, {
-							"from" : 3660,
-							"to" : 3900
-						}, {
-							"from" : 5100,
-							"to" : 5340
-						}, {
-							"from" : 6540,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 8040
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-14:00",
 						"from" : "09:00",
 						"to" : "14:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 8040
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-Fr 08:00-12:00",
+						"from" : "08:00",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 480,
+							"to" : 720
+						}, {
+							"from" : 1920,
+							"to" : 2160
+						}, {
+							"from" : 3360,
+							"to" : 3600
+						}, {
+							"from" : 4800,
+							"to" : 5040
+						}, {
+							"from" : 6240,
+							"to" : 6480
+						} ]
+					}, {
+						"microdata" : "Mo-Fr 13:00-17:00",
+						"from" : "13:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 780,
+							"to" : 1020
+						}, {
+							"from" : 2220,
+							"to" : 2460
+						}, {
+							"from" : 3660,
+							"to" : 3900
+						}, {
+							"from" : 5100,
+							"to" : 5340
+						}, {
+							"from" : 6540,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -5844,20 +5310,16 @@ var data = {
 				"lon" : 9.1074521,
 				"lat" : 48.7233229,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
+					"cW" : [ {
+						"weekday" : "Di",
 						"range" : false
 					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2040,
-							"to" : 2520
-						} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
 						"microdata" : "Tu 10:00-18:00",
 						"from" : "10:00",
 						"to" : "18:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 2040,
 							"to" : 2520
 						} ]
@@ -6262,95 +5724,73 @@ var data = {
 				"lon" : 9.9198447,
 				"lat" : 48.3523985,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "TUESDAY",
-						"range" : false
-					}, {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 960,
-							"to" : 1080
-						}, {
-							"from" : 2400,
-							"to" : 2520
-						}, {
-							"from" : 5280,
-							"to" : 5400
-						} ],
-						"microdata" : "Mo,Tu,Th 16:00-18:00",
-						"from" : "16:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 960,
-							"to" : 1080
-						}, {
-							"from" : 2400,
-							"to" : 2520
-						}, {
-							"from" : 5280,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6540,
-							"to" : 6840
-						} ],
-						"microdata" : "Fr 13:00-18:00",
-						"from" : "13:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6540,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7680,
-							"to" : 8280
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:00-18:00",
 						"from" : "08:00",
 						"to" : "18:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7680,
 							"to" : 8280
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Do",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3840,
-							"to" : 4020
-						} ],
+					"wD" : [ "MONDAY", "TUESDAY", "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo,Tu,Th 16:00-18:00",
+						"from" : "16:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 960,
+							"to" : 1080
+						}, {
+							"from" : 2400,
+							"to" : 2520
+						}, {
+							"from" : 5280,
+							"to" : 5400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 13:00-18:00",
+						"from" : "13:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 6540,
+							"to" : 6840
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mi",
+						"range" : false
+					} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 16:00-19:00",
 						"from" : "16:00",
 						"to" : "19:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3840,
 							"to" : 4020
 						} ]
@@ -7052,32 +6492,19 @@ var data = {
 				"lon" : 7.8073573,
 				"lat" : 47.9873545,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
+					"cW" : [ {
+						"weekday" : "Mo",
 						"range" : false
 					}, {
-						"weekday" : "THURSDAY",
+						"weekday" : "Do",
 						"range" : true
 					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 480,
-							"to" : 720
-						}, {
-							"from" : 1920,
-							"to" : 2160
-						}, {
-							"from" : 3360,
-							"to" : 3600
-						}, {
-							"from" : 4800,
-							"to" : 5040
-						} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY" ],
+					"tI" : [ {
 						"microdata" : "Mo-Th 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 480,
 							"to" : 720
 						}, {
@@ -7091,23 +6518,10 @@ var data = {
 							"to" : 5040
 						} ]
 					}, {
-						"weekMinutes" : [ {
-							"from" : 780,
-							"to" : 1020
-						}, {
-							"from" : 2220,
-							"to" : 2460
-						}, {
-							"from" : 3660,
-							"to" : 3900
-						}, {
-							"from" : 5100,
-							"to" : 5340
-						} ],
 						"microdata" : "Mo-Th 13:00-17:00",
 						"from" : "13:00",
 						"to" : "17:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 780,
 							"to" : 1020
 						}, {
@@ -7122,32 +6536,24 @@ var data = {
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6240,
-							"to" : 6480
-						} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
 						"microdata" : "Fr 08:00-12:00",
 						"from" : "08:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 6240,
 							"to" : 6480
 						} ]
 					}, {
-						"weekMinutes" : [ {
-							"from" : 6540,
-							"to" : 6660
-						} ],
 						"microdata" : "Fr 13:00-15:00",
 						"from" : "13:00",
 						"to" : "15:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 6540,
 							"to" : 6660
 						} ]
@@ -7321,60 +6727,48 @@ var data = {
 				"lon" : 12.5334643,
 				"lat" : 48.82306,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2340,
-							"to" : 2460
-						} ],
-						"microdata" : "Tu 15:00-17:00",
-						"from" : "15:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2340,
-							"to" : 2460
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7800,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 10:00-12:00",
 						"from" : "10:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7800,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 15:00-17:00",
+						"from" : "15:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 2340,
+							"to" : 2460
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -7402,41 +6796,33 @@ var data = {
 				"lon" : 9.29324269,
 				"lat" : 49.07874682,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 5250,
-							"to" : 5430
-						} ],
-						"microdata" : "Th 15:30-18:30",
-						"from" : "15:30",
-						"to" : "18:30",
-						"internalWeekMinutes" : [ {
-							"from" : 5250,
-							"to" : 5430
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 15:30-18:30",
+						"from" : "15:30",
+						"to" : "18:30",
+						"wM" : [ {
+							"from" : 5250,
+							"to" : 5430
 						} ]
 					} ]
 				} ],
@@ -7453,62 +6839,45 @@ var data = {
 				"lon" : 9.1972518,
 				"lat" : 49.23008369,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2460
-						}, {
-							"from" : 3720,
-							"to" : 3900
-						}, {
-							"from" : 5160,
-							"to" : 5340
-						}, {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Tu-Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2460
-						}, {
-							"from" : 3720,
-							"to" : 3900
-						}, {
-							"from" : 5160,
-							"to" : 5340
-						}, {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu-Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 2280,
+							"to" : 2460
+						}, {
+							"from" : 3720,
+							"to" : 3900
+						}, {
+							"from" : 5160,
+							"to" : 5340
+						}, {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -7525,50 +6894,39 @@ var data = {
 				"lon" : 9.22636986,
 				"lat" : 49.21016812,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3720,
-							"to" : 3900
-						}, {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "We,Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 3720,
-							"to" : 3900
-						}, {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mi",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "WEDNESDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "We,Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 3720,
+							"to" : 3900
+						}, {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -7585,60 +6943,48 @@ var data = {
 				"lon" : 9.08231378,
 				"lat" : 49.23575136,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2340,
-							"to" : 2520
-						} ],
-						"microdata" : "Tu 15:00-18:00",
-						"from" : "15:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2340,
-							"to" : 2520
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 15:00-18:00",
+						"from" : "15:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 2340,
+							"to" : 2520
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -7655,41 +7001,33 @@ var data = {
 				"lon" : 9.18231726,
 				"lat" : 49.23024133,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ],
-						"microdata" : "Fr 14:00-16:00",
-						"from" : "14:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 8040
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-14:00",
 						"from" : "09:00",
 						"to" : "14:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 8040
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-16:00",
+						"from" : "14:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6720
 						} ]
 					} ]
 				} ],
@@ -7706,60 +7044,48 @@ var data = {
 				"lon" : 9.31433558,
 				"lat" : 49.0358458,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 5280,
-							"to" : 5400
-						} ],
-						"microdata" : "Th 16:00-18:00",
-						"from" : "16:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 5280,
-							"to" : 5400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7950
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:30",
 						"from" : "09:00",
 						"to" : "12:30",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7950
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 16:00-18:00",
+						"from" : "16:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 5280,
+							"to" : 5400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -7776,60 +7102,48 @@ var data = {
 				"lon" : 9.05981541,
 				"lat" : 49.08364834,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2400
-						} ],
-						"microdata" : "Tu 14:00-16:00",
-						"from" : "14:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 14:00-16:00",
+						"from" : "14:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 2280,
+							"to" : 2400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -7846,41 +7160,33 @@ var data = {
 				"lon" : 9.03035402,
 				"lat" : 49.03999902,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ],
-						"microdata" : "Fr 14:00-16:00",
-						"from" : "14:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-16:00",
+						"from" : "14:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6720
 						} ]
 					} ]
 				} ],
@@ -7897,104 +7203,68 @@ var data = {
 				"lon" : 9.33056831,
 				"lat" : 49.18941713,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 465,
-							"to" : 720
-						}, {
-							"from" : 1905,
-							"to" : 2160
-						}, {
-							"from" : 3345,
-							"to" : 3600
-						}, {
-							"from" : 4785,
-							"to" : 5040
-						}, {
-							"from" : 6225,
-							"to" : 6480
-						} ],
-						"microdata" : "Mo-Fr 07:45-12:00",
-						"from" : "07:45",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 465,
-							"to" : 720
-						}, {
-							"from" : 1905,
-							"to" : 2160
-						}, {
-							"from" : 3345,
-							"to" : 3600
-						}, {
-							"from" : 4785,
-							"to" : 5040
-						}, {
-							"from" : 6225,
-							"to" : 6480
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 780,
-							"to" : 990
-						}, {
-							"from" : 2220,
-							"to" : 2430
-						}, {
-							"from" : 3660,
-							"to" : 3870
-						}, {
-							"from" : 5100,
-							"to" : 5310
-						}, {
-							"from" : 6540,
-							"to" : 6750
-						} ],
-						"microdata" : "Mo-Fr 13:00-16:30",
-						"from" : "13:00",
-						"to" : "16:30",
-						"internalWeekMinutes" : [ {
-							"from" : 780,
-							"to" : 990
-						}, {
-							"from" : 2220,
-							"to" : 2430
-						}, {
-							"from" : 3660,
-							"to" : 3870
-						}, {
-							"from" : 5100,
-							"to" : 5310
-						}, {
-							"from" : 6540,
-							"to" : 6750
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7890
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-11:30",
 						"from" : "09:00",
 						"to" : "11:30",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7890
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-Fr 07:45-12:00",
+						"from" : "07:45",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 465,
+							"to" : 720
+						}, {
+							"from" : 1905,
+							"to" : 2160
+						}, {
+							"from" : 3345,
+							"to" : 3600
+						}, {
+							"from" : 4785,
+							"to" : 5040
+						}, {
+							"from" : 6225,
+							"to" : 6480
+						} ]
+					}, {
+						"microdata" : "Mo-Fr 13:00-16:30",
+						"from" : "13:00",
+						"to" : "16:30",
+						"wM" : [ {
+							"from" : 780,
+							"to" : 990
+						}, {
+							"from" : 2220,
+							"to" : 2430
+						}, {
+							"from" : 3660,
+							"to" : 3870
+						}, {
+							"from" : 5100,
+							"to" : 5310
+						}, {
+							"from" : 6540,
+							"to" : 6750
 						} ]
 					} ]
 				} ],
@@ -8011,41 +7281,33 @@ var data = {
 				"lon" : 9.3133378,
 				"lat" : 49.1537275,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6660,
-							"to" : 6840
-						} ],
-						"microdata" : "Fr 15:00-18:00",
-						"from" : "15:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6660,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 15:00-18:00",
+						"from" : "15:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 6660,
+							"to" : 6840
 						} ]
 					} ]
 				} ],
@@ -8062,59 +7324,45 @@ var data = {
 				"lon" : 8.91347408,
 				"lat" : 49.139502,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					}, {
-						"weekday" : "THURSDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "TUESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2520
-						}, {
-							"from" : 5160,
-							"to" : 5400
-						}, {
-							"from" : 6600,
-							"to" : 6840
-						} ],
-						"microdata" : "Tu,Th,Fr 14:00-18:00",
-						"from" : "14:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2520
-						}, {
-							"from" : 5160,
-							"to" : 5400
-						}, {
-							"from" : 6600,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 8100
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-15:00",
 						"from" : "09:00",
 						"to" : "15:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 8100
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					}, {
+						"weekday" : "Do",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu,Th,Fr 14:00-18:00",
+						"from" : "14:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 2280,
+							"to" : 2520
+						}, {
+							"from" : 5160,
+							"to" : 5400
+						}, {
+							"from" : 6600,
+							"to" : 6840
 						} ]
 					} ]
 				} ],
@@ -8131,20 +7379,16 @@ var data = {
 				"lon" : 8.83244991,
 				"lat" : 49.1797923,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -8163,20 +7407,16 @@ var data = {
 				"lon" : 8.96936059,
 				"lat" : 49.09592285,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -8195,20 +7435,16 @@ var data = {
 				"lon" : 8.89476299,
 				"lat" : 49.104981,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -8227,41 +7463,33 @@ var data = {
 				"lon" : 9.27241266,
 				"lat" : 49.16512179,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6720,
-							"to" : 6840
-						} ],
-						"microdata" : "Fr 16:00-18:00",
-						"from" : "16:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6720,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 16:00-18:00",
+						"from" : "16:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 6720,
+							"to" : 6840
 						} ]
 					} ]
 				} ],
@@ -8278,50 +7506,39 @@ var data = {
 				"lon" : 9.20688629,
 				"lat" : 49.1015778,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 5160,
-							"to" : 5280
-						}, {
-							"from" : 6600,
-							"to" : 6720
-						} ],
-						"microdata" : "Th,Fr 14:00-16:00",
-						"from" : "14:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 5160,
-							"to" : 5280
-						}, {
-							"from" : 6600,
-							"to" : 6720
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Th,Fr 14:00-16:00",
+						"from" : "14:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 5160,
+							"to" : 5280
+						}, {
+							"from" : 6600,
+							"to" : 6720
 						} ]
 					} ]
 				} ],
@@ -8338,41 +7555,33 @@ var data = {
 				"lon" : 8.98905873,
 				"lat" : 49.1502294,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -8389,41 +7598,33 @@ var data = {
 				"lon" : 9.15977597,
 				"lat" : 49.27500088,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -8440,41 +7641,33 @@ var data = {
 				"lon" : 9.00275946,
 				"lat" : 49.06274939,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6540,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 13:00-17:00",
-						"from" : "13:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6540,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 13:00-17:00",
+						"from" : "13:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6540,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -8491,20 +7684,16 @@ var data = {
 				"lon" : 9.37303305,
 				"lat" : 49.24510265,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -8523,50 +7712,39 @@ var data = {
 				"lon" : 9.26701069,
 				"lat" : 49.054239,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 5160,
-							"to" : 5400
-						}, {
-							"from" : 6600,
-							"to" : 6840
-						} ],
-						"microdata" : "Th,Fr 14:00-18:00",
-						"from" : "14:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 5160,
-							"to" : 5400
-						}, {
-							"from" : 6600,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Th,Fr 14:00-18:00",
+						"from" : "14:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 5160,
+							"to" : 5400
+						}, {
+							"from" : 6600,
+							"to" : 6840
 						} ]
 					} ]
 				} ],
@@ -8583,41 +7761,33 @@ var data = {
 				"lon" : 8.93419147,
 				"lat" : 49.1864019,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2370,
-							"to" : 2520
-						} ],
-						"microdata" : "Tu 15:30-18:00",
-						"from" : "15:30",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2370,
-							"to" : 2520
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7680,
-							"to" : 7950
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 08:00-12:30",
 						"from" : "08:00",
 						"to" : "12:30",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7680,
 							"to" : 7950
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 15:30-18:00",
+						"from" : "15:30",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 2370,
+							"to" : 2520
 						} ]
 					} ]
 				} ],
@@ -8634,20 +7804,16 @@ var data = {
 				"lon" : 9.46763724,
 				"lat" : 49.3098983,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -8666,41 +7832,33 @@ var data = {
 				"lon" : 8.98809314,
 				"lat" : 49.20878733,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2460
-						} ],
-						"microdata" : "Tu 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2460
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 2280,
+							"to" : 2460
 						} ]
 					} ]
 				} ],
@@ -8717,20 +7875,16 @@ var data = {
 				"lon" : 9.16127801,
 				"lat" : 49.06315009,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -8749,50 +7903,39 @@ var data = {
 				"lon" : 9.16162133,
 				"lat" : 49.06316415,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 5220,
-							"to" : 5340
-						}, {
-							"from" : 6660,
-							"to" : 6780
-						} ],
-						"microdata" : "Th,Fr 15:00-17:00",
-						"from" : "15:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 5220,
-							"to" : 5340
-						}, {
-							"from" : 6660,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 8160
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-16:00",
 						"from" : "09:00",
 						"to" : "16:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 8160
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Th,Fr 15:00-17:00",
+						"from" : "15:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 5220,
+							"to" : 5340
+						}, {
+							"from" : 6660,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -8809,60 +7952,48 @@ var data = {
 				"lon" : 9.13125873,
 				"lat" : 49.1478469,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2400
-						} ],
-						"microdata" : "Tu 14:00-16:00",
-						"from" : "14:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2280,
-							"to" : 2400
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 14:00-16:00",
+						"from" : "14:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 2280,
+							"to" : 2400
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -8879,20 +8010,16 @@ var data = {
 				"lon" : 9.37555969,
 				"lat" : 49.09305298,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -8911,41 +8038,33 @@ var data = {
 				"lon" : 9.04024601,
 				"lat" : 49.171807,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -8962,58 +8081,46 @@ var data = {
 				"lon" : 9.35291648,
 				"lat" : 49.32874407,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7920
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
+					"cW" : [ {
+						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3660,
-							"to" : 3840
-						} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mi",
+						"range" : false
+					} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 13:00-16:00",
 						"from" : "13:00",
 						"to" : "16:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3660,
 							"to" : 3840
 						} ]
@@ -9032,60 +8139,48 @@ var data = {
 				"lon" : 9.21941757,
 				"lat" : 49.18139306,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2430,
-							"to" : 2580
-						} ],
-						"microdata" : "Tu 16:30-19:00",
-						"from" : "16:30",
-						"to" : "19:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2430,
-							"to" : 2580
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 16:30-19:00",
+						"from" : "16:30",
+						"to" : "19:00",
+						"wM" : [ {
+							"from" : 2430,
+							"to" : 2580
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -9102,39 +8197,31 @@ var data = {
 				"lon" : 9.20304,
 				"lat" : 49.19192734,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
+					"cW" : [ {
+						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3660,
-							"to" : 3840
-						} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 13:00-16:00",
 						"from" : "13:00",
 						"to" : "16:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3660,
 							"to" : 3840
 						} ]
@@ -9153,41 +8240,33 @@ var data = {
 				"lon" : 9.19985354,
 				"lat" : 49.04273833,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -9204,39 +8283,31 @@ var data = {
 				"lon" : 9.26421046,
 				"lat" : 49.28773888,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
+					"cW" : [ {
+						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3720,
-							"to" : 3900
-						} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3720,
 							"to" : 3900
 						} ]
@@ -9255,58 +8326,46 @@ var data = {
 				"lon" : 9.328299,
 				"lat" : 49.232683,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
+					"cW" : [ {
+						"weekday" : "Fr",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3720,
-							"to" : 3990
-						} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mi",
+						"range" : false
+					} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 14:00-18:30",
 						"from" : "14:00",
 						"to" : "18:30",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3720,
 							"to" : 3990
 						} ]
@@ -9325,60 +8384,48 @@ var data = {
 				"lon" : 9.12920952,
 				"lat" : 49.11188853,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6840
-						} ],
-						"microdata" : "Fr 14:00-18:00",
-						"from" : "14:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "TUESDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "TUESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 2460,
-							"to" : 2580
-						} ],
-						"microdata" : "Tu 17:00-19:00",
-						"from" : "17:00",
-						"to" : "19:00",
-						"internalWeekMinutes" : [ {
-							"from" : 2460,
-							"to" : 2580
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Di",
+						"range" : false
+					} ],
+					"wD" : [ "TUESDAY" ],
+					"tI" : [ {
+						"microdata" : "Tu 17:00-19:00",
+						"from" : "17:00",
+						"to" : "19:00",
+						"wM" : [ {
+							"from" : 2460,
+							"to" : 2580
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-18:00",
+						"from" : "14:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6840
 						} ]
 					} ]
 				} ],
@@ -9395,41 +8442,33 @@ var data = {
 				"lon" : 9.24611628,
 				"lat" : 49.24760303,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ],
-						"microdata" : "Fr 14:00-16:00",
-						"from" : "14:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-16:00",
+						"from" : "14:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6720
 						} ]
 					} ]
 				} ],
@@ -9446,41 +8485,33 @@ var data = {
 				"lon" : 9.16478634,
 				"lat" : 49.24236399,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ],
-						"microdata" : "Fr 14:00-17:00",
-						"from" : "14:00",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-17:00",
+						"from" : "14:00",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -9497,20 +8528,16 @@ var data = {
 				"lon" : 8.97158682,
 				"lat" : 49.0654031,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -9529,20 +8556,16 @@ var data = {
 				"lon" : 9.33880806,
 				"lat" : 49.35876631,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -9561,104 +8584,68 @@ var data = {
 				"lon" : 9.02198553,
 				"lat" : 49.1165094,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "MONDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
-						"range" : true
-					} ],
-					"weekdays" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 465,
-							"to" : 720
-						}, {
-							"from" : 1905,
-							"to" : 2160
-						}, {
-							"from" : 3345,
-							"to" : 3600
-						}, {
-							"from" : 4785,
-							"to" : 5040
-						}, {
-							"from" : 6225,
-							"to" : 6480
-						} ],
-						"microdata" : "Mo-Fr 07:45-12:00",
-						"from" : "07:45",
-						"to" : "12:00",
-						"internalWeekMinutes" : [ {
-							"from" : 465,
-							"to" : 720
-						}, {
-							"from" : 1905,
-							"to" : 2160
-						}, {
-							"from" : 3345,
-							"to" : 3600
-						}, {
-							"from" : 4785,
-							"to" : 5040
-						}, {
-							"from" : 6225,
-							"to" : 6480
-						} ]
-					}, {
-						"weekMinutes" : [ {
-							"from" : 780,
-							"to" : 990
-						}, {
-							"from" : 2220,
-							"to" : 2430
-						}, {
-							"from" : 3660,
-							"to" : 3870
-						}, {
-							"from" : 5100,
-							"to" : 5310
-						}, {
-							"from" : 6540,
-							"to" : 6750
-						} ],
-						"microdata" : "Mo-Fr 13:00-16:30",
-						"from" : "13:00",
-						"to" : "16:30",
-						"internalWeekMinutes" : [ {
-							"from" : 780,
-							"to" : 990
-						}, {
-							"from" : 2220,
-							"to" : 2430
-						}, {
-							"from" : 3660,
-							"to" : 3870
-						}, {
-							"from" : 5100,
-							"to" : 5310
-						}, {
-							"from" : 6540,
-							"to" : 6750
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7890
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-11:30",
 						"from" : "09:00",
 						"to" : "11:30",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7890
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Mo",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : true
+					} ],
+					"wD" : [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Mo-Fr 07:45-12:00",
+						"from" : "07:45",
+						"to" : "12:00",
+						"wM" : [ {
+							"from" : 465,
+							"to" : 720
+						}, {
+							"from" : 1905,
+							"to" : 2160
+						}, {
+							"from" : 3345,
+							"to" : 3600
+						}, {
+							"from" : 4785,
+							"to" : 5040
+						}, {
+							"from" : 6225,
+							"to" : 6480
+						} ]
+					}, {
+						"microdata" : "Mo-Fr 13:00-16:30",
+						"from" : "13:00",
+						"to" : "16:30",
+						"wM" : [ {
+							"from" : 780,
+							"to" : 990
+						}, {
+							"from" : 2220,
+							"to" : 2430
+						}, {
+							"from" : 3660,
+							"to" : 3870
+						}, {
+							"from" : 5100,
+							"to" : 5310
+						}, {
+							"from" : 6540,
+							"to" : 6750
 						} ]
 					} ]
 				} ],
@@ -9675,41 +8662,33 @@ var data = {
 				"lon" : 9.18506384,
 				"lat" : 49.09899276,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ],
-						"microdata" : "Fr 14:00-16:00",
-						"from" : "14:00",
-						"to" : "16:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6600,
-							"to" : 6720
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 14:00-16:00",
+						"from" : "14:00",
+						"to" : "16:00",
+						"wM" : [ {
+							"from" : 6600,
+							"to" : 6720
 						} ]
 					} ]
 				} ],
@@ -9726,39 +8705,31 @@ var data = {
 				"lon" : 9.20752466,
 				"lat" : 49.20702098,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
 					} ]
 				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "WEDNESDAY",
+					"cW" : [ {
+						"weekday" : "Mi",
 						"range" : false
 					} ],
-					"weekdays" : [ "WEDNESDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 3750,
-							"to" : 3870
-						} ],
+					"wD" : [ "WEDNESDAY" ],
+					"tI" : [ {
 						"microdata" : "We 14:30-16:30",
 						"from" : "14:30",
 						"to" : "16:30",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 3750,
 							"to" : 3870
 						} ]
@@ -9777,50 +8748,39 @@ var data = {
 				"lon" : 9.27901089,
 				"lat" : 49.08625526,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
-						"range" : false
-					}, {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY", "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 5190,
-							"to" : 5340
-						}, {
-							"from" : 6630,
-							"to" : 6780
-						} ],
-						"microdata" : "Th,Fr 14:30-17:00",
-						"from" : "14:30",
-						"to" : "17:00",
-						"internalWeekMinutes" : [ {
-							"from" : 5190,
-							"to" : 5340
-						}, {
-							"from" : 6630,
-							"to" : 6780
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					}, {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY", "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Th,Fr 14:30-17:00",
+						"from" : "14:30",
+						"to" : "17:00",
+						"wM" : [ {
+							"from" : 5190,
+							"to" : 5340
+						}, {
+							"from" : 6630,
+							"to" : 6780
 						} ]
 					} ]
 				} ],
@@ -9836,60 +8796,48 @@ var data = {
 				"lon" : 9.28548574,
 				"lat" : 49.160965,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "THURSDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "THURSDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 5280,
-							"to" : 5460
-						} ],
-						"microdata" : "Th 16:00-19:00",
-						"from" : "16:00",
-						"to" : "19:00",
-						"internalWeekMinutes" : [ {
-							"from" : 5280,
-							"to" : 5460
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6660,
-							"to" : 6840
-						} ],
-						"microdata" : "Fr 15:00-18:00",
-						"from" : "15:00",
-						"to" : "18:00",
-						"internalWeekMinutes" : [ {
-							"from" : 6660,
-							"to" : 6840
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7920
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-12:00",
 						"from" : "09:00",
 						"to" : "12:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7920
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Do",
+						"range" : false
+					} ],
+					"wD" : [ "THURSDAY" ],
+					"tI" : [ {
+						"microdata" : "Th 16:00-19:00",
+						"from" : "16:00",
+						"to" : "19:00",
+						"wM" : [ {
+							"from" : 5280,
+							"to" : 5460
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 15:00-18:00",
+						"from" : "15:00",
+						"to" : "18:00",
+						"wM" : [ {
+							"from" : 6660,
+							"to" : 6840
 						} ]
 					} ]
 				} ],
@@ -9905,20 +8853,16 @@ var data = {
 				"lon" : 9.42074418,
 				"lat" : 49.3153872,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
 						} ]
@@ -9936,41 +8880,33 @@ var data = {
 				"lon" : 8.92850518,
 				"lat" : 49.06429594,
 				"openingHours" : [ {
-					"compactWeekdays" : [ {
-						"weekday" : "FRIDAY",
+					"cW" : [ {
+						"weekday" : "Sa",
 						"range" : false
 					} ],
-					"weekdays" : [ "FRIDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 6570,
-							"to" : 6750
-						} ],
-						"microdata" : "Fr 13:30-16:30",
-						"from" : "13:30",
-						"to" : "16:30",
-						"internalWeekMinutes" : [ {
-							"from" : 6570,
-							"to" : 6750
-						} ]
-					} ]
-				}, {
-					"compactWeekdays" : [ {
-						"weekday" : "SATURDAY",
-						"range" : false
-					} ],
-					"weekdays" : [ "SATURDAY" ],
-					"timeIntervals" : [ {
-						"weekMinutes" : [ {
-							"from" : 7740,
-							"to" : 7980
-						} ],
+					"wD" : [ "SATURDAY" ],
+					"tI" : [ {
 						"microdata" : "Sa 09:00-13:00",
 						"from" : "09:00",
 						"to" : "13:00",
-						"internalWeekMinutes" : [ {
+						"wM" : [ {
 							"from" : 7740,
 							"to" : 7980
+						} ]
+					} ]
+				}, {
+					"cW" : [ {
+						"weekday" : "Fr",
+						"range" : false
+					} ],
+					"wD" : [ "FRIDAY" ],
+					"tI" : [ {
+						"microdata" : "Fr 13:30-16:30",
+						"from" : "13:30",
+						"to" : "16:30",
+						"wM" : [ {
+							"from" : 6570,
+							"to" : 6750
 						} ]
 					} ]
 				} ],
