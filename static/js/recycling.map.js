@@ -18,10 +18,20 @@
 				position: 'bottomleft'
 			}).addTo(this.map);
 			
-			var data = rc.filteredData();
+			var data = rc.filteredData(this.map.getCenter());
 			for (var index in data) {
 				var amenity = data[index];
 				var marker = new L.Marker(amenity.pos);
+				marker.amenity = amenity;
+				marker.on("mouseover", function() {
+					var elem = document.getElementById(amenity.id);
+					elem.classList.add("highlight");
+					console.log(elem.innerHTML);
+				});
+				marker.on("mouseout", function() {
+					var elem = document.getElementById(amenity.id);
+					elem.classList.remove("highlight");
+				});
 				marker.addTo(this.map);
 			}
 		},

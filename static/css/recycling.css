@@ -84,3 +84,6 @@ div.timeline-sa {
 .timeline-sa {
 	left: 240px;
 }
+.highlight {
+	background-color: #ff0000 !important;
+}
