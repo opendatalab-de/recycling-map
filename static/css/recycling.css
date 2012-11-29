@@ -1,29 +1,38 @@
 body, html {
 	height: 100%;
+	background: #F0F0F0;
 }
 #map {
 	position: absolute;
-	top: 0;
+	top: 42px;
 	bottom: 0;
 	left: 0;
 	right: 304px;
 }
-
 h1 {
 	font-size: 1.5em;
 	margin: 0px;
 }
+.navbar span.brand {
+	margin-left: 5px;
+}
 
-.amenity-list {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 304px;
-	height: 100%;
-	padding: 0 8px;
-	background: #F0F0F0;
-	overflow-y: auto;
-	overflow-x: hidden;
+@media (min-width: 768px) {
+	.amenity-list {
+		position: absolute;
+		top: 42px;
+		right: 0;
+		bottom: 0;
+		width: 288px;
+		padding: 0 8px;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+}
+@media (max-width: 767px) {
+	#map {
+		display: none;
+	}
 }
 
 .amenity {
@@ -42,7 +51,6 @@ h1 {
 .compact-offer {
 	margin: 0;
 }
-
 .timeline-container {
 	position: relative;
 	width: 288px;
