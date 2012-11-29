@@ -49,11 +49,31 @@
 		var focusOnMarker = function(event) {
 			var amenityId = event.target.parentNode.dataset.amenityId;
 			rc.map.focusOnMarker(amenityId);
+			toggleView();
 		};
 		
 		var amenities = document.getElementsByClassName("recycling-name");
 		for (var x = 0; x < amenities.length;x++) {
 			amenities[x].onclick = focusOnMarker;
+		}
+	};
+	
+	var toggleView = function() {
+		if (L.Browser.mobile) {
+			var mapDisplay = window.getComputedStyle(document.getElementById('map'), null).getPropertyValue("display");
+	
+			if (mapDisplay == "none") {
+				document.getElementsByClassName('amenity-list')[0].style.display = "none";
+				document.getElementById('map').style.display = "block";
+				rc.map.map.invalidateSize();
+				document.getElementsByClassName('icon-map-marker')[0].classList.add('icon-list');
+				document.getElementsByClassName('icon-map-marker')[0].classList.remove('icon-map-marker');
+			} else {
+				document.getElementById('map').style.display = "none";
+				document.getElementsByClassName('amenity-list')[0].style.display = "block";
+				document.getElementsByClassName('icon-list')[0].classList.add('icon-map-marker');
+				document.getElementsByClassName('icon-list')[0].classList.remove('icon-list');
+			}
 		}
 	};
 
@@ -65,22 +85,7 @@
 
 			if (L.Browser.mobile) {
 				this.locateMe();
-				document.getElementById('toggleView').onclick = function() {
-					var mapDisplay = window.getComputedStyle(document.getElementById('map'), null).getPropertyValue("display");
-
-					if (mapDisplay == "none") {
-						document.getElementsByClassName('amenity-list')[0].style.display = "none";
-						document.getElementById('map').style.display = "block";
-						rc.map.map.invalidateSize();
-						document.getElementsByClassName('icon-map-marker')[0].classList.add('icon-list');
-						document.getElementsByClassName('icon-map-marker')[0].classList.remove('icon-map-marker');
-					} else {
-						document.getElementById('map').style.display = "none";
-						document.getElementsByClassName('amenity-list')[0].style.display = "block";
-						document.getElementsByClassName('icon-list')[0].classList.add('icon-map-marker');
-						document.getElementsByClassName('icon-list')[0].classList.remove('icon-list');
-					}
-				};
+				document.getElementById('toggleView').onclick = toggleView;
 			}
 			
 			document.getElementById('locateMe').onclick = function() {
