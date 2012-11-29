@@ -16,6 +16,9 @@ h1 {
 .navbar span.brand {
 	margin-left: 5px;
 }
+.navbar a {
+	cursor: pointer;
+}
 
 @media (min-width: 768px) {
 	.amenity-list {
