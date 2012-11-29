@@ -4,7 +4,7 @@
 	<title>Recyclinghöfe in Heilbronn</title>
 	<meta name="description" content="Recyclinghöfe in Heilbronn und Landkreis Heilbronn">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
@@ -36,7 +36,7 @@
 		<h1>Recyclinghöfe in Heilbronn</h1>
 		{{#each amenities}}
 			<div class="amenity" id="{{id}}">
-				<a href="#" class="recycling-name" data-amenity-id="{{id}}"><strong class="amenity-name">
+				<a class="recycling-name" data-amenity-id="{{id}}"><strong class="amenity-name">
 					{{#if keyValues.name}}
 						{{keyValues.name}}
 					{{else}}
@@ -165,6 +165,9 @@
 		{{/if}}
 	</script>
 
+	<script type="text/javascript">
+		L_DISABLE_3D = true;
+	</script>
 	<script type="text/javascript" src="js/underscore.js"></script>
 	<script type="text/javascript" src="js/handlebars.js"></script>
 	<script type="text/javascript" src="js/leaflet.js"></script>

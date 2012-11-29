@@ -47,7 +47,7 @@
 		});
 		
 		var focusOnMarker = function(event) {
-			var amenityId = event.target.parentNode.dataset.amenityId;
+			var amenityId = event.target.parentNode.getAttribute('data-amenity-id');
 			rc.map.focusOnMarker(amenityId);
 			toggleView();
 		};
@@ -58,17 +58,19 @@
 		}
 	};
 	
+	var mapWasHidden = false;
 	var toggleView = function() {
 		if (L.Browser.mobile) {
 			var mapDisplay = window.getComputedStyle(document.getElementById('map'), null).getPropertyValue("display");
 	
 			if (mapDisplay == "none") {
+				mapWasHidden = true;
 				document.getElementsByClassName('amenity-list')[0].style.display = "none";
 				document.getElementById('map').style.display = "block";
 				rc.map.map.invalidateSize();
 				document.getElementsByClassName('icon-map-marker')[0].classList.add('icon-list');
 				document.getElementsByClassName('icon-map-marker')[0].classList.remove('icon-map-marker');
-			} else {
+			} else if(mapWasHidden) {
 				document.getElementById('map').style.display = "none";
 				document.getElementsByClassName('amenity-list')[0].style.display = "block";
 				document.getElementsByClassName('icon-list')[0].classList.add('icon-map-marker');
@@ -115,8 +117,7 @@
 
 			navigator.geolocation.getCurrentPosition(onSuccessHandler, onErrorHandler, {
 				timeout : 120000,
-				maximumAge : 600000,
-				enableHighAccuracy : true
+				maximumAge : 600000
 			});
 		}
 	};

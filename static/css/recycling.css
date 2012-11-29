@@ -39,6 +39,11 @@ h1 {
 		right: 0;
 	}
 }
+@media (max-width: 979px) {
+	#map {
+		top: 51px !important;
+	}
+}
 
 .amenity {
 	width: 100%;
