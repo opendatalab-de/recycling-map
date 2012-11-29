@@ -10,8 +10,8 @@ body, html {
 }
 
 h1 {
-	font-size: 20px;
-	margin-bottom: -1em;
+	font-size: 1.5em;
+	margin: 0px;
 }
 
 .amenity-list {
@@ -28,7 +28,6 @@ h1 {
 
 .amenity {
 	width: 100%;
-	margin-top: 2.5em;
 }
 .amenity-name {
 	display: block;

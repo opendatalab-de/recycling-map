@@ -48,10 +48,36 @@
 			rc.openingHours.init();
 			template = Handlebars.compile(document.getElementById('list-template').innerHTML);
 			
+			if (L.Browser.mobile) {
+				this.locateMe();
+			}
+			
 			render();
 			rc.map.on("moveend", function(event) {
 				render(rc.map.getCenter());
 			});
+		},
+		locateMe : function() {
+			var onSuccessHandler = function(position) {
+				render(new L.LatLng(position.coords.latitude, position.coords.longitude));
+			};
+
+			var onErrorHandler = function(error) {
+				if (error.code == 1) {
+					alert("Zugriff auf die Position nicht erlaubt.");
+				} else if (error.code == 2) {
+					alert("Position konnte vom Browser nicht ermittelt werden. "
+							+ "Bitte prüfen Sie, ob Sie den Zugriff auf das GPS aktiviert haben.");
+				} else if (error.core == 3) {
+					alert("Der Browser hat nach 120 Sekunden keine Position geliefert.");
+				}
+			};
+			
+			navigator.geolocation.getCurrentPosition(onSuccessHandler, onErrorHandler, {
+				timeout : 120000,
+				maximumAge : 600000,
+				enableHighAccuracy : true
+			});			
 		}
 	};
 }(rc));
