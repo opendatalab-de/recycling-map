@@ -40,11 +40,17 @@
 					var elem = document.getElementById(this.amenity.id);
 					elem.classList.remove("highlight");
 				});
+				marker.on("click", function() {
+					rc.map.map.setView(this.amenity.pos, 14);
+				});
 				marker.addTo(this.map);
 			}
 		},
 		getCenter : function() {
 			return this.map.getCenter();
+		},
+		setCenter : function(latlng) {
+			return this.map.setView(latlng, 14);
 		},
 		on : function(eventName, handler) {
 			this.map.on(eventName, handler);
