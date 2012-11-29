@@ -55,19 +55,24 @@
 
 			if (L.Browser.mobile) {
 				this.locateMe();
-				document.getElementById('mapToggle').onclick = function() {
-					var mapDisplay = window.getComputedStyle(document.getElementById('map'), null)
-							.getPropertyValue("display");
+				document.getElementById('toggleView').onclick = function() {
+					var mapDisplay = window.getComputedStyle(document.getElementById('map'), null).getPropertyValue("display");
 
 					if (mapDisplay == "none") {
+						document.getElementsByClassName('amenity-list')[0].style.display = "none";
 						document.getElementById('map').style.display = "block";
-						document.getElementById('recyclingList').style.display = "none";
+						rc.map.map.invalidateSize();
+						document.getElementsByClassName('icon-map-marker')[0].classList.add('icon-list');
+						document.getElementsByClassName('icon-map-marker')[0].classList.remove('icon-map-marker');
 					} else {
 						document.getElementById('map').style.display = "none";
-						document.getElementById('recyclingList').style.display = "block";
+						document.getElementsByClassName('amenity-list')[0].style.display = "block";
+						document.getElementsByClassName('icon-list')[0].classList.add('icon-map-marker');
+						document.getElementsByClassName('icon-list')[0].classList.remove('icon-list');
 					}
 				};
 			}
+			
 			document.getElementById('locateMe').onclick = function() {
 				rc.list.locateMe();
 			};

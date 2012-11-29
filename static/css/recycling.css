@@ -35,11 +35,14 @@ h1 {
 @media (max-width: 767px) {
 	#map {
 		display: none;
+		z-index: 100;
+		right: 0;
 	}
 }
 
 .amenity {
 	width: 100%;
+	margin-bottom: 1em;
 }
 .amenity-name {
 	display: block;

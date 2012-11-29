@@ -34,7 +34,6 @@
 	
 	<script id="list-template" type="text/x-handlebars-template">
 		<h1>Recyclinghöfe in Heilbronn</h1>
-		<div style="text-align:right"><a href="#" id="locateMe">In meiner Nähe</a>&nbsp;|&nbsp;<a href="http://gonam.de/main/imprint">Impressum</a></div>
 		{{#each amenities}}
 			<div class="amenity" id="{{id}}">
 				<strong class="amenity-name">
@@ -65,6 +64,7 @@
 				</div>
 			</div>
 		{{/each}}
+		<p><a href="http://gonam.de/main/imprint">Impressum</a></p>
 	</script>
 	<script id="compact-offer-template" type="text/x-handlebars-template">
 		{{#if wI}}
