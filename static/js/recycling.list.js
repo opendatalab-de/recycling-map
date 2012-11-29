@@ -45,6 +45,16 @@
 		document.getElementsByClassName('amenity-list')[0].innerHTML = template({
 			amenities : rc.filteredData(rc.map.getCenter())
 		});
+		
+		var focusOnMarker = function(event) {
+			var amenityId = event.target.parentNode.dataset.amenityId;
+			rc.map.focusOnMarker(amenityId);
+		};
+		
+		var amenities = document.getElementsByClassName("recycling-name");
+		for (var x = 0; x < amenities.length;x++) {
+			amenities[x].onclick = focusOnMarker;
+		}
 	};
 
 	rc.list = {

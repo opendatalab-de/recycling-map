@@ -5,6 +5,7 @@
 	var disabledIcon = new L.Icon(_.extend({iconUrl: 'css/images/marker-icon-disabled.png'}, defaultIcon.options));
 	
 	rc.map = {
+		markerMap : {},
 		init: function() {
 			rc.openingHours.init();
 			L.Icon.Default.imagePath = 'css/images';
@@ -44,6 +45,8 @@
 					rc.map.map.setView(this.amenity.pos, 14);
 				});
 				marker.addTo(this.map);
+				
+				this.markerMap[amenity.id] = marker;
 			}
 		},
 		getCenter : function() {
@@ -51,6 +54,9 @@
 		},
 		setCenter : function(latlng) {
 			return this.map.setView(latlng, 14);
+		},
+		focusOnMarker : function(amenityId) {
+			this.setCenter(this.markerMap[amenityId].getLatLng());
 		},
 		on : function(eventName, handler) {
 			this.map.on(eventName, handler);
