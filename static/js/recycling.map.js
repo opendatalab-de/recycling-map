@@ -1,4 +1,4 @@
-(function(rc, _) {
+(function(rc, _, L) {
 	"use strict";
 	
 	var defaultIcon = new L.Icon.Default();
@@ -56,4 +56,4 @@
 			this.map.on(eventName, handler);
 		}
 	};
-}(rc, _));
+}(rc, _, L));

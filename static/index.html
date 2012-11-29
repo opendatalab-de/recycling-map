@@ -16,6 +16,17 @@
 	<![endif]-->
 </head>
 <body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<span class="brand">Recyclinghöfe</span>
+			<ul class="nav">
+				<li class="visible-phone"><a id="toggleView"><i class="icon-map-marker"></i></a></li>
+				<li><a id="locateMe"><i class="icon-screenshot"></i></a></li>
+				<li><a href="http://gonam.de/main/imprint"><i class="icon-info-sign"></i><span class="hidden-phone"> Impressum</span></a></li>
+			</ul>
+		</div>
+	</div>
+
 	<div id="map"></div>
 
 	<div class="amenity-list">
@@ -153,7 +164,6 @@
 		{{/if}}
 	</script>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/underscore.js"></script>
 	<script type="text/javascript" src="js/handlebars.js"></script>
 	<script type="text/javascript" src="js/leaflet.js"></script>
