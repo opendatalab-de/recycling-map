@@ -6354,14 +6354,14 @@
 						"range" : false
 					}, {
 						"weekday" : "Fr",
-						"range" : true
+						"range" : false
 					} ],
-					"wD" : [ 2, 3, 4, 5 ],
+					"wD" : [ 2, 5 ],
 					"tI" : [ {
-						"microdata" : "Tu-Fr 14:00-17:00",
+						"microdata" : "Tu,Fr 14:00-17:00",
 						"from" : "14:00",
 						"to" : "17:00",
-						"wM" : [ [ 2280, 2460 ], [ 3720, 3900 ], [ 5160, 5340 ], [ 6600, 6780 ] ]
+						"wM" : [ [ 2280, 2460 ], [ 6600, 6780 ] ]
 					} ]
 				}, {
 					"cW" : [ {
@@ -6381,7 +6381,7 @@
 					"addr:street" : "Salinenstraße",
 					"addr:zip" : "74177",
 					"name" : "Recyclinghof Bad Friedrichshall Jagstfeld",
-					"opening_hours" : "Tu - Fr  14.00 - 17.00 ;Sa 09.00 - 13.00 "
+					"opening_hours" : "Tu 14.00 - 17.00 ;Fr 14.00 - 17.00 ;Sa 09.00 - 13.00"
 				}
 			},
 			{
