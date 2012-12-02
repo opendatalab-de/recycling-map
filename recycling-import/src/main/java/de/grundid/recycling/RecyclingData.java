@@ -1,17 +1,14 @@
 package de.grundid.recycling;
 
-import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
-
-import de.gonam.openinghours.WeeklyTimeIntervalViewModel;
 
 public class RecyclingData {
 
 	private long nodeId;
 	private double lon;
 	private double lat;
-	private List<WeeklyTimeIntervalViewModel> openingHours;
+	//	private List<WeeklyTimeIntervalViewModel> openingHours;
 	private Map<String, String> keyValues = new TreeMap<String, String>();
 
 	public RecyclingData() {
@@ -55,17 +52,18 @@ public class RecyclingData {
 		keyValues.put(key, value);
 	}
 
-	public List<WeeklyTimeIntervalViewModel> getOpeningHours() {
-		return openingHours;
-	}
-
-	public void setOpeningHours(List<WeeklyTimeIntervalViewModel> openingHours) {
-		this.openingHours = openingHours;
-	}
+	//	public List<WeeklyTimeIntervalViewModel> getOpeningHours() {
+	//		return openingHours;
+	//	}
+	//
+	//	public void setOpeningHours(List<WeeklyTimeIntervalViewModel> openingHours) {
+	//		this.openingHours = openingHours;
+	//	}
 
 	@Override
 	public String toString() {
 		return "Name: " + keyValues.get("name") + " A: " + keyValues.get("amenity") + " T: "
-				+ keyValues.get("recycling_type") + " City: " + keyValues.get("addr:city");
+				+ keyValues.get("recycling_type") + " City: " + keyValues.get("addr:city") + " OH: "
+				+ keyValues.get("opening_hours");
 	}
 }

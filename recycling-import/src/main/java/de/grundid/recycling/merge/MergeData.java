@@ -109,7 +109,7 @@ public class MergeData {
 					for (WeeklyTimeInterval wti : list) {
 						models.add(new WeeklyTimeIntervalViewModel(wti));
 					}
-					data.setOpeningHours(models);
+					//					data.setOpeningHours(models);
 				}
 				catch (Exception e) {
 					System.out.println("IAE: " + openingHours);

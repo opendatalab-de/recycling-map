@@ -1,4 +1,4 @@
-package de.grundid.recycling;
+package de.grundid.border;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -10,24 +10,26 @@ import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
+import de.grundid.ra.JsonOsmModule;
+
 public class Import {
 
 	public static void main(String[] args) {
 		ObjectMapper objectMapper = new ObjectMapper();
-		RecyclingReader recyclingReader = new RecyclingReader();
-		RecyclingConsumer consumer = new RecyclingConsumer();
-		ImportHandler<RecyclingData> importHandler = new ImportHandler<RecyclingData>();
+		objectMapper.registerModule(new JsonOsmModule());
+
+		BorderReader reader = new BorderReader();
+		BorderConsumer consumer = new BorderConsumer();
+		ImportHandler<BorderData> importHandler = new ImportHandler<BorderData>();
 		importHandler.setConsumer(consumer);
-		importHandler.setProducer(recyclingReader);
+		importHandler.setProducer(reader);
 		importHandler.setDefaultQueueSize(100);
 		SimpleImporter importer = new SimpleImporter();
 		importer.run(args[0], importHandler);
 
 		try {
 			FileWriter writer = new FileWriter(new File("import-output.json"));
-
 			ObjectWriter prettyWriter = objectMapper.writer(new DefaultPrettyPrinter());
-
 			writer.write(prettyWriter.writeValueAsString(consumer.getData()));
 			writer.flush();
 			writer.close();
@@ -36,6 +38,6 @@ public class Import {
 			e.printStackTrace();
 		}
 
-		System.out.println("Total Objects: " + recyclingReader.getObjectCount());
+		System.out.println("Total Objects: " + reader.getObjectCount());
 	}
 }

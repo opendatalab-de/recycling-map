@@ -1,5 +1,7 @@
 package de.grundid.recycling;
 
+import static org.springframework.util.StringUtils.*;
+
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -65,8 +67,11 @@ public class RecyclingReader extends BlockingQueueDefaultHandler<RecyclingData> 
 		if (c == 'n') {
 			if (data != null) {
 				Map<String, String> keyValues = data.getKeyValues();
+				String amenity = keyValues.get("amenity");
+				String openingHours = keyValues.get("opening_hours");
 				String recyclingType = keyValues.get("recycling_type");
-				if ("centre".equals(recyclingType) || "center".equals(recyclingType)) {
+				if (isRecyclingCenter(recyclingType)
+						|| isRecyclingAndNotContainerWithOpeningHours(amenity, recyclingType, openingHours)) {
 					try {
 						queue.put(data);
 						objectCount++;
@@ -79,6 +84,14 @@ public class RecyclingReader extends BlockingQueueDefaultHandler<RecyclingData> 
 			else
 				throw new RuntimeException("unexpected node end tag");
 		}
+	}
+
+	private boolean isRecyclingAndNotContainerWithOpeningHours(String amenity, String recyclingType, String openingHours) {
+		return "recycling".equals(amenity) && !"container".equals(recyclingType) && hasText(openingHours);
+	}
+
+	private boolean isRecyclingCenter(String recyclingType) {
+		return "centre".equals(recyclingType) || "center".equals(recyclingType);
 	}
 
 	public long getObjectCount() {

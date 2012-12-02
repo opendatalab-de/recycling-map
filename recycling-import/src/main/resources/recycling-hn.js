@@ -16,7 +16,7 @@
 			"street" : "Salinenstraße",
 			"lat" : 49.23008369,
 			"lon" : 9.19725180,
-			"openingHours" : "Tu - Fr  14.00 - 17.00 ;Sa 09.00 - 13.00 "
+			"openingHours" : "Tu,Fr  14.00 - 17.00 ;Sa 09.00 - 13.00 "
 		},
 		{
 			"name" : "Recyclinghof Bad Friedrichshall Kochendorf",
