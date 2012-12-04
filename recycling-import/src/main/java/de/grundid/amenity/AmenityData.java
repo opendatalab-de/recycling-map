@@ -1,9 +1,13 @@
 package de.grundid.amenity;
 
+import java.util.Date;
+
 public class AmenityData extends OsmObject {
 
 	private float lat;
 	private float lon;
+
+	private Date lastModified;
 
 	public AmenityData(long id, float lat, float lon) {
 		this.id = id;
@@ -17,6 +21,14 @@ public class AmenityData extends OsmObject {
 
 	public float getLon() {
 		return lon;
+	}
+
+	public Date getLastModified() {
+		return lastModified;
+	}
+
+	public void setLastModified(Date lastModified) {
+		this.lastModified = lastModified;
 	}
 
 	@Override

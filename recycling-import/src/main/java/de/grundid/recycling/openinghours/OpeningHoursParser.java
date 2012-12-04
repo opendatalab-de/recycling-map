@@ -31,7 +31,7 @@ public class OpeningHoursParser {
 		DAYS_MAP.put(DayOfWeek.SUNDAY, "Su");
 	}
 
-	public List<WeeklyTimeInterval> parse(String pattern) {
+	public List<WeeklyTimeInterval> parse(String pattern) throws ParseException {
 		List<WeeklyTimeInterval> result = new ArrayList<WeeklyTimeInterval>();
 
 		if (StringUtils.hasText(pattern)) {
@@ -53,17 +53,14 @@ public class OpeningHoursParser {
 				}
 				else {
 					if (takeNext) {
-						try {
-							if (!subPattern.toLowerCase().endsWith("off")) {
+						if (!subPattern.toLowerCase().endsWith("off")) {
+							try {
 								WeeklyTimeInterval wti = parseSingle(subPattern);
 								result.add(wti);
 							}
-						}
-						catch (ParseException e) {
-							System.err.println(e.getMessage());
-						}
-						catch (Exception e) {
-							System.err.println("Cannot parse " + subPattern);
+							catch (IllegalArgumentException e) {
+								throw new ParseException(subPattern, 0);
+							}
 						}
 					}
 				}
