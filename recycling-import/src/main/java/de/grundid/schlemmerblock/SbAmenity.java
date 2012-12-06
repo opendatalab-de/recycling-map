@@ -9,6 +9,7 @@ import org.jsoup.select.Elements;
 
 public class SbAmenity {
 
+	private static final String LAT_LNG_FUNCTION = "new GLatLng(";
 	private String name;
 	private String street;
 	private String zip;
@@ -19,6 +20,8 @@ public class SbAmenity {
 	private String openingHours;
 	private String website;
 	private String menuUrl;
+	private String lat;
+	private String lon;
 
 	public SbAmenity(Document document, String url) {
 		this.url = url;
@@ -33,8 +36,12 @@ public class SbAmenity {
 		this.zip = zipCity.substring(0, 5);
 		this.city = zipCity.substring(6);
 
-		this.openingHours = document.getElementById("container_oeffnungszeiten").child(1).text();
-		this.description = document.getElementById("container_beschreibung").child(1).text().trim();
+		if (document.getElementById("container_oeffnungszeiten") != null) {
+			this.openingHours = document.getElementById("container_oeffnungszeiten").child(1).text();
+		}
+		if (document.getElementById("container_beschreibung") != null) {
+			this.description = document.getElementById("container_beschreibung").child(1).text().trim();
+		}
 
 		for (Element element : document.getElementsByTag("a")) {
 			if ("Webseite besuchen".equals(element.text().trim())) {
@@ -46,7 +53,13 @@ public class SbAmenity {
 		}
 
 		Elements scriptTags = document.getElementsByTag("script");
-		scriptTags.html();
+		int begin = scriptTags.html().indexOf(LAT_LNG_FUNCTION);
+		if (begin > -1) {
+			int end = scriptTags.html().indexOf(")", begin);
+			String[] latLon = scriptTags.html().substring(begin + LAT_LNG_FUNCTION.length(), end).split(",");
+			this.lat = latLon[0].replace("\"", "").trim();
+			this.lon = latLon[1].replace("\"", "").trim();
+		}
 	}
 
 	public String getName() {
@@ -129,4 +142,26 @@ public class SbAmenity {
 		this.menuUrl = menuUrl;
 	}
 
+	public String getLat() {
+		return lat;
+	}
+
+	public void setLat(String lat) {
+		this.lat = lat;
+	}
+
+	public String getLon() {
+		return lon;
+	}
+
+	public void setLon(String lon) {
+		this.lon = lon;
+	}
+
+	@Override
+	public String toString() {
+		return "SbAmenity [name=" + name + ", street=" + street + ", zip=" + zip + ", city=" + city + ", tel=" + tel
+				+ ", url=" + url + ", website=" + website + ", menuUrl=" + menuUrl + ", lat=" + lat + ", lon=" + lon
+				+ "]";
+	}
 }

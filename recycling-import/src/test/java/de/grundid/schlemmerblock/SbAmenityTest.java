@@ -48,5 +48,7 @@ public class SbAmenityTest {
 				"Im La Toscana erwarten Sie eine große Auswahl italienischer Spezialitäten, eine gemütliche Atmosphäre und ein Team, das es versteht, seine Gäste zu verwöhnen.",
 				amenity.getDescription());
 		assertEquals("http://www.la-toscana.de/speisekarte/speisekarte.pdf", amenity.getMenuUrl());
+		assertEquals("49.1343", amenity.getLat());
+		assertEquals("9.21925", amenity.getLon());
 	}
 }
