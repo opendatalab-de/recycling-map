@@ -5,42 +5,52 @@ import static org.junit.Assert.*;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.URL;
 import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.junit.Test;
-
-import com.gargoylesoftware.htmlunit.StringWebResponse;
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HTMLParser;
-import com.gargoylesoftware.htmlunit.html.HtmlElement;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
 public class DetailListGrabberTest {
 
+	private List<String> links = Arrays.asList("http://www.schlemmerblock.de/Gutschein/Arsenal-Kino-Tuebingen_64009",
+			"http://www.schlemmerblock.de/Gutschein/Atelier-Kino-Tuebingen_64010",
+			"http://www.schlemmerblock.de/Gutschein/Atelier-Kino-Tuebingen_64010",
+			"http://www.schlemmerblock.de/Gutschein/Zimmertheater-Tuebingen-Tuebingen_64011",
+			"http://www.schlemmerblock.de/Gutschein/Zimmertheater-Tuebingen-Tuebingen_64011",
+			"http://www.schlemmerblock.de/Gutschein/Kinder-und-Jugendtheater-am-LTT-Tuebingen_64007",
+			"http://www.schlemmerblock.de/Gutschein/Landestheater-Wuerttemberg-Hohenzollern-Tuebingen_64006",
+			"http://www.schlemmerblock.de/Gutschein/Landestheater-Wuerttemberg-Hohenzollern-Tuebingen_64006",
+			"http://www.schlemmerblock.de/Gutschein/Mike-s-Stocherkahnfahrten-Tuebingen_64008",
+			"http://www.schlemmerblock.de/Gutschein/Bowling-Sportcenter-Rottenburg-Rottenburg_63998",
+			"http://www.schlemmerblock.de/Gutschein/Bowling-Sportcenter-Rottenburg-Rottenburg_63999");
+
+	private DetailListGrabber grabber = new DetailListGrabber();
+
 	@Test
 	public void testGetUrls() throws Exception {
-		DetailListGrabber grabber = new DetailListGrabber();
-
-		WebClient webClient = new WebClient();
-		webClient.setJavaScriptEnabled(false);
-
 		String data = loadFile("Regionsuche.htm");
-		URL url = new URL("http://www.schlemmerblock.de/Regionsuche");
-		StringWebResponse webResponse = new StringWebResponse(data, url);
-		//		HtmlPage htmlPage = webClient.getPage(url);
+		Document document = Jsoup.parse(data);
+		List<String> list = grabber.parsePage(document);
+		assertEquals(125, list.size());
 
-		HtmlPage htmlPage = HTMLParser.parseHtml(webResponse, webClient.getCurrentWindow());
-		//		HtmlPage htmlPage = new HtmlPage(url, webResponse, webClient.getCurrentWindow());
+	}
 
-		HtmlElement body = htmlPage.getBody();
-		System.out.println(body);
+	@Test
+	public void testGetDetailUrls() throws Exception {
+		String data = loadFile("Augsburg-2013_1119.htm");
+		Document document = Jsoup.parse(data);
+		List<String> list = grabber.parseRegionPage(document);
+		assertEquals(81, list.size());
+	}
 
-		List<String> list = grabber.parsePage(htmlPage);
-
-		assertEquals(20, list.size());
-
+	@Test
+	public void testFilterDoubles() throws Exception {
+		List<String> filteredList = grabber.filterDoubles(new ArrayList<String>(links));
+		assertEquals(7, filteredList.size());
 	}
 
 	private String loadFile(String filename) {
