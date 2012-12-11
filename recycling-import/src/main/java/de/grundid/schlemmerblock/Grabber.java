@@ -14,11 +14,13 @@ import de.grundid.ra.JsonOsmModule;
 import de.grundid.recycling.ResourceUtils;
 import de.grundid.utils.GrabUtils;
 
-public class Grabber {
+public class Grabber
+{
 
 	private static final Logger log = Logger.getLogger(Grabber.class.getName());
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException
+	{
 		DetailListGrabber detailListGrabber = new DetailListGrabber();
 		//		List<String> detailUrls = detailListGrabber.getUrls();
 		//		detailListGrabber.filterDoubles(detailUrls);
@@ -34,11 +36,19 @@ public class Grabber {
 
 		log.info("grabbing " + detailUrlsList.size() + " amenities");
 		List<SbAmenity> amenities = new ArrayList<SbAmenity>();
-		for (String detailUrl : detailUrlsList) {
+		for (String detailUrl : detailUrlsList)
+		{
 			log.info("parsing " + detailUrl);
-			SbAmenity amenity = new SbAmenity(Jsoup.connect(detailUrl).get(), detailUrl);
-			amenities.add(amenity);
-			log.info(amenity.toString());
+			try
+			{
+				SbAmenity amenity = new SbAmenity(Jsoup.connect(detailUrl).get(), detailUrl);
+				amenities.add(amenity);
+				log.info(amenity.toString());
+			}
+			catch (Exception e)
+			{
+				log.error("error parsing " + detailUrl);
+			}
 		}
 		log.info(amenities.size());
 		GrabUtils.writeJsonObject(amenities, "import-schlemmerblock-details.json");
