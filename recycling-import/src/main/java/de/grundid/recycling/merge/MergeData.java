@@ -11,9 +11,9 @@ import org.springframework.util.StringUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import de.gonam.openinghours.OpeningHoursJsonModule;
 import de.gonam.openinghours.WeeklyTimeInterval;
 import de.gonam.openinghours.WeeklyTimeIntervalViewModel;
+import de.gonam.openinghours.json.OpeningHoursJsonModule;
 import de.grundid.recycling.RecyclingData;
 import de.grundid.recycling.openinghours.OpeningHoursParser;
 
