@@ -2,8 +2,8 @@ package de.grundid.recycling.openinghours;
 
 import java.util.Set;
 
-import de.gonam.openinghours.DayOfWeek;
-import de.gonam.openinghours.TimeInterval;
+import de.gonam.api.openinghours.DayOfWeek;
+import de.gonam.api.openinghours.TimeInterval;
 
 public class WeekDaysTimeInterval {
 

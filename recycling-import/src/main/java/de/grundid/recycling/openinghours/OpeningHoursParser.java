@@ -12,9 +12,9 @@ import java.util.Set;
 import org.joda.time.LocalTime;
 import org.springframework.util.StringUtils;
 
-import de.gonam.openinghours.DayOfWeek;
-import de.gonam.openinghours.TimeInterval;
-import de.gonam.openinghours.WeeklyTimeInterval;
+import de.gonam.api.openinghours.DayOfWeek;
+import de.gonam.api.openinghours.TimeInterval;
+import de.gonam.api.openinghours.WeeklyTimeInterval;
 
 public class OpeningHoursParser {
 
