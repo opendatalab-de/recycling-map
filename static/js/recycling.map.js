@@ -1,33 +1,54 @@
 (function(rc, _, L) {
 	"use strict";
-	
+
 	var defaultIcon = new L.Icon.Default();
-	var disabledIcon = new L.Icon(_.extend({iconUrl: 'css/images/marker-icon-disabled.png'}, defaultIcon.options));
-	
+	var disabledIcon = new L.Icon(_.extend({
+		iconUrl : 'css/images/marker-icon-disabled.png'
+	}, defaultIcon.options));
+
+	var weekdayColors = {
+		"Mo" : "#BE3030",
+		"Di" : "#849E71",
+		"Mi" : "#DF8430",
+		"Do" : "#488C13",
+		"Fr" : "#4A6D87",
+		"Sa" : "#1B55C0",
+		"So" : "#E9B104"
+	};
+
 	rc.map = {
 		markerMap : {},
-		init: function() {
+		init : function() {
 			rc.openingHours.init();
 			L.Icon.Default.imagePath = 'css/images';
-			
+
 			this.map = L.map('map', {
-				maxZoom: 18,
-				attributionControl: false
-			}).setView([49.15, 9.22], 11);
-			
-			this.map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-                maxZoom: 18
-			}));
-			
+				maxZoom : 18,
+				attributionControl : false
+			}).setView([ 49.15, 9.22 ], 11);
+
+			L
+					.tileLayer(
+							'http://{s}.tile.cloudmade.com/036a729cf53d4388a8ec345e1543ef53/44094/256/{z}/{x}/{y}.png',
+							{
+								'maxZoom' : 18
+							}).addTo(this.map);
+
+			/*
+			 * this.map.addLayer(new L.TileLayer(
+			 * 'http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+			 * maxZoom : 18 }));
+			 */
 			new L.Control.Attribution({
-				position: 'bottomleft'
+				position : 'bottomleft'
 			}).addTo(this.map);
-			
+
 			var data = rc.filteredData(this.map.getCenter());
-			for (var index in data) {
+			for ( var index in data) {
 				var amenity = data[index];
 				var marker = new L.Marker(amenity.pos, {
-					icon: rc.openingHours.isOpen(amenity.openingHours) ? defaultIcon : disabledIcon
+					icon : rc.openingHours.isOpen(amenity.openingHours) ? defaultIcon
+							: disabledIcon
 				});
 				marker.amenity = amenity;
 				marker.bindPopup(rc.openingHours.today(amenity.openingHours));
@@ -45,9 +66,53 @@
 					rc.map.map.setView(this.amenity.pos, 14);
 				});
 				marker.addTo(this.map);
-				
+
 				this.markerMap[amenity.id] = marker;
 			}
+			this.addGemeinden(this.map);
+		},
+		findGemeindeGarbage : function(name) {
+			for ( var x = 0; x < garbage.length; x++) {
+				if (garbage[x].name == name) {
+					return garbage[x];
+				}
+			}
+		},
+		addGemeinden : function(map) {
+			var that = this;
+			L
+					.geoJson(
+							gemeinden,
+							{
+								style : function(feature) {
+									var garbage = that.findGemeindeGarbage(feature.properties.Name);
+									if (garbage) {
+										return {
+											color : weekdayColors[garbage.rm],
+											weight : 1
+										};
+									} else
+										return {
+											color : '#000000',
+											stroke : false
+										};
+								},
+								onEachFeature : function(feature, layer) {
+									var garbage = that.findGemeindeGarbage(feature.properties.Name);
+									var popup = "<h3>" + feature.properties.Name + "</h3>";
+									if (garbage) {
+										popup += "<div>Restmüll: <b>" + garbage.rm
+												+ "</b> Biomüll: <b>" + garbage.bm + "</b></div>";
+										popup += "<div>Genaue Abfuhrtermine entnehmen Sie bitte Ihrem "
+												+ "<a href='http://www.landkreis-heilbronn.de/sixcms/media.php/103/"
+												+ garbage.download
+												+ "'>"
+												+ "Müllabfuhrkalender</a>";
+									}
+
+									layer.bindPopup(popup);
+								}
+							}).addTo(map);
 		},
 		getCenter : function() {
 			return this.map.getCenter();
