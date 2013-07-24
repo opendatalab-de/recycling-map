@@ -22,28 +22,42 @@
 			rc.openingHours.init();
 			L.Icon.Default.imagePath = 'css/images';
 
+			var APIKey = "036a729cf53d4388a8ec345e1543ef53";
+			var cloudmadeLayer = L.tileLayer('http://{s}.tile.cloudmade.com/' + APIKey
+					+ '/44094/256/{z}/{x}/{y}.png', {
+				'maxZoom' : 18
+			});
+
 			this.map = L.map('map', {
 				maxZoom : 18,
-				attributionControl : false
+				attributionControl : false,
+				layers : [ cloudmadeLayer ]
 			}).setView([ 49.15, 9.22 ], 11);
 
-			L
-					.tileLayer(
-							'http://{s}.tile.cloudmade.com/036a729cf53d4388a8ec345e1543ef53/44094/256/{z}/{x}/{y}.png',
-							{
-								'maxZoom' : 18
-							}).addTo(this.map);
-
-			/*
-			 * this.map.addLayer(new L.TileLayer(
-			 * 'http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-			 * maxZoom : 18 }));
-			 */
 			new L.Control.Attribution({
 				position : 'bottomleft'
 			}).addTo(this.map);
 
+			var gemeindenLayer = this.createGemeindenLayer();
+			var recyclingLayer = this.createRecyclingLayer();
+			recyclingLayer.addTo(this.map);
+			gemeindenLayer.addTo(this.map);
+
+			var baseMaps = {
+				"Standard" : cloudmadeLayer
+			};
+
+			var overlayMaps = {
+				"Recycling-Höfe" : recyclingLayer,
+				"Abfahrtstermine" : gemeindenLayer
+			};
+
+			L.control.layers(baseMaps, overlayMaps).addTo(this.map);
+
+		},
+		createRecyclingLayer : function() {
 			var data = rc.filteredData(this.map.getCenter());
+			var markers = [];
 			for ( var index in data) {
 				var amenity = data[index];
 				var marker = new L.Marker(amenity.pos, {
@@ -65,11 +79,12 @@
 				marker.on("click", function() {
 					rc.map.map.setView(this.amenity.pos, 14);
 				});
-				marker.addTo(this.map);
+				markers.push(marker);
 
 				this.markerMap[amenity.id] = marker;
 			}
-			this.addGemeinden(this.map);
+
+			return L.layerGroup(markers);
 		},
 		findGemeindeGarbage : function(name) {
 			for ( var x = 0; x < garbage.length; x++) {
@@ -78,9 +93,9 @@
 				}
 			}
 		},
-		addGemeinden : function(map) {
+		createGemeindenLayer : function() {
 			var that = this;
-			L
+			return L
 					.geoJson(
 							gemeinden,
 							{
@@ -112,7 +127,7 @@
 
 									layer.bindPopup(popup);
 								}
-							}).addTo(map);
+							});
 		},
 		getCenter : function() {
 			return this.map.getCenter();

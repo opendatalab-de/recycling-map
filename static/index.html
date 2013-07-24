@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Öffnungszeiten aller Recyclinghöfe in Stadt und LK Heilbronn</title>
+	<title>Öffnungszeiten aller Recyclinghöfe und Müllabfuhrtermine im LK Heilbronn</title>
 	<meta name="description" content="Tagesaktuelle Anzeige der Öffnungszeiten und Adressen aller Recyclinghöfe in Stadt und Landkreis Heilbronn mit Darstellung auf einer Karte und mobiler Suche in meiner Nähe">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link rel="image_src" href="http://recycling.gonam.de/recycling_gonam.de.jpg">
-	<meta property="og:title" content="Öffnungszeiten aller Recyclinghöfe in Stadt und LK Heilbronn"/>
+	<link rel="image_src" href="http://opendatalab.de/recycling-map/screen.jpg">
+	<meta property="og:title" content="Öffnungszeiten aller Recyclinghöfe und Müllabfuhrtermine im LK Heilbronn"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="http://recycling.gonam.de"/>
-	<meta property="og:image" content="http://recycling.gonam.de/recycling_gonam.de.jpg"/>
+	<meta property="og:url" content="http://opendatalab.de/recycling-map"/>
+	<meta property="og:image" content="http://opendatalab.de/recycling-map/screen.jpg"/>
 	<meta property="og:description" content="Tagesaktuelle Anzeige der Öffnungszeiten und Adressen aller Recyclinghöfe in Stadt und Landkreis Heilbronn mit Darstellung auf einer Karte und mobiler Suche in meiner Nähe."/>
 	
 	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
@@ -24,11 +24,11 @@
 <body>
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
-			<span class="brand">Recyclinghöfe</span>
+			<span class="brand">Recyclinghöfe/Abfuhrtermine</span>
 			<ul class="nav">
 				<li class="visible-phone"><a id="toggleView" title="Zwischen Karte und Liste umschalten"><i class="icon-map-marker"></i></a></li>
 				<li><a id="locateMe" title="in meiner Nähe"><i class="icon-screenshot"></i><span class="hidden-phone"> in meiner Nähe</span></a></li>
-				<li><a href="http://gonam.de/main/imprint" title="Impressum"><i class="icon-info-sign"></i><span class="hidden-phone"> Impressum</span></a></li>
+				<li><a href="http://blog.opendatalab.de/imprint.html" title="Impressum"><i class="icon-info-sign"></i><span class="hidden-phone"> Impressum</span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		{{/each}}
-		<p><a href="http://gonam.de/main/imprint">Impressum</a></p>
+		<p><a href="http://blog.opendatalab.de/imprint.html">Impressum</a></p>
 	</script>
 	<script id="compact-offer-template" type="text/x-handlebars-template">
 		{{#if wI}}
