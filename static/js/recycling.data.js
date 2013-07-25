@@ -3324,7 +3324,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1550587519,
 			"lon": 9.274093,
 			"lat": 50.2076375,
@@ -3338,7 +3339,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1551426184,
 			"lon": 7.2475368,
 			"lat": 51.2961385,
@@ -3348,7 +3350,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1557367714,
 			"lon": 10.8867813,
 			"lat": 49.9783369,
@@ -3357,7 +3360,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1558993556,
 			"lon": 12.3770139,
 			"lat": 48.3042159,
@@ -3373,7 +3377,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1559390154,
 			"lon": 10.6224455,
 			"lat": 47.8001691,
@@ -3387,7 +3392,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1564124283,
 			"lon": 11.0107135,
 			"lat": 51.0147507,
@@ -3396,7 +3402,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1566128889,
 			"lon": 11.9305331,
 			"lat": 48.2417666,
@@ -3416,7 +3423,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1567007645,
 			"lon": 10.7402584,
 			"lat": 53.7059859,
@@ -3429,7 +3437,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1568024866,
 			"lon": 12.9693847,
 			"lat": 47.8442999,
@@ -3440,7 +3449,8 @@
 				"recycling:glass_bottles": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1574331673,
 			"lon": 8.3294742,
 			"lat": 50.8365287,
@@ -3452,7 +3462,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1576969443,
 			"lon": 9.0206972,
 			"lat": 53.3600418,
@@ -3464,7 +3475,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1577506737,
 			"lon": 6.8785412,
 			"lat": 51.4448911,
@@ -3482,7 +3494,8 @@
 				"recycling_type": "centre",
 				"website": "http://www.mheg.de/cms/recyclinghof1.html"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1577936168,
 			"lon": 9.47803617,
 			"lat": 49.09236798,
@@ -3520,7 +3533,8 @@
 				"addr:street": "neben dem Rathaus",
 				"opening_hours": "Apr-Sep;Fr 11.00 - 12.00  ; 14.00 - 17.00 ;Oct-Mar;Fr 11.00 - 12.00 ; 13.00 - 16.00  ;Ganzjährig ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 1580678610,
 			"lon": 8.3898958,
 			"lat": 49.0261886,
@@ -3531,7 +3545,8 @@
 				"recycling:waste": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1581241737,
 			"lon": 12.5958557,
 			"lat": 49.0018629,
@@ -3541,7 +3556,8 @@
 				"name": "Wertstoffhof Falkenfels",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1582354984,
 			"lon": 12.0163202,
 			"lat": 50.9309586,
@@ -3607,7 +3623,8 @@
 				"recycling_type": "centre",
 				"website": "http://www.gud-gera.de/recyclinghoefe/"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1583703133,
 			"lon": 10.258167,
 			"lat": 53.3924004,
@@ -3636,7 +3653,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1584804227,
 			"lon": 12.174045,
 			"lat": 49.4445551,
@@ -3646,7 +3664,8 @@
 				"name": "Wertstoffhof Nabburg",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1587635873,
 			"lon": 9.1601912,
 			"lat": 50.0586687,
@@ -3677,7 +3696,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1589118513,
 			"lon": 9.4639434,
 			"lat": 51.2737565,
@@ -3694,7 +3714,8 @@
 				"recycling_type": "centre",
 				"website": "http://www.stadtreiniger.de"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1594942587,
 			"lon": 9.1990767,
 			"lat": 49.9581655,
@@ -3704,7 +3725,8 @@
 				"name": "Bauhof Haibach",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1596462644,
 			"lon": 8.9650431,
 			"lat": 50.0488799,
@@ -3714,7 +3736,8 @@
 				"name": "Recylinghof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1596834616,
 			"lon": 8.6905191,
 			"lat": 52.2756741,
@@ -3744,7 +3767,8 @@
 				"recycling:wood": "no",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1600282955,
 			"lon": 7.8059423,
 			"lat": 48.1311043,
@@ -3783,7 +3807,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1603751848,
 			"lon": 10.756375,
 			"lat": 49.1047388,
@@ -3792,7 +3817,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1607990523,
 			"lon": 8.3170048,
 			"lat": 47.6341769,
@@ -3839,7 +3865,8 @@
 				"opening_hours": "We 13:00-16:00; Fr 15:00-17:00; Sa 09:00-16:00",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1611557764,
 			"lon": 9.9197204,
 			"lat": 48.5233489,
@@ -3870,7 +3897,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1620494664,
 			"lon": 10.1416717,
 			"lat": 49.6683351,
@@ -3891,7 +3919,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1624152112,
 			"lon": 9.2044624,
 			"lat": 47.783568,
@@ -3901,7 +3930,8 @@
 				"name": "Füllenwaid",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1624224443,
 			"lon": 10.6024461,
 			"lat": 49.5782709,
@@ -3911,7 +3941,8 @@
 				"name": "Wertstoffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1628543276,
 			"lon": 11.8151829,
 			"lat": 49.092567,
@@ -3921,7 +3952,8 @@
 				"name": "Wertstoffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1629691105,
 			"lon": 9.7401263,
 			"lat": 51.5358545,
@@ -3951,7 +3983,8 @@
 				"recycling:wood": "no",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1630778706,
 			"lon": 11.881405,
 			"lat": 49.0702165,
@@ -3961,7 +3994,8 @@
 				"name": "Wertstoffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1634969352,
 			"lon": 10.8980831,
 			"lat": 48.4200308,
@@ -4009,7 +4043,8 @@
 				"opening_hours": "Mo-Fr 08:00-12:00,13:00-16:00; Sa 09:00-12:00",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1634969359,
 			"lon": 10.9169285,
 			"lat": 48.3727068,
@@ -4077,7 +4112,8 @@
 				"opening_hours": "Mo-We 08:00-15:00; Th 08:00-18:00; Fr 08:00-12:00; Sa 09:00-13:00",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1636236888,
 			"lon": 13.2482643,
 			"lat": 52.4294024,
@@ -4089,7 +4125,8 @@
 				"recycling_type": "centre",
 				"website": "http://www.bsr.de/8853.html"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1639621524,
 			"lon": 10.1754156,
 			"lat": 53.5575719,
@@ -4120,7 +4157,8 @@
 				"recycling:wood": "no",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1639685172,
 			"lon": 10.4114822,
 			"lat": 53.7993291,
@@ -4151,7 +4189,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1643656701,
 			"lon": 12.4139325,
 			"lat": 51.3414054,
@@ -4195,7 +4234,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1644232911,
 			"lon": 12.4109506,
 			"lat": 51.3469806,
@@ -4206,7 +4246,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1646981263,
 			"lon": 12.3036944,
 			"lat": 51.6312255,
@@ -4219,7 +4260,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1648410093,
 			"lon": 13.0596968,
 			"lat": 48.7660111,
@@ -4229,7 +4271,8 @@
 				"name": "ZAW Hengersberg",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1649361182,
 			"lon": 11.2006767,
 			"lat": 49.1621381,
@@ -4279,7 +4322,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1653158256,
 			"lon": 10.0833068,
 			"lat": 50.1511868,
@@ -4288,7 +4332,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1653236484,
 			"lon": 9.7725933,
 			"lat": 49.9741675,
@@ -4297,7 +4342,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1659161951,
 			"lon": 6.8158627,
 			"lat": 50.9889392,
@@ -4307,7 +4353,8 @@
 				"name": "Fa. Steinhaus Metallrecycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1660867580,
 			"lon": 7.1046992,
 			"lat": 53.4293922,
@@ -4319,7 +4366,8 @@
 				"recycling:electrical_appliances": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1661041540,
 			"lon": 12.1207893,
 			"lat": 49.2663427,
@@ -4329,7 +4377,8 @@
 				"name": "Grüngutannahmestelle",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1662249038,
 			"lon": 8.764173,
 			"lat": 49.6438107,
@@ -4349,7 +4398,8 @@
 				"recycling:white_goods": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1675530437,
 			"lon": 6.8864922,
 			"lat": 49.40443,
@@ -4379,7 +4429,8 @@
 				"recycling:wood": "no",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1676576019,
 			"lon": 12.2933424,
 			"lat": 47.9062504,
@@ -4389,7 +4440,8 @@
 				"name": "Wertstoffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1680934375,
 			"lon": 7.9789496,
 			"lat": 51.0047067,
@@ -4398,7 +4450,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1685925618,
 			"lon": 8.9283212,
 			"lat": 50.173965,
@@ -4409,7 +4462,8 @@
 				"recycling:glass_bottles": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1697375636,
 			"lon": 13.3290638,
 			"lat": 48.8491736,
@@ -4419,7 +4473,8 @@
 				"name": "Recyclinghof-Schönberg",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1703493595,
 			"lon": 10.5565311,
 			"lat": 49.8877707,
@@ -4429,7 +4484,8 @@
 				"name": "Wertsotffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1704834180,
 			"lon": 11.2539493,
 			"lat": 51.7261428,
@@ -4442,7 +4498,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1705230027,
 			"lon": 11.1900587,
 			"lat": 47.6054038,
@@ -4469,7 +4526,8 @@
 				"recycling:wood": "no",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1705705996,
 			"lon": 8.2848134,
 			"lat": 47.6190886,
@@ -4520,7 +4578,8 @@
 				"recycling_type": "centre",
 				"website": "http://www.abfall-landkreis-waldshut.de"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1706160407,
 			"lon": 8.6479668,
 			"lat": 49.8878064,
@@ -4541,7 +4600,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1707674690,
 			"lon": 11.2650843,
 			"lat": 50.119322,
@@ -4551,7 +4611,8 @@
 				"name": "Wertstoffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1710220403,
 			"lon": 8.8673668,
 			"lat": 52.8056084,
@@ -4582,7 +4643,8 @@
 				"recycling:wood": "no",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1717092728,
 			"lon": 8.4241324,
 			"lat": 49.2593585,
@@ -4594,7 +4656,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1720923705,
 			"lon": 8.1633792,
 			"lat": 47.908868,
@@ -4604,7 +4667,8 @@
 				"name": "RAZ Hochschwarzwald",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1730302784,
 			"lon": 10.3091147,
 			"lat": 49.3633283,
@@ -4619,7 +4683,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1730520090,
 			"lon": 13.2577731,
 			"lat": 52.3797262,
@@ -4629,7 +4694,8 @@
 				"name": "Schrottannahme",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1731528342,
 			"lon": 12.3892237,
 			"lat": 47.9297545,
@@ -4649,7 +4715,8 @@
 				"recycling:waste": "no",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1735194118,
 			"lon": 8.8517162,
 			"lat": 50.0674809,
@@ -4658,7 +4725,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1741217225,
 			"lon": 10.2184265,
 			"lat": 49.3711161,
@@ -4674,7 +4742,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1745851923,
 			"lon": 9.9130813,
 			"lat": 53.8581007,
@@ -4696,7 +4765,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1751757504,
 			"lon": 11.3721199,
 			"lat": 48.5000741,
@@ -4705,7 +4775,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1757278126,
 			"lon": 9.1074521,
 			"lat": 48.7233229,
@@ -4729,7 +4800,8 @@
 				"recycling:clothes": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1761636929,
 			"lon": 11.5087192,
 			"lat": 48.0417377,
@@ -4739,7 +4811,8 @@
 				"name": "Wertstoffhof Gemeinde Pullach",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1762428643,
 			"lon": 8.1593089,
 			"lat": 52.3366064,
@@ -4749,7 +4822,8 @@
 				"name": "AWIGO Grünülatz Vehrte",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1763116066,
 			"lon": 12.13848,
 			"lat": 47.9922896,
@@ -4759,7 +4833,8 @@
 				"name": "Wertstoffhof Rott",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767673830,
 			"lon": 11.2072612,
 			"lat": 48.7315832,
@@ -4774,7 +4849,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767676098,
 			"lon": 11.2627646,
 			"lat": 48.7562463,
@@ -4789,7 +4865,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767689251,
 			"lon": 11.0337471,
 			"lat": 48.6932743,
@@ -4804,7 +4881,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767690731,
 			"lon": 11.1149141,
 			"lat": 48.6941872,
@@ -4819,7 +4897,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767692248,
 			"lon": 11.1626526,
 			"lat": 48.6885501,
@@ -4834,7 +4913,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767700686,
 			"lon": 11.4104393,
 			"lat": 48.6737253,
@@ -4849,7 +4929,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767706614,
 			"lon": 11.2861741,
 			"lat": 48.6935413,
@@ -4864,7 +4945,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767708013,
 			"lon": 11.2934007,
 			"lat": 48.6766499,
@@ -4879,7 +4961,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767711573,
 			"lon": 11.0658979,
 			"lat": 48.618082,
@@ -4894,7 +4977,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767715666,
 			"lon": 11.1821166,
 			"lat": 48.6412917,
@@ -4909,7 +4993,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767716687,
 			"lon": 11.2593567,
 			"lat": 48.6330357,
@@ -4924,7 +5009,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767718288,
 			"lon": 11.3146031,
 			"lat": 48.6275421,
@@ -4939,7 +5025,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767724052,
 			"lon": 11.1579144,
 			"lat": 48.6116471,
@@ -4954,7 +5041,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767724059,
 			"lon": 11.1991603,
 			"lat": 48.6083387,
@@ -4969,7 +5057,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767725874,
 			"lon": 11.1834575,
 			"lat": 48.5827041,
@@ -4984,7 +5073,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767728015,
 			"lon": 11.2967643,
 			"lat": 48.5706461,
@@ -4999,7 +5089,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767728365,
 			"lon": 11.34554,
 			"lat": 48.5813417,
@@ -5014,7 +5105,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767728953,
 			"lon": 11.2059578,
 			"lat": 48.5442504,
@@ -5030,7 +5122,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767729514,
 			"lon": 11.2660701,
 			"lat": 48.5452751,
@@ -5045,7 +5138,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767729680,
 			"lon": 11.2814644,
 			"lat": 48.5362338,
@@ -5060,7 +5154,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767730340,
 			"lon": 11.2227518,
 			"lat": 48.5330327,
@@ -5075,7 +5170,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1767742363,
 			"lon": 11.1017675,
 			"lat": 48.7168184,
@@ -5090,7 +5186,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1772608993,
 			"lon": 9.9198447,
 			"lat": 48.3523985,
@@ -5156,7 +5253,8 @@
 				"operator": "EBU Ulm",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1773557495,
 			"lon": 10.7106379,
 			"lat": 49.5560378,
@@ -5166,7 +5264,8 @@
 				"name": "Wertstoffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1774942020,
 			"lon": 10.5601766,
 			"lat": 48.5117091,
@@ -5175,7 +5274,8 @@
 				"amenity": "recycling",
 				"recycling_type": "center"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1779731607,
 			"lon": 12.6557994,
 			"lat": 49.2563579,
@@ -5184,7 +5284,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1782389826,
 			"lon": 8.1691885,
 			"lat": 47.821716,
@@ -5194,7 +5295,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1782942259,
 			"lon": 8.1643869,
 			"lat": 47.821342,
@@ -5204,7 +5306,8 @@
 				"name:de": "Grünschnittsammelstelle",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1784177404,
 			"lon": 8.777837,
 			"lat": 50.0015716,
@@ -5238,7 +5341,8 @@
 				"recycling_type": "centre",
 				"website": "http://www.dietzenbach.de/index.phtml?mNavID=1799.187&sNavID=1799.187&La=1"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1790310242,
 			"lon": 12.4001808,
 			"lat": 47.8937632,
@@ -5253,7 +5357,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1797002836,
 			"lon": 11.7754452,
 			"lat": 48.6232566,
@@ -5263,7 +5368,8 @@
 				"name": "Wertstoffhof Stadt Mainburg",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1798044418,
 			"lon": 9.8321682,
 			"lat": 50.589909,
@@ -5275,7 +5381,8 @@
 				"recycling:glass": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1799975552,
 			"lon": 12.1901772,
 			"lat": 48.5639042,
@@ -5285,7 +5392,8 @@
 				"name": "Koslow Recycling Werk 2 - Bauschutt",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1800248667,
 			"lon": 9.5932381,
 			"lat": 53.5061711,
@@ -5296,7 +5404,8 @@
 				"recycling:green_waste": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1803626212,
 			"lon": 10.3335557,
 			"lat": 49.3327933,
@@ -5311,7 +5420,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1811340952,
 			"lon": 9.3834154,
 			"lat": 53.1156916,
@@ -5326,7 +5436,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1817408315,
 			"lon": 12.8637494,
 			"lat": 48.2292989,
@@ -5335,7 +5446,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1819295751,
 			"lon": 12.1086502,
 			"lat": 48.5491788,
@@ -5345,7 +5457,8 @@
 				"name": "Wertstoffhof Landshut",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1819593834,
 			"lon": 12.7346613,
 			"lat": 53.3014523,
@@ -5355,7 +5468,8 @@
 				"opening_hours": "nur Fusion Festival",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1819593835,
 			"lon": 12.7337906,
 			"lat": 53.3048381,
@@ -5367,7 +5481,8 @@
 				"operator": "DRK",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1819593836,
 			"lon": 12.7463853,
 			"lat": 53.3053657,
@@ -5377,7 +5492,8 @@
 				"opening_hours": "nur Fusion Festival",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1819593837,
 			"lon": 12.743209,
 			"lat": 53.3071318,
@@ -5387,7 +5503,8 @@
 				"opening_hours": "nur Fusion Festival",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1819593838,
 			"lon": 12.7410997,
 			"lat": 53.3094473,
@@ -5397,7 +5514,8 @@
 				"opening_hours": "nur Fusion Festival",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1819593840,
 			"lon": 12.7576432,
 			"lat": 53.3096671,
@@ -5407,7 +5525,8 @@
 				"opening_hours": "nur Fusion Festival",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1823286070,
 			"lon": 9.1455618,
 			"lat": 48.9223141,
@@ -5416,7 +5535,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1826254623,
 			"lon": 10.9374765,
 			"lat": 47.8904017,
@@ -5430,7 +5550,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1826499408,
 			"lon": 11.8500487,
 			"lat": 49.7567789,
@@ -5442,7 +5563,8 @@
 				"recycling:paper": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1828061613,
 			"lon": 8.9038927,
 			"lat": 50.409148,
@@ -5452,7 +5574,8 @@
 				"name": "Entsorgungszentrum Wetterau",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1828475310,
 			"lon": 11.656761,
 			"lat": 48.2504884,
@@ -5461,7 +5584,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1832892864,
 			"lon": 9.5191081,
 			"lat": 51.1681847,
@@ -5478,7 +5602,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1837597847,
 			"lon": 8.1959723,
 			"lat": 49.9547816,
@@ -5487,7 +5612,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1837655714,
 			"lon": 12.27165,
 			"lat": 51.3105648,
@@ -5508,7 +5634,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1837720509,
 			"lon": 12.3129022,
 			"lat": 51.6152722,
@@ -5520,7 +5647,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1843206422,
 			"lon": 10.0826268,
 			"lat": 48.1850994,
@@ -5535,7 +5663,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1846094795,
 			"lon": 12.27165,
 			"lat": 51.3105648,
@@ -5556,7 +5685,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1847055643,
 			"lon": 10.5419806,
 			"lat": 50.0006807,
@@ -5566,7 +5696,8 @@
 				"name": "Werstoffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1855428568,
 			"lon": 9.7463674,
 			"lat": 52.1213976,
@@ -5576,7 +5707,8 @@
 				"name": "Wertstoffhof Elze",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1856298595,
 			"lon": 9.0066923,
 			"lat": 52.3855101,
@@ -5586,7 +5718,8 @@
 				"name": "Recycling-Platz Meyer Büchenberg (geöffnet freitags)",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1860575768,
 			"lon": 12.9117115,
 			"lat": 47.7360954,
@@ -5596,7 +5729,8 @@
 				"name": "Wertstoffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1861170866,
 			"lon": 11.7551065,
 			"lat": 52.1387247,
@@ -5611,7 +5745,8 @@
 				"recycling:paper_packaging": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1862293297,
 			"lon": 6.2660099,
 			"lat": 51.3035061,
@@ -5621,7 +5756,8 @@
 				"recycling:batteries": "no",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1864792362,
 			"lon": 11.043672,
 			"lat": 50.9692941,
@@ -5633,7 +5769,8 @@
 				"recycling:paper": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1872860505,
 			"lon": 10.8792587,
 			"lat": 48.273012,
@@ -5644,7 +5781,8 @@
 				"recycling_type": "centre",
 				"website": "http://www.koenigsbrunn.de/index.php?id=82,101"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1875929926,
 			"lon": 14.5990474,
 			"lat": 51.0821272,
@@ -5654,7 +5792,8 @@
 				"name": "EGLZ mbH",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1878069520,
 			"lon": 11.9095552,
 			"lat": 51.1735653,
@@ -5684,7 +5823,8 @@
 				"recycling:waste": "no",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1879072189,
 			"lon": 11.7475179,
 			"lat": 48.3327955,
@@ -5713,7 +5853,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1884579139,
 			"lon": 9.2295166,
 			"lat": 53.980475,
@@ -5723,7 +5864,8 @@
 				"name": "Wertstoffhof",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1884910372,
 			"lon": 9.4395334,
 			"lat": 47.8582818,
@@ -5753,7 +5895,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1885038928,
 			"lon": 12.1183046,
 			"lat": 49.0892157,
@@ -5763,7 +5906,8 @@
 				"name": "Wertstoffhof Zeitlarn",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1887935391,
 			"lon": 8.6592144,
 			"lat": 53.6155332,
@@ -5781,7 +5925,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1890105557,
 			"lon": 12.325129,
 			"lat": 49.8305103,
@@ -5791,7 +5936,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1890169625,
 			"lon": 7.8073573,
 			"lat": 47.9873545,
@@ -5841,7 +5987,8 @@
 				"recycling:metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1890232684,
 			"lon": 11.9082266,
 			"lat": 48.0694776,
@@ -5851,7 +5998,8 @@
 				"name": "Wertstoffhof Kirchseeon",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1893462784,
 			"lon": 10.2061058,
 			"lat": 49.3493178,
@@ -5869,7 +6017,8 @@
 				"recycling:wood": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1897797921,
 			"lon": 10.6896514,
 			"lat": 53.8876304,
@@ -5882,7 +6031,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1901096129,
 			"lon": 13.1011554,
 			"lat": 52.3669368,
@@ -5895,7 +6045,8 @@
 				"recycling:glass_bottles": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1902182612,
 			"lon": 7.4230615,
 			"lat": 49.9620635,
@@ -5904,7 +6055,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1903905705,
 			"lon": 7.5352176,
 			"lat": 51.9471471,
@@ -5919,7 +6071,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1906135532,
 			"lon": 8.3677362,
 			"lat": 49.570521,
@@ -5928,7 +6081,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1906800935,
 			"lon": 10.6135783,
 			"lat": 49.7645235,
@@ -5943,7 +6097,8 @@
 				"recycling:scrap_metal": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1910308658,
 			"lon": 10.5271753,
 			"lat": 48.2971611,
@@ -5952,7 +6107,8 @@
 				"amenity": "recycling",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1912536379,
 			"lon": 10.6140983,
 			"lat": 53.8606337,
@@ -5962,7 +6118,8 @@
 				"name": "otto dörner",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1912536382,
 			"lon": 10.5999193,
 			"lat": 53.8573194,
@@ -5972,7 +6129,8 @@
 				"name": "remondis",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1915195065,
 			"lon": 13.6264039,
 			"lat": 51.0444245,
@@ -5983,7 +6141,8 @@
 				"recycling:green_waste": "yes",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1929199800,
 			"lon": 12.5334643,
 			"lat": 48.82306,
@@ -6030,7 +6189,8 @@
 				"operator": "ZAW-SR",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 1936380818,
 			"lon": 8.6719791,
 			"lat": 49.2116671,
@@ -6041,7 +6201,8 @@
 				"name": "Bauhof Bad Schönborn",
 				"recycling_type": "centre"
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.29324269,
 			"lat": 49.07874682,
@@ -6077,7 +6238,8 @@
 				"name": "Recyclinghof Abstatt",
 				"opening_hours": "Th 15.30 - 18.30  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.1972518,
 			"lat": 49.23008369,
@@ -6116,7 +6278,8 @@
 				"name": "Recyclinghof Bad Friedrichshall Jagstfeld",
 				"opening_hours": "Tu 14.00 - 17.00 ;Fr 14.00 - 17.00 ;Sa 09.00 - 13.00"
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.22636986,
 			"lat": 49.21016812,
@@ -6155,7 +6318,8 @@
 				"name": "Recyclinghof Bad Friedrichshall Kochendorf",
 				"opening_hours": "We 14.00 - 17.00  ;Fr 14.00 - 17.00  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.08231378,
 			"lat": 49.23575136,
@@ -6203,7 +6367,8 @@
 				"name": "Recyclinghof Bad Rappenau",
 				"opening_hours": "Apr-Sep;Tu 16.00 - 19.00  ;Oct-Mar;Tu 15.00 - 18.00 ;Ganzjährig ;Fr 14.00 - 17.00  ;Sa 09.00 - 12.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.18231726,
 			"lat": 49.23024133,
@@ -6239,7 +6404,8 @@
 				"name": "Recyclinghof Bad Wimpfen",
 				"opening_hours": "Apr-Sep;Fr 14.00 - 17.00 ;Oct-Mar;Fr 14.00 - 16.00 ;Ganzjährig ;Sa 09.00 - 14.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.31433558,
 			"lat": 49.0358458,
@@ -6287,7 +6453,8 @@
 				"name": "Recyclinghof Beilstein",
 				"opening_hours": "Th 16.00 - 18.00  ;Fr 14.00 - 17.00  ;Sa 09.00 - 12.30 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.05981541,
 			"lat": 49.08364834,
@@ -6335,7 +6502,8 @@
 				"name": "Recyclinghof Brackenheim",
 				"opening_hours": "Apr-Sep;Tu 16.00 - 19.00  ;Oct-Mar;Tu 14.00 - 16.00 ;Ganzjährig;Fr 14.00 - 17.00  ;Sa 09.00 - 12.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.03035402,
 			"lat": 49.03999902,
@@ -6371,7 +6539,8 @@
 				"name": "Recyclinghof Cleebronn",
 				"opening_hours": "Fr 14.00 - 16.00  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.33056831,
 			"lat": 49.18941713,
@@ -6415,7 +6584,8 @@
 				"name": "Recyclinghof Eberstadt",
 				"opening_hours": "Mo - Fr 7.45 - 12.00;Mo - Fr 13.00 - 16.30  ;Sa 9.00 - 11.30 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.3133378,
 			"lat": 49.1537275,
@@ -6451,7 +6621,8 @@
 				"name": "Recyclinghof Ellhofen",
 				"opening_hours": "Fr 15.00 - 18.00 ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 8.91347408,
 			"lat": 49.139502,
@@ -6493,7 +6664,8 @@
 				"name": "Recyclinghof Eppingen",
 				"opening_hours": "Tu 14.00 - 18.00 ;Th 14.00 - 18.00 ;Fr 14.00 - 18.00 ;Sa 09.00 - 15.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 8.83244991,
 			"lat": 49.1797923,
@@ -6517,7 +6689,8 @@
 				"name": "Recyclinghof Eppingen Elsenz",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 8.96936059,
 			"lat": 49.09592285,
@@ -6541,7 +6714,8 @@
 				"name": "Recyclinghof Eppingen Kleingartach",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 8.89476299,
 			"lat": 49.104981,
@@ -6565,7 +6739,8 @@
 				"name": "Recyclinghof Eppingen Mühlbach",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.27241266,
 			"lat": 49.16512179,
@@ -6601,7 +6776,8 @@
 				"name": "Recyclinghof Erlenbach",
 				"opening_hours": "Fr 16.00 - 18.00  ;Sa 09.00 - 13.00 ;Ganzjährig"
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.20688629,
 			"lat": 49.1015778,
@@ -6640,7 +6816,8 @@
 				"name": "Recyclinghof Flein",
 				"opening_hours": "Apr-Sep;Th 16.00 - 18.00 ;Fr 14.00 - 17.00  ;Oct-Mar;Th 14.00 - 16.00 ;Fr 14.00 - 16.00 ;Ganzjährig ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 8.98905873,
 			"lat": 49.1502294,
@@ -6676,7 +6853,8 @@
 				"name": "Recyclinghof Gemmingen",
 				"opening_hours": "Apr-Sep;Fr 14.00 - 18.00  ;Oct-Mar;Fr 14.00 - 17.00 ;Ganzjährig ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.15977597,
 			"lat": 49.27500088,
@@ -6712,7 +6890,8 @@
 				"name": "Recyclinghof Gundelsheim",
 				"opening_hours": "Fr 14.00 - 17.00  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.00275946,
 			"lat": 49.06274939,
@@ -6748,7 +6927,8 @@
 				"name": "Recyclinghof Güglingen",
 				"opening_hours": "Fr 13.00 - 17.00  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.37303305,
 			"lat": 49.24510265,
@@ -6772,7 +6952,8 @@
 				"name": "Recyclinghof Hardthausen Gochsen",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.26701069,
 			"lat": 49.054239,
@@ -6811,7 +6992,8 @@
 				"name": "Recyclinghof Ilsfeld",
 				"opening_hours": "Th 14.00 - 18.00 ;Fr 14.00 - 18.00 ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 8.93419147,
 			"lat": 49.1864019,
@@ -6847,7 +7029,8 @@
 				"name": "Recyclinghof Ittlingen",
 				"opening_hours": "Tu 15.30 - 18.00  ;Sa 8.00 - 12.30 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.46763724,
 			"lat": 49.3098983,
@@ -6871,7 +7054,8 @@
 				"name": "Recyclinghof Jagsthausen",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 8.98809314,
 			"lat": 49.20878733,
@@ -6907,7 +7091,8 @@
 				"name": "Recyclinghof Kirchardt",
 				"opening_hours": "Apr-Sep;Tu 16.00 - 19.00 ;Oct-Mar ;Tu 14.00 - 17.00 ;Ganzjährig ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.16127801,
 			"lat": 49.06315009,
@@ -6931,7 +7116,8 @@
 				"name": "Recyclinghof Langenbrettach",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.16162133,
 			"lat": 49.06316415,
@@ -6970,7 +7156,8 @@
 				"name": "Recyclinghof Lauffen am Neckar",
 				"opening_hours": "Apr-Sep;Th 16.00 - 18.00 ;Fr 16.00 - 18.00  ;Oct-Mar;Th 15.00 - 17.00 ;Fr 15.00 - 17  ;Ganzjährig ;Sa 09.00 - 16.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.13125873,
 			"lat": 49.1478469,
@@ -7018,7 +7205,8 @@
 				"name": "Recyclinghof Leingarten",
 				"opening_hours": "Apr-Sep;Tu 16.00 - 19.00  ;Oct-Mar;Tu 14.00 - 16.00  ;Fr 14.00 - 17.00  ;Sa 09.00 - 12.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.37555969,
 			"lat": 49.09305298,
@@ -7042,7 +7230,8 @@
 				"name": "Recyclinghof Löwenstein Obermühle",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.04024601,
 			"lat": 49.171807,
@@ -7078,7 +7267,8 @@
 				"name": "Recyclinghof Massenbachhausen",
 				"opening_hours": "Apr-Sep;Sa 08.00 - 12.00  ;Oct-Mar;Sa 09.00 - 13.00 ;Ganzjährig;Fr 14.00 - 17.00  "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.35291648,
 			"lat": 49.32874407,
@@ -7126,7 +7316,8 @@
 				"name": "Recyclinghof Möckmühl",
 				"opening_hours": "Apr-Sep;We 16.00 - 19.00 ;Oct-Mar;We 13.00 - 16.00;Ganzjährig ;Fr 14.00 - 17.00  ;Sa 09.00 - 12.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.21941757,
 			"lat": 49.18139306,
@@ -7174,7 +7365,8 @@
 				"name": "Recyclinghof Neckarsulm",
 				"opening_hours": "Tu 16.30 - 19.00  ;Fr 14.00 - 17.00  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.20304,
 			"lat": 49.19192734,
@@ -7210,7 +7402,8 @@
 				"name": "Recyclinghof Neckarsulm Obereisesheim",
 				"opening_hours": "Apr-Sep;We 16.00 - 19.00 ;Oct-Mar;We 13.00 - 16 ;Ganzjährig ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.19985354,
 			"lat": 49.04273833,
@@ -7246,7 +7439,8 @@
 				"name": "Recyclinghof Neckarwestheim",
 				"opening_hours": "Fr 14.00 - 17.00  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.26421046,
 			"lat": 49.28773888,
@@ -7282,7 +7476,8 @@
 				"name": "Recyclinghof Neudenau",
 				"opening_hours": "Apr-Sep;We 16.30 - 19.00 ;Oct-Mar;We 14.00 - 17.00 ;Ganzjährig ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.328299,
 			"lat": 49.232683,
@@ -7330,7 +7525,8 @@
 				"name": "Recyclinghof Neuenstadt am Kocher",
 				"opening_hours": "We 14.00 - 18.30  ;Fr 14.00 - 17.00  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.12920952,
 			"lat": 49.11188853,
@@ -7378,7 +7574,8 @@
 				"name": "Recyclinghof Nordheim",
 				"opening_hours": "Tu 17.00 - 19.00 ;Fr 14.00 - 18.00 ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.24611628,
 			"lat": 49.24760303,
@@ -7414,7 +7611,8 @@
 				"name": "Recyclinghof Oedheim",
 				"opening_hours": "Apr-Sep;Fr 16.00 - 18.00 ;Oct-Mar;Fr 14.00 - 16.00 ;Ganzjährig ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.16478634,
 			"lat": 49.24236399,
@@ -7450,7 +7648,8 @@
 				"name": "Recyclinghof Offenau",
 				"opening_hours": "Fr 14.00 - 17.00  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 8.97158682,
 			"lat": 49.0654031,
@@ -7474,7 +7673,8 @@
 				"name": "Recyclinghof Pfaffenhofen",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.33880806,
 			"lat": 49.35876631,
@@ -7498,7 +7698,8 @@
 				"name": "Recyclinghof Roigheim",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.02198553,
 			"lat": 49.1165094,
@@ -7542,7 +7743,8 @@
 				"name": "Recyclinghof Schwaigern Stetten a. H.",
 				"opening_hours": "Mo - Fr 7.45 - 12.00  ;Mo - Fr 13.00 - 16.30  ;Sa 09.00 - 11.30 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.18506384,
 			"lat": 49.09899276,
@@ -7578,7 +7780,8 @@
 				"name": "Recyclinghof Talheim",
 				"opening_hours": "Apr-Sep;Fr 15.00 - 18.00 ;Oct-Mar;Fr 14.00 - 16.00 ;Ganzjährig ;Sa 9.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.20752466,
 			"lat": 49.20702098,
@@ -7614,7 +7817,8 @@
 				"name": "Recyclinghof Untereisesheim",
 				"opening_hours": "Apr-Sep;We 16.30 - 19.00 ;Oct-Mar;We 14.30 - 16.30 ;Ganzjährig ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.27901089,
 			"lat": 49.08625526,
@@ -7653,7 +7857,8 @@
 				"name": "Recyclinghof Untergruppenbach",
 				"opening_hours": "Apr-Sep;Th 16.30 - 19.00 ;Oct-Mar;Th 14.30 - 17.00 ;Ganzjährig ;Fr 14.30 - 17.00  ;Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.28548574,
 			"lat": 49.160965,
@@ -7701,7 +7906,8 @@
 				"name": "Recyclinghof Weinsberg",
 				"opening_hours": "Th 16.00 - 19.00  ;Fr 15.00 - 18.00  ;Sa 09.00 - 12.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 9.42074418,
 			"lat": 49.3153872,
@@ -7725,7 +7931,8 @@
 				"name": "Recyclinghof Widdern",
 				"opening_hours": "Sa 09.00 - 13.00 "
 			}
-		}, {
+		},
+		{
 			"nodeId": 0,
 			"lon": 8.92850518,
 			"lat": 49.06429594,
@@ -7760,6 +7967,371 @@
 				"addr:zip": "74374",
 				"name": "Recyclinghof Zaberfeld",
 				"opening_hours": "Fr 13.30 - 16.30  ;Sa 09.00 - 13.00 "
+			}
+		},
+		{
+			"nodeId": 0,
+			"lon": 9.1543465,
+			"lat": 49.1893046,
+			"openingHours": [{
+				"cW": [{
+					"weekday": "Di",
+					"range": false
+				}],
+				"wD": [2],
+				"tI": [{
+					"microdata": "Di 14:00-18:00",
+					"from": "14:00",
+					"to": "18:00",
+					"wM": [[2280, 2520]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Sa",
+					"range": false
+				}],
+				"wD": [6],
+				"tI": [{
+					"microdata": "Sa 08:00-16:00",
+					"from": "08:00",
+					"to": "16:00",
+					"wM": [[7680, 8160]]
+				}]
+			}],
+			"keyValues": {
+				"city": "Biberach",
+				"addr:street": "Heisenbergstraße",
+				"addr:zip": "74078",
+				"name": "Recyclinghof Biberach (ehemalige Kläranlage)",
+				"opening_hours": "Tu 14.00 - 18.00  ;Sa 08.00 - 16.00 "
+			}
+		},
+		{
+			"nodeId": 0,
+			"lon": 9.1936959,
+			"lat": 49.1379502,
+			"openingHours": [{
+				"cW": [{
+					"weekday": "Di",
+					"range": false
+				}],
+				"wD": [2],
+				"tI": [{
+					"microdata": "Di 08:00-12:00",
+					"from": "08:00",
+					"to": "12:00",
+					"wM": [[1920, 2160]]
+				}, {
+					"microdata": "Di 14:00-18:00",
+					"from": "14:00",
+					"to": "18:00",
+					"wM": [[2280, 2520]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Fr",
+					"range": false
+				}],
+				"wD": [5],
+				"tI": [{
+					"microdata": "Fr 14:00-18:00",
+					"from": "14:00",
+					"to": "18:00",
+					"wM": [[6600, 6840]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Sa",
+					"range": false
+				}],
+				"wD": [6],
+				"tI": [{
+					"microdata": "Sa 08:00-16:00",
+					"from": "08:00",
+					"to": "16:00",
+					"wM": [[7680, 8160]]
+				}]
+			}],
+			"keyValues": {
+				"city": "Böckingen",
+				"addr:street": "Leonhardstraße 29",
+				"addr:zip": "74080",
+				"name": "Recyclinghof Böckingen",
+				"opening_hours": "Tu 08.00-12.00,14:00-18:00  ;Fr 14.00 - 18.00  ;Sa 08.00 - 16.00"
+			}
+		},
+		{
+			"nodeId": 0,
+			"lon": 9.173057417898697,
+			"lat": 49.118399065273614,
+			"openingHours": [{
+				"cW": [{
+					"weekday": "Mi",
+					"range": false
+				}],
+				"wD": [3],
+				"tI": [{
+					"microdata": "Mi 14:00-18:00",
+					"from": "14:00",
+					"to": "18:00",
+					"wM": [[3720, 3960]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Sa",
+					"range": false
+				}],
+				"wD": [6],
+				"tI": [{
+					"microdata": "Sa 08:00-16:00",
+					"from": "08:00",
+					"to": "16:00",
+					"wM": [[7680, 8160]]
+				}]
+			}],
+			"keyValues": {
+				"city": "Horkheim",
+				"addr:street": "Untere Kanalstraße 17",
+				"addr:zip": "74081",
+				"name": "Recyclinghof Horkheim",
+				"opening_hours": "Mi 14.00 - 18.00  ;Sa 08.00 - 16.00"
+			}
+		},
+		{
+			"nodeId": 0,
+			"lon": 9.178260903394838,
+			"lat": 49.164056158608005,
+			"openingHours": [{
+				"cW": [{
+					"weekday": "Mo",
+					"range": false
+				}, {
+					"weekday": "Mi",
+					"range": false
+				}, {
+					"weekday": "Fr",
+					"range": false
+				}],
+				"wD": [1, 3, 5],
+				"tI": [{
+					"microdata": "Mo, Mi, Fr 14:00-18:00",
+					"from": "14:00",
+					"to": "18:00",
+					"wM": [[840, 1080], [3720, 3960], [6600, 6840]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Sa",
+					"range": false
+				}],
+				"wD": [6],
+				"tI": [{
+					"microdata": "Sa 08:00-16:00",
+					"from": "08:00",
+					"to": "16:00",
+					"wM": [[7680, 8160]]
+				}]
+			}],
+			"keyValues": {
+				"city": "Frankenbach",
+				"addr:street": "Würzburger Straße 47",
+				"addr:zip": "74087",
+				"name": "Recyclinghof Frankenbach",
+				"opening_hours": "Mo 14.00 - 18.00  ;Mi 14.00 - 18.00  ;Fr 14.00 - 18.00"
+			}
+		},
+		{
+			"nodeId": 0,
+			"lon": 9.215436320324846,
+			"lat": 49.16097273444539,
+			"openingHours": [{
+				"cW": [{
+					"weekday": "Mi",
+					"range": false
+				}],
+				"wD": [3],
+				"tI": [{
+					"microdata": "Mi 08:00-12:00",
+					"from": "08:00",
+					"to": "12:00",
+					"wM": [[3360, 3600]]
+				}, {
+					"microdata": "Mi 13:00-16:00",
+					"from": "13:00",
+					"to": "16:00",
+					"wM": [[3660, 3840]]
+				}]
+			}],
+			"keyValues": {
+				"city": "Heilbronn",
+				"addr:street": "Salzstraße 136",
+				"addr:zip": "74076",
+				"name": "Recyclinghof Heilbronn-Nord (Betriebsamt)",
+				"opening_hours": "Mi 08.00-12.00,13.00-16.00"
+			}
+		},
+		{
+			"nodeId": 0,
+			"lon": 9.240177016287047,
+			"lat": 49.13984313396777,
+			"openingHours": [{
+				"cW": [{
+					"weekday": "Mi",
+					"range": false
+				}],
+				"wD": [3],
+				"tI": [{
+					"microdata": "Mi 14:00-18:00",
+					"from": "14:00",
+					"to": "18:00",
+					"wM": [[3720, 3960]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Do",
+					"range": false
+				}],
+				"wD": [4],
+				"tI": [{
+					"microdata": "Do 08:00-12:00",
+					"from": "08:00",
+					"to": "12:00",
+					"wM": [[4800, 5040]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Fr",
+					"range": false
+				}],
+				"wD": [5],
+				"tI": [{
+					"microdata": "Fr 14:00-18:00",
+					"from": "14:00",
+					"to": "18:00",
+					"wM": [[6600, 6840]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Sa",
+					"range": false
+				}],
+				"wD": [6],
+				"tI": [{
+					"microdata": "Sa 08:00-16:00",
+					"from": "08:00",
+					"to": "16:00",
+					"wM": [[7680, 8160]]
+				}]
+			}],
+			"keyValues": {
+				"city": "Heilbronn",
+				"addr:street": "Im Wannental 2",
+				"addr:zip": "74074",
+				"name": "Recyclinghof Heilbronn-Ost",
+				"opening_hours": "Mi 14.00 - 18.00  ;Do 08.00 - 12.00  ; Fr 14.00 - 18.00  ; Sa 08.00 - 16.00"
+			}
+		},
+		{
+			"nodeId": 0,
+			"lon": 9.217614274056093,
+			"lat": 49.122608577035194,
+			"openingHours": [{
+				"cW": [{
+					"weekday": "Mo",
+					"range": false
+				}],
+				"wD": [1],
+				"tI": [{
+					"microdata": "Mo 08:00-12:00",
+					"from": "08:00",
+					"to": "12:00",
+					"wM": [[480, 720]]
+				}, {
+					"microdata": "Mo 14:00-18:00",
+					"from": "14:00",
+					"to": "18:00",
+					"wM": [[840, 1080]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Fr",
+					"range": false
+				}],
+				"wD": [5],
+				"tI": [{
+					"microdata": "Fr 08:00-12:00",
+					"from": "08:00",
+					"to": "12:00",
+					"wM": [[6240, 6480]]
+				}, {
+					"microdata": "Fr 14:00-18:00",
+					"from": "14:00",
+					"to": "18:00",
+					"wM": [[6600, 6840]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Sa",
+					"range": false
+				}],
+				"wD": [6],
+				"tI": [{
+					"microdata": "Sa 08:00-16:00",
+					"from": "08:00",
+					"to": "16:00",
+					"wM": [[7680, 8160]]
+				}]
+			}],
+			"keyValues": {
+				"city": "Heilbronn",
+				"addr:street": "Lise-Meitner-Straße 18",
+				"addr:zip": "74074",
+				"name": "Recyclinghof Heilbronn-Süd (Schwabenhof)",
+				"opening_hours": "Mo 08.00-12.00,14.00-18.00  ;Fr 08.00-12.00,14.00-18.00  ; Sa 08.00 - 16.00"
+			}
+		},
+		{
+			"nodeId": 0,
+			"lon": 9.2514861,
+			"lat": 49.1592965,
+			"openingHours": [{
+				"cW": [{
+					"weekday": "Mo",
+					"range": false
+				}, {
+					"weekday": "Fr",
+					"range": true
+				}],
+				"wD": [1, 2, 3, 4, 5],
+				"tI": [{
+					"microdata": "Mo-Fr 08:00-12:00",
+					"from": "08:00",
+					"to": "12:00",
+					"wM": [[480, 720], [1920, 2160], [3360, 3600], [4800, 5040], [6240, 6480]]
+				}, {
+					"microdata": "Mo-Fr 13:00-16:30",
+					"from": "13:00",
+					"to": "16:30",
+					"wM": [[780, 990], [2220, 2430], [3660, 3870], [5100, 5310], [6540, 6750]]
+				}]
+			}, {
+				"cW": [{
+					"weekday": "Sa",
+					"range": false
+				}],
+				"wD": [6],
+				"tI": [{
+					"microdata": "Sa 08:00-12:00",
+					"from": "08:00",
+					"to": "12:00",
+					"wM": [[7680, 7920]]
+				}]
+			}],
+			"keyValues": {
+				"city": "Wartberg",
+				"addr:zip": "74076",
+				"name": "Deponie Vogelsang",
+				"opening_hours": "Mo 08.00-12.00,13.00-16.30  ;Di 08.00-12.00,13.00-16.30  ;Mi 08.00-12.00,13.00-16.30  ;Do 08.00-12.00,13.00-16.30  ;Fr 08.00-12.00,13.00-16.30  ;Sa 08.00 - 12.00"
 			}
 		}];
 
