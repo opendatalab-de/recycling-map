@@ -41,7 +41,6 @@
 	var template;
 	var render = function() {
 		var center = (rc.map.getZoom() < 12) ? null : rc.map.getCenter();
-		console.log(center);
 		document.getElementsByClassName('amenity-list')[0].innerHTML = template({
 			amenities: rc.filteredData(center)
 		});
