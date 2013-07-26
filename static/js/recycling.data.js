@@ -8337,6 +8337,8 @@
 
 	var filtered = [];
 	rc.filteredData = function(centerPos) {
+		var mapBounds = new L.LatLngBounds(new L.LatLng(48.95226830218508, 8.66546630859375), new L.LatLng(49.34659884833296, 9.775085449218748));
+
 		if (filtered.length === 0) {
 			var id = 0;
 			for ( var index in rc.data) {
@@ -8345,7 +8347,7 @@
 					reData.pos = new L.LatLng(reData.lat, reData.lon);
 					reData.id = "id" + id++;
 
-					if (rc.map.getBounds().contains(reData.pos)) {
+					if (mapBounds.contains(reData.pos)) {
 						filtered.push(reData);
 					}
 				}
