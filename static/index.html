@@ -26,7 +26,7 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<span class="navbar-brand">Recyclinghöfe / Abfuhrtermine HN 2014</span>
+				<span class="navbar-brand">Recyclinghöfe / Abfuhrtermine Heilbronn 2014</span>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav">
@@ -44,37 +44,42 @@
 	</div>
 	
 	<script id="list-template" type="text/x-handlebars-template">
-		<h1 class="hidden-xs">Abfuhrtermine LK Heilbronn</h1>
-		<p class="hidden-xs">Ein Klick auf eine Landkreisfläche in der Karte öffnet einen Dialog mit einem Link zum aktuellen Müllabfuhrkalender.</p>
-		<h1>Recyclinghöfe in Heilbronn</h1>
+		<div class="alert alert-info hidden-xs"><span class="glyphicon glyphicon-info-sign"></span> Abfuhrtermine werden beim Klick auf eine Landkreisfläche angezeigt.</div>
+
 		{{#each amenities}}
-			<div class="amenity" id="{{id}}">
-				<a class="recycling-name" data-amenity-id="{{id}}"><strong class="amenity-name">
-					{{#if keyValues.name}}
-						{{keyValues.name}}
-					{{else}}
-						Recycling
-						{{#if keyValues.city}}
-							in {{keyValues.city}}
-						{{/if}}
-					{{/if}}
-				</strong>
+			<div class="amenity panel {{{panelClass openingHours}}}" id="{{id}}">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+					<a class="recycling-name" data-amenity-id="{{id}}"><strong class="amenity-name">
+						{{#if keyValues.name}}
+							{{keyValues.name}}
+						{{else}}
+							Recycling
+								{{#if keyValues.city}}
+									in {{keyValues.city}}
+								{{/if}}
+							{{/if}}
+						</strong>
+					</h3>
+				</div>
+				<div class="panel-body">
 					<a class="pull-right" href="http://maps.google.com/maps?q={{lat}},{{lon}}&z=15" target="gmap" title="Zu Google Maps"><img src="img/map-link.png" alt="zu Google Maps" /></a>
-				<p class="opening-hours">Öffnungszeiten:</p>
-				{{{compactOffer openingHours}}}
-				{{{countdown openingHours}}}
-				<div class="timeline-container">
-					<div class="timeline-mo">Mo</div>
-					<div class="timeline-tu">Di</div>
-					<div class="timeline-tu-bar"></div>
-					<div class="timeline-we">Mi</div>
-					<div class="timeline-th">Do</div>
-					<div class="timeline-th-bar"></div>
-					<div class="timeline-fr">Fr</div>
-					<div class="timeline-sa">Sa</div>
-					<div class="timeline-sa-bar"></div>
-					{{{timelineWeeklyIntervals openingHours}}}
-					{{{timelineHighlightCurrent}}}
+					
+					{{{compactOffer openingHours}}}
+					{{{countdown openingHours}}}
+					<div class="timeline-container">
+						<div class="timeline-mo">Mo</div>
+						<div class="timeline-tu">Di</div>
+						<div class="timeline-tu-bar"></div>
+						<div class="timeline-we">Mi</div>
+						<div class="timeline-th">Do</div>
+						<div class="timeline-th-bar"></div>
+						<div class="timeline-fr">Fr</div>
+						<div class="timeline-sa">Sa</div>
+						<div class="timeline-sa-bar"></div>
+						{{{timelineWeeklyIntervals openingHours}}}
+						{{{timelineHighlightCurrent}}}
+					</div>
 				</div>
 			</div>
 		{{/each}}

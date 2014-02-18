@@ -2,7 +2,7 @@
 	"use strict";
 
 	var timelineHelper = {
-		factor: 288 / (24 * 60 * 6 - 1),
+		factor: 246 / (24 * 60 * 6 - 1),
 		weeklyIntervals: function(weeklyIntervals) {
 			if (!weeklyIntervals) {
 				return "";
@@ -59,22 +59,20 @@
 
 	var mapWasHidden = false;
 	var toggleView = function() {
-		if (L.Browser.mobile) {
-			var mapDisplay = window.getComputedStyle(document.getElementById('map'), null).getPropertyValue("display");
+		var mapDisplay = window.getComputedStyle(document.getElementById('map'), null).getPropertyValue("display");
 
-			if (mapDisplay == "none") {
-				mapWasHidden = true;
-				document.getElementsByClassName('amenity-list')[0].style.display = "none";
-				document.getElementById('map').style.display = "block";
-				rc.map.map.invalidateSize();
-				document.getElementsByClassName('icon-map-marker')[0].classList.add('icon-list');
-				document.getElementsByClassName('icon-map-marker')[0].classList.remove('icon-map-marker');
-			} else if (mapWasHidden) {
-				document.getElementById('map').style.display = "none";
-				document.getElementsByClassName('amenity-list')[0].style.display = "block";
-				document.getElementsByClassName('icon-list')[0].classList.add('icon-map-marker');
-				document.getElementsByClassName('icon-list')[0].classList.remove('icon-list');
-			}
+		if (mapDisplay == "none") {
+			mapWasHidden = true;
+			document.getElementsByClassName('amenity-list')[0].style.display = "none";
+			document.getElementById('map').style.display = "block";
+			rc.map.map.invalidateSize();
+			document.getElementsByClassName('icon-map-marker')[0].classList.add('icon-list');
+			document.getElementsByClassName('icon-map-marker')[0].classList.remove('icon-map-marker');
+		} else if (mapWasHidden) {
+			document.getElementById('map').style.display = "none";
+			document.getElementsByClassName('amenity-list')[0].style.display = "block";
+			document.getElementsByClassName('icon-list')[0].classList.add('icon-map-marker');
+			document.getElementsByClassName('icon-list')[0].classList.remove('icon-list');
 		}
 	};
 
@@ -86,8 +84,8 @@
 
 			if (L.Browser.mobile) {
 				this.locateMe();
-				document.getElementById('toggleView').onclick = toggleView;
 			}
+			document.getElementById('toggleView').onclick = toggleView;
 
 			document.getElementById('locateMe').onclick = function() {
 				rc.list.locateMe();

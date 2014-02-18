@@ -1,12 +1,12 @@
 (function(rc, _, Handlebars) {
 	'use strict';
-	
+
 	var offerHandler = {
 		getInterval: function(weekday) {
 			var interval = {};
-			if(this.wI) {
+			if (this.wI) {
 				_.each(this.wI, function(currentInterval) {
-					if(_.indexOf(currentInterval.wD, weekday) > -1) {
+					if (_.indexOf(currentInterval.wD, weekday) > -1) {
 						interval = currentInterval;
 					}
 				});
@@ -18,7 +18,7 @@
 			interval.highlight = true;
 		},
 		setPrintMicrodata: function(doPrint) {
-			if(this.wI) {
+			if (this.wI) {
 				_.each(this.wI, function(currentInterval) {
 					currentInterval.printMicrodata = doPrint;
 				});
@@ -29,14 +29,14 @@
 			return this.wI && this.wI.length > 0;
 		},
 		isClosedToday: function() {
-			if(this.wI) {
+			if (this.wI) {
 				var interval = this.getInterval(weekday.getCurrent());
 				return !interval || !interval.tI;
 			}
 			return true;
 		}
 	};
-	
+
 	var proxy = function(target) {
 		return function() {
 			var obj = {
@@ -46,34 +46,34 @@
 			return target.apply(this, arguments);
 		};
 	};
-	
+
 	var weekday = {
-		weekMinuteMap: [1440*6, 0, 1440, 1440*2, 1440*3, 1440*4, 1440*5],
+		weekMinuteMap: [1440 * 6, 0, 1440, 1440 * 2, 1440 * 3, 1440 * 4, 1440 * 5],
 		getCurrent: function() {
 			return new Date().getDay();
 		},
 		forWeekMinute: function(weekMinute) {
-			for(var key = 0; key < this.weekMinuteMap.length; key++) {
+			for ( var key = 0; key < this.weekMinuteMap.length; key++) {
 				var boundaryStart = this.weekMinuteMap[key];
 				var boundaryEnd = this.weekMinuteMap[key] + 1440;
-				if(weekMinute >= boundaryStart && weekMinute < boundaryEnd) {
+				if (weekMinute >= boundaryStart && weekMinute < boundaryEnd) {
 					break;
 				}
 			}
-			
+
 			return key;
 		}
 	};
-	
+
 	var weekMinutes = {
-		max: 24*60*7-1,
+		max: 24 * 60 * 7 - 1,
 		getCurrent: function() {
 			var date = new Date();
 			var dayMultiplier = date.getDay() === 0 ? 6 : date.getDay() - 1;
 			return (dayMultiplier * 1440) + (date.getHours() * 60) + date.getMinutes();
 		},
 		getDiff: function(from, to) {
-			if(to >= from) {
+			if (to >= from) {
 				return to - from;
 			} else {
 				return this.max + 1 - from + to;
@@ -82,16 +82,16 @@
 		getDaysBetween: function(from, to) {
 			var fromDayIndex = weekday.forWeekMinute(from);
 			var toDayIndex = weekday.forWeekMinute(to);
-			
-			if(fromDayIndex <= toDayIndex) {
-				return toDayIndex - fromDayIndex; 
+
+			if (fromDayIndex <= toDayIndex) {
+				return toDayIndex - fromDayIndex;
 			} else {
 				return 7 - fromDayIndex + toDayIndex;
 			}
 		},
 		getNextWeekMinutes: function(offer, current) {
 			var nonstop = false;
-			var undefinedMinute = 24*60*60; 
+			var undefinedMinute = 24 * 60 * 60;
 			var next = {
 				from: {
 					label: '',
@@ -105,7 +105,7 @@
 					return interval[key] > current && interval[key] < this[key].value;
 				},
 				set: function(key, interval, timeInterval) {
-					if(this.isLower(key, interval)) {
+					if (this.isLower(key, interval)) {
 						this[key] = {
 							label: timeInterval[key],
 							value: interval[key]
@@ -119,13 +119,16 @@
 					return interval[key] < this[key].value;
 				}
 			});
-			
+
 			_.each(offer.wI, function(weeklyInterval) {
 				_.each(weeklyInterval.tI, function(timeInterval) {
-					if(timeInterval.wM) {
+					if (timeInterval.wM) {
 						_.each(timeInterval.wM, function(interval) {
-							interval = { from: interval[0], to: interval[1] };
-							if(interval.from === 0 && interval.to >= weekMinutes.max) {
+							interval = {
+								from: interval[0],
+								to: interval[1]
+							};
+							if (interval.from === 0 && interval.to >= weekMinutes.max) {
 								nonstop = true;
 							}
 							lowest.set('to', interval, timeInterval).set('from', interval, timeInterval);
@@ -134,13 +137,12 @@
 					}
 				});
 			});
-			
-			if(next.from.value === undefinedMinute && next.to.value === undefinedMinute) {
+
+			if (next.from.value === undefinedMinute && next.to.value === undefinedMinute) {
 				return null;
-			}
-			else {
+			} else {
 				var result = next.from.value <= next.to.value ? next.from : next.to;
-				if(result.value > weekMinutes.max) {
+				if (result.value > weekMinutes.max) {
 					result = lowest.from.value <= lowest.to.value ? lowest.from : lowest.to;
 				}
 				return {
@@ -155,15 +157,15 @@
 			var next = weekMinutes.getNextWeekMinutes(offer, weekMinutes.getCurrent());
 			return next && next.inInterval ? true : false;
 		}
-	}; 
-	
+	};
+
 	/**
 	 * HELPER
 	 */
 	var templates;
 	var todayHelper = function(offer) {
 		var interval = offer.getInterval(weekday.getCurrent());
-		
+
 		var tmplData = {
 			tI: interval.tI,
 			isClosedToday: offer.isClosedToday(),
@@ -172,24 +174,38 @@
 		tmplData.hasDataForToday = (tmplData.tI || tmplData.isClosedToday) ? true : false;
 		return templates.serviceHoursToday(tmplData);
 	};
-	
+
 	var compactOfferHelper = function(offer) {
 		offer.highlightWeekday(weekday.getCurrent());
 		offer.setPrintMicrodata(true);
-		
-		var tmplData = _.extend({}, offer, { printMicrodata: true });
+
+		var tmplData = _.extend({}, offer, {
+			printMicrodata: true
+		});
 		return templates.compactOffer(tmplData);
 	};
-	
+
+	var panelClassHelper = function(offer) {
+		var current = weekMinutes.getCurrent();
+		var next = weekMinutes.getNextWeekMinutes(offer, current);
+		if (next === null) {
+			return false;
+		}
+
+		var isActive = next.inInterval ? true : false;
+		return isActive ? 'panel-success' : 'panel-default';
+	};
+
 	rc.openingHours = {
 		today: proxy(todayHelper),
 		compactOffer: proxy(compactOfferHelper),
+		panelClass: proxy(panelClassHelper),
 		isOpen: proxy(weekMinutes.isActive),
 		offerHandler: offerHandler,
 		weekMinutes: weekMinutes,
 		weekday: weekday,
 		init: function() {
-			if(!templates) {
+			if (!templates) {
 				Handlebars.registerPartial('timeIntervals', Handlebars.compile(document.getElementById('timeintervals-template').innerHTML));
 				templates = {
 					serviceHoursToday: Handlebars.compile(document.getElementById('service-hours-today-template').innerHTML),
@@ -198,7 +214,8 @@
 			}
 		}
 	};
-	
+
 	Handlebars.registerHelper('serviceHoursToday', rc.openingHours.today);
 	Handlebars.registerHelper('compactOffer', rc.openingHours.compactOffer);
+	Handlebars.registerHelper('panelClass', rc.openingHours.panelClass);
 }(rc, _, Handlebars));
