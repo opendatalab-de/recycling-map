@@ -8,9 +8,6 @@ body, html {
 	left: 0;
 	right: 354px;
 }
-h1 {
-	font-size: 1.25em;
-}
 a {
 	cursor: pointer;
 }
@@ -47,17 +44,6 @@ a {
 	}
 }
 
-.amenity {
-	width: 100%;
-	margin-bottom: 2em;
-}
-.amenity-name {
-	display: block;
-	width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
 .opening-hours {
 	margin: .25em 0 0 0;
 }
@@ -129,5 +115,8 @@ div.timeline-sa {
 	left: 205px;
 }
 .highlight {
-	background-color: #ffffff !important;
+	background-color: #FBFFD6 !important;
+}
+.leaflet-popup-content a {
+	color: #FFF !important;
 }
