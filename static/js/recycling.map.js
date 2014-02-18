@@ -111,9 +111,9 @@
 					var garbage = that.findGemeindeGarbage(feature.properties.Name);
 					var popup = "<h3>" + feature.properties.Name + "</h3>";
 					if (garbage) {
-						popup += "<div>Restmüll: <b>" + garbage.rm + "</b> Biomüll: <b>" + garbage.bm + "</b></div>";
-						popup += "<div>Genaue Abfuhrtermine entnehmen Sie bitte Ihrem " + "<a href='http://www.landkreis-heilbronn.de/sixcms/media.php/103/"
-								+ garbage.download + "'>" + "Müllabfuhrkalender</a>";
+						popup += "<p>Restmüll: <b>" + garbage.rm + "</b><br />Biomüll: <b>" + garbage.bm + "</b></p>";
+						popup += "<p>Genaue Abfuhrtermine entnehmen Sie bitte Ihrem " + "<a href='http://www.landkreis-heilbronn.de/sixcms/media.php/103/"
+								+ garbage.download + "'>" + "Müllabfuhrkalender</a></p>";
 					}
 
 					layer.bindPopup(popup);
