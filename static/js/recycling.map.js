@@ -1,10 +1,14 @@
 (function(rc, _, L) {
 	"use strict";
 
-	var defaultIcon = new L.Icon.Default();
-	var disabledIcon = new L.Icon(_.extend({
-		iconUrl: 'css/images/marker-icon-disabled.png'
-	}, defaultIcon.options));
+	var defaultIcon = L.AwesomeMarkers.icon({
+		icon: 'trash',
+		markerColor: 'green'
+	});
+	var disabledIcon = L.AwesomeMarkers.icon({
+		icon: 'trash',
+		markerColor: 'red'
+	});
 
 	var weekdayColors = {
 		"Mo": "#BE3030",

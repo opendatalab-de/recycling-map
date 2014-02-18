@@ -12,10 +12,7 @@ body, html {
 h1 {
 	font-size: 1.25em;
 }
-.navbar span.brand {
-	margin-left: 5px;
-}
-.navbar a {
+a {
 	cursor: pointer;
 }
 

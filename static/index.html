@@ -18,9 +18,6 @@
 	<link type="text/css" href="css/leaflet.css" rel="stylesheet" />
 	<link type="text/css" href="css/recycling.css" rel="stylesheet" />
 	<link type="text/css" href="css/leaflet.awesome-markers.css" rel="stylesheet">
-	<!--[if gte IE 8]>
-		<link type="text/css" href="css/leaflet.ie.css" rel="stylesheet" />
-	<![endif]-->
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -151,7 +148,7 @@
 				{{/if}}
 			</span>
 		{{else}}
-			<span class="countdown text-warning">
+			<span class="countdown text-danger">
 				{{#if getsActiveToday}}
 					öffnet in {{> countdownMinutes}}
 				{{else}}
@@ -188,7 +185,7 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/underscore.js"></script>
 	<script type="text/javascript" src="js/handlebars.js"></script>
-	<script type="text/javascript" src="js/leaflet.js"></script>
+	<script type="text/javascript" src="js/leaflet-src.js"></script>
 	<script type="text/javascript" src="js/leaflet.awesome-markers.js"></script>
 	<script type="text/javascript" src="js/heilbronn.js"></script>
 	<script type="text/javascript" src="js/gemeinden.js"></script>
