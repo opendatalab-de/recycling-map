@@ -37,26 +37,15 @@
 				layers: [cloudmadeLayer]
 			}).setView([49.15, 9.22], 11);
 
+			var attribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>, Geodaten: <a href="http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=0&gdz_user_id=0">Geodatenzentrum</a>, alle Angaben ohne Gewähr!';
 			new L.Control.Attribution({
 				position: 'bottomleft'
-			}).addTo(this.map);
+			}).addAttribution(attribution).addTo(this.map);
 
 			var gemeindenLayer = this.createGemeindenLayer();
 			var recyclingLayer = this.createRecyclingLayer();
 			recyclingLayer.addTo(this.map);
 			gemeindenLayer.addTo(this.map);
-
-			var baseMaps = {
-				"Standard": cloudmadeLayer
-			};
-
-			var overlayMaps = {
-				"Recycling-Höfe": recyclingLayer,
-				"Abfahrtstermine": gemeindenLayer
-			};
-
-			L.control.layers(baseMaps, overlayMaps).addTo(this.map);
-
 		},
 		createRecyclingLayer: function() {
 			var data = rc.filteredData(this.map.getCenter());
