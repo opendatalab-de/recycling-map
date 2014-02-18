@@ -4,14 +4,13 @@ body, html {
 }
 #map {
 	position: absolute;
-	top: 42px;
+	top: 52px;
 	bottom: 0;
 	left: 0;
 	right: 304px;
 }
 h1 {
 	font-size: 1.25em;
-	margin: 0px;
 }
 .navbar span.brand {
 	margin-left: 5px;
@@ -23,7 +22,7 @@ h1 {
 @media (min-width: 768px) {
 	.amenity-list {
 		position: absolute;
-		top: 42px;
+		top: 52px;
 		right: 0;
 		bottom: 0;
 		width: 288px;

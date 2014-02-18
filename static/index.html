@@ -13,25 +13,33 @@
 	<meta property="og:image" content="http://opendatalab.de/recycling-map/screen.jpg"/>
 	<meta property="og:description" content="Tagesaktuelle Anzeige der Öffnungszeiten und Adressen aller Recyclinghöfe in Stadt und Landkreis Heilbronn mit Darstellung auf einer Karte und mobiler Suche in meiner Nähe."/>
 	
-	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
-	<link type="text/css" href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link type="text/css" href="css/bootstrap.css" rel="stylesheet" />
+	<link type="text/css" href="css/bootstrap-theme.css" rel="stylesheet" />
 	<link type="text/css" href="css/leaflet.css" rel="stylesheet" />
 	<link type="text/css" href="css/recycling.css" rel="stylesheet" />
+	<link type="text/css" href="css/leaflet.awesome-markers.css" rel="stylesheet">
 	<!--[if gte IE 8]>
 		<link type="text/css" href="css/leaflet.ie.css" rel="stylesheet" />
 	<![endif]-->
 </head>
 <body>
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<span class="brand">Recyclinghöfe/Abfuhrtermine 2014</span>
-			<ul class="nav">
-				<li class="visible-phone"><a id="toggleView" title="Zwischen Karte und Liste umschalten"><i class="icon-map-marker"></i></a></li>
-				<li><a id="locateMe" title="in meiner Nähe"><i class="icon-screenshot"></i><span class="hidden-phone"> in meiner Nähe</span></a></li>
-				<li><a href="http://blog.opendatalab.de/imprint.html" title="Impressum"><i class="icon-info-sign"></i><span class="hidden-phone"> Impressum</span></a></li>
-			</ul>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<span class="navbar-brand">Recyclinghöfe / Abfuhrtermine HN 2014</span>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="visible-xs"><a id="toggleView"><i class="glyphicon glyphicon-map-marker"></i> Kartenansicht</a></li>
+					<li><a id="locateMe"><i class="glyphicon glyphicon-screenshot"></i> in meiner Nähe</a></li>
+					<li><a href="http://blog.opendatalab.de/imprint.html"><i class="glyphicon glyphicon-info-sign"></i> Impressum</a></li>
+				</ul>
+			</div>
 		</div>
-	</div>
+	</nav>
 
 	<div id="map"></div>
 
@@ -39,8 +47,8 @@
 	</div>
 	
 	<script id="list-template" type="text/x-handlebars-template">
-		<h1 class="hidden-phone">Abfuhrtermine LK Heilbronn</h1>
-		<p class="hidden-phone">Ein Klick auf eine Landkreisfläche in der Karte öffnet einen Dialog mit einem Link zum aktuellen Müllabfuhrkalender.</p>
+		<h1 class="hidden-xs">Abfuhrtermine LK Heilbronn</h1>
+		<p class="hidden-xs">Ein Klick auf eine Landkreisfläche in der Karte öffnet einen Dialog mit einem Link zum aktuellen Müllabfuhrkalender.</p>
 		<h1>Recyclinghöfe in Heilbronn</h1>
 		{{#each amenities}}
 			<div class="amenity" id="{{id}}">
@@ -77,7 +85,7 @@
 	</script>
 	<script id="compact-offer-template" type="text/x-handlebars-template">
 		{{#if wI}}
-			<ul class="compact-offer unstyled">
+			<ul class="compact-offer list-unstyled">
 				{{#each wI}}
 					<li>
 						{{#if highlight}}
@@ -176,9 +184,12 @@
 	<script type="text/javascript">
 		L_DISABLE_3D = true;
 	</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/underscore.js"></script>
 	<script type="text/javascript" src="js/handlebars.js"></script>
 	<script type="text/javascript" src="js/leaflet.js"></script>
+	<script type="text/javascript" src="js/leaflet.awesome-markers.js"></script>
 	<script type="text/javascript" src="js/heilbronn.js"></script>
 	<script type="text/javascript" src="js/gemeinden.js"></script>
 	<script type="text/javascript" src="js/recycling.js"></script>
