@@ -1,0 +1,16 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Gemeinde</th>
+			<th>PDF</th>
+			<th>Kalender-Datei</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="c in garbage">
+			<td><a href="#/community/{{c.community}}">{{c.community}}</a></td>
+			<td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/{{c.fileName}}.pdf">PDF</a></td>
+			<td><a href="{{c.fileName}}.ics">ICS</a></td>
+		</tr>
+	</tbody>
+</table>
