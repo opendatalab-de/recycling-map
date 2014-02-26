@@ -17,6 +17,39 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
 	
+	<script type="text/ng-template" id="overview.html">
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Gemeinde</th>
+			<th>PDF</th>
+			<th>Kalender-Datei</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="c in garbage">
+			<td><a href="#/community/{{c.community}}">{{c.community}}</a></td>
+			<td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/{{c.fileName}}.pdf">PDF</a></td>
+			<td><a href="{{c.fileName}}.ics">ICS</a></td>
+		</tr>
+	</tbody>
+</table>
+</script>
+	<script type="text/ng-template" id="community.html">
+	<h2>{{garbage.community}}</h2>
+
+<h4>Müllabfuhr</h4>
+
+
+<div ng-repeat="date in garbage.dates">
+
+	<div itemscope itemtype="http://schema.org/Event">
+	  <div itemprop="name">{{date.type}}</div>
+	  <time itemprop="startDate" datetime="{{date.date | date:'yyyy-MM-dd'}}">{{date.date | date:'EEE, dd.MM.yyyy'}}</time>
+	</div>
+
+</div>	
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-default">

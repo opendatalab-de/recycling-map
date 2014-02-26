@@ -27,9 +27,10 @@ var gc = {};
 				});
 			} ]);
 
-	appModule.controller('OverviewCtrl', [ "$scope", "$routeParams",
-			function($scope, $routeParams) {
+	appModule.controller('OverviewCtrl', [ "$scope", "$rootScope",
+			"$routeParams", function($scope, $rootScope, $routeParams) {
 				$scope.garbage = garbage;
+				$rootScope.title = garbage.community;
 			} ]);
 
 })(angular, gc);
