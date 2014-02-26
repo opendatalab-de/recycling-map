@@ -17,12 +17,16 @@ var gc = {};
 		});
 	});
 
-	appModule.controller('CommunityCtrl', [ "$scope", "$routeParams",
+	appModule.controller('CommunityCtrl', [
+			"$scope",
+			"$routeParams",
 			function($scope, $routeParams) {
 				var selectedCommunity = $routeParams['communityId'];
 				angular.forEach(garbage, function(value, key) {
 					if (selectedCommunity == value.community) {
 						$scope.garbage = value;
+						document.title = "Müllabfuhrtermine in "
+								+ value.community;
 					}
 				});
 			} ]);
@@ -30,7 +34,6 @@ var gc = {};
 	appModule.controller('OverviewCtrl', [ "$scope", "$rootScope",
 			"$routeParams", function($scope, $rootScope, $routeParams) {
 				$scope.garbage = garbage;
-				$rootScope.title = garbage.community;
 			} ]);
 
 })(angular, gc);
