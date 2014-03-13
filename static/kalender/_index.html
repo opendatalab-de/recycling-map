@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="gcMain">
+<head>
+	<title>Müllabfuhrtermine im LK Heilbronn</title>
+	<meta name="description" content="Tagesaktuelle Anzeige der Müllabfuhr im Landkreis Heilbronn">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<link type="text/css" href="../css/leaflet.css" rel="stylesheet" />
+	<link type="text/css" href="../css/bootstrap.css" rel="stylesheet" />
+	<link type="text/css" href="../css/bootstrap-theme.css" rel="stylesheet" />
+	<link type="text/css" href="../css/recycling.css" rel="stylesheet" />
+	
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+	
+	<script type="text/ng-template" id="overview.html">
+	<div>
+	<p>Übersicht aller Gemeinden im LK Heilbronn mit Müllabfuhrterminen.</p>
+	<p>Klicken Sie auf den PDF Link um den Abfallkalender für Ihre Gemeinde downzuloaden oder laden Sie die ICS Datei für Ihren mobilen Kalender runter.</p>
+	<div>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Gemeinde</th>
+			<th>PDF</th>
+			<th>Kalender-Datei</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="c in garbage">
+			<td><a href="#/community/{{c.community}}">{{c.community}}</a></td>
+			<td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/{{c.fileName}}.pdf">PDF</a></td>
+			<td><a href="{{c.fileName}}.ics">ICS</a></td>
+		</tr>
+	</tbody>
+</table>
+</script>
+	<script type="text/ng-template" id="community.html">
+	<h2>{{garbage.community}}</h2>
+
+<h4>Müllabfuhr</h4>
+<div ng-repeat="date in garbage.dates">
+	<div itemscope itemtype="http://schema.org/Event">
+	  <div>
+<time itemprop="startDate" datetime="{{date.date | date:'yyyy-MM-dd'}}">{{date.date | date:'EEE, dd.MM.yyyy'}}</time>
+<span itemprop="summary">{{date.type}}</span> (<span itemprop="location">{{garbage.community}}</span>)
+	  
+		</div>
+	</div>
+</div>	
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<span class="navbar-brand">Recyclinghöfe / Abfuhrtermine Heilbronn 2014</span>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html"><i class="glyphicon glyphicon-map-marker"></i> Kartenansicht</a></li>
+					<li><a href="http://blog.opendatalab.de/imprint.html"><i class="glyphicon glyphicon-info-sign"></i> Impressum</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container" ng-view></div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="angular-locale_de.js"></script>
+	<script type="text/javascript" src="garbage.data.js"></script>
+	<script type="text/javascript" src="garbage.js"></script>
+</body>
+</html>

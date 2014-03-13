@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="gcMain">
+<html>
 <head>
 	<title>Müllabfuhrtermine im LK Heilbronn</title>
 	<meta name="description" content="Tagesaktuelle Anzeige der Müllabfuhr im Landkreis Heilbronn">
@@ -12,48 +12,6 @@
 	<link type="text/css" href="../css/bootstrap-theme.css" rel="stylesheet" />
 	<link type="text/css" href="../css/recycling.css" rel="stylesheet" />
 	
-	<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
-	
-	<script type="text/ng-template" id="overview.html">
-	<div>
-	<p>Übersicht aller Gemeinden im LK Heilbronn mit Müllabfuhrterminen.</p>
-	<p>Klicken Sie auf den PDF Link um den Abfallkalender für Ihre Gemeinde downzuloaden oder laden Sie die ICS Datei für Ihren mobilen Kalender runter.</p>
-	<div>
-
-<table class="table table-striped">
-	<thead>
-		<tr>
-			<th>Gemeinde</th>
-			<th>PDF</th>
-			<th>Kalender-Datei</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr ng-repeat="c in garbage">
-			<td><a href="#/community/{{c.community}}">{{c.community}}</a></td>
-			<td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/{{c.fileName}}.pdf">PDF</a></td>
-			<td><a href="{{c.fileName}}.ics">ICS</a></td>
-		</tr>
-	</tbody>
-</table>
-</script>
-	<script type="text/ng-template" id="community.html">
-	<h2>{{garbage.community}}</h2>
-
-<h4>Müllabfuhr</h4>
-<div ng-repeat="date in garbage.dates">
-	<div itemscope itemtype="http://schema.org/Event">
-	  <div>
-<time itemprop="startDate" datetime="{{date.date | date:'yyyy-MM-dd'}}">{{date.date | date:'EEE, dd.MM.yyyy'}}</time>
-<span itemprop="summary">{{date.type}}</span> (<span itemprop="location">{{garbage.community}}</span>)
-	  
-		</div>
-	</div>
-</div>	
-	</script>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -73,12 +31,27 @@
 		</div>
 	</nav>
 
-	<div class="container" ng-view></div>
+	<div class="container">
+		<div>
+	<p>Übersicht aller Gemeinden im LK Heilbronn mit Müllabfuhrterminen.</p>
+	<p>Klicken Sie auf den PDF Link um den Abfallkalender für Ihre Gemeinde downzuloaden oder laden Sie die ICS Datei für Ihren mobilen Kalender runter.</p>
+	</div>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Gemeinde</th>
+			<th>PDF</th>
+			<th>Kalender-Datei</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td><a href="Abstatt.html">Abstatt</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Abstatt.pdf">PDF</a></td><td><a href="Abstatt.ics">ICS</a></td></tr><tr><td><a href="Bad Friedrichshall.html">Bad Friedrichshall</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Bad Friedrichshall.pdf">PDF</a></td><td><a href="Bad Friedrichshall.ics">ICS</a></td></tr><tr><td><a href="Bad Rappenau.html">Bad Rappenau</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Bad Rappenau.pdf">PDF</a></td><td><a href="Bad Rappenau.ics">ICS</a></td></tr><tr><td><a href="Bad Wimpfen.html">Bad Wimpfen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Bad Wimpfen.pdf">PDF</a></td><td><a href="Bad Wimpfen.ics">ICS</a></td></tr><tr><td><a href="Beilstein.html">Beilstein</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Beilstein.pdf">PDF</a></td><td><a href="Beilstein.ics">ICS</a></td></tr><tr><td><a href="Brackenheim.html">Brackenheim</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Brackenheim.pdf">PDF</a></td><td><a href="Brackenheim.ics">ICS</a></td></tr><tr><td><a href="Cleebronn.html">Cleebronn</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Cleebronn.pdf">PDF</a></td><td><a href="Cleebronn.ics">ICS</a></td></tr><tr><td><a href="Eberstadt.html">Eberstadt</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Eberstadt.pdf">PDF</a></td><td><a href="Eberstadt.ics">ICS</a></td></tr><tr><td><a href="Ellhofen.html">Ellhofen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Ellhofen.pdf">PDF</a></td><td><a href="Ellhofen.ics">ICS</a></td></tr><tr><td><a href="Eppingen Stadt.html">Eppingen Stadt</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Eppingen Stadt.pdf">PDF</a></td><td><a href="Eppingen Stadt.ics">ICS</a></td></tr><tr><td><a href="Erlenbach.html">Erlenbach</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Erlenbach.pdf">PDF</a></td><td><a href="Erlenbach.ics">ICS</a></td></tr><tr><td><a href="Flein.html">Flein</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Flein.pdf">PDF</a></td><td><a href="Flein.ics">ICS</a></td></tr><tr><td><a href="Gemmingen.html">Gemmingen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Gemmingen.pdf">PDF</a></td><td><a href="Gemmingen.ics">ICS</a></td></tr><tr><td><a href="Gueglingen.33076.html">Güglingen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Gueglingen.33076.pdf">PDF</a></td><td><a href="Gueglingen.33076.ics">ICS</a></td></tr><tr><td><a href="Gundelsheim.html">Gundelsheim</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Gundelsheim.pdf">PDF</a></td><td><a href="Gundelsheim.ics">ICS</a></td></tr><tr><td><a href="Hardthausen.html">Hardthausen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Hardthausen.pdf">PDF</a></td><td><a href="Hardthausen.ics">ICS</a></td></tr><tr><td><a href="Ilsfeld.html">Ilsfeld</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Ilsfeld.pdf">PDF</a></td><td><a href="Ilsfeld.ics">ICS</a></td></tr><tr><td><a href="Ittlingen.html">Ittlingen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Ittlingen.pdf">PDF</a></td><td><a href="Ittlingen.ics">ICS</a></td></tr><tr><td><a href="Jagsthausen.html">Jagsthausen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Jagsthausen.pdf">PDF</a></td><td><a href="Jagsthausen.ics">ICS</a></td></tr><tr><td><a href="Kirchardt.html">Kirchardt</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Kirchardt.pdf">PDF</a></td><td><a href="Kirchardt.ics">ICS</a></td></tr><tr><td><a href="Langenbrettach.html">Langenbrettach</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Langenbrettach.pdf">PDF</a></td><td><a href="Langenbrettach.ics">ICS</a></td></tr><tr><td><a href="Lauffenneu.html">Lauffen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Lauffenneu.pdf">PDF</a></td><td><a href="Lauffenneu.ics">ICS</a></td></tr><tr><td><a href="Lehrensteinsfeld.html">Lehrensteinsfeld</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Lehrensteinsfeld.pdf">PDF</a></td><td><a href="Lehrensteinsfeld.ics">ICS</a></td></tr><tr><td><a href="Leingarten.html">Leingarten</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Leingarten.pdf">PDF</a></td><td><a href="Leingarten.ics">ICS</a></td></tr><tr><td><a href="Loewenstein.html">Löwenstein</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Loewenstein.pdf">PDF</a></td><td><a href="Loewenstein.ics">ICS</a></td></tr><tr><td><a href="Massenbachhausen.html">Massenbachhausen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Massenbachhausen.pdf">PDF</a></td><td><a href="Massenbachhausen.ics">ICS</a></td></tr><tr><td><a href="Moeckmuehl.html">Möckmühl</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Moeckmuehl.pdf">PDF</a></td><td><a href="Moeckmuehl.ics">ICS</a></td></tr><tr><td><a href="Neckarsulmneu.html">Neckarsulm</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Neckarsulmneu.pdf">PDF</a></td><td><a href="Neckarsulmneu.ics">ICS</a></td></tr><tr><td><a href="Neckarwestheim.html">Neckarwestheim</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Neckarwestheim.pdf">PDF</a></td><td><a href="Neckarwestheim.ics">ICS</a></td></tr><tr><td><a href="Neudenau.html">Neudenau</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Neudenau.pdf">PDF</a></td><td><a href="Neudenau.ics">ICS</a></td></tr><tr><td><a href="Neuenstadt.html">Neuenstadt</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Neuenstadt.pdf">PDF</a></td><td><a href="Neuenstadt.ics">ICS</a></td></tr><tr><td><a href="Nordheim.html">Nordheim</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Nordheim.pdf">PDF</a></td><td><a href="Nordheim.ics">ICS</a></td></tr><tr><td><a href="Obersulm.html">Obersulm</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Obersulm.pdf">PDF</a></td><td><a href="Obersulm.ics">ICS</a></td></tr><tr><td><a href="Oedheim.html">Oedheim</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Oedheim.pdf">PDF</a></td><td><a href="Oedheim.ics">ICS</a></td></tr><tr><td><a href="Offenau.html">Offenau</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Offenau.pdf">PDF</a></td><td><a href="Offenau.ics">ICS</a></td></tr><tr><td><a href="Pfaffenhofen.html">Pfaffenhofen</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Pfaffenhofen.pdf">PDF</a></td><td><a href="Pfaffenhofen.ics">ICS</a></td></tr><tr><td><a href="Roigheim.html">Roigheim</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Roigheim.pdf">PDF</a></td><td><a href="Roigheim.ics">ICS</a></td></tr><tr><td><a href="Schwaigern.33052.html">Schwaigern</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Schwaigern.33052.pdf">PDF</a></td><td><a href="Schwaigern.33052.ics">ICS</a></td></tr><tr><td><a href="Siegelsbach.html">Siegelsbach</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Siegelsbach.pdf">PDF</a></td><td><a href="Siegelsbach.ics">ICS</a></td></tr><tr><td><a href="Talheim.html">Talheim</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Talheim.pdf">PDF</a></td><td><a href="Talheim.ics">ICS</a></td></tr><tr><td><a href="Untereisesheim.html">Untereisesheim</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Untereisesheim.pdf">PDF</a></td><td><a href="Untereisesheim.ics">ICS</a></td></tr><tr><td><a href="Untergruppenbach.html">Untergruppenbach</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Untergruppenbach.pdf">PDF</a></td><td><a href="Untergruppenbach.ics">ICS</a></td></tr><tr><td><a href="Weinsbergneu.html">Weinsberg</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Weinsbergneu.pdf">PDF</a></td><td><a href="Weinsbergneu.ics">ICS</a></td></tr><tr><td><a href="Widdern.html">Widdern</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Widdern.pdf">PDF</a></td><td><a href="Widdern.ics">ICS</a></td></tr><tr><td><a href="Wuestenrot.html">Wüstenrot</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Wuestenrot.pdf">PDF</a></td><td><a href="Wuestenrot.ics">ICS</a></td></tr><tr><td><a href="Zaberfeld.html">Zaberfeld</a></td><td><a href="http://www.landkreis-heilbronn.de/sixcms/media.php/103/Zaberfeld.pdf">PDF</a></td><td><a href="Zaberfeld.ics">ICS</a></td></tr>
+	</tbody>
+</table>
+	</div>
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.js"></script>
-	<script type="text/javascript" src="angular-locale_de.js"></script>
-	<script type="text/javascript" src="garbage.data.js"></script>
-	<script type="text/javascript" src="garbage.js"></script>
 </body>
 </html>
