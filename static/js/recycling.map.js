@@ -26,8 +26,7 @@
 			rc.openingHours.init();
 			L.Icon.Default.imagePath = 'css/images';
 
-			var APIKey = "036a729cf53d4388a8ec345e1543ef53";
-			var cloudmadeLayer = L.tileLayer('http://{s}.tile.cloudmade.com/' + APIKey + '/44094/256/{z}/{x}/{y}.png', {
+			var cloudmadeLayer = L.tileLayer('https://{s}.tiles.mapbox.com/v3/codeforheilbronn.i4fciif2/{z}/{x}/{y}.png', {
 				'maxZoom': 18
 			});
 
@@ -37,7 +36,7 @@
 				layers: [cloudmadeLayer]
 			}).setView([49.15, 9.22], 11);
 
-			var attribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>, Geodaten: <a href="http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=0&gdz_user_id=0">Geodatenzentrum</a>, alle Angaben ohne Gewähr!';
+			var attribution = '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>, Geodaten: <a href="http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=0&gdz_user_id=0">Geodatenzentrum</a>, alle Angaben ohne Gewähr!';
 			new L.Control.Attribution({
 				position: 'bottomleft'
 			}).addAttribution(attribution).addTo(this.map);
