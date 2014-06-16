@@ -7,3 +7,4 @@
 target/**
 jetty-env.xml
 node_modules
+**/.DS_Store
