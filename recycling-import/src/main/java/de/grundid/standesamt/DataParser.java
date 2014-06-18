@@ -53,7 +53,7 @@ public class DataParser {
 			System.out.println("Anzahl: " + standesaemter.size());
 			for (Entry<String, String> entry : standesaemter.entrySet()) {
 				Standesamt standesamt = new Standesamt();
-				//				standesamt.setOriginalData(entry.getValue());
+				standesamt.setOriginalData(entry.getValue());
 				Document document = Jsoup.parse(entry.getValue());
 				Elements allElements = document.getAllElements();
 				boolean addressStart = false;
