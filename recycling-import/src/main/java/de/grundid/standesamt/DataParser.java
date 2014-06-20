@@ -1,5 +1,6 @@
 package de.grundid.standesamt;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.springframework.util.StringUtils.hasText;
 
@@ -36,6 +37,32 @@ public class DataParser {
 	@Test
 	public void testPattern() throws Exception {
 		assertTrue(PHONE.matcher("06104/703 – 3107, -3106, -3111").matches());
+	}
+
+	@Test
+	public void testStreet() throws Exception {
+		String input = "<p style=\"text-align: justify;\"><span style=\"font-family: Arial,Helvetica,sans-serif; "
+				+ "font-size: small;\" face=\"Arial, Helvetica, sans-serif\" size=\"2\">Stadtplatz 1<br /> "
+				+ "93326 Abensberg</span></p>";
+		Document document = Jsoup.parse(input);
+		Elements children = document.getElementsByTag("p");
+		Standesamt standesamt = new Standesamt();
+		processStreetAddress(standesamt, children.first());
+		assertEquals("Stadtplatz 1", standesamt.getStreet());
+		assertEquals("93326", standesamt.getZip());
+		assertEquals("Abensberg", standesamt.getCity());
+	}
+
+	@Test
+	public void testStreetSimple() throws Exception {
+		String input = "<p style=\"text-align: justify;\">Stadtplatz 1<br />93326 Abensberg</p>";
+		Document document = Jsoup.parse(input);
+		Elements children = document.getElementsByTag("p");
+		Standesamt standesamt = new Standesamt();
+		processStreetAddress(standesamt, children.first());
+		assertEquals("Stadtplatz 1", standesamt.getStreet());
+		assertEquals("93326", standesamt.getZip());
+		assertEquals("Abensberg", standesamt.getCity());
 	}
 
 	private void run() {
@@ -78,30 +105,8 @@ public class DataParser {
 					}
 					else if (nodeName.equals("p")) {
 						if (addressStart) {
-							boolean street = true;
-							for (Node addressNode : element.childNodes()) {
-								if (addressNode.nodeName().equalsIgnoreCase("br")) {
-									street = false;
-								}
-								else if (street) {
-									setValue(addressNode.toString(), "street", standesamt);
-								}
-								else {
-									String zipCity = addressNode.toString();
-									int pos = zipCity.indexOf(' ');
-									if (pos != -1) {
-										String zip = zipCity.substring(0, pos);
-										String city = zipCity.substring(pos);
-										setValue(zip, "zip", standesamt);
-										setValue(city, "city", standesamt);
-									}
-									else {
-										setValue(zipCity, "city", standesamt);
-									}
-								}
-							}
-							addressStart = false;
-							phoneStart = true;
+							addressStart = !processStreetAddress(standesamt, element);
+							phoneStart = !addressStart;
 						}
 						else if (phoneStart) {
 							String possiblePhone = element.text().trim();
@@ -127,6 +132,43 @@ public class DataParser {
 			throw new RuntimeException(e);
 		}
 		GrabUtils.writeJsonObject(result, "standesaemter-list.json");
+	}
+
+	private boolean processStreetAddress(Standesamt standesamt, Element element) {
+		Node possibleAddress = element;
+		List<Node> nodes = possibleAddress.childNodes();
+		if (nodes.size() == 1 && nodes.get(0).nodeName().equalsIgnoreCase("span")) {
+			possibleAddress = nodes.get(0);
+		}
+		boolean result = false;
+		boolean street = !hasText(standesamt.getStreet());
+		for (Node addressNode : possibleAddress.childNodes()) {
+			if (addressNode.nodeName().equalsIgnoreCase("br")) {
+				street = false;
+			}
+			else if (street) {
+				String possibleStreet = addressNode.toString();
+				if (!possibleStreet.contains("Standesamt") && !possibleStreet.contains("Bezirk")
+						&& !possibleStreet.startsWith("B ") && !possibleStreet.startsWith("BA ")) {
+					setValue(possibleStreet, "street", standesamt);
+				}
+			}
+			else {
+				String zipCity = addressNode.toString().trim();
+				int pos = zipCity.indexOf(' ');
+				if (pos != -1) {
+					String zip = zipCity.substring(0, pos);
+					String city = zipCity.substring(pos);
+					setValue(zip, "zip", standesamt);
+					setValue(city, "city", standesamt);
+				}
+				else {
+					setValue(zipCity, "city", standesamt);
+				}
+				result = true;
+			}
+		}
+		return result;
 	}
 
 	private String extractTagContent(String value) {
