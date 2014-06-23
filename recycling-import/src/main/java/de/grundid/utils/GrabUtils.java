@@ -9,25 +9,21 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 
 import de.grundid.ra.JsonOsmModule;
 
-public class GrabUtils
-{
+public class GrabUtils {
 
-	public static void writeJsonObject(Object object, String filename)
-	{
-		try
-		{
+	public static void writeJsonObject(Object object, String filename) {
+		try {
 			ObjectMapper objectMapper = new ObjectMapper();
 			objectMapper.registerModule(new JsonOsmModule());
 			FileWriter writer = new FileWriter(new File(filename));
+			System.out.println("Encoding " + writer.getEncoding());
 			ObjectWriter prettyWriter = objectMapper.writer(new DefaultPrettyPrinter());
 			writer.write(prettyWriter.writeValueAsString(object));
 			writer.flush();
 			writer.close();
 		}
-		catch (Exception e)
-		{
+		catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 }

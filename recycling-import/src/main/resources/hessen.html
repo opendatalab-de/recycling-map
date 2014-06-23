@@ -1,0 +1,504 @@
+<!DOCTYPE html><html><head><title>Standesämter in Hessen</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta http-equiv="content-language" content="de"/><meta name="description" content="Verzeichnis zu Standesämtern in Hessen" /><link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.standesamt.com/rss.php">
+<link href="/javascripts/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon">
+
+
+<style type=text/css>
+.lightTip                       { width: 342px; }.lightTip .content              { width: 310px; padding: 10px; border: 6px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #ffffff; color: #020202; }.lightTip .bottom               { height: 14px; background: url(../images/notch-white.png) top center no-repeat; } .yellowTip                      { width: 342px; }.yellowTip .content             { width: 310px; padding: 10px; border: 6px solid #f9e98e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbf7aa; color: #020202; }.yellowTip .bottom              { height: 14px; background: url(../images/notch-yellow.png) top center no-repeat; } .orangeTip                      { width: 342px; }.orangeTip .content             { width: 310px; padding: 10px; border: 6px solid #f9cd8e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbe3aa; color: #020202; }.orangeTip .bottom              { height: 14px; background: url(../images/notch-orange.png) top center no-repeat; } .redTip                         { width: 342px; }.redTip .content                { width: 310px; padding: 10px; border: 6px solid #ce6f6f; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #f79992; color: #020202; }.redTip .bottom                 { height: 14px; background: url(../images/notch-red.png) top center no-repeat; } .greenTip                       { width: 342px; }.greenTip .content              { width: 310px; padding: 10px; border: 6px solid #a9db66; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #cae8a2; color: #020202; }.greenTip .bottom               { height: 14px; background: url(../images/notch-green.png) top center no-repeat; } .blueTip                        { width: 342px; }.blueTip .content               { width: 310px; padding: 10px; border: 6px solid #36a4d9; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #90d8f0; color: #020202; }.blueTip .bottom                { height: 14px; background: url(../images/notch-blue.png) top center no-repeat; } .purpleTip                      { width: 342px; }.purpleTip .content             { width: 310px; padding: 10px; border: 6px solid #8671de; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #a290f0; color: #020202; }.purpleTip .bottom              { height: 14px; background: url(../images/notch-purple.png) top center no-repeat; } .darkTip                        { width: 342px; }.darkTip .content               { width: 310px; padding: 10px; border: 6px solid #303030; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #505050; color: #f8f8f8; }.darkTip .bottom                { height: 14px; background: url(../images/notch-dark.png) top center no-repeat; }
+
+/* simple css-based tooltip */
+ .tooltip {
+ 	background-color:#000;
+ 	border:1px solid #fff;
+ 	padding:10px 15px;
+ 	width:200px;
+ 	display:none;
+ 	color:#fff;
+ 	text-align:left;
+ 	font-size:14px;
+
+ 	/* outline radius for mozilla/firefox only */
+ 	-moz-box-shadow:0 0 10px #000;
+ 	-webkit-box-shadow:0 0 10px #000;
+ }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0px none;
+	outline: 0;
+	background: ;
+}
+.none {
+	display: none;
+}
+.break {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+:focus {
+	outline: none;
+}
+ul {
+	list-style-type: none;
+}
+ul.quicklinks li{margin-bottom:5px;padding-left:20px;background:url('/images/bullet_green.png') no-repeat top left;}
+.big {
+	font-size:14px;
+}
+/* Layout
+========================*/
+body {
+	background: #e6f8f8 url('/images/bg.jpg') repeat-x top left;
+	text-align: center;
+	font-style:normal; font-variant:normal; font-weight:normal; font-size:76.5%; font-family:Arial, Helvetica, sans-serif
+}
+
+h1{ font-size:18px;margin-top:0em; margin-bottom:0em;}
+h2{ font-size:16px;margin-top:0em; margin-bottom:0em;}
+h3{ font-size:14px;margin-top:0em; margin-bottom:0em;}
+
+a:link {color:#2ca4e8; text-decoration:none}
+a:hover {color:#2ca4e8; text-decoration:underline}
+
+.small{
+	font-size:12px;
+}
+
+.small_gray{
+	font-size:12px;
+	color:#606060;
+}
+.gray{
+	color:#606060;
+}
+
+#headline_black {
+	height: 5px;
+	width: 100%;
+	background:#000
+}
+
+#topmenu {
+	float: right;
+	margin-top: 0px;
+	height: 20px;
+	font-weight: bold;
+	color: #515151;
+	white-space: nowrap;
+	width: auto;
+	padding-right: 31px;
+	padding-left: 31px;
+	background: #000;
+}
+#topmenu span {
+	color: #fff;
+}
+#topmenu a {
+	color: #bebebe;
+	text-decoration: none;
+}
+#topmenu a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+#topmenu span.left {
+	width: 31px;
+	height: 20px;
+	display: block;
+	background:;
+	float: left
+}
+
+#container {
+	width: 960px;
+	height:100%;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+
+#container_bordered {
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	border: solid 1px #000;
+}
+
+#content {
+	width: 940px;
+	background: #fff;
+	clear: both;
+	padding-left:20px; padding-right:20px; padding-top:10px; padding-bottom:0px;
+	border: 1px solid #fff;
+}
+
+#header_blue{
+	background:#2ca4e3;
+	color:#fff;
+}
+#header_orange{
+	background:#ff770b;
+	color:#fff;
+}
+
+
+ul.steps { background: url('/images/steps-bg.png') no-repeat 0 0;display:block;height:207px;margin-bottom:10px;clear:both }
+  ul.steps li {color:#9AB5CF;float:left;font-size:32px;margin:20px 42px 20px 15px;width:260px;}
+    ul.steps li img { vertical-align:top;margin-left:20px;}
+    ul.steps li div { color:#010101;font-size:13px;text-align:center;width:260px;margin-top:10px; }
+    ul.steps li div.benefit_text { font-size: 15px; }
+    ul.steps li div.margin_top_0 { margin-top: 0px; }
+    ul.steps li div strong { font-weight:bold; }
+    ul.steps li.last_step { margin-right:0px; }
+
+.big_red{
+	font-size:22px;
+	color:#ff691f;
+	text-decoration: none;
+}
+
+#submenu1{
+	padding-top:15px;
+	width:920px;
+	height:40px;
+	background:#d2f2f3;
+}
+
+
+
+
+#submenu {
+	padding-top:15px;
+	height: 41px;
+	background:#d2f2f3;
+	margin-bottom: 20px
+}
+#submenu ul, #submenu p {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	display: inline;
+}
+#submenu ul li {
+	float: left;
+	margin-top: 3px;
+}
+
+
+#submenu ul li a {
+	border-bottom: 1px solid #cce8eb;
+	padding: 4px 10px 4px 10px;
+	text-decoration: none;
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #5c7e81;
+	background: #eaf7f8;
+	margin-right: 4px;
+	position: relative;
+	text-align: center;
+}
+#submenu ul li a:hover {
+	background: #fff;
+}
+#submenu ul li a.active {
+	background: #fff;
+	color: #396063;
+	border-bottom: 1px solid #c4e3e6;
+}
+#submenu ul li span {
+	position: absolute;
+	display: block;
+	background: url('/images/submenu_pointer.gif') no-repeat;
+	width: 21px;
+	height: 12px;
+	top: 30px;
+	left: 50%;
+	margin-left: -10px
+}
+
+
+
+input#searchField {
+	width: 225px;
+	background: #fff;
+	border: 1px solid #bbb;
+	border-bottom-color: #ddd;
+	border-right-color: #ddd;
+	color: #868686;
+	padding: 4px;
+}
+input#searchButton, input#loginButton, input#Button {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #ff691f;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+
+input#searchButtonRed, input#loginButtonRed, input#ButtonRed {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #c92f2e;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+#footer{
+	float: right;
+	color: #aaaaaa;
+}
+
+input.textbox,
+select.textbox,
+textarea,
+input[type=text],
+input[type=password] {
+  -moz-border-radius: 5px;
+  -webkit-border-radius:5px;
+  border:1px solid #E0E0E0;
+  padding:6px 10px;
+  border-color:#AFAFAF #E0E0E0 #E0E0E0;
+  border-style:solid;
+  border-width:1px 1px 1px;
+  font-size:13px;
+  color:#434343;
+  resize:none;
+  font-family:arial;
+  background-color: #F9F9F9;
+  vertical-align: middle;
+}
+
+textarea {
+  line-height: 1.5;
+  vertical-align: baseline;
+}
+
+select {
+  font-size:13px;
+  color:#434343;
+  background-color: #ffffff;
+}
+
+input.checkbox {
+  margin: 0 5px 0 0;
+}
+
+
+
+.accordion {
+	width: 280px;
+}
+.accordion span {
+	height:50px;
+	background: url(/images/help.png) no-repeat right 8px;
+	padding: 10px;
+	margin: 0;
+	cursor: pointer;
+}
+.accordion span.active {
+	background-position: right 8px;
+}
+.accordion p {
+	margin: 0;
+	padding: 5px 5px 5px;
+	border-top:1px dotted #000;
+	border-bottom:1px dotted #000;
+}
+
+
+.edit {
+	padding-top:5px;
+	float:right;
+	color:blue;
+	cursor: pointer;
+}
+
+##########rating ###################
+.rating {
+	cursor: pointer;
+	margin: 2em;
+	clear: both;
+	display: block;
+}
+.rating:after {
+	content: '.';
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+	visibility: hidden;
+}
+.cancel,
+.star {
+	float: left;
+	width: 17px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.star-left,
+.star-right {
+  width: 8px
+}
+.cancel,
+.cancel a {background: url('/images/rating-delete.gif') no-repeat 0 -16px;}
+
+.star,
+.star a {background: url('/images/rating-star.gif') no-repeat 0 0px;}
+.star-left,
+.star-left a {background: url('/images/rating-star-left.gif') no-repeat 0 0px;}
+.star-right,
+.star-right a {background: url('/images/rating-star-right.gif') no-repeat 0 0px;}
+
+.cancel a,
+.star a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: 0 0px;
+}
+
+div.rating div.on a {
+	background-position: 0 -16px;
+}
+div.rating div.hover a,
+div.rating div a:hover {
+	background-position: 0 -32px;
+}
+.buttonlink
+		{
+			background-image: url('/images/button-green.png') !important;
+			background-position: left top;
+
+			color: #fff;
+
+			height: 22px;
+			width: 146px;
+
+			padding: 10px 0 10px 0;
+			margin: 0 5px 0 0;
+
+			font-weight: bold;
+			display: block;
+			float: left;
+			text-align: center;
+
+			font-size: 16px;
+
+			text-shadow: 0 1px 1px #595;
+
+		}
+#buttonlinks
+{
+	padding: 10px;
+}
+
+
+.buttonlink:hover
+{
+	color: #fff;
+	background-position: left 80px;
+}
+
+.buttonlink:active
+{
+	color: #fff;
+	background-position: left 40px;
+}
+
+
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel, div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel, div.rating-cancel a{background:url('/rating/delete.gif') no-repeat 0 -16px; }
+div.star-rating, div.star-rating a{background:url('/rating/star.gif') no-repeat 0 0px; }
+div.rating-cancel a, div.star-rating a{display:block;width:16px;height:100%;background-position: 0 0px;border:0px none; }
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+
+
+google_afs_bigsize{padding:1px;}
+.google_afs_bigsize a {height:auto;text-decoration:none;display:inline;height:100%;}
+.google_afs_bigsize a:hover {text-decoration:none;background-color:#eee}
+.google_afs_bigsize a:activ {text-decoration:none;}
+.google_afs_bigsize a:visited {text-decoration:none;}
+.google_afs_bigsize a strong {text-decoration:underline;}
+.google_afs_bigsize span.visible_url {color:#555555;font-style:italic;}
+.google_afs_bigsize span.txt {color:#666666;}
+
+</style>
+<link type="text/css" href="/javascripts/jquery/themes/le-frog/jquery.ui.all.css" rel="stylesheet" /><script type="text/javascript" src="/javascripts/jquery/jquery.js"></script><script src="/javascripts/jquery/ui/jquery-ui-1.8.6.custom.js"></script><script src="/javascripts/facebox/facebox.js" type="text/javascript"></script><script type="text/javascript" src="/javascripts/tinytip/jquery.tinyTips.js"></script><link type="text/css" href="/javascripts/menu/menu.css" rel="stylesheet" /><script type="text/javascript" src="/javascripts/menu/menu.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20235868-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script></head><body ><div style="width:100%;height:20px;"></div><div id="container"><div id="content">
+<script src="/javascripts/jquery/ui/jquery.effects.blind.js"></script>
+<script>
+$(function() {
+		// run the currently selected effect
+		function runEffect() {
+			// most effect types need no options passed by default
+			var options = {}; 
+			// run the effect
+			$( "#menu1" ).show( 'blind', options, 500);
+		};
+ 
+		//callback function to bring a hidden box back
+		function callback() {
+			setTimeout(function() {
+				$( "#menu1:visible" ).removeAttr( "style" ).fadeOut();
+			}, 100 );
+		};
+ 
+		// set effect from select menu value
+		$( "#tab1" ).mouseover(function() {
+			runEffect();
+			return false;
+		});
+ 		
+ 		
+
+		$( "#menu1" ).hide();
+		
+	});
+	
+	
+			function testhide()
+			{
+				$( "#menu1" ).hide();
+		}
+	</script>
+<div style="height:110px;border-bottom: solid 1px #bbb;width:100%"><div style="width:100%;"><a href="/"><img src="/images/logo.png" title="Standesamt"></a></div><div style="width:100%;text-align:right;padding-top:0px"><form action="/search.php"><input type="text" style="border:solid 1px #000" size=50 name="q" id="id_q" value="Plz oder Ort" onClick="if (this.value=='Plz oder Ort') this.value='';"> <input type="hidden" name="key" value="hochzeit"><input type="submit"  name="do" onClick="if (document.getElementById('id_q').value=='Plz oder Ort') document.getElementById('id_q').value='';return true;" value="Standesämter anzeigen"></form></div></div><div style="font-size:10px"><a href="/">Startseite</a> > <a href="/Standesaemter-Hessen/7">Standesämter Hessen</a></div><div style="width:100%;valign:top"><div style="background:#fff;width:200px;float:left;"><div style="background:#fff;border: solid 1px #c3c3c3;width:100%;"><div style="background:#2ca4e3;padding:5px;color:#fff;"><h2>Standesämter Hessen</h2></div><div style="padding:5px;"> Wir haben aktuell <b>213 Standesämter</b> aus Hessen bei uns gelistet.</div></div></div><div style="min-height:400px;margin-left: 210px;padding-left:20px;font-size:14px;"><p><h1>Standesämter in Hessen</h1></p><br><p><a href="/Standesamt-Alsbach-Haehnlein/2527">Standesamt Alsbach-Hähnlein</a><br>Bickenbacher Str. 6, 64665 Alsbach-Hähnlein</p><p><a href="/Standesamt-Alsfeld/2842">Standesamt Alsfeld</a><br>Markt 2, 36304 Alsfeld</p><p><a href="/Standesamt-Altenstadt/2900">Standesamt Altenstadt</a><br>Frankfurter Str. 11, 63674 Altenstadt (Hessen)</p><p><a href="/Standesamt-Asslar/2669">Standesamt Aßlar</a><br>Mühlgrabenstr. 1, 35614 Aßlar</p><p><a href="/Standesamt-Babenhausen/2528">Standesamt Babenhausen</a><br>Marktplatz 2, 64832 Babenhausen</p><p><a href="/Standesamt-Bad-Arolsen/2863">Standesamt Bad Arolsen</a><br>Große Allee 26, 34454 Bad Arolsen</p><p><a href="/Standesamt-Bad-Camberg/2694">Standesamt Bad Camberg</a><br>Am Amthof 15, 65520 Bad Camberg</p><p><a href="/Standesamt-Bad-Endbach/2753">Standesamt Bad Endbach</a><br>Hauptstr. 35, 35080 Bad Endbach</p><p><a href="/Standesamt-Bad-Hersfeld/2608">Standesamt Bad Hersfeld</a><br>Am Markt 16, 36251 Bad Hersfeld</p><p><a href="/Standesamt-Bad-Homburg/2627">Standesamt Bad Homburg</a><br>Schulberg 1, 61348 Bad Homburg v.d. Höhe</p><p><a href="/Standesamt-Bad-Koenig/2773">Standesamt Bad König</a><br>Schloßplatz 3, 64732 Bad König</p><p><a href="/Standesamt-Bad-Nauheim/2901">Standesamt Bad Nauheim</a><br>Parkstr. 40, 61231 Bad Nauheim</p><p><a href="/Standesamt-Bad-Orb/2711">Standesamt Bad Orb</a><br>Frankfurter Str. 2, 63619 Bad Orb</p><p><a href="/Standesamt-Bad-Schwalbach/2802">Standesamt Bad Schwalbach</a><br>Adolfstr. 38, 65307 Bad Schwalbach</p><p><a href="/Standesamt-Bad-Soden/2749">Standesamt Bad Soden</a><br>Königsteiner Straße 73 , 65812 Bad Soden am Taunus</p><p><a href="/Standesamt-Bad-Soden-Am-Taunus/2740">Standesamt Bad Soden am Taunus</a><br>Kronberger Str. 1, 65812 Bad Soden am Taunus</p><p><a href="/Standesamt-Bad-Soden-Salmuenster/2712">Standesamt Bad Soden-Salmünster</a><br>Frowin-von-Hutten-Str. 5, 63628 Bad Soden-Salmünster</p><p><a href="/Standesamt-Bad-Vilbel/2902">Standesamt Bad Vilbel</a><br>Marktplatz 5, 61118 Bad Vilbel</p><p><a href="/Standesamt-Bad-Wildungen/2864">Standesamt Bad Wildungen</a><br>Am Markt 1, 34537 Bad Wildungen</p><p><a href="/Standesamt-Baunatal/2643">Standesamt Baunatal</a><br>Marktplatz 14, 34225 Baunatal</p><p><a href="/Standesamt-Bebra/2609">Standesamt Bebra</a><br>Rathausmarkt 1, 36179 Bebra</p><p><a href="/Standesamt-Bensheim/2507">Standesamt Bensheim</a><br>Kirchbergstr. 18, 64625 Bensheim</p><p><a href="/Standesamt-Biblis/2508">Standesamt Biblis</a><br>Darmstädter Str. 25, 68647 Biblis</p><p><a href="/Standesamt-Biebertal/2576">Standesamt Biebertal</a><br>Mühlbergstr. 9, 35444 Biebertal</p><p><a href="/Standesamt-Biedenkopf/2754">Standesamt Biedenkopf</a><br>Hainstr. 63, 35216 Biedenkopf</p><p><a href="/Standesamt-Birkenau/2509">Standesamt Birkenau</a><br>Hauptstr. 119, 69488 Birkenau</p><p><a href="/Standesamt-Bischofsheim/2594">Standesamt Bischofsheim</a><br>Schulstr. 15, 65474 Bischofsheim</p><p><a href="/Standesamt-Borken-hessen/2815">Standesamt Borken (Hessen)</a><br>Am Rathaus 7, 34582 Borken (Hessen)</p><p><a href="/Standesamt-Braunfels/2671">Standesamt Braunfels</a><br>Hüttenweg 3, 35619 Braunfels</p><p><a href="/Standesamt-Brechen/2693">Standesamt Brechen</a><br>Marktstr. 1, 65611 Brechen</p><p><a href="/Standesamt-Bruchkoebel/2716">Standesamt Bruchköbel</a><br>Hauptstr. 32, 63486 Bruchköbel</p><p><a href="/Standesamt-Buedingen/2903">Standesamt Büdingen</a><br>Eberhard-Bauner-Allee 16, 63654 Büdingen</p><p><a href="/Standesamt-Buerstadt/2510">Standesamt Bürstadt</a><br>Rathausstr. 2, 68642 Bürstadt</p><p><a href="/Standesamt-Buseck/2577">Standesamt Buseck</a><br>Ernst-Ludwig-Str. 15, 35418 Buseck</p><p><a href="/Standesamt-Butzbach/2904">Standesamt Butzbach</a><br>Schlossplatz 1, 35510 Butzbach</p><p><a href="/Standesamt-Coelbe/2756">Standesamt Cölbe</a><br>Kasseler Str. 88, 35091 Cölbe</p><p><a href="/Standesamt-Darmstadt/2526">Standesamt Darmstadt</a><br>Marktplatz 8, 64283 Darmstadt</p><p><a href="/Standesamt-Dautphetal/2757">Standesamt Dautphetal</a><br>Hainstr. 1, 35232 Dautphetal</p><p><a href="/Standesamt-Dieburg/2530">Standesamt Dieburg</a><br>Markt 4, 64807 Dieburg</p><p><a href="/Standesamt-Dietzenbach/2789">Standesamt Dietzenbach</a><br>Europaplatz 1, 63128 Dietzenbach</p><p><a href="/Standesamt-Dillenburg/2674">Standesamt Dillenburg</a><br>Bahnhofsplatz 1, 35683 Dillenburg</p><p><a href="/Standesamt-Dreieich/2790">Standesamt Dreieich</a><br>Hauptstr. 45, 63303 Dreieich</p><p><a href="/Standesamt-Ebsdorfergrund/2758">Standesamt Ebsdorfergrund</a><br>Dreihäuserstr. 17, 35085 Ebsdorfergrund</p><p><a href="/Standesamt-Edertal/2870">Standesamt Edertal</a><br>Bahnhofstr. 25, 34549 Edertal-Giflitz</p><p><a href="/Standesamt-Egelsbach/2791">Standesamt Egelsbach</a><br>Freiherr-vom-Stein-Str. 13, 63329 Egelsbach</p><p><a href="/Standesamt-Ehringshausen/2676">Standesamt Ehringshausen</a><br>Rathausstr. 1, 35630 Ehringshausen</p><p><a href="/Standesamt-Eichenzell/2557">Standesamt Eichenzell</a><br>Schlossgasse 4, 36124 Eichenzell</p><p><a href="/Standesamt-Eltville-Am-Rhein/2803">Standesamt Eltville am Rhein</a><br>Gutenbergstr. 13, 65343 Eltville am Rhein</p><p><a href="/Standesamt-Erlensee/2717">Standesamt Erlensee</a><br>Am Rathaus 3, 63526 Erlensee</p><p><a href="/Standesamt-Eschborn/2742">Standesamt Eschborn</a><br>Rathausplatz 36, 65760 Eschborn</p><p><a href="/Standesamt-Eschenburg/2677">Standesamt Eschenburg</a><br>Nassauer Str. 11, 35713 Eschenburg</p><p><a href="/Standesamt-Eschwege/2886">Standesamt Eschwege</a><br>Obermarkt 22, 37269 Eschwege</p><p><a href="/Standesamt-Felsberg/2817">Standesamt Felsberg</a><br>Vernouillet-Allee 1, 34587 Felsberg</p><p><a href="/Standesamt-Floersheim-Am-Main/2743">Standesamt Flörsheim Am Main</a><br>Riedstr. 9, 65439 Flörsheim Am Main</p><p><a href="/Standesamt-Frankenberg-eder/2872">Standesamt Frankenberg (Eder)</a><br>Obermarkt 7-13, 35066 Frankenberg (Eder)</p><p><a href="/Standesamt-Frankfurt-Am-Main/2550">Standesamt Frankfurt am Main</a><br>Bethmannstr. 3, 60311 Frankfurt am Main</p><p><a href="/Standesamt-Freigericht/2719">Standesamt Freigericht</a><br>Rathausstraße 13, 63579 Freigericht</p><p><a href="/Standesamt-Friedberg/2907">Standesamt Friedberg</a><br>Mainzer-Tor-Anlage 6, 61169 Friedberg (Hessen)</p><p><a href="/Standesamt-Friedrichsdorf/2628">Standesamt Friedrichsdorf</a><br>Hugenottenstr. 55, 61381 Friedrichsdorf</p><p><a href="/Standesamt-Fritzlar/2819">Standesamt Fritzlar</a><br>Rathaus, 34560 Fritzlar</p><p><a href="/Standesamt-Fulda/2560">Standesamt Fulda</a><br>Schloßstr. 1, 36037 Fulda</p><p><a href="/Standesamt-Fuldatal/2649">Standesamt Fuldatal</a><br>Am Rathaus 9, 34233 Fuldatal</p><p><a href="/Standesamt-Fuerthodenwald/2512">Standesamt Fürth/Odenwald</a><br>Hauptstr. 19, 64658 Fürth</p><p><a href="/Standesamt-Geisenheim/2804">Standesamt Geisenheim</a><br>Rüdesheimer Str. 48, 65366 Geisenheim</p><p><a href="/Standesamt-Gelnhausen/2720">Standesamt Gelnhausen</a><br>Holzgasse 2, 63571 Gelnhausen</p><p><a href="/Standesamt-Gernsheim/2596">Standesamt Gernsheim</a><br>Stadthausplatz 1, 64579 Gernsheim</p><p><a href="/Standesamt-Giessen/2579">Standesamt Gießen</a><br>Ostanlage 25, 35390 Gießen</p><p><a href="/Standesamt-Ginsheim-Gustavsburg/2597">Standesamt Ginsheim-Gustavsburg</a><br>Dr.-Herrmann-Str. 32, 65462 Ginsheim-Gustavsburg</p><p><a href="/Standesamt-Gladenbach/2760">Standesamt Gladenbach</a><br>Karl-Waldschmidt-Str. 3, 35075 Gladenbach</p><p><a href="/Standesamt-Griesheim/2534">Standesamt Griesheim</a><br>Wilhelm-Leuschner-Str. 75, 64347 Griesheim</p><p><a href="/Standesamt-Gross-Gerau/2598">Standesamt Groß-Gerau</a><br>Elisabethenstr. 18, 64521 Groß-Gerau</p><p><a href="/Standesamt-Gross-Rohrheim/2515">Standesamt Groß-Rohrheim</a><br>Rheinstr. 14, 68649 Groß-Rohrheim</p><p><a href="/Standesamt-Gross-Umstadt/2536">Standesamt Groß-Umstadt</a><br>Georg-August-Zinn-Str.44, 64823 Groß-Umstadt</p><p><a href="/Standesamt-Gross-Zimmern/2537">Standesamt Groß-Zimmern</a><br>Rathausplatz 1, 64846 Groß-Zimmern</p><p><a href="/Standesamt-Grossalmerode/2887">Standesamt Großalmerode</a><br>Marktplatz 11, 37247 Großalmerode</p><p><a href="/Standesamt-Gruenberg/2580">Standesamt Grünberg</a><br>Marktplatz 8, 35305 Grünberg</p><p><a href="/Standesamt-Gruendau/2722">Standesamt Gründau</a><br>Am Bürgerzentrum 1, 63584 Gründau</p><p><a href="/Standesamt-Gudensberg/2821">Standesamt Gudensberg</a><br>Kasseler Str. 2, 34281 Gudensberg</p><p><a href="/Standesamt-Hadamar/2698">Standesamt Hadamar</a><br>Untermarkt 1, 65589 Hadamar</p><p><a href="/Standesamt-Haiger/2679">Standesamt Haiger</a><br>Marktplatz 7, 35708 Haiger</p><p><a href="/Standesamt-Hainburg/2792">Standesamt Hainburg</a><br>Hauptstr. 44, 63512 Hainburg</p><p><a href="/Standesamt-Hanau/2724">Standesamt Hanau</a><br>Am Markt 14-18, 63450 Hanau</p><p><a href="/Standesamt-Hattersheim-Am-Main/2744">Standesamt Hattersheim am Main</a><br>Untertorstr. 3, 65795 Hattersheim am Main</p><p><a href="/Standesamt-Heppenheim/2516">Standesamt Heppenheim</a><br>Großer Markt 1, 64646 Heppenheim (Bergstraße)</p><p><a href="/Standesamt-Herborn/2680">Standesamt Herborn</a><br>Hauptstr. 39, 35745 Herborn</p><p><a href="/Standesamt-Hessisch-Lichtenau/2889">Standesamt Hessisch Lichtenau</a><br>Landgrafenstr. 52, 37235 Hessisch Lichtenau</p><p><a href="/Standesamt-Heusenstamm/2788">Standesamt Heusenstamm</a><br>Im Herrngarten 1, 63150 Heusenstamm</p><p><a href="/Standesamt-Hochheim-Am-Main/2745">Standesamt Hochheim am Main</a><br>Burgeffstr. 30, 65239 Hochheim am Main</p><p><a href="/Standesamt-Hoechst-I-Odw/2780">Standesamt Höchst i. Odw.</a><br>Montmelianer Platz 4, 64739 Höchst i. Odw.</p><p><a href="/Standesamt-Hoechst-In-Frankfurt-Am-Main/2551">Standesamt Höchst in Frankfurt am Main</a><br>Seilerbahn 2, 65929 Frankfurt am Main</p><p><a href="/Standesamt-Hofgeismar/2653">Standesamt Hofgeismar</a><br>Markt 1, 34369 Hofgeismar</p><p><a href="/Standesamt-Hofheim-Am-Taunus/2746">Standesamt Hofheim am Taunus</a><br>Chinonplatz 2, 65719 Hofheim am Taunus</p><p><a href="/Standesamt-Homberg-efze/2823">Standesamt Homberg (Efze)</a><br>Rathausgasse 1, 34576 Homberg (Efze)</p><p><a href="/Standesamt-Homberg-ohm/2850">Standesamt Homberg (Ohm)</a><br>Marktstr. 26, 35315 Homberg (Ohm)</p><p><a href="/Standesamt-Huenfeld/2566">Standesamt Hünfeld</a><br>Konrad-Adenauer-Platz 1, 36088 Hünfeld</p><p><a href="/Standesamt-Huenfelden/2699">Standesamt Hünfelden</a><br>Le-Thillay-Platz, 65597 Hünfelden</p><p><a href="/Standesamt-Hungen/2582">Standesamt Hungen</a><br>Kaiserstr. 7, 35410 Hungen</p><p><a href="/Standesamt-Huettenberg/2682">Standesamt Hüttenberg</a><br>Frankfurter Str. 49–51 , 35625 Hüttenberg</p><p><a href="/Standesamt-Idsteiner-Land/2807">Standesamt Idsteiner Land</a><br>König-Adolf-Platz 2, 65510 Idstein</p><p><a href="/Standesamt-Karben/2911">Standesamt Karben</a><br>Rathausplatz 1, 61184 Karben</p><p><a href="/Standesamt-Kassel/2639">Standesamt Kassel</a><br>Obere Königsstr. 8, 34117 Kassel</p><p><a href="/Standesamt-Kaufungen/2655">Standesamt Kaufungen</a><br>Leipziger Str. 463, 34260 Kaufungen</p><p><a href="/Standesamt-Kelkheim-Am-Taunus/2747">Standesamt Kelkheim am Taunus</a><br>Gagernring 6, 65779 Kelkheim (Taunus)</p><p><a href="/Standesamt-Kelsterbach/2599">Standesamt Kelsterbach</a><br>Mörfelder Str. 33, 65451 Kelsterbach</p><p><a href="/Standesamt-Kiedrich/2808">Standesamt Kiedrich</a><br>Schulstr. 2, 65399 Kiedrich</p><p><a href="/Standesamt-Kirchhain/2761">Standesamt Kirchhain</a><br>Am Markt  6/8, 35274 Kirchhain</p><p><a href="/Standesamt-Kirchheim/2617">Standesamt Kirchheim</a><br>Hauptstr. 20, 36275 Kirchheim</p><p><a href="/Standesamt-Koenigstein-Im-Taunus/2630">Standesamt Königstein Im Taunus</a><br>Hauptstr. 21c, 61462 Königstein Im Taunus</p><p><a href="/Standesamt-Korbach/2876">Standesamt Korbach</a><br>Stechbahn 1, 34497 Korbach</p><p><a href="/Standesamt-Kriftel/2748">Standesamt Kriftel</a><br>Frankfurter Str. 33-37, 65830 Kriftel</p><p><a href="/Standesamt-Kronberg-Im-Taunus/2631">Standesamt Kronberg im Taunus</a><br>Friedrich-Ebert-Str. 6, 61476 Kronberg im Taunus</p><p><a href="/Standesamt-Kuenzell/2568">Standesamt Künzell</a><br>Unterer Ortesweg 23, 36093 Künzell</p><p><a href="/Standesamt-Lahnau/2683">Standesamt Lahnau</a><br>Rathausplatz 1 - 5, 35633 Lahnau</p><p><a href="/Standesamt-Lampertheim/2517">Standesamt Lampertheim</a><br>Domgasse 2, 68623 Lampertheim</p><p><a href="/Standesamt-Langen-hessen/2793">Standesamt Langen (Hessen)</a><br>Südliche Ringstr. 80, 63225 Langen (Hessen)</p><p><a href="/Standesamt-Langenselbold/2727">Standesamt Langenselbold</a><br>Schlosspark 2, 63505 Langenselbold</p><p><a href="/Standesamt-Langgoens/2583">Standesamt Langgöns</a><br>St.-Ulrich-Ring 13, 35428 Langgöns</p><p><a href="/Standesamt-Laubach/2584">Standesamt Laubach</a><br>Friedrichstr. 11, 35321 Laubach</p><p><a href="/Standesamt-Lich/2585">Standesamt Lich</a><br>Unterstadt 1, 35423 Lich</p><p><a href="/Standesamt-Lichtenfels/2877">Standesamt Lichtenfels</a><br>Aarweg 10, 35104 Lichtenfels</p><p><a href="/Standesamt-Limburg-An-Der-Lahn/2700">Standesamt Limburg an der Lahn</a><br>Fischmarkt 21, 65549 Limburg a. d. Lahn</p><p><a href="/Standesamt-Linden/2586">Standesamt Linden</a><br>Konrad-Adenauer-Str. 25, 35440 Linden</p><p><a href="/Standesamt-Lindenfels/2519">Standesamt Lindenfels</a><br>Burgstr. 39, 64678 Lindenfels</p><p><a href="/Standesamt-Linsengericht/2728">Standesamt Linsengericht</a><br>Amtshofstr. 1, 63589 Linsengericht</p><p><a href="/Standesamt-Lohfelden/2657">Standesamt Lohfelden</a><br>Lange Straße 20, 34253 Lohfelden</p><p><a href="/Standesamt-Lollar/2587">Standesamt Lollar</a><br>Holzmühler Weg 76, 35457 Lollar</p><p><a href="/Standesamt-Lorch-Am-Rhein/2809">Standesamt Lorch am Rhein</a><br>Markt 5, 65391 Lorch / Rhein</p><p><a href="/Standesamt-Lorsch/2520">Standesamt Lorsch</a><br>Kaiser-Wilhelm-Platz 1, 64653 Lorsch</p><p><a href="/Standesamt-Mainhausen/2794">Standesamt Mainhausen</a><br>Rheinstr. 3, 63533 Mainhausen</p><p><a href="/Standesamt-Maintal/2729">Standesamt Maintal</a><br>Klosterhofstr. 4-6, 63477 Maintal</p><p><a href="/Standesamt-Marburg/2764">Standesamt Marburg</a><br>Frauenbergerstr. 35, 35039 Marburg</p><p><a href="/Standesamt-Melsungen/2828">Standesamt Melsungen</a><br>Sandstraße 13 , 34212 Melsungen</p><p><a href="/Standesamt-Michelstadt/2782">Standesamt Michelstadt</a><br>Frankfurter Str. 3, 64720 Michelstadt</p><p><a href="/Standesamt-Moerfelden-Walldorf/2600">Standesamt Mörfelden-Walldorf</a><br>Flughafenstraße 37, 64546 Mörfelden-Walldorf</p><p><a href="/Standesamt-Moerlenbach/2521">Standesamt Mörlenbach</a><br>Rathausplatz 1, 69509 Mörlenbach</p><p><a href="/Standesamt-Muecke/2854">Standesamt Mücke</a><br>Im Herrnhain 2, 35325 Mücke</p><p><a href="/Standesamt-Muehlheim-Am-Main/2795">Standesamt Mühlheim am Main</a><br>Friedensstr. 20, 63165 Mühlheim am Main</p><p><a href="/Standesamt-Muehltal/2540">Standesamt Mühltal</a><br>Ober-Ramstädter Str. 2-4, 64367 Mühltal</p><p><a href="/Standesamt-Muenster-gemeinde/2541">Standesamt Münster (Gemeinde)</a><br>Mozartstr. 8, 64839 Münster</p><p><a href="/Standesamt-Nauheim/2601">Standesamt Nauheim</a><br>Weingartenstr. 46-50, 64569 Nauheim</p><p><a href="/Standesamt-Naumburg-kassel/2658">Standesamt Naumburg (Kassel)</a><br>Burgstr. 15, 34311 Naumburg</p><p><a href="/Standesamt-Neu-Anspachusingen/2636">Standesamt Neu-Anspach/Usingen</a><br>Bahnhofstraße 27, 61267 Neu-Anspach</p><p><a href="/Standesamt-Neu-Isenburg/2796">Standesamt Neu-Isenburg</a><br>Hugenottenallee 53, 63263 Neu-Isenburg</p><p><a href="/Standesamt-Neuhof/2569">Standesamt Neuhof</a><br>Lindenplatz 4, 36119 Neuhof</p><p><a href="/Standesamt-Neustadt-hessen/2766">Standesamt Neustadt (Hessen)</a><br>Ritterstr. 5-9, 35279 Neustadt (Hessen)</p><p><a href="/Standesamt-Nidda/2915">Standesamt Nidda</a><br>Wilhelm-Eckhardt-Platz, 63667 Nidda</p><p><a href="/Standesamt-Niddatal/2916">Standesamt Niddatal</a><br>Hauptstr. 2, 61194 Niddatal</p><p><a href="/Standesamt-Nidderau/2731">Standesamt Nidderau</a><br>Am Steinweg 1, 61130 Nidderau</p><p><a href="/Standesamt-Niestetal/2659">Standesamt Niestetal</a><br>Heiligenröder Str. 70, 34266 Niestetal</p><p><a href="/Standesamt-Ober-Ramstadt/2542">Standesamt Ober-Ramstadt</a><br>Darmstädter Str. 29, 64372 Ober-Ramstadt</p><p><a href="/Standesamt-Obertshausen/2797">Standesamt Obertshausen</a><br>Schubertstr. 11, 63179 Obertshausen</p><p><a href="/Standesamt-Oberursel-taunus/2633">Standesamt Oberursel (Taunus)</a><br>Rathausplatz 1, 61440 Oberursel (Taunus)</p><p><a href="/Standesamt-Oestrich-Winkel/2810">Standesamt Oestrich-Winkel</a><br>Paul-Gerhardt-Weg 1, 65375 Oestrich-Winkel</p><p><a href="/Standesamt-Offenbach-Am-Main/2787">Standesamt Offenbach am Main</a><br>Berliner Straße 100, 63065 Offenbach am Main</p><p><a href="/Standesamt-Ortenberg/2918">Standesamt Ortenberg</a><br>Lauterbacher Str. 2, 63683 Ortenberg</p><p><a href="/Standesamt-Petersberg/2571">Standesamt Petersberg</a><br>Rathausplatz 1, 36100 Petersberg</p><p><a href="/Standesamt-Pfungstadt/2544">Standesamt Pfungstadt</a><br>Borngasse 17, 64319 Pfungstadt</p><p><a href="/Standesamt-Pohlheim/2588">Standesamt Pohlheim</a><br>Ludwigstr. 31, 35415 Pohlheim</p><p><a href="/Standesamt-Raunheim/2602">Standesamt Raunheim</a><br>Schulstr. 2, 65479 Raunheim</p><p><a href="/Standesamt-Reichelsheim-odenwald/2784">Standesamt Reichelsheim (Odenwald)</a><br>Bismarckstr. 43, 64385 Reichelsheim (Odenwald)</p><p><a href="/Standesamt-Reichelsheim--Wetterau/2920">Standesamt Reichelsheim / Wetterau</a><br>Bingenheimer Str. 33, 61203 Reichelsheim</p><p><a href="/Standesamt-Reinheim/2545">Standesamt Reinheim</a><br>Cestasplatz 1, 64354 Reinheim</p><p><a href="/Standesamt-Reiskirchen/2590">Standesamt Reiskirchen</a><br>Schulstr. 17, 35447 Reiskirchen</p><p><a href="/Standesamt-Riedstadt/2603">Standesamt Riedstadt</a><br>Rathausplatz 1, 64560 Riedstadt</p><p><a href="/Standesamt-Rodenbach/2733">Standesamt Rodenbach</a><br>Buchbergstr. 2, 63517 Rodenbach</p><p><a href="/Standesamt-Roedermark/2799">Standesamt Rödermark</a><br>Dieburger Str. 13-17, 63322 Rödermark</p><p><a href="/Standesamt-Rodgau/2798">Standesamt Rodgau</a><br>Hintergasse 15, 63110 Rodgau</p><p><a href="/Standesamt-Rosbach-Vdhoehe/2922">Standesamt Rosbach v.d.Höhe</a><br>Homburger Str. 64, 61191 Rosbach v.d.Höhe</p><p><a href="/Standesamt-Rossdorf/2546">Standesamt Roßdorf</a><br>Erbacher Str. 1, 64380 Roßdorf</p><p><a href="/Standesamt-Rotenburg-An-Der-Fulda/2624">Standesamt Rotenburg an der Fulda</a><br>Marktplatz 15, 36199 Rotenburg a.d. Fulda</p><p><a href="/Standesamt-Ruedesheim-Am-Rhein/2811">Standesamt Rüdesheim am Rhein</a><br>Markt 16, 65385 Rüdesheim am Rhein</p><p><a href="/Standesamt-Runkel/2704">Standesamt Runkel</a><br>Burgstr. 4, 65594 Runkel</p><p><a href="/Standesamt-Ruesselsheim/2604">Standesamt Rüsselsheim</a><br>Marktplatz 4, 65428 Rüsselsheim</p><p><a href="/Standesamt-Schaafheim/2547">Standesamt Schaafheim</a><br>Wilhelm-Leuschner-Str. 3, 64850 Schaafheim</p><p><a href="/Standesamt-Schauenburg/2662">Standesamt Schauenburg</a><br>Korbacher Str. 300, 34270 Schauenburg</p><p><a href="/Standesamt-Schlangenbad/2812">Standesamt Schlangenbad</a><br>Rheingauer Str. 23, 65388 Schlangenbad</p><p><a href="/Standesamt-Schlitz/2856">Standesamt Schlitz</a><br>An der Kirche 4, 36110 Schlitz</p><p><a href="/Standesamt-Schluechtern/2735">Standesamt Schlüchtern</a><br>Krämerstr. 2, 36381 Schlüchtern</p><p><a href="/Standesamt-Schmitten/2634">Standesamt Schmitten</a><br>Parkstr. 2, 61389 Schmitten</p><p><a href="/Standesamt-Schoeneck/2736">Standesamt Schöneck</a><br>Herrnhofstr. 8, 61137 Schöneck</p><p><a href="/Standesamt-Schotten/2857">Standesamt Schotten</a><br>Vogelsbergstr. 184, 63679 Schotten</p><p><a href="/Standesamt-Schwalmstadt/2836">Standesamt Schwalmstadt</a><br>Wiederholdstr. 24, 34613 Schwalmstadt</p><p><a href="/Standesamt-Schwalmtalhessen/2858">Standesamt Schwalmtal/Hessen</a><br>Alsfelder Str. 72, 36318 Schwalmtal</p><p><a href="/Standesamt-Seeheim-Jugenheim/2548">Standesamt Seeheim-Jugenheim</a><br>Georg-Kaiser-Platz 3, 64342 Seeheim-Jugenheim</p><p><a href="/Standesamt-Seligenstadt/2800">Standesamt Seligenstadt</a><br>Marktplatz 1, 63500 Seligenstadt</p><p><a href="/Standesamt-Sinntal/2737">Standesamt Sinntal</a><br>Am Rathaus 11, 36391 Sinntal</p><p><a href="/Standesamt-Solms/2689">Standesamt Solms</a><br>Oberndorfer Str. 20, 35606 Solms</p><p><a href="/Standesamt-Stadtallendorf/2768">Standesamt Stadtallendorf</a><br>Bahnhofstr. 2, 35260 Stadtallendorf</p><p><a href="/Standesamt-Steinau-An-Der-Strasse/2738">Standesamt Steinau an der Straße</a><br>Brüder-Grimm-Str. 47, 36396 Steinau an der Straße</p><p><a href="/Standesamt-Steinbach-taunus/2635">Standesamt Steinbach (Taunus)</a><br>Gartenstr. 25, 61449 Steinbach (Taunus)</p><p><a href="/Standesamt-Stockstadt-Am-Rhein/2605">Standesamt Stockstadt am Rhein</a><br>Rheinstr. 34-36, 64589 Stockstadt am Rhein</p><p><a href="/Standesamt-Sulzbach-taunus/2750">Standesamt Sulzbach (Taunus)</a><br>Hauptstr. 11, 65843 Sulzbach (Taunus)</p><p><a href="/Standesamt-Taunusstein/2813">Standesamt Taunusstein</a><br>Aarstr. 150, 65232 Taunusstein</p><p><a href="/Standesamt-Trebur/2606">Standesamt Trebur</a><br>Herrngasse 3, 65468 Trebur</p><p><a href="/Standesamt-Twistetal/2879">Standesamt Twistetal</a><br>Hüfte 7, 34477 Twistetal</p><p><a href="/Standesamt-Vellmar/2665">Standesamt Vellmar</a><br>Rathausplatz 1, 34246 Vellmar</p><p><a href="/Standesamt-Viernheim/2523">Standesamt Viernheim</a><br>Kettelerstr. 3, 68519 Viernheim</p><p><a href="/Standesamt-Volkmarsen/2881">Standesamt Volkmarsen</a><br>Steinweg 29, 34471 Volkmarsen</p><p><a href="/Standesamt-Waechtersbach/2739">Standesamt Wächtersbach</a><br>Main-Kinzig-Str. 31, 63607 Wächtersbach</p><p><a href="/Standesamt-Wald-Michelbach/2524">Standesamt Wald-Michelbach</a><br>In der Gass 17, 69483 Wald-Michelbach</p><p><a href="/Standesamt-Wehrheim/2637">Standesamt Wehrheim</a><br>Dorfborngasse 1 , 61273 Wehrheim</p><p><a href="/Standesamt-Weilburg/2708">Standesamt Weilburg</a><br>Mauerstr. 6-8, 35781 Weilburg an der Lahn</p><p><a href="/Standesamt-Weilmuenster/2709">Standesamt Weilmünster</a><br>Hauptstr. 12, 35789 Weilmünster</p><p><a href="/Standesamt-Weimar-lahn/2770">Standesamt Weimar (Lahn)</a><br>Alte Bahnhofstr. 31, 35096 Weimar (Lahn)</p><p><a href="/Standesamt-Weissenborn/2898">Standesamt Weißenborn</a><br>Kirchplatz 1, 37299 Weißenborn</p><p><a href="/Standesamt-Weiterstadt/2549">Standesamt Weiterstadt</a><br>Riedbahnstr. 6, 64331 Weiterstadt</p><p><a href="/Standesamt-Wettenberg/2592">Standesamt Wettenberg</a><br>Sorguesplatz 2, 35435 Wettenberg</p><p><a href="/Standesamt-Wetter-hessen/2771">Standesamt Wetter (Hessen)</a><br>Marktplatz 1, 35083 Wetter (Hessen)</p><p><a href="/Standesamt-Wetzlar/2691">Standesamt Wetzlar</a><br>Hauser Gasse 17, 35578 Wetzlar</p><p><a href="/Standesamt-Wiesbaden/2925">Standesamt Wiesbaden</a><br>Marktstr. 16, 65183 Wiesbaden</p><p><a href="/Standesamt-Witzenhausen/2899">Standesamt Witzenhausen</a><br>Am Markt 1, 37213 Witzenhausen</p><p><a href="/Standesamt-Woelfersheim/2923">Standesamt Wölfersheim</a><br>Hauptstr. 60, 61200 Wölfersheim</p><p><a href="/Standesamt-Wolfhagen/2667">Standesamt Wolfhagen</a><br>Burgstr. 33-35, 34466 Wolfhagen</p></div></div><br><br><br><br><br></div><div id="container">
+<div id="content" style="border-top: solid 1px #eee;background:#fff;color:#9a9a9a;height:20px;text-align:right;font-size:10px">
+<a href="/agb.php" target="_blank">AGB</a>&nbsp;|&nbsp;<a href="/datenschutz.php" target="_blank">Datenschutz</a>&nbsp;|&nbsp;
+<a href="/hilfe.php" target="_blank">Hilfe</a>&nbsp;|&nbsp;
+<a href="/impressum.php" target="_blank">Impressum</a>&nbsp;|&nbsp;
+<a href="/kontakt.php" target="_blank">Kontakt</a>&nbsp;|&nbsp;
+<a href="/anb.php" target="_blank">Nutzungsbedingungen</a>
+&nbsp;|&nbsp;<a href="/preise.php" target="_blank">Preise</a>&nbsp;|&nbsp;<a href="/rhinweise.php" target="_blank">Rechtliches</a>
+&nbsp;|&nbsp;<a href="/rss.php" target="_blank"><img src="/images/rss.png" height=10 width=10></a>
+</div>
+</div></div></body>
+</html>
+<!--
+0,027196884155273
+0,0046060085296631
+0,031802892684937
+-->

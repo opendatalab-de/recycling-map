@@ -1,0 +1,504 @@
+<html><head><title>Standesämter in Bayern</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><meta http-equiv="content-language" content="de"><meta name="description" content="Verzeichnis zu Standesämtern in Bayern"><link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.standesamt.com/rss.php">
+<link href="/javascripts/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css">
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon">
+
+
+<style type="text/css">
+.lightTip                       { width: 342px; }.lightTip .content              { width: 310px; padding: 10px; border: 6px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #ffffff; color: #020202; }.lightTip .bottom               { height: 14px; background: url(../images/notch-white.png) top center no-repeat; } .yellowTip                      { width: 342px; }.yellowTip .content             { width: 310px; padding: 10px; border: 6px solid #f9e98e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbf7aa; color: #020202; }.yellowTip .bottom              { height: 14px; background: url(../images/notch-yellow.png) top center no-repeat; } .orangeTip                      { width: 342px; }.orangeTip .content             { width: 310px; padding: 10px; border: 6px solid #f9cd8e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbe3aa; color: #020202; }.orangeTip .bottom              { height: 14px; background: url(../images/notch-orange.png) top center no-repeat; } .redTip                         { width: 342px; }.redTip .content                { width: 310px; padding: 10px; border: 6px solid #ce6f6f; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #f79992; color: #020202; }.redTip .bottom                 { height: 14px; background: url(../images/notch-red.png) top center no-repeat; } .greenTip                       { width: 342px; }.greenTip .content              { width: 310px; padding: 10px; border: 6px solid #a9db66; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #cae8a2; color: #020202; }.greenTip .bottom               { height: 14px; background: url(../images/notch-green.png) top center no-repeat; } .blueTip                        { width: 342px; }.blueTip .content               { width: 310px; padding: 10px; border: 6px solid #36a4d9; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #90d8f0; color: #020202; }.blueTip .bottom                { height: 14px; background: url(../images/notch-blue.png) top center no-repeat; } .purpleTip                      { width: 342px; }.purpleTip .content             { width: 310px; padding: 10px; border: 6px solid #8671de; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #a290f0; color: #020202; }.purpleTip .bottom              { height: 14px; background: url(../images/notch-purple.png) top center no-repeat; } .darkTip                        { width: 342px; }.darkTip .content               { width: 310px; padding: 10px; border: 6px solid #303030; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #505050; color: #f8f8f8; }.darkTip .bottom                { height: 14px; background: url(../images/notch-dark.png) top center no-repeat; }
+
+/* simple css-based tooltip */
+ .tooltip {
+ 	background-color:#000;
+ 	border:1px solid #fff;
+ 	padding:10px 15px;
+ 	width:200px;
+ 	display:none;
+ 	color:#fff;
+ 	text-align:left;
+ 	font-size:14px;
+
+ 	/* outline radius for mozilla/firefox only */
+ 	-moz-box-shadow:0 0 10px #000;
+ 	-webkit-box-shadow:0 0 10px #000;
+ }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0px none;
+	outline: 0;
+	background: ;
+}
+.none {
+	display: none;
+}
+.break {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+:focus {
+	outline: none;
+}
+ul {
+	list-style-type: none;
+}
+ul.quicklinks li{margin-bottom:5px;padding-left:20px;background:url('/images/bullet_green.png') no-repeat top left;}
+.big {
+	font-size:14px;
+}
+/* Layout
+========================*/
+body {
+	background: #e6f8f8 url('/images/bg.jpg') repeat-x top left;
+	text-align: center;
+	font-style:normal; font-variant:normal; font-weight:normal; font-size:76.5%; font-family:Arial, Helvetica, sans-serif
+}
+
+h1{ font-size:18px;margin-top:0em; margin-bottom:0em;}
+h2{ font-size:16px;margin-top:0em; margin-bottom:0em;}
+h3{ font-size:14px;margin-top:0em; margin-bottom:0em;}
+
+a:link {color:#2ca4e8; text-decoration:none}
+a:hover {color:#2ca4e8; text-decoration:underline}
+
+.small{
+	font-size:12px;
+}
+
+.small_gray{
+	font-size:12px;
+	color:#606060;
+}
+.gray{
+	color:#606060;
+}
+
+#headline_black {
+	height: 5px;
+	width: 100%;
+	background:#000
+}
+
+#topmenu {
+	float: right;
+	margin-top: 0px;
+	height: 20px;
+	font-weight: bold;
+	color: #515151;
+	white-space: nowrap;
+	width: auto;
+	padding-right: 31px;
+	padding-left: 31px;
+	background: #000;
+}
+#topmenu span {
+	color: #fff;
+}
+#topmenu a {
+	color: #bebebe;
+	text-decoration: none;
+}
+#topmenu a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+#topmenu span.left {
+	width: 31px;
+	height: 20px;
+	display: block;
+	background:;
+	float: left
+}
+
+#container {
+	width: 960px;
+	height:100%;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+
+#container_bordered {
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	border: solid 1px #000;
+}
+
+#content {
+	width: 940px;
+	background: #fff;
+	clear: both;
+	padding-left:20px; padding-right:20px; padding-top:10px; padding-bottom:0px;
+	border: 1px solid #fff;
+}
+
+#header_blue{
+	background:#2ca4e3;
+	color:#fff;
+}
+#header_orange{
+	background:#ff770b;
+	color:#fff;
+}
+
+
+ul.steps { background: url('/images/steps-bg.png') no-repeat 0 0;display:block;height:207px;margin-bottom:10px;clear:both }
+  ul.steps li {color:#9AB5CF;float:left;font-size:32px;margin:20px 42px 20px 15px;width:260px;}
+    ul.steps li img { vertical-align:top;margin-left:20px;}
+    ul.steps li div { color:#010101;font-size:13px;text-align:center;width:260px;margin-top:10px; }
+    ul.steps li div.benefit_text { font-size: 15px; }
+    ul.steps li div.margin_top_0 { margin-top: 0px; }
+    ul.steps li div strong { font-weight:bold; }
+    ul.steps li.last_step { margin-right:0px; }
+
+.big_red{
+	font-size:22px;
+	color:#ff691f;
+	text-decoration: none;
+}
+
+#submenu1{
+	padding-top:15px;
+	width:920px;
+	height:40px;
+	background:#d2f2f3;
+}
+
+
+
+
+#submenu {
+	padding-top:15px;
+	height: 41px;
+	background:#d2f2f3;
+	margin-bottom: 20px
+}
+#submenu ul, #submenu p {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	display: inline;
+}
+#submenu ul li {
+	float: left;
+	margin-top: 3px;
+}
+
+
+#submenu ul li a {
+	border-bottom: 1px solid #cce8eb;
+	padding: 4px 10px 4px 10px;
+	text-decoration: none;
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #5c7e81;
+	background: #eaf7f8;
+	margin-right: 4px;
+	position: relative;
+	text-align: center;
+}
+#submenu ul li a:hover {
+	background: #fff;
+}
+#submenu ul li a.active {
+	background: #fff;
+	color: #396063;
+	border-bottom: 1px solid #c4e3e6;
+}
+#submenu ul li span {
+	position: absolute;
+	display: block;
+	background: url('/images/submenu_pointer.gif') no-repeat;
+	width: 21px;
+	height: 12px;
+	top: 30px;
+	left: 50%;
+	margin-left: -10px
+}
+
+
+
+input#searchField {
+	width: 225px;
+	background: #fff;
+	border: 1px solid #bbb;
+	border-bottom-color: #ddd;
+	border-right-color: #ddd;
+	color: #868686;
+	padding: 4px;
+}
+input#searchButton, input#loginButton, input#Button {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #ff691f;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+
+input#searchButtonRed, input#loginButtonRed, input#ButtonRed {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #c92f2e;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+#footer{
+	float: right;
+	color: #aaaaaa;
+}
+
+input.textbox,
+select.textbox,
+textarea,
+input[type=text],
+input[type=password] {
+  -moz-border-radius: 5px;
+  -webkit-border-radius:5px;
+  border:1px solid #E0E0E0;
+  padding:6px 10px;
+  border-color:#AFAFAF #E0E0E0 #E0E0E0;
+  border-style:solid;
+  border-width:1px 1px 1px;
+  font-size:13px;
+  color:#434343;
+  resize:none;
+  font-family:arial;
+  background-color: #F9F9F9;
+  vertical-align: middle;
+}
+
+textarea {
+  line-height: 1.5;
+  vertical-align: baseline;
+}
+
+select {
+  font-size:13px;
+  color:#434343;
+  background-color: #ffffff;
+}
+
+input.checkbox {
+  margin: 0 5px 0 0;
+}
+
+
+
+.accordion {
+	width: 280px;
+}
+.accordion span {
+	height:50px;
+	background: url(/images/help.png) no-repeat right 8px;
+	padding: 10px;
+	margin: 0;
+	cursor: pointer;
+}
+.accordion span.active {
+	background-position: right 8px;
+}
+.accordion p {
+	margin: 0;
+	padding: 5px 5px 5px;
+	border-top:1px dotted #000;
+	border-bottom:1px dotted #000;
+}
+
+
+.edit {
+	padding-top:5px;
+	float:right;
+	color:blue;
+	cursor: pointer;
+}
+
+##########rating ###################
+.rating {
+	cursor: pointer;
+	margin: 2em;
+	clear: both;
+	display: block;
+}
+.rating:after {
+	content: '.';
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+	visibility: hidden;
+}
+.cancel,
+.star {
+	float: left;
+	width: 17px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.star-left,
+.star-right {
+  width: 8px
+}
+.cancel,
+.cancel a {background: url('/images/rating-delete.gif') no-repeat 0 -16px;}
+
+.star,
+.star a {background: url('/images/rating-star.gif') no-repeat 0 0px;}
+.star-left,
+.star-left a {background: url('/images/rating-star-left.gif') no-repeat 0 0px;}
+.star-right,
+.star-right a {background: url('/images/rating-star-right.gif') no-repeat 0 0px;}
+
+.cancel a,
+.star a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: 0 0px;
+}
+
+div.rating div.on a {
+	background-position: 0 -16px;
+}
+div.rating div.hover a,
+div.rating div a:hover {
+	background-position: 0 -32px;
+}
+.buttonlink
+		{
+			background-image: url('/images/button-green.png') !important;
+			background-position: left top;
+
+			color: #fff;
+
+			height: 22px;
+			width: 146px;
+
+			padding: 10px 0 10px 0;
+			margin: 0 5px 0 0;
+
+			font-weight: bold;
+			display: block;
+			float: left;
+			text-align: center;
+
+			font-size: 16px;
+
+			text-shadow: 0 1px 1px #595;
+
+		}
+#buttonlinks
+{
+	padding: 10px;
+}
+
+
+.buttonlink:hover
+{
+	color: #fff;
+	background-position: left 80px;
+}
+
+.buttonlink:active
+{
+	color: #fff;
+	background-position: left 40px;
+}
+
+
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel, div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel, div.rating-cancel a{background:url('/rating/delete.gif') no-repeat 0 -16px; }
+div.star-rating, div.star-rating a{background:url('/rating/star.gif') no-repeat 0 0px; }
+div.rating-cancel a, div.star-rating a{display:block;width:16px;height:100%;background-position: 0 0px;border:0px none; }
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+
+
+google_afs_bigsize{padding:1px;}
+.google_afs_bigsize a {height:auto;text-decoration:none;display:inline;height:100%;}
+.google_afs_bigsize a:hover {text-decoration:none;background-color:#eee}
+.google_afs_bigsize a:activ {text-decoration:none;}
+.google_afs_bigsize a:visited {text-decoration:none;}
+.google_afs_bigsize a strong {text-decoration:underline;}
+.google_afs_bigsize span.visible_url {color:#555555;font-style:italic;}
+.google_afs_bigsize span.txt {color:#666666;}
+
+</style>
+<link type="text/css" href="/javascripts/jquery/themes/le-frog/jquery.ui.all.css" rel="stylesheet"><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="/javascripts/jquery/jquery.js"></script><script src="/javascripts/jquery/ui/jquery-ui-1.8.6.custom.js"></script><script src="/javascripts/facebox/facebox.js" type="text/javascript"></script><script type="text/javascript" src="/javascripts/tinytip/jquery.tinyTips.js"></script><link type="text/css" href="/javascripts/menu/menu.css" rel="stylesheet"><script type="text/javascript" src="/javascripts/menu/menu.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20235868-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script></head><body><div style="width:100%;height:20px;"></div><div id="container"><div id="content">
+<script src="/javascripts/jquery/ui/jquery.effects.blind.js"></script>
+<script>
+$(function() {
+		// run the currently selected effect
+		function runEffect() {
+			// most effect types need no options passed by default
+			var options = {}; 
+			// run the effect
+			$( "#menu1" ).show( 'blind', options, 500);
+		};
+ 
+		//callback function to bring a hidden box back
+		function callback() {
+			setTimeout(function() {
+				$( "#menu1:visible" ).removeAttr( "style" ).fadeOut();
+			}, 100 );
+		};
+ 
+		// set effect from select menu value
+		$( "#tab1" ).mouseover(function() {
+			runEffect();
+			return false;
+		});
+ 		
+ 		
+
+		$( "#menu1" ).hide();
+		
+	});
+	
+	
+			function testhide()
+			{
+				$( "#menu1" ).hide();
+		}
+	</script>
+<div style="height:110px;border-bottom: solid 1px #bbb;width:100%"><div style="width:100%;"><a href="/"><img src="/images/logo.png" title="Standesamt"></a></div><div style="width:100%;text-align:right;padding-top:0px"><form action="/search.php"><input type="text" style="border:solid 1px #000" size="50" name="q" id="id_q" value="Plz oder Ort" onclick="if (this.value=='Plz oder Ort') this.value='';"> <input type="hidden" name="key" value="hochzeit"><input type="submit" name="do" onclick="if (document.getElementById('id_q').value=='Plz oder Ort') document.getElementById('id_q').value='';return true;" value="Standesämter anzeigen"></form></div></div><div style="font-size:10px"><a href="/">Startseite</a> &gt; <a href="/Standesaemter-Bayern/2">Standesämter Bayern</a></div><div style="width:100%;valign:top"><div style="background:#fff;width:200px;float:left;"><div style="background:#fff;border: solid 1px #c3c3c3;width:100%;"><div style="background:#2ca4e3;padding:5px;color:#fff;"><h2>Standesämter Bayern</h2></div><div style="padding:5px;"> Wir haben aktuell <b>706 Standesämter</b> aus Bayern bei uns gelistet.</div></div></div><div style="min-height:400px;margin-left: 210px;padding-left:20px;font-size:14px;"><p></p><h1>Standesämter in Bayern</h1><p></p><br><p><a href="/Standesamt-Abensberg/1998">Standesamt Abensberg</a><br>Stadtplatz 1, 93326 Abensberg</p><p><a href="/Standesamt-Adelsdorf/1831">Standesamt Adelsdorf</a><br>Rathausplatz 1, 91325 Adelsdorf</p><p><a href="/Standesamt-Adelsried/1535">Standesamt Adelsried</a><br>Dillinger Str. 2, 86477 Adelsried</p><p><a href="/Standesamt-Affing/1467">Standesamt Affing</a><br>Mühlweg 2, 86444 Affing</p><p><a href="/Standesamt-Aholming/1715">Standesamt Aholming</a><br>Untere Römerstr. 2, 94527 Aholming</p><p><a href="/Standesamt-Ahorn/1691">Standesamt Ahorn</a><br>Hauptstr. 40, 96482 Ahorn</p><p><a href="/Standesamt-Ahorntal/1626">Standesamt Ahorntal</a><br>Kirchahorn 11, 95491 Ahorntal</p><p><a href="/Standesamt-Aichach/1468">Standesamt Aichach</a><br>Tandlmarkt 13, 86551 Aichach</p><p><a href="/Standesamt-Aindling/1475">Standesamt Aindling</a><br>Marktplatz 1, 86447 Aindling</p><p><a href="/Standesamt-Ainring/1647">Standesamt Ainring</a><br>Salzburger Str. 48, 83404 Ainring</p><p><a href="/Standesamt-Allershausen/1879">Standesamt Allershausen</a><br>Johannes-Boos-Platz 6, 85391 Allershausen</p><p><a href="/Standesamt-Alling/1901">Standesamt Alling</a><br>Am Kirchberg 6, 82239 Alling</p><p><a href="/Standesamt-Altdorf-B-Nuernberg/2271">Standesamt Altdorf b. Nürnberg</a><br>Röderstr. 10, 90518 Altdorf b. Nürnberg</p><p><a href="/Standesamt-Altendorf/1623">Standesamt Altendorf</a><br>Jurastr. 1, 96146 Altendorf</p><p><a href="/Standesamt-Altenmuenster/1536">Standesamt Altenmünster</a><br>Rathausplatz 1, 86450 Altenmünster</p><p><a href="/Standesamt-Altenstadt/2226">Standesamt Altenstadt</a><br>Hindenburgstr. 1, 89281 Altenstadt</p><p><a href="/Standesamt-Altmannstein/1790">Standesamt Altmannstein</a><br>Marktplatz 4, 93336 Altmannstein</p><p><a href="/Standesamt-Altomuenster/1707">Standesamt Altomünster</a><br>St.-Altohof 1, 85250 Altomünster</p><p><a href="/Standesamt-Altoetting/1479">Standesamt Altötting</a><br>Kapellplatz 2a, 84503 Altötting</p><p><a href="/Standesamt-Altusried/2293">Standesamt Altusried</a><br>Rathausplatz 1, 87452 Altusried</p><p><a href="/Standesamt-Alzenau/1511">Standesamt Alzenau</a><br>Hanauer Str. 1, 63755 Alzenau</p><p><a href="/Standesamt-Amberg/1486">Standesamt Amberg</a><br>Marktplatz 11, 92224 Amberg</p><p><a href="/Standesamt-Ammerndorf/1916">Standesamt Ammerndorf</a><br>Cadolzburger Str. 3, 90614 Ammerndorf</p><p><a href="/Standesamt-Ammerthal/1508">Standesamt Ammerthal</a><br>Mühlweg 16a, 92260 Ammerthal</p><p><a href="/Standesamt-Amorbach/2148">Standesamt Amorbach</a><br>Kellereigasse 1, 63916 Amorbach</p><p><a href="/Standesamt-Anger/1648">Standesamt Anger</a><br>Dorfplatz 4, 83454 Anger</p><p><a href="/Standesamt-Ansbach/1509">Standesamt Ansbach</a><br>Pfarrstr. 29, 91522 Ansbach</p><p><a href="/Standesamt-Anzing/1775">Standesamt Anzing</a><br>Schulstr. 1, 85646 Anzing</p><p><a href="/Standesamt-Arnschwang/1659">Standesamt Arnschwang</a><br>Kirchgasse 10, 93473 Arnschwang</p><p><a href="/Standesamt-Arrach/1660">Standesamt Arrach</a><br>Rathausplatz 1, 93474 Arrach</p><p><a href="/Standesamt-Asbach-Baeumenheim/1758">Standesamt Asbach-Bäumenheim</a><br>Rathausplatz 1, 86663 Asbach-Bäumenheim</p><p><a href="/Standesamt-Aschaffenburg/1510">Standesamt Aschaffenburg</a><br>Dalbergstr. 15, 63739 Aschaffenburg</p><p><a href="/Standesamt-Aschheim/2188">Standesamt Aschheim</a><br>Ismaninger Str. 8, 85609 Aschheim</p><p><a href="/Standesamt-Assling/1787">Standesamt Aßling</a><br>Bahnhofstr. 1, 85617 Aßling</p><p><a href="/Standesamt-Au-Id-Hallertau/1866">Standesamt Au i.d. Hallertau</a><br>Untere Hauptstraße 2, 84072 Au i.d. Hallertau</p><p><a href="/Standesamt-Auerbach/1716">Standesamt Auerbach</a><br>Hauptstr. 8, 94530 Auerbach</p><p><a href="/Standesamt-Auerbach-Id-Opf/1487">Standesamt Auerbach i.d. OPf.</a><br>Oberer Marktplatz 1, 91275 Auerbach i.d.OPf.</p><p><a href="/Standesamt-Augsburg/1534">Standesamt Augsburg</a><br>Maximilianstraße 69, 86150 Augsburg</p><p><a href="/Standesamt-Aurachtal/1843">Standesamt Aurachtal</a><br>Lange Str. 2, 91086 Aurachtal</p><p><a href="/Standesamt-Aystetten/1537">Standesamt Aystetten</a><br>Bäckergasse 2, 86482 Aystetten</p><p><a href="/Standesamt-Bad-Abbach/1999">Standesamt Bad Abbach</a><br>Raiffeisenstr. 72, 93077 Bad Abbach</p><p><a href="/Standesamt-Bad-Berneck-I-Fichtelgebirge/1627">Standesamt Bad Berneck i. Fichtelgebirge</a><br>Bahnhofstr. 77, 95460 Bad Berneck</p><p><a href="/Standesamt-Bad-Bocklet/1564">Standesamt Bad Bocklet</a><br>Kleinfeldlein 14, 97708 Bad Bocklet</p><p><a href="/Standesamt-Bad-Brueckenau/1565">Standesamt Bad Brückenau</a><br>Marktplatz 2, 97769 Bad Brückenau</p><p><a href="/Standesamt-Bad-Heilbrunn/1580">Standesamt Bad Heilbrunn</a><br>Badstr. 3, 83670 Bad Heilbrunn</p><p><a href="/Standesamt-Bad-Hindelang/2301">Standesamt Bad Hindelang</a><br>Marktstr. 9, 87541 Bad Hindelang</p><p><a href="/Standesamt-Bad-Kissingen/1566">Standesamt Bad Kissingen</a><br>Rathausplatz 1, 97688 Bad Kissingen</p><p><a href="/Standesamt-Bad-Kohlgrub/1928">Standesamt Bad Kohlgrub</a><br>Hauptstr. 29, 82433 Bad Kohlgrub</p><p><a href="/Standesamt-Bad-Koetzting/1668">Standesamt Bad Kötzting</a><br>Herrenstr. 5, 93444 Bad Kötzting</p><p><a href="/Standesamt-Bad-Reichenhall/1649">Standesamt Bad Reichenhall</a><br>Rathausplatz 1 und 8, 83435 Bad Reichenhall</p><p><a href="/Standesamt-Bad-Rodach/1699">Standesamt Bad Rodach</a><br>Markt 1, 96476 Bad Rodach</p><p><a href="/Standesamt-Bad-Staffelstein/2099">Standesamt Bad Staffelstein</a><br>Marktplatz 1, 96231 Bad Staffelstein</p><p><a href="/Standesamt-Bad-Steben/1975">Standesamt Bad Steben</a><br>Hauptstr. 2, 95138 Bad Steben</p><p><a href="/Standesamt-Bad-Toelz/1581">Standesamt Bad Tölz</a><br>Am Schloßplatz 1, 83646 Bad Tölz</p><p><a href="/Standesamt-Bad-Windsheim/2256">Standesamt Bad Windsheim</a><br>Marktplatz 1, 91438 Bad Windsheim</p><p><a href="/Standesamt-Baiersdorf/1832">Standesamt Baiersdorf</a><br>Waaggasse 2, 91083 Baiersdorf</p><p><a href="/Standesamt-Bamberg/1597">Standesamt Bamberg</a><br>Maximiliansplatz 3, 96047 Bamberg</p><p><a href="/Standesamt-Baunach/1615">Standesamt Baunach</a><br>Bamberger Str. 1, 96148 Baunach</p><p><a href="/Standesamt-Bayreuth/1625">Standesamt Bayreuth</a><br>Luitpoldplatz 13, 95444 Bayreuth</p><p><a href="/Standesamt-Beilngries/1791">Standesamt Beilngries</a><br>Hauptstr. 24, 92339 Beilngries</p><p><a href="/Standesamt-Benediktbeuern/1594">Standesamt Benediktbeuern</a><br>Prälatenstr. 7, 83671 Benediktbeuern</p><p><a href="/Standesamt-Berching/2240">Standesamt Berching</a><br>Pettenkoferplatz 12, 92334 Berching</p><p><a href="/Standesamt-Berchtesgaden/1650">Standesamt Berchtesgaden</a><br>Rathausplatz 1, 83471 Berchtesgaden</p><p><a href="/Standesamt-Berg/1976">Standesamt Berg</a><br>Kirchplatz 2, 95180 Berg</p><p><a href="/Standesamt-Bergkirchen/1708">Standesamt Bergkirchen</a><br>Johann-Michael-Fischer-Str. 1, 85232 Bergkirchen</p><p><a href="/Standesamt-Bernried/1717">Standesamt Bernried</a><br>Birket 34, 94505 Bernried</p><p><a href="/Standesamt-Bessenbach/1512">Standesamt Bessenbach</a><br>Ludwig-Straub-Str. 2, 63856 Bessenbach</p><p><a href="/Standesamt-Betzenstein/1641">Standesamt Betzenstein</a><br>Nürnberger Str. 5, 91282 Betzenstein</p><p><a href="/Standesamt-Biberbach/1538">Standesamt Biberbach</a><br>Rathausplatz 1, 86485 Biberbach</p><p><a href="/Standesamt-Bibertal/1943">Standesamt Bibertal</a><br>Kirchberg 3, 89346 Bibertal</p><p><a href="/Standesamt-Bindlach/1628">Standesamt Bindlach</a><br>Rathausplatz 1, 95463 Bindlach</p><p><a href="/Standesamt-Bischberg/1598">Standesamt Bischberg</a><br>Schulstr. 16, 96120 Bischberg</p><p><a href="/Standesamt-Bischofsgruen/1629">Standesamt Bischofsgrün</a><br>Hauptstr. 27, 95493 Bischofsgrün</p><p><a href="/Standesamt-Bischofswiesen/1651">Standesamt Bischofswiesen</a><br>Rathausplatz 2, 83483 Bischofswiesen</p><p><a href="/Standesamt-Bissingen/1734">Standesamt Bissingen</a><br>Am Hofgarten 1, 86657 Markt Bissingen</p><p><a href="/Standesamt-Blaibach/1661">Standesamt Blaibach</a><br>Badstr. 5, 93476 Blaibach</p><p><a href="/Standesamt-Bobingen/1539">Standesamt Bobingen</a><br>Rathausplatz 1, 86399 Bobingen</p><p><a href="/Standesamt-Bockhorn/1813">Standesamt Bockhorn</a><br>Rathausplatz 1, 85461 Bockhorn</p><p><a href="/Standesamt-Breitenguessbach/1599">Standesamt Breitengüßbach</a><br>Kirchplatz 4, 96149 Breitengüßbach</p><p><a href="/Standesamt-Bubenreuth/1833">Standesamt Bubenreuth</a><br>Birkenallee 51, 91088 Bubenreuth</p><p><a href="/Standesamt-Burgau/1944">Standesamt Burgau</a><br>Gerichtsweg 8, 89331 Burgau</p><p><a href="/Standesamt-Burgebrach/1616">Standesamt Burgebrach</a><br>Hauptstr. 1-3, 96138 Burgebrach</p><p><a href="/Standesamt-Burghausen/1480">Standesamt Burghausen</a><br>Stadtplatz 112, 84489 Burghausen</p><p><a href="/Standesamt-Burgkirchen-Ad-Alz/1481">Standesamt Burgkirchen a.d. Alz</a><br>Max-Planck-Platz 5, 84508 Burgkirchen a.d.Alz</p><p><a href="/Standesamt-Burgkunstadt/2095">Standesamt Burgkunstadt</a><br>Vogtei 5, 96224 Burgkunstadt</p><p><a href="/Standesamt-Buergstadt/2168">Standesamt Bürgstadt</a><br>Große Maingasse 1, 63927 Bürgstadt</p><p><a href="/Standesamt-Burgthann/2272">Standesamt Burgthann</a><br>Rathausplatz 1, 90559 Burgthann</p><p><a href="/Standesamt-Burkardroth/1567">Standesamt Burkardroth</a><br>Am Marktplatz 10, 97705 Burkardroth</p><p><a href="/Standesamt-Burtenbach/1945">Standesamt Burtenbach</a><br>Rathausgäßchen 1, 89349 Burtenbach</p><p><a href="/Standesamt-Buttenheim/1617">Standesamt Buttenheim</a><br>Hauptstr. 15, 96155 Buttenheim</p><p><a href="/Standesamt-Buttenwiesen/1735">Standesamt Buttenwiesen</a><br>Marktplatz 4, 86647 Buttenwiesen</p><p><a href="/Standesamt-Buxheim/1792">Standesamt Buxheim</a><br>Dorfplatz 2, 85114 Buxheim</p><p><a href="/Standesamt-Cadolzburg/1917">Standesamt Cadolzburg</a><br>Rathausplatz 1, 90556 Cadolzburg</p><p><a href="/Standesamt-Cham/1662">Standesamt Cham</a><br>Marktplatz 2, 93413 Cham</p><p><a href="/Standesamt-Chamerau/1663">Standesamt Chamerau</a><br>Schulstr. 2, 93466 Chamerau</p><p><a href="/Standesamt-Coburg/1690">Standesamt Coburg</a><br>Oberer Bürglaß 1, 96450 Coburg</p><p><a href="/Standesamt-Creussen/1642">Standesamt Creußen</a><br>Bahnhofstr. 11, 95473 Creußen</p><p><a href="/Standesamt-Dachau/1709">Standesamt Dachau</a><br>Konrad-Adenauer-Str. 2-6, 85221 Dachau</p><p><a href="/Standesamt-Deggendorf/1718">Standesamt Deggendorf</a><br>Franz-Josef-Strauß-Str. 3, 94469 Deggendorf</p><p><a href="/Standesamt-Denkendorf/1793">Standesamt Denkendorf</a><br>Wassertal 2, 85095 Denkendorf</p><p><a href="/Standesamt-Denklingen/2053">Standesamt Denklingen</a><br>Hauptstr. 23, 86920 Denklingen</p><p><a href="/Standesamt-Dettelbach/2012">Standesamt Dettelbach</a><br>Luipold-Baumann-Str. 1, 97337 Dettelbach</p><p><a href="/Standesamt-Diedorf/1540">Standesamt Diedorf</a><br>Lindenstr. 5, 86420 Diedorf</p><p><a href="/Standesamt-Diessen-Am-Ammersee/2054">Standesamt Dießen am Ammersee</a><br>Marktplatz 1, 86911 Diessen a. Ammersee</p><p><a href="/Standesamt-Dietramszell/1582">Standesamt Dietramszell</a><br>Am Richteranger 10, 83623 Dietramszell</p><p><a href="/Standesamt-Dillingen-Ad-Donau/1736">Standesamt Dillingen a.d. Donau</a><br>Königstrasse 37/38, 89407 Dillingen a.d.Donau</p><p><a href="/Standesamt-Dingolfing/1744">Standesamt Dingolfing</a><br>Dr.-Josef-Hastreiter-Str. 2, 84130 Dingolfing</p><p><a href="/Standesamt-Dinkelscherben/1541">Standesamt Dinkelscherben</a><br>Augsburger Str. 4-6, 86424 Dinkelscherben</p><p><a href="/Standesamt-Doehlau/1977">Standesamt Döhlau</a><br>Am Rathaus 2, 95182 Döhlau</p><p><a href="/Standesamt-Dollnstein/1794">Standesamt Dollnstein</a><br>Papst-Viktor-Str. 35, 91795 Dollnstein</p><p><a href="/Standesamt-Donauwoerth/1759">Standesamt Donauwörth</a><br>Rathausgasse 1, 86609 Donauwörth</p><p><a href="/Standesamt-Dorfen/1814">Standesamt Dorfen</a><br>Marienplatz 10, 84405 Dorfen</p><p><a href="/Standesamt-Doerfles-Esbach/1692">Standesamt Dörfles-Esbach</a><br>Rosenauer Str. 12, 96487 Dörfles-Esbach</p><p><a href="/Standesamt-Dormitz/1860">Standesamt Dormitz</a><br>Sebalder Str. 12, 91077 Dormitz</p><p><a href="/Standesamt-Ebelsbach/1970">Standesamt Ebelsbach</a><br>Georg-Schäfer-Str. 56, 97500 Ebelsbach</p><p><a href="/Standesamt-Ebermannsdorf/1488">Standesamt Ebermannsdorf</a><br>Schulstr. 8, 92263 Ebermannsdorf</p><p><a href="/Standesamt-Ebermannstadt/1861">Standesamt Ebermannstadt</a><br>Franz-Dörrzapf-Straße 10, 91320 Ebermannstadt</p><p><a href="/Standesamt-Ebern/1971">Standesamt Ebern</a><br>Rittergasse 3, 96106 Ebern</p><p><a href="/Standesamt-Ebersberg/1776">Standesamt Ebersberg</a><br>Marienplatz 1, 85560 Ebersberg</p><p><a href="/Standesamt-Ebersdorf-B-Coburg/1693">Standesamt Ebersdorf b. Coburg</a><br>Raiffeisenstr. 1, 96237 Ebersdorf Ebersdorf</p><p><a href="/Standesamt-Ebrach/1618">Standesamt Ebrach</a><br>Rathausplatz 2, 96157 Ebrach</p><p><a href="/Standesamt-Eching/1867">Standesamt Eching</a><br>Untere Hauptstr. 3, 85386 Eching</p><p><a href="/Standesamt-Eching/2077">Standesamt Eching</a><br>Viecht, Hauptstraße 12, 84174 Eching</p><p><a href="/Standesamt-Eckental/1834">Standesamt Eckental</a><br>Rathausplatz 1, 90542 Eckental</p><p><a href="/Standesamt-Eckersdorf/1630">Standesamt Eckersdorf</a><br>Bamberger Str. 30, 95488 Eckersdorf</p><p><a href="/Standesamt-Edelsfeld/1489">Standesamt Edelsfeld</a><br>Hirschbachstr. 8, 92265 Edelsfeld</p><p><a href="/Standesamt-Effeltrich/1862">Standesamt Effeltrich</a><br>Forchheimer Str. 1, 91090 Effeltrich</p><p><a href="/Standesamt-Egenhofen/1902">Standesamt Egenhofen</a><br>Hauptstr. 37, 82281 Egenhofen</p><p><a href="/Standesamt-Eggolsheim/1847">Standesamt Eggolsheim</a><br>Hauptstr. 27, 91330 Eggolsheim</p><p><a href="/Standesamt-Egling/1583">Standesamt Egling</a><br>Münchner Str. 2, 82544 Egling</p><p><a href="/Standesamt-Egling-An-Der-Paar/2055">Standesamt Egling an der Paar</a><br>Hauptstr. 31, 86492 Egling a. d. Paar</p><p><a href="/Standesamt-Egloffstein/1848">Standesamt Egloffstein</a><br>Badstr. 166, 91349 Egloffstein</p><p><a href="/Standesamt-Eichenau/1903">Standesamt Eichenau</a><br>Hauptplatz 2, 82223 Eichenau</p><p><a href="/Standesamt-Eichendorf/1745">Standesamt Eichendorf</a><br>Marktplatz 5, 94428 Eichendorf</p><p><a href="/Standesamt-Eichstaett/1795">Standesamt Eichstätt</a><br>Marktplatz 11, 85072 Eichstätt</p><p><a href="/Standesamt-Eichstaett/1809">Standesamt Eichstätt</a><br>Pfahlstr. 17, 85072 Eichstätt</p><p><a href="/Standesamt-Eitensheim/1810">Standesamt Eitensheim</a><br>Eichstätter Str. 1, 85117 Eitensheim</p><p><a href="/Standesamt-Elchingen/2218">Standesamt Elchingen</a><br>Pfarrgäßle 2, 89275 Elchingen</p><p><a href="/Standesamt-Elfershausen/1577">Standesamt Elfershausen</a><br>Marktstr. 17, 97725 Elfershausen</p><p><a href="/Standesamt-Elsenfeld/2151">Standesamt Elsenfeld</a><br>Marienstr. 29, 63820 Elsenfeld</p><p><a href="/Standesamt-Eltmann/1960">Standesamt Eltmann</a><br>Marktplatz 1, 97483 Eltmann</p><p><a href="/Standesamt-Emmering/1904">Standesamt Emmering</a><br>Amperstr. 11a, 82275 Emmering</p><p><a href="/Standesamt-Ensdorf/1490">Standesamt Ensdorf</a><br>Hauptstr. 4, 92266 Ensdorf</p><p><a href="/Standesamt-Erding/1815">Standesamt Erding</a><br>Landshuter Str. 1, 85435 Erding</p><p><a href="/Standesamt-Ergolding/2071">Standesamt Ergolding</a><br>Lindenstr. 25, 84030 Ergolding</p><p><a href="/Standesamt-Erlangen/1830">Standesamt Erlangen</a><br>Rathausplatz 1, 91052 Erlangen</p><p><a href="/Standesamt-Erlenbach-A-Main/2152">Standesamt Erlenbach a. Main</a><br>Bahnstr. 26, 63906 Erlenbach a. Main</p><p><a href="/Standesamt-Eschlkam/1664">Standesamt Eschlkam</a><br>Waldschmidtplatz 2, 93458 Eschlkam</p><p><a href="/Standesamt-Essenbach/2078">Standesamt Essenbach</a><br>Rathausplatz 3, 84051 Essenbach</p><p><a href="/Standesamt-Euerdorf/1578">Standesamt Euerdorf</a><br>Zeilweg 2, 97717 Euerdorf</p><p><a href="/Standesamt-Eurasburg/1584">Standesamt Eurasburg</a><br>Beuerberger Str. 10, 82547 Eurasburg</p><p><a href="/Standesamt-Fahrenzhausen/1868">Standesamt Fahrenzhausen</a><br>Hauptstr. 21, 85777 Fahrenzhausen</p><p><a href="/Standesamt-Farchant/1929">Standesamt Farchant</a><br>Am Gern 1, 82490 Farchant</p><p><a href="/Standesamt-Feilitzsch/1992">Standesamt Feilitzsch</a><br>Hauptstr. 28, 95183 Feilitzsch</p><p><a href="/Standesamt-Feldkirchen/1789">Standesamt Feldkirchen</a><br>Rathausplatz 1, 85622 Feldkirchen</p><p><a href="/Standesamt-Feucht/2273">Standesamt Feucht</a><br>Hauptstr. 33, 90537 Feucht</p><p><a href="/Standesamt-Fichtelberg/1631">Standesamt Fichtelberg</a><br>Gablonzer Str. 11, 95686 Fichtelberg</p><p><a href="/Standesamt-Finsing/1816">Standesamt Finsing</a><br>Rathausplatz 1, 85464 Neufinsing</p><p><a href="/Standesamt-Fischach/1542">Standesamt Fischach</a><br>Hauptstr. 16, 86850 Fischach</p><p><a href="/Standesamt-Forchheim/1849">Standesamt Forchheim</a><br>Sattlertorstr. 5, 91301 Forchheim</p><p><a href="/Standesamt-Forstern/1817">Standesamt Forstern</a><br>Hauptstr. 15, 85659 Forstern</p><p><a href="/Standesamt-Forstinning/1777">Standesamt Forstinning</a><br>Mühldorfer Str. 4, 85661 Forstinning</p><p><a href="/Standesamt-Frammersbach/2116">Standesamt Frammersbach</a><br>Am Marktplatz 3, 97833 Frammersbach</p><p><a href="/Standesamt-Fraunberg/1818">Standesamt Fraunberg</a><br>Schulstr. 1, 85447 Fraunberg</p><p><a href="/Standesamt-Freihung/1491">Standesamt Freihung</a><br>Rathausstr. 4, 92271 Freihung Oberpfalz</p><p><a href="/Standesamt-Freilassing/1652">Standesamt Freilassing</a><br>Münchener Str. 15, 83395 Freilassing</p><p><a href="/Standesamt-Freising/1869">Standesamt Freising</a><br>Rindermarkt 18, 85354 Freising</p><p><a href="/Standesamt-Fremdingen/1760">Standesamt Fremdingen</a><br>Kirchberg 1, 86742 Fremdingen</p><p><a href="/Standesamt-Frensdorf/1619">Standesamt Frensdorf</a><br>Kaulberg 1, 96158 Frensdorf</p><p><a href="/Standesamt-Freudenberg/1492">Standesamt Freudenberg</a><br>Hauptstr. 17, 92272 Freudenberg</p><p><a href="/Standesamt-Freyung/1882">Standesamt Freyung</a><br>Rathausplatz 1, 94078 Freyung</p><p><a href="/Standesamt-Friedberg/1469">Standesamt Friedberg</a><br>Marienplatz 1, 86316 Friedberg</p><p><a href="/Standesamt-Frontenhausen/1746">Standesamt Frontenhausen</a><br>Marienplatz 3, 84160 Frontenhausen</p><p><a href="/Standesamt-Fuchstal/2062">Standesamt Fuchstal</a><br>Bahnhofstr. 1, 86925 Fuchstal</p><p><a href="/Standesamt-Fuerstenfeldbruck/1905">Standesamt Fürstenfeldbruck</a><br>Hauptstr. 4, 82256 Fürstenfeldbruck</p><p><a href="/Standesamt-Fuerth/1915">Standesamt Fürth</a><br>Koenigstr. 88, 90762 Fürth</p><p><a href="/Standesamt-Furth/2089">Standesamt Furth</a><br>Am Rathaus 6, 84095 Furth</p><p><a href="/Standesamt-Furth-Im-Wald/1665">Standesamt Furth im Wald</a><br>Burgstr. 1, 93437 Furth</p><p><a href="/Standesamt-Gablingen/1543">Standesamt Gablingen</a><br>Rathausplatz 1, 86456 Gablingen</p><p><a href="/Standesamt-Gaimersheim/1796">Standesamt Gaimersheim</a><br>Marktplatz 3, 85080 Gaimersheim</p><p><a href="/Standesamt-Gaissach/1585">Standesamt Gaißach</a><br>Bahnhofstr. 8, 83674 Gaißach</p><p><a href="/Standesamt-Garching-Ad-Alz/1482">Standesamt Garching a.d. Alz</a><br>Rathausplatz 1, 84518 Garching a.d. Alz</p><p><a href="/Standesamt-Garching-B-Muenchen/2192">Standesamt Garching b. München</a><br>Rathausplatz 3, 85748 Garching b. München</p><p><a href="/Standesamt-Garmisch-Partenkirchen/1930">Standesamt Garmisch-Partenkirchen</a><br>Rathausplatz 1, 82467 Garmisch-Partenkirchen</p><p><a href="/Standesamt-Gefrees/1632">Standesamt Gefrees</a><br>Hauptstr. 22, 95482 Gefrees</p><p><a href="/Standesamt-Geiselbach/1513">Standesamt Geiselbach</a><br>Kirchstr. 6, 63826 Geiselbach</p><p><a href="/Standesamt-Geiselwind/2013">Standesamt Geiselwind</a><br>Marktplatz 1, 96160 Geiselwind</p><p><a href="/Standesamt-Geltendorf/2056">Standesamt Geltendorf</a><br>Schulstr. 13, 82269 Geltendorf</p><p><a href="/Standesamt-Gemeinde-Oberhausen-Bei-Neuburg/2234">Standesamt Gemeinde Oberhausen bei Neuburg</a><br>Hauptstr. 4, 86697 Oberhausen</p><p><a href="/Standesamt-Gemuenden-A-Main/2117">Standesamt Gemünden a. Main</a><br>Scherenbergstr. 5, 97737 Gemünden a. Main</p><p><a href="/Standesamt-Geretsried/1586">Standesamt Geretsried</a><br>Karl-Lederer-Platz 1, 82538 Geretsried</p><p><a href="/Standesamt-Germering/1906">Standesamt Germering</a><br>Rathausplatz 1, 82110 Germering</p><p><a href="/Standesamt-Geroldsgruen/1978">Standesamt Geroldsgrün</a><br>Keyßerstr. 25, 95179 Geroldsgrün</p><p><a href="/Standesamt-Gersthofen/1544">Standesamt Gersthofen</a><br>Rathausplatz 1, 86368 Gersthofen</p><p><a href="/Standesamt-Gessertshausen/1558">Standesamt Gessertshausen</a><br>Hauptstr. 31, 86459 Gessertshausen</p><p><a href="/Standesamt-Glattbach/1514">Standesamt Glattbach</a><br>Schulstr. 17, 63864 Glattbach</p><p><a href="/Standesamt-Glonn/1788">Standesamt Glonn</a><br>Marktplatz 1, 85625 Glonn</p><p><a href="/Standesamt-Goldbach/1515">Standesamt Goldbach</a><br>Sachsenhausen 19, 63773 Goldbach</p><p><a href="/Standesamt-Goldkronach/1633">Standesamt Goldkronach</a><br>Marktplatz 2, 95497 Goldkronach</p><p><a href="/Standesamt-Goessweinstein/1850">Standesamt Gößweinstein</a><br>Burgstr. 8, 91327 Gößweinstein</p><p><a href="/Standesamt-Graben/1545">Standesamt Graben</a><br>Rathausplatz 1, 86836 Graben</p><p><a href="/Standesamt-Graefelfing/2193">Standesamt Gräfelfing</a><br>Ruffiniallee 2, 82166 Gräfelfing</p><p><a href="/Standesamt-Grafenau/1883">Standesamt Grafenau</a><br>Rathausgasse 1, 94481 Grafenau</p><p><a href="/Standesamt-Graefenberg/1864">Standesamt Gräfenberg</a><br>Kirchplatz 8, 91322 Gräfenberg</p><p><a href="/Standesamt-Grafenwiesen/1666">Standesamt Grafenwiesen</a><br>Rathausplatz 6, 93479 Grafenwiesen</p><p><a href="/Standesamt-Grafing-Bei-Muenchen/1778">Standesamt Grafing bei München</a><br>Marktplatz 28, 85567 Grafing b. München</p><p><a href="/Standesamt-Grafling/1719">Standesamt Grafling</a><br>Hauptstr. 2, 94539 Grafling</p><p><a href="/Standesamt-Grafrath/1913">Standesamt Grafrath</a><br>Hauptstr. 64, 82284 Grafrath</p><p><a href="/Standesamt-Grainau/1931">Standesamt Grainau</a><br>Am Kurpark 1, 82491 Grainau</p><p><a href="/Standesamt-Grainet/1884">Standesamt Grainet</a><br>Obere Hauptstr. 21, 94143 Grainet</p><p><a href="/Standesamt-Groebenzell/1907">Standesamt Gröbenzell</a><br>Rathausstr. 4, 82194 Gröbenzell</p><p><a href="/Standesamt-Grossaitingen/1559">Standesamt Großaitingen</a><br>Am Alten Markt 3, 86845 Großaitingen</p><p><a href="/Standesamt-Grosshabersdorf/1918">Standesamt Großhabersdorf</a><br>Nürnberger Str. 12, 90613 Großhabersdorf</p><p><a href="/Standesamt-Grossheirath/1694">Standesamt Großheirath</a><br>Schulstr. 34, 96269 Großheirath</p><p><a href="/Standesamt-Grosslangheim/2018">Standesamt Großlangheim</a><br>Schwarzacher Str. 4, 97320 Großlangheim</p><p><a href="/Standesamt-Grossmehring/1797">Standesamt Großmehring</a><br>Marienplatz 7, 85098 Großmehring</p><p><a href="/Standesamt-Grossostheim/1516">Standesamt Großostheim</a><br>Schaafheimer Str. 33, 63762 Großostheim</p><p><a href="/Standesamt-Grub-Am-Forst/1706">Standesamt Grub am Forst</a><br>Coburger Str. 23, 96271 Grub a. Forst</p><p><a href="/Standesamt-Gruenwald/2195">Standesamt Grünwald</a><br>Rathausstr. 3, 82031 Grünwald</p><p><a href="/Standesamt-Gundelfingen-Ad-Donau/1738">Standesamt Gundelfingen a.d. Donau</a><br>Professor-Bamann-Str. 22, 89423 Gundelfingen a.d.Donau</p><p><a href="/Standesamt-Gundelsheim/1600">Standesamt Gundelsheim</a><br>Karmelitenstr. 11, 96163 Gundelsheim</p><p><a href="/Standesamt-Guenzburg/1946">Standesamt Günzburg</a><br>Schloßplatz 1, 89312 Günzburg</p><p><a href="/Standesamt-Haar/2196">Standesamt Haar</a><br>Bahnhofstr. 7, 85540 Haar</p><p><a href="/Standesamt-Hahnbach/1503">Standesamt Hahnbach</a><br>Herbert-Falk-Str. 5, 92256 Hahnbach</p><p><a href="/Standesamt-Haibach/1517">Standesamt Haibach</a><br>Hauptstr. 6, 63808 Haibach</p><p><a href="/Standesamt-Haidmuehle/1885">Standesamt Haidmühle</a><br>Dreisesselstr. 12, 94145 Haidmühle</p><p><a href="/Standesamt-Haldenwang-schwaben/1953">Standesamt Haldenwang (Schwaben)</a><br>Hauptstr. 28, 89356 Haldenwang</p><p><a href="/Standesamt-Hallbergmoos/1870">Standesamt Hallbergmoos</a><br>Theresienstr. 76, 85399 Hallbergmoos</p><p><a href="/Standesamt-Hallerndorf/1851">Standesamt Hallerndorf</a><br>Von-Seckendorf-Straße 10, 91352 Hallerndorf</p><p><a href="/Standesamt-Hallstadt/1601">Standesamt Hallstadt</a><br>Marktplatz 2, 96103 Hallstadt</p><p><a href="/Standesamt-Hammelburg/1568">Standesamt Hammelburg</a><br>Frobeniusstr. 2, 97762 Hammelburg</p><p><a href="/Standesamt-Harburg-schwaben/1761">Standesamt Harburg (Schwaben)</a><br>Schloßstr. 1, 86655 Harburg (Schw.)</p><p><a href="/Standesamt-Hassfurt/1961">Standesamt Haßfurt</a><br>Marktplatz 1, 97437 Haßfurt</p><p><a href="/Standesamt-Hausen/1852">Standesamt Hausen</a><br>Heroldsbacher Str. 51, 91353 Hausen</p><p><a href="/Standesamt-Heigenbruecken/1531">Standesamt Heigenbrücken</a><br>Hauptstr. 7, 63869 Heigenbrücken</p><p><a href="/Standesamt-Heiligenstadt/1602">Standesamt Heiligenstadt</a><br>Marktplatz 20, 91332 Heiligenstadt</p><p><a href="/Standesamt-Heimbuchenthal/1532">Standesamt Heimbuchenthal</a><br>Hauptstr. 81, 63872 Heimbuchenthal</p><p><a href="/Standesamt-Heinersreuth/1634">Standesamt Heinersreuth</a><br>Kulmbacher Str. 14, 95500 Heinersreuth</p><p><a href="/Standesamt-Helmbrechts/1979">Standesamt Helmbrechts</a><br>Luitpoldstr. 21, 95233 Helmbrechts</p><p><a href="/Standesamt-Hemhofen/1835">Standesamt Hemhofen</a><br>Blumenstr. 25, 91334 Hemhofen</p><p><a href="/Standesamt-Hengersberg/1720">Standesamt Hengersberg</a><br>Mimminger Str. 2, 94491 Hengersberg</p><p><a href="/Standesamt-Hepberg/1798">Standesamt Hepberg</a><br>Schulstr. 5, 85120 Hepberg</p><p><a href="/Standesamt-Heroldsbach/1853">Standesamt Heroldsbach</a><br>Hauptstr. 9, 91336 Heroldsbach</p><p><a href="/Standesamt-Heroldsberg/1836">Standesamt Heroldsberg</a><br>Hauptstr. 104, 90562 Heroldsberg</p><p><a href="/Standesamt-Hersbruck/2274">Standesamt Hersbruck</a><br>Unterer Markt 2, 91217 Hersbruck</p><p><a href="/Standesamt-Herzogenaurach/1837">Standesamt Herzogenaurach</a><br>Marktplatz 11, 91074 Herzogenaurach</p><p><a href="/Standesamt-Hessdorf/1844">Standesamt Heßdorf</a><br>Hannberger Str. 5, 91093 Heßdorf</p><p><a href="/Standesamt-Hilgertshausen-Tandern/1713">Standesamt Hilgertshausen-Tandern</a><br>Schrobenhausener Str. 9, 86567 Hilgertshausen-Tandern</p><p><a href="/Standesamt-Himmelkron/2039">Standesamt Himmelkron</a><br>Klosterberg 9, 95502 Himmelkron</p><p><a href="/Standesamt-Hinterschmiding/1897">Standesamt Hinterschmiding</a><br>Dorfplatz 23, 94146 Hinterschmiding</p><p><a href="/Standesamt-Hirschaid/1603">Standesamt Hirschaid</a><br>Kirchplatz 6, 96114 Hirschaid</p><p><a href="/Standesamt-Hirschau/1493">Standesamt Hirschau</a><br>Rathausplatz 1, 92242 Hirschau</p><p><a href="/Standesamt-Hitzhofen/1799">Standesamt Hitzhofen</a><br>Kirchweg 12, 85122 Hitzhofen</p><p><a href="/Standesamt-Hoechstadt-A-D-Aisch/1845">Standesamt Höchstadt a. d. Aisch</a><br>Bahnhofstr. 18, 91315 Höchstadt a.d.Aisch</p><p><a href="/Standesamt-Hoechstaedt-Addonau/1739">Standesamt Höchstädt a.d.Donau</a><br>Herzog-Philipp-Ludwig-Str. 10, 89420 Höchstädt a.d.Donau</p><p><a href="/Standesamt-Hof/1974">Standesamt Hof</a><br>Karolinenstr. 40, 95028 Hof</p><p><a href="/Standesamt-Hofheim-In-Unterfranken/1972">Standesamt Hofheim in Unterfranken</a><br>Obere Sennigstr. 4, 97461 Hofheim i. UFr.</p><p><a href="/Standesamt-Hohenau/1886">Standesamt Hohenau</a><br>Dorfplatz 22, 94545 Hohenau</p><p><a href="/Standesamt-Hohenbrunn/2198">Standesamt Hohenbrunn</a><br>Pfarrer-Wenk-Platz 1, 85662 Hohenbrunn</p><p><a href="/Standesamt-Hohenkammer/1871">Standesamt Hohenkammer</a><br>Petershauser Str. 1, 85411 Hohenkammer</p><p><a href="/Standesamt-Hohenlinden/1779">Standesamt Hohenlinden</a><br>Rathausplatz 1, 85664 Hohenlinden</p><p><a href="/Standesamt-Hohenwarth/1667">Standesamt Hohenwarth</a><br>Kirchstr. 7, 93480 Hohenwarth</p><p><a href="/Standesamt-Hollfeld/1643">Standesamt Hollfeld</a><br>Marienplatz 18, 96142 Hollfeld</p><p><a href="/Standesamt-Holzheim/1740">Standesamt Holzheim</a><br>Hochstiftstr. 2, 89438 Holzheim</p><p><a href="/Standesamt-Holzkirchen/2136">Standesamt Holzkirchen</a><br>Marktplatz 2, 83607 Holzkirchen</p><p><a href="/Standesamt-Horgau/1546">Standesamt Horgau</a><br>Martinsplatz 1, 86497 Horgau</p><p><a href="/Standesamt-Hoerlkofen/1824">Standesamt Hörlkofen</a><br>Erdinger Str. 8a, 85457 Hörlkofen</p><p><a href="/Standesamt-Hoesbach/1518">Standesamt Hösbach</a><br>Rathausstr. 3, 63768 Hösbach</p><p><a href="/Standesamt-Ichenhausen/1954">Standesamt Ichenhausen</a><br>Heinrich-Sinz-Str. 14, 89335 Ichenhausen</p><p><a href="/Standesamt-Icking/1587">Standesamt Icking</a><br>Mittenwalder Str. 6, 82057 Icking</p><p><a href="/Standesamt-Igensdorf/1854">Standesamt Igensdorf</a><br>Bürgermeister-Zeiß-Platz 1, 91338 Igensdorf</p><p><a href="/Standesamt-Iggensbach/1721">Standesamt Iggensbach</a><br>Hauptstr. 39, 94547 Iggensbach</p><p><a href="/Standesamt-Igling/2063">Standesamt Igling</a><br>Unteriglinger Str. 37, 86859 Igling</p><p><a href="/Standesamt-Ihrlerstein/2006">Standesamt Ihrlerstein</a><br>Hauptstr. 15, 93346 Ihrlerstein</p><p><a href="/Standesamt-Illertissen/2219">Standesamt Illertissen</a><br>Hauptstr. 4, 89257 Illertissen</p><p><a href="/Standesamt-Illschwang/1504">Standesamt Illschwang</a><br>Am Dorfplatz 2, 92278 Illschwang</p><p><a href="/Standesamt-Immenstadt-I-Allgaeu/2302">Standesamt Immenstadt i. Allgäu</a><br>Kirchplatz 7, 87509 Immenstadt</p><p><a href="/Standesamt-Inchenhofen/1470">Standesamt Inchenhofen</a><br>Zisterzienserplatz 2, 86570 Inchenhofen</p><p><a href="/Standesamt-Ingolstadt/1996">Standesamt Ingolstadt</a><br>Rathausplatz 4, 85049 Ingolstadt</p><p><a href="/Standesamt-Iphofen/2019">Standesamt Iphofen</a><br>Marktplatz 28, 97346 Iphofen</p><p><a href="/Standesamt-Isen/1819">Standesamt Isen</a><br>Münchner Str. 12, 84424 Isen</p><p><a href="/Standesamt-Ismaning/2199">Standesamt Ismaning</a><br>Schloßstr. 2, 85737 Ismaning</p><p><a href="/Standesamt-Itzgrund/1695">Standesamt Itzgrund</a><br>Rathausstr. 4, 96274 Itzgrund</p><p><a href="/Standesamt-Jachenau/1588">Standesamt Jachenau</a><br>Dorf 51 1/2, 83676 Jachenau</p><p><a href="/Standesamt-Jandelsbrunn/1887">Standesamt Jandelsbrunn</a><br>Hauptstr. 31, 94118 Jandelsbrunn</p><p><a href="/Standesamt-Jettingen-Scheppach/1947">Standesamt Jettingen-Scheppach</a><br>Hauptstr. 55, 89343 Jettingen-Scheppach</p><p><a href="/Standesamt-Johannesberg/1519">Standesamt Johannesberg</a><br>Oberafferbacher Str. 12, 63867 Johannesberg</p><p><a href="/Standesamt-Kahl-Am-Main/1520">Standesamt Kahl am Main</a><br>Aschaffenburger Str. 1, 63796 Kahl a. Main</p><p><a href="/Standesamt-Kaisheim/1762">Standesamt Kaisheim</a><br>Münsterplatz 5, 86687 Kaisheim</p><p><a href="/Standesamt-Kalchreuth/1839">Standesamt Kalchreuth</a><br>Schulstr. 9, 90562 Kalchreuth</p><p><a href="/Standesamt-Kammeltal/1948">Standesamt Kammeltal</a><br>Burgauer Str. 12, 89358 Kammeltal</p><p><a href="/Standesamt-Karlsfeld/1710">Standesamt Karlsfeld</a><br>Gartenstr. 7, 85757 Karlsfeld</p><p><a href="/Standesamt-Karlstadt/2118">Standesamt Karlstadt</a><br>Zum Helfenstein 2, 97753 Karlstadt</p><p><a href="/Standesamt-Karlstein-Am-Main/1521">Standesamt Karlstein am Main</a><br>Am Oberborn 1, 63791 Karlstein a. Main</p><p><a href="/Standesamt-Kasendorf/2048">Standesamt Kasendorf</a><br>Marktplatz 8, 95359 Kasendorf</p><p><a href="/Standesamt-Kastl/1495">Standesamt Kastl</a><br>Marktplatz 1, 92280 Kastl</p><p><a href="/Standesamt-Kaufbeuren/1997">Standesamt Kaufbeuren</a><br>Kaiser-Max-Str. 1, 87600 Kaufbeuren</p><p><a href="/Standesamt-Kaufering/2057">Standesamt Kaufering</a><br>Pfälzerstr. 1, 86916 Kaufering</p><p><a href="/Standesamt-Kelheim/2000">Standesamt Kelheim</a><br>Ludwigsplatz 16, 93309 Kelheim</p><p><a href="/Standesamt-Kemmern/1604">Standesamt Kemmern</a><br>Hauptstr. 2, 96164 Kemmern</p><p><a href="/Standesamt-Kempten-allgaeu/2011">Standesamt Kempten (Allgäu)</a><br>Rathausplatz 29, 87435 Kempten (Allgäu)</p><p><a href="/Standesamt-Kinding/1800">Standesamt Kinding</a><br>Kipfenberger Str. 4, 85125 Kinding</p><p><a href="/Standesamt-Kipfenberg/1801">Standesamt Kipfenberg</a><br>Marktplatz 2, 85110 Kipfenberg</p><p><a href="/Standesamt-Kirchdorf-An-Der-Amper/1872">Standesamt Kirchdorf an der Amper</a><br>Rathausplatz 1, 85414 Kirchdorf a. d. Amper</p><p><a href="/Standesamt-Kirchehrenbach/1865">Standesamt Kirchehrenbach</a><br>Hauptstr. 53, 91356 Kirchehrenbach</p><p><a href="/Standesamt-Kirchheim-Bei-Muenchen/2200">Standesamt Kirchheim bei München</a><br>Münchner Str. 6, 85551 Kirchheim b. München</p><p><a href="/Standesamt-Kirchseeon/1780">Standesamt Kirchseeon</a><br>Rathausstr. 1, 85614 Kirchseeon</p><p><a href="/Standesamt-Kissing/1471">Standesamt Kissing</a><br>Pestalozzistr. 5, 86438 Kissing</p><p><a href="/Standesamt-Kitzingen/2014">Standesamt Kitzingen</a><br>Kaiserstr. 13/15, 97318 Kitzingen</p><p><a href="/Standesamt-Kleinostheim/1522">Standesamt Kleinostheim</a><br>Kardinal-Faulhaber-Str. 12, 63801 Kleinostheim</p><p><a href="/Standesamt-Knetzgau/1962">Standesamt Knetzgau</a><br>Am Rathaus 2, 97478 Knetzgau</p><p><a href="/Standesamt-Kochel-A-See/1595">Standesamt Kochel a. See</a><br>Kalmbachstr. 11, 82431 Kochel a. See</p><p><a href="/Standesamt-Koeditz/1980">Standesamt Köditz</a><br>Talstr. 2, 95189 Köditz</p><p><a href="/Standesamt-Koenigsberg-In-Bayern/1963">Standesamt Königsberg in Bayern</a><br>Marktplatz 7, 97486 Königsberg i.Bay.</p><p><a href="/Standesamt-Koenigsbrunn/1547">Standesamt Königsbrunn</a><br>Marktplatz 7, 86343 Königsbrunn</p><p><a href="/Standesamt-Koenigsdorf/1589">Standesamt Königsdorf</a><br>Hauptstr. 54, 82549 Königsdorf</p><p><a href="/Standesamt-Konradsreuth/1981">Standesamt Konradsreuth</a><br>Hofer Str. 8, 95176 Konradsreuth</p><p><a href="/Standesamt-Koesching/1802">Standesamt Kösching</a><br>Marktplatz 1, 85092 Kösching</p><p><a href="/Standesamt-Koetz/1955">Standesamt Kötz</a><br>Schloßplatz 1, 89359 Kötz</p><p><a href="/Standesamt-Krailling/2216">Standesamt Krailling</a><br>Rudolf-von-Hirsch-Str. 1, 82152 Krailling</p><p><a href="/Standesamt-Kreuzwertheim/2125">Standesamt Kreuzwertheim</a><br>Lengfurter Str. 8, 97892 Kreuzwertheim</p><p><a href="/Standesamt-Kronach/2024">Standesamt Kronach</a><br>Marktplatz 5, 96317 Kronach</p><p><a href="/Standesamt-Krumbach-schwaben/1949">Standesamt Krumbach (Schwaben)</a><br>Nattenhauser Str. 5, 86381 Krumbach (Schwaben)</p><p><a href="/Standesamt-Kruen/1932">Standesamt Krün</a><br>Schöttlkarspitzstr. 15, 82494 Krün</p><p><a href="/Standesamt-Kuehbach/1476">Standesamt Kühbach</a><br>Marktplatz 3, 86556 Kühbach</p><p><a href="/Standesamt-Kulmbach/2040">Standesamt Kulmbach</a><br>Marktplatz 1, 95326 Kulmbach</p><p><a href="/Standesamt-Kuemmersbruck/1496">Standesamt Kümmersbruck</a><br>Schulstr. 37, 92245 Kümmersbruck</p><p><a href="/Standesamt-Kuenzing/1722">Standesamt Künzing</a><br>Osterhofener Str. 2, 94550 Künzing</p><p><a href="/Standesamt-Kueps/2025">Standesamt Küps</a><br>Am Rathaus 1, 96328 Küps</p><p><a href="/Standesamt-Kutzenhausen/1548">Standesamt Kutzenhausen</a><br>Schulstr. 10, 86500 Kutzenhausen</p><p><a href="/Standesamt-Lalling/1730">Standesamt Lalling</a><br>Hauptstr. 28, 94551 Lalling</p><p><a href="/Standesamt-Lam/1669">Standesamt Lam</a><br>Schulweg 4, 93462 Lam</p><p><a href="/Standesamt-Landau-Ad-Isar/1747">Standesamt Landau a.d. Isar</a><br>Oberer Stadtplatz 1, 94405 Landau a.d. Isar</p><p><a href="/Standesamt-Landsberg-Am-Lech/2058">Standesamt Landsberg am Lech</a><br>Katharinenstr. 1, 86899 Landsberg am Lech</p><p><a href="/Standesamt-Landshut/2069">Standesamt Landshut</a><br>Luitpoldstraße 29, 84034 Landshut</p><p><a href="/Standesamt-Langenbach/1873">Standesamt Langenbach</a><br>Bahnhofstr. 6, 85416 Langenbach</p><p><a href="/Standesamt-Langenneufnach/1560">Standesamt Langenneufnach</a><br>Rathausstr. 58, 86863 Langenneufnach</p><p><a href="/Standesamt-Langensendelbach/1855">Standesamt Langensendelbach</a><br>Kirchweg 1, 91094 Langensendelbach</p><p><a href="/Standesamt-Langenzenn/1919">Standesamt Langenzenn</a><br>Klaushofer Weg 1, 90579 Langenzenn</p><p><a href="/Standesamt-Langerringen/1561">Standesamt Langerringen</a><br>Hauptstr. 16, 86853 Langerringen</p><p><a href="/Standesamt-Langquaid/2007">Standesamt Langquaid</a><br>Marktplatz 24, 84085 Langquaid</p><p><a href="/Standesamt-Langweid-Am-Lech/1549">Standesamt Langweid am Lech</a><br>Augsburger Str. 20, 86462 Langweid a. Lech</p><p><a href="/Standesamt-Lauf-An-Der-Pegnitz/2276">Standesamt Lauf an der Pegnitz</a><br>Urlasstr. 22, 91207 Lauf a. d. Pegnitz</p><p><a href="/Standesamt-Laufach/1523">Standesamt Laufach</a><br>Raiffeisengasse 4, 63846 Laufach</p><p><a href="/Standesamt-Laufen/1653">Standesamt Laufen</a><br>Rathausplatz 1, 83410 Laufen</p><p><a href="/Standesamt-Lauingen-donau/1737">Standesamt Lauingen (Donau)</a><br>Herzog-Georg-Str. 17, 89415 Lauingen (Donau)</p><p><a href="/Standesamt-Lautertal/1696">Standesamt Lautertal</a><br>Frankenstr. 3, 96486 Lautertal</p><p><a href="/Standesamt-Leipheim/1950">Standesamt Leipheim</a><br>Marktstr. 5, 89340 Leipheim</p><p><a href="/Standesamt-Lengdorf/1820">Standesamt Lengdorf</a><br>Bischof-Arn-Platz 1, 84435 Lengdorf</p><p><a href="/Standesamt-Lenggries/1590">Standesamt Lenggries</a><br>Rathausplatz 1, 83661 Lenggries</p><p><a href="/Standesamt-Lenting/1803">Standesamt Lenting</a><br>Rathausplatz 1, 85101 Lenting</p><p><a href="/Standesamt-Lichtenberg/1993">Standesamt Lichtenberg</a><br>Marktplatz 16, 95192 Lichtenberg</p><p><a href="/Standesamt-Lichtenfels/2097">Standesamt Lichtenfels</a><br>Marktplatz 1, 96215 Lichtenfels</p><p><a href="/Standesamt-Lindau-bodensee/2105">Standesamt Lindau (Bodensee)</a><br>Bregenzer Str. 12, 88131 Lindau (B)</p><p><a href="/Standesamt-Lindenberg-I-Allgaeu/2106">Standesamt Lindenberg i. Allgäu</a><br>Stadtplatz 1, 88161 Lindenberg i. Allgäu</p><p><a href="/Standesamt-Lisberg/1620">Standesamt Lisberg</a><br>Am Schloß 6, 96170 Lisberg</p><p><a href="/Standesamt-Litzendorf/1605">Standesamt Litzendorf</a><br>Am Knock 6, 96123 Litzendorf</p><p><a href="/Standesamt-Lohberg/1670">Standesamt Lohberg</a><br>Rathausweg 1a, 93470 Lohberg</p><p><a href="/Standesamt-Lohr-A-Main/2119">Standesamt Lohr a. Main</a><br>Schloßplatz 3, 97816 Lohr a. Main</p><p><a href="/Standesamt-Lohr-A-Main---Vgem/2126">Standesamt Lohr a. Main - Vgem</a><br>Schloßplatz 2, 97816 Lohr a. Main</p><p><a href="/Standesamt-Loiching/1748">Standesamt Loiching</a><br>Kirchplatz 4, 84180 Loiching</p><p><a href="/Standesamt-Ludwigsstadt/2026">Standesamt Ludwigsstadt</a><br>Lauensteiner Str. 1, 96337 Ludwigsstadt</p><p><a href="/Standesamt-Mainaschaff/1524">Standesamt Mainaschaff</a><br>Hauptstr. 10-12, 63814 Mainaschaff</p><p><a href="/Standesamt-Mainbernheim/2015">Standesamt Mainbernheim</a><br>Rathausplatz 1, 97350 Mainbernheim</p><p><a href="/Standesamt-Mainburg/2001">Standesamt Mainburg</a><br>Marktplatz 1-4, 84048 Mainburg</p><p><a href="/Standesamt-Mainleus/2041">Standesamt Mainleus</a><br>Fritz-Hornschuch-Platz 4, 8, 95336 Mainleus</p><p><a href="/Standesamt-Maisach/1908">Standesamt Maisach</a><br>Schulstr. 1, 82216 Maisach</p><p><a href="/Standesamt-Mammendorf/1914">Standesamt Mammendorf</a><br>Augsburger Str. 12, 82291 Mammendorf</p><p><a href="/Standesamt-Mamming/1757">Standesamt Mamming</a><br>Hauptstr. 15, 94437 Mamming</p><p><a href="/Standesamt-Marklkofen/1749">Standesamt Marklkofen</a><br>Bahnhofstr. 5, 84163 Marklkofen</p><p><a href="/Standesamt-Markt-Altdorf/2070">Standesamt Markt Altdorf</a><br>Dekan-Wagner-Str. 13, 84032 Altdorf</p><p><a href="/Standesamt-Markt-Falkenstein/1684">Standesamt Markt Falkenstein</a><br>Marktplatz 1, 93167 Falkenstein</p><p><a href="/Standesamt-Markt-Indersdorf/1711">Standesamt Markt Indersdorf</a><br>Marktplatz 1, 85229 Markt Indersdorf</p><p><a href="/Standesamt-Markt-Koenigstein/1505">Standesamt Markt Königstein</a><br>Oberer Markt 20, 92281 Königstein</p><p><a href="/Standesamt-Markt-Neukirchen-Beim-Heiligen-Blut/1672">Standesamt Markt Neukirchen beim Heiligen Blut</a><br>Marktplatz 2, 93453 Neukirchen b. Hl. Blut</p><p><a href="/Standesamt-Markt-Pfaffenhofen/2228">Standesamt Markt Pfaffenhofen</a><br>Kirchplatz 6, 89284 Pfaffenhofen</p><p><a href="/Standesamt-Markt-Schneeberg-Im-Odenwald/2164">Standesamt Markt Schneeberg im Odenwald</a><br>Amorbacher Str. 1, 63936 Schneeberg</p><p><a href="/Standesamt-Markt-Schoenberg/1899">Standesamt Markt Schönberg</a><br>Marktplatz 16, 94513 Schönberg</p><p><a href="/Standesamt-Markt-Schwaben/1781">Standesamt Markt Schwaben</a><br>Schloßplatz 2, 85570 Markt Schwaben</p><p><a href="/Standesamt-Markt-Simbach/1755">Standesamt Markt Simbach</a><br>Eggenfeldener Str. 1, 94436 Simbach</p><p><a href="/Standesamt-Markt-Wegscheid/4379140">Standesamt Markt Wegscheid</a><br>Marktstr. 1, 94110 Wegscheid </p><p><a href="/Standesamt-Marktbreit/2021">Standesamt Marktbreit</a><br>Marktstr. 4, 97340 Marktbreit</p><p><a href="/Standesamt-Marktheidenfeld/2120">Standesamt Marktheidenfeld</a><br>Luitpoldstr. 17, 97828 Marktheidenfeld</p><p><a href="/Standesamt-Marktleugast/2049">Standesamt Marktleugast</a><br>Kulmbacher Str. 2, 95352 Marktleugast</p><p><a href="/Standesamt-Marktrodach/2027">Standesamt Marktrodach</a><br>Kirchplatz 3, 96364 Marktrodach</p><p><a href="/Standesamt-Marktschellenberg/1654">Standesamt Marktschellenberg</a><br>Salzburger Str. 2, 83487 Marktschellenberg</p><p><a href="/Standesamt-Marktschorgast/2042">Standesamt Marktschorgast</a><br>Marktplatz 17, 95509 Marktschorgast</p><p><a href="/Standesamt-Maroldsweisach/1964">Standesamt Maroldsweisach</a><br>Hauptstr. 24, 96126 Maroldsweisach</p><p><a href="/Standesamt-Marxheim/1763">Standesamt Marxheim</a><br>Pfalzstr. 4, 86688 Marxheim</p><p><a href="/Standesamt-Marzling/1874">Standesamt Marzling</a><br>Freisinger Straße 11, 85417 Marzling</p><p><a href="/Standesamt-Massbach/1579">Standesamt Maßbach</a><br>Marktplatz 1, 97711 Maßbach</p><p><a href="/Standesamt-Mauern/1880">Standesamt Mauern</a><br>Schloßplatz 2, 85419 Mauern</p><p><a href="/Standesamt-Mauth/1888">Standesamt Mauth</a><br>Giesekestr. 2, 94151 Mauth</p><p><a href="/Standesamt-Meeder/1697">Standesamt Meeder</a><br>Bahnhofstr. 1, 96484 Meeder</p><p><a href="/Standesamt-Mehlmeisel/1635">Standesamt Mehlmeisel</a><br>Rathausplatz, 95694 Mehlmeisel</p><p><a href="/Standesamt-Meitingen/1550">Standesamt Meitingen</a><br>Schloßstr. 2, 86405 Meitingen</p><p><a href="/Standesamt-Memmelsdorf/1606">Standesamt Memmelsdorf</a><br>Rathausplatz 1, 96117 Memmelsdorf</p><p><a href="/Standesamt-Memmingen/2130">Standesamt Memmingen</a><br>Marktplatz 4, 87700 Memmingen</p><p><a href="/Standesamt-Mengkofen/1750">Standesamt Mengkofen</a><br>Von-Haniel-Allee 12, 84152 Mengkofen</p><p><a href="/Standesamt-Merching/1472">Standesamt Merching</a><br>Hauptstr. 26, 86504 Merching</p><p><a href="/Standesamt-Mering/1477">Standesamt Mering</a><br>Kirchplatz 4, 86415 Mering</p><p><a href="/Standesamt-Mertingen/1764">Standesamt Mertingen</a><br>Fuggerstr. 5, 86690 Mertingen</p><p><a href="/Standesamt-Metten/1723">Standesamt Metten</a><br>Krankenhausstr. 22, 94526 Metten</p><p><a href="/Standesamt-Miesbach/2139">Standesamt Miesbach</a><br>Rathausplatz 1, 83714 Miesbach</p><p><a href="/Standesamt-Miltach/1671">Standesamt Miltach</a><br>Kötztinger Str. 3, 93468 Miltach</p><p><a href="/Standesamt-Miltenberg/2160">Standesamt Miltenberg</a><br>Engelplatz 69, 63897 Miltenberg</p><p><a href="/Standesamt-Mistelbach/1644">Standesamt Mistelbach</a><br>Kanzleistr. 3, 95511 Mistelbach</p><p><a href="/Standesamt-Mistelgau/1645">Standesamt Mistelgau</a><br>Bahnhofstr. 35, 95490 Mistelgau</p><p><a href="/Standesamt-Mittenwald/1933">Standesamt Mittenwald</a><br>Dammkarstr. 3, 82481 Mittenwald</p><p><a href="/Standesamt-Mitwitz/2038">Standesamt Mitwitz</a><br>Coburger Str. 14, 96268 Mitwitz</p><p><a href="/Standesamt-Moehrendorf/1840">Standesamt Möhrendorf</a><br>Hauptstraße 16, 91096 Möhrendorf</p><p><a href="/Standesamt-Moembris/1525">Standesamt Mömbris</a><br>Schimborner Str. 6, 63776 Mömbris</p><p><a href="/Standesamt-Monheim/1769">Standesamt Monheim</a><br>Marktplatz 23, 86653 Monheim</p><p><a href="/Standesamt-Moorenweis/1909">Standesamt Moorenweis</a><br>Ammerseestr. 8, 82272 Moorenweis</p><p><a href="/Standesamt-Moos/1731">Standesamt Moos</a><br>Graf-Ulrich-Philipp-Platz 1, 94554 Moos</p><p><a href="/Standesamt-Moosburg-An-Der-Isar/1875">Standesamt Moosburg an der Isar</a><br>Stadtplatz 13, 85368 Moosburg a. d. Isar</p><p><a href="/Standesamt-Moosinning/1821">Standesamt Moosinning</a><br>Erdinger Str. 30a, 85452 Moosinning</p><p><a href="/Standesamt-Moosthenning/1751">Standesamt Moosthenning</a><br>Rathausweg 2, 84164 Moosthenning</p><p><a href="/Standesamt-Moernsheim/1804">Standesamt Mörnsheim</a><br>Kastnerplatz 1, 91804 Mörnsheim</p><p><a href="/Standesamt-Moettingen/1765">Standesamt Möttingen</a><br>Pfarrgasse 6, 86753 Möttingen</p><p><a href="/Standesamt-Muehldorf-A-Inn/2178">Standesamt Mühldorf a. Inn</a><br>Stadtplatz 21, 84453 Mühldorf a. Inn</p><p><a href="/Standesamt-Muehlhausen-sulz/2248">Standesamt Mühlhausen (Sulz)</a><br>Bahnhofstr. 7, 92360 Mühlhausen</p><p><a href="/Standesamt-Muenchberg/1982">Standesamt Münchberg</a><br>Ludwigstr. 15, 95213 Münchberg</p><p><a href="/Standesamt-Muenchen/4641">Standesamt München</a><br>Ruppertstraße 11 , 80337 München</p><p><a href="/Standesamt-Muenchen-Pasing/2187">Standesamt München-Pasing</a><br>Landsberger Str. 486, 81241 München</p><p><a href="/Standesamt-Muennerstadt/1569">Standesamt Münnerstadt</a><br>Marktplatz 1, 97702 Münnerstadt</p><p><a href="/Standesamt-Murnau-Am-Staffelsee/1934">Standesamt Murnau am Staffelsee</a><br>Untermarkt 13, 82418 Murnau a. Staffelsee</p><p><a href="/Standesamt-Naila/1983">Standesamt Naila</a><br>Marktplatz 12, 95119 Naila</p><p><a href="/Standesamt-Nandlstadt/1876">Standesamt Nandlstadt</a><br>Rathausplatz 1, 85405 Nandlstadt</p><p><a href="/Standesamt-Nassenfels/1811">Standesamt Nassenfels</a><br>Schulstr. 9, 85128 Nassenfels</p><p><a href="/Standesamt-Nersingen/2220">Standesamt Nersingen</a><br>Rathausplatz 1, 89278 Nersingen</p><p><a href="/Standesamt-Neu-Ulm/2221">Standesamt Neu-Ulm</a><br>Augsburger Str. 15, 89231 Neu-Ulm</p><p><a href="/Standesamt-Neubiberg/2201">Standesamt Neubiberg</a><br>Rathausplatz 12, 85579 Neubiberg</p><p><a href="/Standesamt-Neuburg-An-Der-Donau/2233">Standesamt Neuburg an der Donau</a><br>Amalienstr. A 54, 86633 Neuburg an der Donau</p><p><a href="/Standesamt-Neuburg-An-Der-Kammel/1951">Standesamt Neuburg an der Kammel</a><br>Bergstr. 2, 86476 Neuburg a. d. Kammel</p><p><a href="/Standesamt-Neudrossenfeld/2043">Standesamt Neudrossenfeld</a><br>Adam-Seiler-Str. 1, 95512 Neudrossenfeld</p><p><a href="/Standesamt-Neuenmarkt/2044">Standesamt Neuenmarkt</a><br>Hauptstr. 18, 95339 Neuenmarkt</p><p><a href="/Standesamt-Neufahrn-Bei-Freising/1877">Standesamt Neufahrn bei Freising</a><br>Bahnhofstr. 32, 85375 Neufahrn b. Freising</p><p><a href="/Standesamt-Neufahrn-I-Nb/2081">Standesamt Neufahrn i. NB</a><br>Hauptstr. 40, 84088 Neufahrn i. NB</p><p><a href="/Standesamt-Neuhof-Ad-Zenn/2266">Standesamt Neuhof a.d. Zenn</a><br>Marktplatz 10, 90616 Neuhof a. d. Zenn</p><p><a href="/Standesamt-Neukirchen-B-Sulzbach-Rosenberg/1506">Standesamt Neukirchen b. Sulzbach-Rosenberg</a><br>Am Rathaus 1, 92259 Neukirchen b. Sulzbach-Rosenberg</p><p><a href="/Standesamt-Neumarkt-Id-Opf---Verwaltungsgemeinschaft/2254">Standesamt Neumarkt i.d. OPf. - Verwaltungsgemeinschaft</a><br>Bahnhofstr. 12, 92318 Neumarkt i. d. OPf.</p><p><a href="/Standesamt-Neumarkt-In-Der-Oberpfalz/2249">Standesamt Neumarkt in der Oberpfalz</a><br>Rathausplatz 2, 92318 Neumarkt i. d. OPf.</p><p><a href="/Standesamt-Neunkirchen-A-Brand/1856">Standesamt Neunkirchen a. Brand</a><br>Innerer Markt 1, 91077 Neunkirchen a. Brand</p><p><a href="/Standesamt-Neuoetting/1483">Standesamt Neuötting</a><br>Ludwigstr. 62, 84524 Neuötting</p><p><a href="/Standesamt-Neureichenau/1889">Standesamt Neureichenau</a><br>Dreisesselstr. 8, 94089 Neureichenau</p><p><a href="/Standesamt-Neuried/2202">Standesamt Neuried</a><br>Planegger Str. 2, 82061 Neuried</p><p><a href="/Standesamt-Neusaess/1551">Standesamt Neusäß</a><br>Hauptstr. 28, 86356 Neusäß</p><p><a href="/Standesamt-Neuschoenau/1894">Standesamt Neuschönau</a><br>Kaiserstr. 13, 94556 Neuschönau</p><p><a href="/Standesamt-Neustadt-A-D-Donau/2002">Standesamt Neustadt a. d. Donau</a><br>Stadtplatz 1, 93333 Neustadt a.d. Donau</p><p><a href="/Standesamt-Neustadt-An-Der-Aisch/2261">Standesamt Neustadt an der Aisch</a><br>Marktplatz 5, 91413 Neustadt an der Aisch</p><p><a href="/Standesamt-Neustadt-Bei-Coburg/1698">Standesamt Neustadt bei Coburg</a><br>Georg-Langbein-Str. 1, 96465 Neustadt b. Coburg</p><p><a href="/Standesamt-Niederalteich/1724">Standesamt Niederalteich</a><br>Guntherweg 3, 94557 Niederalteich</p><p><a href="/Standesamt-Niederviehbach/1752">Standesamt Niederviehbach</a><br>Schulstr. 1, 84183 Niederviehbach</p><p><a href="/Standesamt-Nordendorf/1562">Standesamt Nordendorf</a><br>Schäfflerstr. 6, 86695 Nordendorf</p><p><a href="/Standesamt-Nordhalben/2028">Standesamt Nordhalben</a><br>Kronacher Str. 4, 96365 Nordhalben</p><p><a href="/Standesamt-Noerdlingen/1772">Standesamt Nördlingen</a><br>Marktplatz 1, 86720 Nördlingen</p><p><a href="/Standesamt-Nuedlingen/1570">Standesamt Nüdlingen</a><br>Kissinger Str. 1, 97720 Nüdlingen</p><p><a href="/Standesamt-Nuernberg/2270">Standesamt Nürnberg</a><br>Hauptmarkt 18, 90403 Nürnberg</p><p><a href="/Standesamt-Oberammergau/1935">Standesamt Oberammergau</a><br>Schnitzlergasse 5, 82487 Oberammergau</p><p><a href="/Standesamt-Oberasbach/1920">Standesamt Oberasbach</a><br>Rathausplatz 1, 90522 Oberasbach</p><p><a href="/Standesamt-Oberau/1936">Standesamt Oberau</a><br>Schmiedeweg 10, 82496 Oberau</p><p><a href="/Standesamt-Oberaurach/1965">Standesamt Oberaurach</a><br>Rathausstr. 25, 97514 Oberaurach</p><p><a href="/Standesamt-Oberding-Eitting/1825">Standesamt Oberding-Eitting</a><br>Tassilostr. 17, 85445 Oberding</p><p><a href="/Standesamt-Oberhaching/2203">Standesamt Oberhaching</a><br>Alpenstr. 11, 82041 Oberhaching</p><p><a href="/Standesamt-Oberhaid/1607">Standesamt Oberhaid</a><br>Rathausplatz 1, 96173 Oberhaid</p><p><a href="/Standesamt-Oberkotzau/1984">Standesamt Oberkotzau</a><br>Am Rathaus 2, 95145 Oberkotzau</p><p><a href="/Standesamt-Obermichelbach-Tuchenbach/1926">Standesamt Obermichelbach-Tuchenbach</a><br>Vacher Str. 25, 90587 Obermichelbach</p><p><a href="/Standesamt-Oberndorf-Am-Lech/1767">Standesamt Oberndorf am Lech</a><br>Eggelstetter Str. 3, 86698 Oberndorf a. Lech</p><p><a href="/Standesamt-Oberneuching/1826">Standesamt Oberneuching</a><br>St. Martin Straße 9 , 85467 Neuching</p><p><a href="/Standesamt-Oberpoering/1732">Standesamt Oberpöring</a><br>Niederpöring 23 (Schloss), 94562 Oberpöring</p><p><a href="/Standesamt-Oberschleissheim/2204">Standesamt Oberschleißheim</a><br>Freisinger Str. 15, 85764 Oberschleißheim</p><p><a href="/Standesamt-Oberstdorf/2305">Standesamt Oberstdorf</a><br>Prinzregenten-Platz 1, 87561 Oberstdorf</p><p><a href="/Standesamt-Obertaufkirchen/2179">Standesamt Obertaufkirchen</a><br>Am Sportplatz 5, 84419 Obertaufkirchen</p><p><a href="/Standesamt-Oberthulba/1571">Standesamt Oberthulba</a><br>Kirchgasse 16, 97723 Oberthulba</p><p><a href="/Standesamt-Obertrubach/1857">Standesamt Obertrubach</a><br>Teichstr. 5, 91286 Obertrubach</p><p><a href="/Standesamt-Odelzhausen/1714">Standesamt Odelzhausen</a><br>Schulstr. 14, 85235 Odelzhausen</p><p><a href="/Standesamt-Oerlenbach/1572">Standesamt Oerlenbach</a><br>Schulstr. 8, 97714 Oerlenbach</p><p><a href="/Standesamt-Oettingen-I-Bay/1770">Standesamt Oettingen i. Bay.</a><br>Schloßstr. 36, 86732 Oettingen i. Bay.</p><p><a href="/Standesamt-Offenberg/1725">Standesamt Offenberg</a><br>Rathausplatz 1, 94560 Offenberg</p><p><a href="/Standesamt-Offingen/1957">Standesamt Offingen</a><br>Marktstr. 19, 89362 Offingen</p><p><a href="/Standesamt-Ohlstadt/1939">Standesamt Ohlstadt</a><br>Rathausplatz 1, 82441 Ohlstadt</p><p><a href="/Standesamt-Olching/1910">Standesamt Olching</a><br>Rebhuhnstr. 18, 82140 Olching</p><p><a href="/Standesamt-Osterhofen/1726">Standesamt Osterhofen</a><br>Stadtplatz 13, 94486 Osterhofen</p><p><a href="/Standesamt-Ottobrunn/2205">Standesamt Ottobrunn</a><br>Rathausplatz 1, 85521 Ottobrunn</p><p><a href="/Standesamt-Painten/2003">Standesamt Painten</a><br>Marktplatz 24, 93351 Painten</p><p><a href="/Standesamt-Passau/4379123">Standesamt Passau</a><br>Rathausplatz 2, 94032 Passau</p><p><a href="/Standesamt-Pastetten/1827">Standesamt Pastetten</a><br>Fröbelweg 1, 85669 Pastetten</p><p><a href="/Standesamt-Pegnitz/1636">Standesamt Pegnitz</a><br>Hauptstr. 37, 91257 Pegnitz</p><p><a href="/Standesamt-Pemfling/1673">Standesamt Pemfling</a><br>Hauptstr. 13, 93482 Pemfling</p><p><a href="/Standesamt-Penzing/2059">Standesamt Penzing</a><br>Fritz-Börner-Str. 11, 86929 Penzing</p><p><a href="/Standesamt-Perlesreut/1898">Standesamt Perlesreut</a><br>Unterer Markt 3, 94157 Perlesreut</p><p><a href="/Standesamt-Pettstadt/1624">Standesamt Pettstadt</a><br>Kirchplatz 10, 96175 Pettstadt</p><p><a href="/Standesamt-Pfaffenhofen-An-Der-Ilm/4653">Standesamt Pfaffenhofen an der Ilm</a><br>Hauptplatz  1, 85276 Pfaffenhofen a.d.Ilm</p><p><a href="/Standesamt-Pfoerring/1812">Standesamt Pförring</a><br>Marktplatz 1, 85104 Pförring</p><p><a href="/Standesamt-Piding/1655">Standesamt Piding</a><br>Thomastr. 2, 83451 Piding</p><p><a href="/Standesamt-Pilsting/1753">Standesamt Pilsting</a><br>Marktplatz 23, 94431 Pilsting</p><p><a href="/Standesamt-Pinzberg/1863">Standesamt Pinzberg</a><br>Reuther Str. 1, 91361 Pinzberg</p><p><a href="/Standesamt-Planegg/2206">Standesamt Planegg</a><br>Pasinger Str. 8, 82152 Planegg</p><p><a href="/Standesamt-Plattling/1727">Standesamt Plattling</a><br>Preysingplatz 1, 94447 Plattling</p><p><a href="/Standesamt-Pliening/1782">Standesamt Pliening</a><br>Geltinger Str. 18, 85652 Pliening</p><p><a href="/Standesamt-Poing/1783">Standesamt Poing</a><br>Rathausstr. 3, 85586 Poing</p><p><a href="/Standesamt-Pommersfelden/1608">Standesamt Pommersfelden</a><br>Hauptstr. 11, 96178 Pommersfelden</p><p><a href="/Standesamt-Poppenricht/1497">Standesamt Poppenricht</a><br>Rathausplatz 2, 92284 Poppenricht</p><p><a href="/Standesamt-Pottenstein/1637">Standesamt Pottenstein</a><br>Forchheimer Str. 1, 91278 Pottenstein</p><p><a href="/Standesamt-Poettmes/1478">Standesamt Pöttmes</a><br>Marktplatz 18, 86554 Pöttmes</p><p><a href="/Standesamt-Presseck/2045">Standesamt Presseck</a><br>Marktplatz 8, 95355 Presseck</p><p><a href="/Standesamt-Pressig/2029">Standesamt Pressig</a><br>Hauptstr. 16, 96332 Pressig</p><p><a href="/Standesamt-Pretzfeld/1858">Standesamt Pretzfeld</a><br>Hauptstr. 3, 91362 Pretzfeld</p><p><a href="/Standesamt-Prichsenstadt/2016">Standesamt Prichsenstadt</a><br>Karlsplatz 5, 97357 Prichsenstadt</p><p><a href="/Standesamt-Prittriching/2064">Standesamt Prittriching</a><br>Bgm.-Franz-Ditsch-Str. 7, 86931 Prittriching</p><p><a href="/Standesamt-Puchheim/1911">Standesamt Puchheim</a><br>Poststr. 2, 82178 Puchheim</p><p><a href="/Standesamt-Pullach-I-Isartal/2207">Standesamt Pullach i. Isartal</a><br>Johann-Bader-Straße 21, 82049 Pullach i. Isartal</p><p><a href="/Standesamt-Puergen/2065">Standesamt Pürgen</a><br>Weilheimer Str. 2, 86932 Pürgen</p><p><a href="/Standesamt-Puschendorf/1921">Standesamt Puschendorf</a><br>Neustädter Str. 7, 90617 Puschendorf</p><p><a href="/Standesamt-Rain/1771">Standesamt Rain</a><br>Hauptstr. 60, 86641 Rain</p><p><a href="/Standesamt-Ramsau/1656">Standesamt Ramsau</a><br>Im Tal 2, 83486 Ramsau</p><p><a href="/Standesamt-Rattelsdorf/1609">Standesamt Rattelsdorf</a><br>Grabenstr. 26, 96179 Rattelsdorf</p><p><a href="/Standesamt-Rauhenebrach/1966">Standesamt Rauhenebrach</a><br>Hauptstr. 1, 96181 Rauhenebrach</p><p><a href="/Standesamt-Regnitzlosau/1985">Standesamt Regnitzlosau</a><br>Hauptstr. 24, 95194 Regnitzlosau</p><p><a href="/Standesamt-Rehau/1986">Standesamt Rehau</a><br>Martin-Luther-Str. 1, 95111 Rehau</p><p><a href="/Standesamt-Rehling/1473">Standesamt Rehling</a><br>Hauptstr. 1, 86508 Rehling</p><p><a href="/Standesamt-Reichersbeuern/1596">Standesamt Reichersbeuern</a><br>Tölzer Str. 12, 83677 Reichersbeuern</p><p><a href="/Standesamt-Reichling/2066">Standesamt Reichling</a><br>Untergasse 3, 86934 Reichling</p><p><a href="/Standesamt-Reisbach/1754">Standesamt Reisbach</a><br>Landauer Str. 18, 94419 Reisbach</p><p><a href="/Standesamt-Rettenberg/4379141">Standesamt Rettenberg</a><br>Bichelweg 2, 87549 Rettenberg</p><p><a href="/Standesamt-Ried/1474">Standesamt Ried</a><br>Sirchenriederstr. 1, 86510 Ried</p><p><a href="/Standesamt-Rieden/1498">Standesamt Rieden</a><br>Hirschwalder Str. 27, 92286 Rieden</p><p><a href="/Standesamt-Riedenburg/2004">Standesamt Riedenburg</a><br>Sankt-Anna-Platz 2, 93339 Riedenburg</p><p><a href="/Standesamt-Rimbach/1674">Standesamt Rimbach</a><br>Hohenbogenstr. 10, 93485 Rimbach</p><p><a href="/Standesamt-Ringelai/1890">Standesamt Ringelai</a><br>Pfarrer-Kainz-Str. 6, 94160 Ringelai</p><p><a href="/Standesamt-Roedental/1700">Standesamt Rödental</a><br>Bürgerplatz 1, 96472 Rödental</p><p><a href="/Standesamt-Roding/1675">Standesamt Roding</a><br>Schulstr. 15, 93426 Roding</p><p><a href="/Standesamt-Rohr-I-Nb/2005">Standesamt Rohr i. NB</a><br>Marienplatz 1, 93352 Rohr i. NB</p><p><a href="/Standesamt-Rohrbach/1485">Standesamt Rohrbach</a><br>Rohrbach 20, 84513 Erharting</p><p><a href="/Standesamt-Roehrnbach/1891">Standesamt Röhrnbach</a><br>Rathausplatz 1, 94133 Röhrnbach</p><p><a href="/Standesamt-Rosenheim/4379121">Standesamt Rosenheim</a><br>Königstr. 15, 83022 Rosenheim</p><p><a href="/Standesamt-Rosstal/1922">Standesamt Roßtal</a><br>Marktplatz 1, 90574 Roßtal</p><p><a href="/Standesamt-Roth/4379133">Standesamt Roth</a><br>Kirchplatz 4 , 91154 Roth</p><p><a href="/Standesamt-Roethenbach-Ad-Pegnitz/2283">Standesamt Röthenbach a.d. Pegnitz</a><br>Friedrichsplatz 21, 90552 Röthenbach a.d.Pegnitz</p><p><a href="/Standesamt-Rothenbuch/1526">Standesamt Rothenbuch</a><br>Schloßplatz 1, 63860 Rothenbuch</p><p><a href="/Standesamt-Rothenburg-Ob-Der-Tauber/4655">Standesamt Rothenburg ob der Tauber</a><br>Grüner Markt 1, 91541 Rothenburg o.d.T.</p><p><a href="/Standesamt-Roettenbach/1841">Standesamt Röttenbach</a><br>Ringstr. 46, 91341 Röttenbach</p><p><a href="/Standesamt-Roetz/1676">Standesamt Rötz</a><br>Rathausstr. 1, 92444 Rötz</p><p><a href="/Standesamt-Rueckersdorf/2284">Standesamt Rückersdorf</a><br>Hauptstr. 20, 90607 Rückersdorf</p><p><a href="/Standesamt-Rudelzhausen/1878">Standesamt Rudelzhausen</a><br>Kirchplatz 10, 84104 Rudelzhausen</p><p><a href="/Standesamt-Runding/1677">Standesamt Runding</a><br>Kirchstr. 6, 93486 Runding</p><p><a href="/Standesamt-Saal-An-Der-Donau/2009">Standesamt Saal an der Donau</a><br>Rathausstr. 4, 93342 Saal a. d. Donau</p><p><a href="/Standesamt-Saaldorf-Surheim/1657">Standesamt Saaldorf-Surheim</a><br>Moosweg 2, 83416 Saaldorf</p><p><a href="/Standesamt-Sailauf/1527">Standesamt Sailauf</a><br>Rathausstr. 9, 63877 Sailauf</p><p><a href="/Standesamt-Saldenburg/1892">Standesamt Saldenburg</a><br>Seldenstr. 30, 94163 Saldenburg</p><p><a href="/Standesamt-Sand-Am-Main/1967">Standesamt Sand am Main</a><br>Kirchplatz 2, 97522 Sand am Main </p><p><a href="/Standesamt-Sankt-Wolfgang/1822">Standesamt Sankt Wolfgang</a><br>Hauptstr. 9, 84427 St. Wolfgang</p><p><a href="/Standesamt-Saulgrub/1940">Standesamt Saulgrub</a><br>Kohlgruber Str. 2, 82442 Saulgrub</p><p><a href="/Standesamt-Schauenstein/1994">Standesamt Schauenstein</a><br>Rathausplatz 1, 95197 Schauenstein</p><p><a href="/Standesamt-Schesslitz/1610">Standesamt Scheßlitz</a><br>Hauptstr. 34, 96110 Scheßlitz</p><p><a href="/Standesamt-Schluesselfeld/1611">Standesamt Schlüsselfeld</a><br>Marktplatz 5, 96132 Schlüsselfeld</p><p><a href="/Standesamt-Schmidmuehlen/1499">Standesamt Schmidmühlen</a><br>Rathausstr. 1, 92287 Schmidmühlen</p><p><a href="/Standesamt-Schnaittenbach/1500">Standesamt Schnaittenbach</a><br>Rosenbühlstr. 1, 92253 Schnaittenbach</p><p><a href="/Standesamt-Schoellkrippen/1533">Standesamt Schöllkrippen</a><br>Marktplatz 1, 63825 Schöllkrippen</p><p><a href="/Standesamt-Schoellnach/1733">Standesamt Schöllnach</a><br>Marktplatz 12, 94508 Schöllnach</p><p><a href="/Standesamt-Schondorf-Am-Ammersee/2067">Standesamt Schondorf am Ammersee</a><br>Rathausplatz 1, 86938 Schondorf a. Ammersee</p><p><a href="/Standesamt-Schoenthal/1678">Standesamt Schönthal</a><br>Rathausplatz 1, 93488 Schönthal</p><p><a href="/Standesamt-Schrobenhausen/2236">Standesamt Schrobenhausen</a><br>Regensburger Str. 5, 86529 Schrobenhausen</p><p><a href="/Standesamt-Schrobenhausen---Vgem-/2239">Standesamt Schrobenhausen - VGem </a><br>Herzoganger 1, 86529 Schrobenhausen</p><p><a href="/Standesamt-Schwabach/4379128">Standesamt Schwabach</a><br>Friedrich-Ebert-Straße 21, 91126 Schwabach</p><p><a href="/Standesamt-Schwabhausen/1712">Standesamt Schwabhausen</a><br>Münchener Str. 12, 85247 Schwabhausen</p><p><a href="/Standesamt-Schwabmuenchen/1552">Standesamt Schwabmünchen</a><br>Fuggerstr. 50, 86830 Schwabmünchen</p><p><a href="/Standesamt-Schwandorf/4379130">Standesamt Schwandorf</a><br>Spitalgarten 1, 92421 Schwandorf</p><p><a href="/Standesamt-Schwarzach-Am-Main/2017">Standesamt Schwarzach am Main</a><br>Marktplatz 1, 97359 Schwarzach a. Main</p><p><a href="/Standesamt-Schwarzenbach-A-Wald/1988">Standesamt Schwarzenbach a. Wald</a><br>Frankenwaldstr. 16, 95131 Schwarzenbach a. Wald</p><p><a href="/Standesamt-Schwarzenbach-An-Der-Saale/1987">Standesamt Schwarzenbach an der Saale</a><br>Ludwigstr. 4, 95126 Schwarzenbach a. d. Saale</p><p><a href="/Standesamt-Schweinfurt/4379122">Standesamt Schweinfurt</a><br>Markt 1, 97421 Schweinfurt</p><p><a href="/Standesamt-Seehausen-Am-Staffelsee/1941">Standesamt Seehausen am Staffelsee</a><br>Am Graswegerer 1, 82418 Seehausen a. Staffelsee</p><p><a href="/Standesamt-Selbitz/1989">Standesamt Selbitz</a><br>Bahnhofstr. 2, 95152 Selbitz</p><p><a href="/Standesamt-Senden/2223">Standesamt Senden</a><br>Hauptstr. 34, 89250 Senden</p><p><a href="/Standesamt-Sesslach/1701">Standesamt Seßlach</a><br>Marktplatz 98, 96145 Seßlach</p><p><a href="/Standesamt-Siegenburg/2010">Standesamt Siegenburg</a><br>Marienplatz 13, 93354 Siegenburg</p><p><a href="/Standesamt-Simbach-Am-Inn/4654">Standesamt Simbach am Inn</a><br>Innstraße 14, 84359 Simbach am Inn </p><p><a href="/Standesamt-Sonnefeld/1702">Standesamt Sonnefeld</a><br>Schafberg 2, 96242 Sonnefeld</p><p><a href="/Standesamt-Sparneck/1995">Standesamt Sparneck</a><br>Marktplatz 4, 95234 Sparneck</p><p><a href="/Standesamt-Speichersdorf/1638">Standesamt Speichersdorf</a><br>Rathausplatz 1, 95469 Speichersdorf</p><p><a href="/Standesamt-Spiegelau/1895">Standesamt Spiegelau</a><br>Konrad-Wilsdorf-Str. 5, 94518 Spiegelau</p><p><a href="/Standesamt-St-Oswald---Riedlhuette/1893">Standesamt St. Oswald - Riedlhütte</a><br>Lusenstr. 2, 94568 Sankt Oswald</p><p><a href="/Standesamt-Stadelhofen/1622">Standesamt Stadelhofen</a><br>Steinfeld 86, 96187 Stadelhofen</p><p><a href="/Standesamt-Stadtbergen/1553">Standesamt Stadtbergen</a><br>Oberer Stadtweg 2, 86391 Stadtbergen</p><p><a href="/Standesamt-Stadtsteinach/2050">Standesamt Stadtsteinach</a><br>Marktplatz 8, 95346 Stadtsteinach</p><p><a href="/Standesamt-Stammbach/1990">Standesamt Stammbach</a><br>Rathausstr. 7, 95236 Stammbach</p><p><a href="/Standesamt-Stammham/1805">Standesamt Stammham</a><br>Nürnberger Str. 3, 85134 Stammham</p><p><a href="/Standesamt-Stamsried/1685">Standesamt Stamsried</a><br>Schloßstr. 10, 93491 Stamsried</p><p><a href="/Standesamt-Starnberg/4379134">Standesamt Starnberg</a><br>Vogelanger 2, 82319 Starnberg</p><p><a href="/Standesamt-Stegaurach/1621">Standesamt Stegaurach</a><br>Schloßplatz 1, 96135 Stegaurach</p><p><a href="/Standesamt-Stein/1923">Standesamt Stein</a><br>Hauptstr. 56, 90547 Stein</p><p><a href="/Standesamt-Steinbach-Am-Wald/2030">Standesamt Steinbach am Wald</a><br>Ludwigsstädter Str. 2, 96361 Steinbach a. Wald</p><p><a href="/Standesamt-Steinhoering/1784">Standesamt Steinhöring</a><br>Berger Str. 3, 85643 Steinhöring</p><p><a href="/Standesamt-Steinkirchen/1828">Standesamt Steinkirchen</a><br>Am Kirchberg 2, 84439 Steinkirchen</p><p><a href="/Standesamt-Steinwiesen/2031">Standesamt Steinwiesen</a><br>Kirchstr. 4, 96349 Steinwiesen</p><p><a href="/Standesamt-Stephansposching/1728">Standesamt Stephansposching</a><br>Deggendorfer Str. 6, 94569 Stephansposching</p><p><a href="/Standesamt-Stockheim/2032">Standesamt Stockheim</a><br>Rathausstr. 1, 96342 Stockheim</p><p><a href="/Standesamt-Stockstadt-Am-Main/1528">Standesamt Stockstadt am Main</a><br>Hauptstr. 19-21, 63811 Stockstadt a. Main</p><p><a href="/Standesamt-Straubing/4379124">Standesamt Straubing</a><br>Stetthaimerplatz 11, 94315 Straubing</p><p><a href="/Standesamt-Strullendorf/1612">Standesamt Strullendorf</a><br>Forchheimer Str. 32, 96129 Strullendorf</p><p><a href="/Standesamt-Sulzbach-Am-Main/2165">Standesamt Sulzbach am Main</a><br>Hauptstr. 36, 63834 Sulzbach am Main</p><p><a href="/Standesamt-Sulzbach-Rosenberg/1501">Standesamt Sulzbach-Rosenberg</a><br>Luitpoldplatz 5, 92237 Sulzbach-Rosenberg</p><p><a href="/Standesamt-Syrgenstein/1741">Standesamt Syrgenstein</a><br>Ringstr. 35, 89428 Syrgenstein</p><p><a href="/Standesamt-Tapfheim/1768">Standesamt Tapfheim</a><br>Ulmer Str. 66, 86660 Tapfheim</p><p><a href="/Standesamt-Taufkirchen/2212">Standesamt Taufkirchen</a><br>Köglweg 3, 82024 Taufkirchen</p><p><a href="/Standesamt-Taufkirchen-vils/1823">Standesamt Taufkirchen (Vils)</a><br>Rathausplatz 1, 84416 Taufkirchen (Vils)</p><p><a href="/Standesamt-Tegernsee/2143">Standesamt Tegernsee</a><br>Rathausplatz 1, 83684 Tegernsee</p><p><a href="/Standesamt-Teisendorf/1658">Standesamt Teisendorf</a><br>Poststraße 14, 83317 Teisendorf</p><p><a href="/Standesamt-Tettau/2033">Standesamt Tettau</a><br>Hauptstr. 10, 96355 Tettau</p><p><a href="/Standesamt-Teuschnitz/2037">Standesamt Teuschnitz</a><br>Hauptstr. 38, 96358 Teuschnitz</p><p><a href="/Standesamt-Thannhausen/1958">Standesamt Thannhausen</a><br>Christoph-von-Schmid-Str. 7, 86470 Thannhausen</p><p><a href="/Standesamt-Theres/1973">Standesamt Theres</a><br>Rathausstr. 3, 97531 Theres</p><p><a href="/Standesamt-Thierhaupten/1554">Standesamt Thierhaupten</a><br>Marktplatz 1, 86672 Thierhaupten</p><p><a href="/Standesamt-Thurmansbang/1900">Standesamt Thurmansbang</a><br>Gründelln 3, 94169 Thurmansbang</p><p><a href="/Standesamt-Thurnau/2046">Standesamt Thurnau</a><br>Oberer Markt 28, 95349 Thurnau</p><p><a href="/Standesamt-Tiefenbach/1686">Standesamt Tiefenbach</a><br>Hauptstr. 33, 93464 Tiefenbach</p><p><a href="/Standesamt-Titting/1806">Standesamt Titting</a><br>Rathausplatz 1, 85135 Titting</p><p><a href="/Standesamt-Toeging-A-Inn-/1484">Standesamt Töging a. Inn </a><br>Hauptstr. 26, 84513 Töging a. Inn </p><p><a href="/Standesamt-Traitsching/1679">Standesamt Traitsching</a><br>Rathausstr. 1, 93455 Traitsching</p><p><a href="/Standesamt-Trebgast/2051">Standesamt Trebgast</a><br>Kulmbacher Str. 36, 95367 Trebgast</p><p><a href="/Standesamt-Tuerkenfeld/1912">Standesamt Türkenfeld</a><br>Schloßweg 2, 82299 Türkenfeld</p><p><a href="/Standesamt-Uffing-Am-Staffelsee/1937">Standesamt Uffing am Staffelsee</a><br>Hauptstr. 2, 82449 Uffing a. Staffelsee</p><p><a href="/Standesamt-Unterammergau/1942">Standesamt Unterammergau</a><br>Dorfstr. 23, 82497 Unterammergau</p><p><a href="/Standesamt-Unterfoehring/2213">Standesamt Unterföhring</a><br>Münchner Str. 70, 85774 Unterföhring</p><p><a href="/Standesamt-Unterhaching/2214">Standesamt Unterhaching</a><br>Rathausplatz 7, 82008 Unterhaching</p><p><a href="/Standesamt-Untermeitingen/1555">Standesamt Untermeitingen</a><br>Von-Imhof-Str. 6, 86836 Untermeitingen</p><p><a href="/Standesamt-Untermerzbach/1968">Standesamt Untermerzbach</a><br>Marktplatz 8, 96190 Untermerzbach</p><p><a href="/Standesamt-Unterschleissheim/2215">Standesamt Unterschleißheim</a><br>Rathausplatz 1, 85716 Unterschleißheim</p><p><a href="/Standesamt-Untersiemau/1703">Standesamt Untersiemau</a><br>Rathausplatz 3, 96253 Untersiemau</p><p><a href="/Standesamt-Untersteinach/2052">Standesamt Untersteinach</a><br>Stadtsteinacher Str. 17, 95369 Untersteinach</p><p><a href="/Standesamt-Ursberg/1952">Standesamt Ursberg</a><br>Prämonstratenserstr. 20, 86513 Ursberg</p><p><a href="/Standesamt-Ursensollen/1507">Standesamt Ursensollen</a><br>Rathausstr. 1, 92289 Ursensollen</p><p><a href="/Standesamt-Uttenreuth/1846">Standesamt Uttenreuth</a><br>Erlanger Str. 40, 91080 Uttenreuth</p><p><a href="/Standesamt-Utting-Am-Ammersee/2060">Standesamt Utting am Ammersee</a><br>Eduard-Thöny-Straße 1, 86919 Utting a. Ammersee</p><p><a href="/Standesamt-Vaterstetten/1785">Standesamt Vaterstetten</a><br>Wendelsteinstr. 7, 85591 Vaterstetten</p><p><a href="/Standesamt-Veitsbronn/1927">Standesamt Veitsbronn</a><br>Nürnberger Str. 2, 90587 Veitsbronn</p><p><a href="/Standesamt-Verwaltungsgemeinschaft-Bad-Brueckenau/1576">Standesamt Verwaltungsgemeinschaft Bad Brückenau</a><br>Sinnaustr. 14A, 97769 Bad Brückenau</p><p><a href="/Standesamt-Vg-Ries/1766">Standesamt VG Ries</a><br>Beuthener Str. 6, 86720 Nördlingen</p><p><a href="/Standesamt-Vgem-Kitzingen/2020">Standesamt VGem Kitzingen</a><br>Friedrich-Ebert-Straße 5, 97318 Kitzingen</p><p><a href="/Standesamt-Vgem-Krumbach-schwaben/1956">Standesamt VGem Krumbach (Schwaben)</a><br>Rittlen 6, 86381 Krumbach (Schwaben)</p><p><a href="/Standesamt-Vgem-Mainburg/2008">Standesamt VGem Mainburg</a><br>Regensburger Str. 1, 84048 Mainburg</p><p><a href="/Standesamt-Viereth-Trunstadt/1613">Standesamt Viereth-Trunstadt</a><br>Weiherer Str. 6, 96191 Viereth-Trunstadt</p><p><a href="/Standesamt-Vilsbiburg/2086">Standesamt Vilsbiburg</a><br>Stadtplatz 26, 84137 Vilsbiburg</p><p><a href="/Standesamt-Vilseck/1502">Standesamt Vilseck</a><br>Marktplatz 13, 92249 Vilseck</p><p><a href="/Standesamt-Voehringen/2224">Standesamt Vöhringen</a><br>Hettstedter Platz 1, 89269 Vöhringen</p><p><a href="/Standesamt-Volkach/2022">Standesamt Volkach</a><br>Marktplatz 1, 97332 Volkach</p><p><a href="/Standesamt-Wackersberg/1592">Standesamt Wackersberg</a><br>Bachstr. 8 (Ortsteil Oberfischbach), 83646 Wackersberg</p><p><a href="/Standesamt-Waffenbrunn/1681">Standesamt Waffenbrunn</a><br>Rhanwaltinger Str. 4, 93494 Waffenbrunn</p><p><a href="/Standesamt-Waischenfeld/1639">Standesamt Waischenfeld</a><br>Marktplatz 1, 91344 Waischenfeld</p><p><a href="/Standesamt-Wald/1687">Standesamt Wald</a><br>Hauptstr. 14, 93192 Wald</p><p><a href="/Standesamt-Waldaschaff/1529">Standesamt Waldaschaff</a><br>Am Mühlbach 5, 63857 Waldaschaff</p><p><a href="/Standesamt-Walderbach/1688">Standesamt Walderbach</a><br>Franz-Xaver-Witt-Straße 2, 93194 Walderbach</p><p><a href="/Standesamt-Waldkirchen/1896">Standesamt Waldkirchen</a><br>Rathausplatz 1, 94065 Waldkirchen</p><p><a href="/Standesamt-Waldkraiburg/2181">Standesamt Waldkraiburg</a><br>Stadtplatz 26, 84478 Waldkraiburg</p><p><a href="/Standesamt-Waldmuenchen/1680">Standesamt Waldmünchen</a><br>Marktplatz 14 u. 16, 93449 Waldmünchen</p><p><a href="/Standesamt-Wallenfels/2034">Standesamt Wallenfels</a><br>Rathausgasse 1, 96346 Wallenfels</p><p><a href="/Standesamt-Wallersdorf/1756">Standesamt Wallersdorf</a><br>Marktplatz 19, 94522 Wallersdorf</p><p><a href="/Standesamt-Wallerstein/1773">Standesamt Wallerstein</a><br>Weinstr. 19, 86757 Wallerstein</p><p><a href="/Standesamt-Wallgau/1938">Standesamt Wallgau</a><br>Mittenwalder Str. 8, 82499 Wallgau</p><p><a href="/Standesamt-Warmensteinach/1640">Standesamt Warmensteinach</a><br>Bahnhofsstr. 100, 95485 Warmensteinach</p><p><a href="/Standesamt-Wartenberg/1829">Standesamt Wartenberg</a><br>Marktplatz 8, 85456 Wartenberg</p><p><a href="/Standesamt-Wartmannsroth/1573">Standesamt Wartmannsroth</a><br>Hauptstr. 15, 97797 Wartmannsroth</p><p><a href="/Standesamt-Wasserburg-bodensee/2110">Standesamt Wasserburg (Bodensee)</a><br>Lindenplatz 1, 88142 Wasserburg (Bodensee)</p><p><a href="/Standesamt-Wehringen/1556">Standesamt Wehringen</a><br>Nördliche Hauptstr. 18, 86517 Wehringen</p><p><a href="/Standesamt-Weibersbrunn/1530">Standesamt Weibersbrunn</a><br>Jakob-Groß-Str. 20, 63879 Weibersbrunn</p><p><a href="/Standesamt-Weiden-In-Der-Oberpfalz/4379127">Standesamt Weiden in der Oberpfalz</a><br>Dr.-Pfleger-Straße 15, 92637 Weiden i. d. OPf.</p><p><a href="/Standesamt-Weidenberg/1646">Standesamt Weidenberg</a><br>Rathausplatz 1, 95466 Weidenberg</p><p><a href="/Standesamt-Weidhausen-Bei-Coburg/1704">Standesamt Weidhausen bei Coburg</a><br>Hauptstr. 2, 96279 Weidhausen b. Coburg</p><p><a href="/Standesamt-Weiding/1689">Standesamt Weiding</a><br>Rathausplatz 1, 93495 Weiding</p><p><a href="/Standesamt-Weil/2061">Standesamt Weil</a><br>Landsberger Str. 15, 86947 Weil</p><p><a href="/Standesamt-Weilheim-I-Ob/4656">Standesamt Weilheim i. OB</a><br>Admiral-Hipper-Str. 20, 82362 Weilheim i. OB</p><p><a href="/Standesamt-Weissenbrunn/2035">Standesamt Weißenbrunn</a><br>Bergstr. 21, 96369 Weißenbrunn</p><p><a href="/Standesamt-Weisendorf/1842">Standesamt Weisendorf</a><br>Gerbersleite 2, 91085 Weisendorf</p><p><a href="/Standesamt-Weitramsdorf/1705">Standesamt Weitramsdorf</a><br>Ummerstadter Str. 11, 96479 Weitramsdorf</p><p><a href="/Standesamt-Welden/1563">Standesamt Welden</a><br>Marktplatz 1, 86465 Welden</p><p><a href="/Standesamt-Wellheim/1807">Standesamt Wellheim</a><br>Pfahlstraße 27 , 85072 Wellheim</p><p><a href="/Standesamt-Wemding/1774">Standesamt Wemding</a><br>Marktplatz 3, 86650 Wemding</p><p><a href="/Standesamt-Wertingen/1742">Standesamt Wertingen</a><br>Schulstr. 12, 86637 Wertingen</p><p><a href="/Standesamt-Wettstetten/1808">Standesamt Wettstetten</a><br>Dr.-Kurt-Schumacher-Ring 34, 85139 Wettstetten</p><p><a href="/Standesamt-Wiesentheid/2023">Standesamt Wiesentheid</a><br>Balth.-Neumann-Str. 14 , 97353 Wiesentheid</p><p><a href="/Standesamt-Wiesenttal/1859">Standesamt Wiesenttal</a><br>Forchheimer Str. 8, 91346 Wiesenttal</p><p><a href="/Standesamt-Wildflecken/1574">Standesamt Wildflecken</a><br>Rathausplatz 1, 97772 Wildflecken</p><p><a href="/Standesamt-Wilhelmsthal/2036">Standesamt Wilhelmsthal</a><br>Wöhrleite 1, 96352 Wilhelmsthal</p><p><a href="/Standesamt-Wilhermsdorf/1924">Standesamt Wilhermsdorf</a><br>Hauptstr. 46, 91452 Wilhermsdorf</p><p><a href="/Standesamt-Willmering/1682">Standesamt Willmering</a><br>Rathausplatz 1, 93497 Willmering</p><p><a href="/Standesamt-Windach/2068">Standesamt Windach</a><br>Von-Pfetten-Füll-Platz 1, 86949 Windach</p><p><a href="/Standesamt-Winzer/1729">Standesamt Winzer</a><br>Schwanenkirchener Str. 2, 94577 Winzer</p><p><a href="/Standesamt-Wirsberg/2047">Standesamt Wirsberg</a><br>Sessenreuther Str. 2, 95339 Wirsberg</p><p><a href="/Standesamt-Wittislingen/1743">Standesamt Wittislingen</a><br>Marienplatz 6, 89426 Wittislingen</p><p><a href="/Standesamt-Wolfratshausen/1593">Standesamt Wolfratshausen</a><br>Marienplatz 1, 82515 Wolfratshausen</p><p><a href="/Standesamt-Woerth-Ad-Donau/4379138">Standesamt Wörth a.d. Donau</a><br>Rathausplatz 1, 93086 Wörth a.d. Donau</p><p><a href="/Standesamt-Woerth-Ad-Isar/2092">Standesamt Wörth a.d. Isar</a><br>Am Kellerberg 2a, 84109 Wörth a.d. Isar</p><p><a href="/Standesamt-Woerth-Am-Main/2167">Standesamt Wörth am Main</a><br>Luxburgstr. 10, 63939 Wörth a. Main</p><p><a href="/Standesamt-Wuerzburg/4379119">Standesamt Würzburg</a><br>Rückermainstr. 2 , 97070 Würzburg</p><p><a href="/Standesamt-Zandt/1683">Standesamt Zandt</a><br>Rathausplatz 1, 93499 Zandt</p><p><a href="/Standesamt-Zapfendorf/1614">Standesamt Zapfendorf</a><br>Herrngasse 1, 96199 Zapfendorf</p><p><a href="/Standesamt-Zeil-Am-Main/1969">Standesamt Zeil am Main</a><br>Marktplatz 8, 97475 Zeil am Main</p><p><a href="/Standesamt-Zeitlofs/1575">Standesamt Zeitlofs</a><br>Baumalle 12, 97799 Zeitlofs</p><p><a href="/Standesamt-Zell-Im-Fichtelgebirge/1991">Standesamt Zell im Fichtelgebirge</a><br>Bahnhofstr. 10, 95239 Zell im Fichtelgebirge</p><p><a href="/Standesamt-Ziemetshausen/1959">Standesamt Ziemetshausen</a><br>Bgm.-Haide-Str. 1, 86473 Ziemetshausen</p><p><a href="/Standesamt-Zirndorf/1925">Standesamt Zirndorf</a><br>Fürther Str. 8, 90513 Zirndorf</p><p><a href="/Standesamt-Zolling/1881">Standesamt Zolling</a><br>Rathausplatz 1, 85406 Zolling</p><p><a href="/Standesamt-Zorneding/1786">Standesamt Zorneding</a><br>Schulstr. 13, 85604 Zorneding</p><p><a href="/Standesamt-Zusmarshausen/1557">Standesamt Zusmarshausen</a><br>Schulstr. 2, 86441 Zusmarshausen</p></div></div><br><br><br><br><br></div><div id="container">
+<div id="content" style="border-top: solid 1px #eee;background:#fff;color:#9a9a9a;height:20px;text-align:right;font-size:10px">
+<a href="/agb.php" target="_blank">AGB</a>&nbsp;|&nbsp;<a href="/datenschutz.php" target="_blank">Datenschutz</a>&nbsp;|&nbsp;
+<a href="/hilfe.php" target="_blank">Hilfe</a>&nbsp;|&nbsp;
+<a href="/impressum.php" target="_blank">Impressum</a>&nbsp;|&nbsp;
+<a href="/kontakt.php" target="_blank">Kontakt</a>&nbsp;|&nbsp;
+<a href="/anb.php" target="_blank">Nutzungsbedingungen</a>
+&nbsp;|&nbsp;<a href="/preise.php" target="_blank">Preise</a>&nbsp;|&nbsp;<a href="/rhinweise.php" target="_blank">Rechtliches</a>
+&nbsp;|&nbsp;<a href="/rss.php" target="_blank"><img src="/images/rss.png" height="10" width="10"></a>
+</div>
+</div></div>
+
+<!--
+0,037935972213745
+0,013070106506348
+0,051006078720093
+--></body></html>

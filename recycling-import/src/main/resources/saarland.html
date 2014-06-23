@@ -1,0 +1,504 @@
+<!DOCTYPE html><html><head><title>Standesämter in Saarland</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta http-equiv="content-language" content="de"/><meta name="description" content="Verzeichnis zu Standesämtern in Saarland" /><link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.standesamt.com/rss.php">
+<link href="/javascripts/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon">
+
+
+<style type=text/css>
+.lightTip                       { width: 342px; }.lightTip .content              { width: 310px; padding: 10px; border: 6px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #ffffff; color: #020202; }.lightTip .bottom               { height: 14px; background: url(../images/notch-white.png) top center no-repeat; } .yellowTip                      { width: 342px; }.yellowTip .content             { width: 310px; padding: 10px; border: 6px solid #f9e98e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbf7aa; color: #020202; }.yellowTip .bottom              { height: 14px; background: url(../images/notch-yellow.png) top center no-repeat; } .orangeTip                      { width: 342px; }.orangeTip .content             { width: 310px; padding: 10px; border: 6px solid #f9cd8e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbe3aa; color: #020202; }.orangeTip .bottom              { height: 14px; background: url(../images/notch-orange.png) top center no-repeat; } .redTip                         { width: 342px; }.redTip .content                { width: 310px; padding: 10px; border: 6px solid #ce6f6f; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #f79992; color: #020202; }.redTip .bottom                 { height: 14px; background: url(../images/notch-red.png) top center no-repeat; } .greenTip                       { width: 342px; }.greenTip .content              { width: 310px; padding: 10px; border: 6px solid #a9db66; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #cae8a2; color: #020202; }.greenTip .bottom               { height: 14px; background: url(../images/notch-green.png) top center no-repeat; } .blueTip                        { width: 342px; }.blueTip .content               { width: 310px; padding: 10px; border: 6px solid #36a4d9; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #90d8f0; color: #020202; }.blueTip .bottom                { height: 14px; background: url(../images/notch-blue.png) top center no-repeat; } .purpleTip                      { width: 342px; }.purpleTip .content             { width: 310px; padding: 10px; border: 6px solid #8671de; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #a290f0; color: #020202; }.purpleTip .bottom              { height: 14px; background: url(../images/notch-purple.png) top center no-repeat; } .darkTip                        { width: 342px; }.darkTip .content               { width: 310px; padding: 10px; border: 6px solid #303030; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #505050; color: #f8f8f8; }.darkTip .bottom                { height: 14px; background: url(../images/notch-dark.png) top center no-repeat; }
+
+/* simple css-based tooltip */
+ .tooltip {
+ 	background-color:#000;
+ 	border:1px solid #fff;
+ 	padding:10px 15px;
+ 	width:200px;
+ 	display:none;
+ 	color:#fff;
+ 	text-align:left;
+ 	font-size:14px;
+
+ 	/* outline radius for mozilla/firefox only */
+ 	-moz-box-shadow:0 0 10px #000;
+ 	-webkit-box-shadow:0 0 10px #000;
+ }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0px none;
+	outline: 0;
+	background: ;
+}
+.none {
+	display: none;
+}
+.break {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+:focus {
+	outline: none;
+}
+ul {
+	list-style-type: none;
+}
+ul.quicklinks li{margin-bottom:5px;padding-left:20px;background:url('/images/bullet_green.png') no-repeat top left;}
+.big {
+	font-size:14px;
+}
+/* Layout
+========================*/
+body {
+	background: #e6f8f8 url('/images/bg.jpg') repeat-x top left;
+	text-align: center;
+	font-style:normal; font-variant:normal; font-weight:normal; font-size:76.5%; font-family:Arial, Helvetica, sans-serif
+}
+
+h1{ font-size:18px;margin-top:0em; margin-bottom:0em;}
+h2{ font-size:16px;margin-top:0em; margin-bottom:0em;}
+h3{ font-size:14px;margin-top:0em; margin-bottom:0em;}
+
+a:link {color:#2ca4e8; text-decoration:none}
+a:hover {color:#2ca4e8; text-decoration:underline}
+
+.small{
+	font-size:12px;
+}
+
+.small_gray{
+	font-size:12px;
+	color:#606060;
+}
+.gray{
+	color:#606060;
+}
+
+#headline_black {
+	height: 5px;
+	width: 100%;
+	background:#000
+}
+
+#topmenu {
+	float: right;
+	margin-top: 0px;
+	height: 20px;
+	font-weight: bold;
+	color: #515151;
+	white-space: nowrap;
+	width: auto;
+	padding-right: 31px;
+	padding-left: 31px;
+	background: #000;
+}
+#topmenu span {
+	color: #fff;
+}
+#topmenu a {
+	color: #bebebe;
+	text-decoration: none;
+}
+#topmenu a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+#topmenu span.left {
+	width: 31px;
+	height: 20px;
+	display: block;
+	background:;
+	float: left
+}
+
+#container {
+	width: 960px;
+	height:100%;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+
+#container_bordered {
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	border: solid 1px #000;
+}
+
+#content {
+	width: 940px;
+	background: #fff;
+	clear: both;
+	padding-left:20px; padding-right:20px; padding-top:10px; padding-bottom:0px;
+	border: 1px solid #fff;
+}
+
+#header_blue{
+	background:#2ca4e3;
+	color:#fff;
+}
+#header_orange{
+	background:#ff770b;
+	color:#fff;
+}
+
+
+ul.steps { background: url('/images/steps-bg.png') no-repeat 0 0;display:block;height:207px;margin-bottom:10px;clear:both }
+  ul.steps li {color:#9AB5CF;float:left;font-size:32px;margin:20px 42px 20px 15px;width:260px;}
+    ul.steps li img { vertical-align:top;margin-left:20px;}
+    ul.steps li div { color:#010101;font-size:13px;text-align:center;width:260px;margin-top:10px; }
+    ul.steps li div.benefit_text { font-size: 15px; }
+    ul.steps li div.margin_top_0 { margin-top: 0px; }
+    ul.steps li div strong { font-weight:bold; }
+    ul.steps li.last_step { margin-right:0px; }
+
+.big_red{
+	font-size:22px;
+	color:#ff691f;
+	text-decoration: none;
+}
+
+#submenu1{
+	padding-top:15px;
+	width:920px;
+	height:40px;
+	background:#d2f2f3;
+}
+
+
+
+
+#submenu {
+	padding-top:15px;
+	height: 41px;
+	background:#d2f2f3;
+	margin-bottom: 20px
+}
+#submenu ul, #submenu p {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	display: inline;
+}
+#submenu ul li {
+	float: left;
+	margin-top: 3px;
+}
+
+
+#submenu ul li a {
+	border-bottom: 1px solid #cce8eb;
+	padding: 4px 10px 4px 10px;
+	text-decoration: none;
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #5c7e81;
+	background: #eaf7f8;
+	margin-right: 4px;
+	position: relative;
+	text-align: center;
+}
+#submenu ul li a:hover {
+	background: #fff;
+}
+#submenu ul li a.active {
+	background: #fff;
+	color: #396063;
+	border-bottom: 1px solid #c4e3e6;
+}
+#submenu ul li span {
+	position: absolute;
+	display: block;
+	background: url('/images/submenu_pointer.gif') no-repeat;
+	width: 21px;
+	height: 12px;
+	top: 30px;
+	left: 50%;
+	margin-left: -10px
+}
+
+
+
+input#searchField {
+	width: 225px;
+	background: #fff;
+	border: 1px solid #bbb;
+	border-bottom-color: #ddd;
+	border-right-color: #ddd;
+	color: #868686;
+	padding: 4px;
+}
+input#searchButton, input#loginButton, input#Button {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #ff691f;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+
+input#searchButtonRed, input#loginButtonRed, input#ButtonRed {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #c92f2e;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+#footer{
+	float: right;
+	color: #aaaaaa;
+}
+
+input.textbox,
+select.textbox,
+textarea,
+input[type=text],
+input[type=password] {
+  -moz-border-radius: 5px;
+  -webkit-border-radius:5px;
+  border:1px solid #E0E0E0;
+  padding:6px 10px;
+  border-color:#AFAFAF #E0E0E0 #E0E0E0;
+  border-style:solid;
+  border-width:1px 1px 1px;
+  font-size:13px;
+  color:#434343;
+  resize:none;
+  font-family:arial;
+  background-color: #F9F9F9;
+  vertical-align: middle;
+}
+
+textarea {
+  line-height: 1.5;
+  vertical-align: baseline;
+}
+
+select {
+  font-size:13px;
+  color:#434343;
+  background-color: #ffffff;
+}
+
+input.checkbox {
+  margin: 0 5px 0 0;
+}
+
+
+
+.accordion {
+	width: 280px;
+}
+.accordion span {
+	height:50px;
+	background: url(/images/help.png) no-repeat right 8px;
+	padding: 10px;
+	margin: 0;
+	cursor: pointer;
+}
+.accordion span.active {
+	background-position: right 8px;
+}
+.accordion p {
+	margin: 0;
+	padding: 5px 5px 5px;
+	border-top:1px dotted #000;
+	border-bottom:1px dotted #000;
+}
+
+
+.edit {
+	padding-top:5px;
+	float:right;
+	color:blue;
+	cursor: pointer;
+}
+
+##########rating ###################
+.rating {
+	cursor: pointer;
+	margin: 2em;
+	clear: both;
+	display: block;
+}
+.rating:after {
+	content: '.';
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+	visibility: hidden;
+}
+.cancel,
+.star {
+	float: left;
+	width: 17px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.star-left,
+.star-right {
+  width: 8px
+}
+.cancel,
+.cancel a {background: url('/images/rating-delete.gif') no-repeat 0 -16px;}
+
+.star,
+.star a {background: url('/images/rating-star.gif') no-repeat 0 0px;}
+.star-left,
+.star-left a {background: url('/images/rating-star-left.gif') no-repeat 0 0px;}
+.star-right,
+.star-right a {background: url('/images/rating-star-right.gif') no-repeat 0 0px;}
+
+.cancel a,
+.star a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: 0 0px;
+}
+
+div.rating div.on a {
+	background-position: 0 -16px;
+}
+div.rating div.hover a,
+div.rating div a:hover {
+	background-position: 0 -32px;
+}
+.buttonlink
+		{
+			background-image: url('/images/button-green.png') !important;
+			background-position: left top;
+
+			color: #fff;
+
+			height: 22px;
+			width: 146px;
+
+			padding: 10px 0 10px 0;
+			margin: 0 5px 0 0;
+
+			font-weight: bold;
+			display: block;
+			float: left;
+			text-align: center;
+
+			font-size: 16px;
+
+			text-shadow: 0 1px 1px #595;
+
+		}
+#buttonlinks
+{
+	padding: 10px;
+}
+
+
+.buttonlink:hover
+{
+	color: #fff;
+	background-position: left 80px;
+}
+
+.buttonlink:active
+{
+	color: #fff;
+	background-position: left 40px;
+}
+
+
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel, div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel, div.rating-cancel a{background:url('/rating/delete.gif') no-repeat 0 -16px; }
+div.star-rating, div.star-rating a{background:url('/rating/star.gif') no-repeat 0 0px; }
+div.rating-cancel a, div.star-rating a{display:block;width:16px;height:100%;background-position: 0 0px;border:0px none; }
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+
+
+google_afs_bigsize{padding:1px;}
+.google_afs_bigsize a {height:auto;text-decoration:none;display:inline;height:100%;}
+.google_afs_bigsize a:hover {text-decoration:none;background-color:#eee}
+.google_afs_bigsize a:activ {text-decoration:none;}
+.google_afs_bigsize a:visited {text-decoration:none;}
+.google_afs_bigsize a strong {text-decoration:underline;}
+.google_afs_bigsize span.visible_url {color:#555555;font-style:italic;}
+.google_afs_bigsize span.txt {color:#666666;}
+
+</style>
+<link type="text/css" href="/javascripts/jquery/themes/le-frog/jquery.ui.all.css" rel="stylesheet" /><script type="text/javascript" src="/javascripts/jquery/jquery.js"></script><script src="/javascripts/jquery/ui/jquery-ui-1.8.6.custom.js"></script><script src="/javascripts/facebox/facebox.js" type="text/javascript"></script><script type="text/javascript" src="/javascripts/tinytip/jquery.tinyTips.js"></script><link type="text/css" href="/javascripts/menu/menu.css" rel="stylesheet" /><script type="text/javascript" src="/javascripts/menu/menu.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20235868-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script></head><body ><div style="width:100%;height:20px;"></div><div id="container"><div id="content">
+<script src="/javascripts/jquery/ui/jquery.effects.blind.js"></script>
+<script>
+$(function() {
+		// run the currently selected effect
+		function runEffect() {
+			// most effect types need no options passed by default
+			var options = {}; 
+			// run the effect
+			$( "#menu1" ).show( 'blind', options, 500);
+		};
+ 
+		//callback function to bring a hidden box back
+		function callback() {
+			setTimeout(function() {
+				$( "#menu1:visible" ).removeAttr( "style" ).fadeOut();
+			}, 100 );
+		};
+ 
+		// set effect from select menu value
+		$( "#tab1" ).mouseover(function() {
+			runEffect();
+			return false;
+		});
+ 		
+ 		
+
+		$( "#menu1" ).hide();
+		
+	});
+	
+	
+			function testhide()
+			{
+				$( "#menu1" ).hide();
+		}
+	</script>
+<div style="height:110px;border-bottom: solid 1px #bbb;width:100%"><div style="width:100%;"><a href="/"><img src="/images/logo.png" title="Standesamt"></a></div><div style="width:100%;text-align:right;padding-top:0px"><form action="/search.php"><input type="text" style="border:solid 1px #000" size=50 name="q" id="id_q" value="Plz oder Ort" onClick="if (this.value=='Plz oder Ort') this.value='';"> <input type="hidden" name="key" value="hochzeit"><input type="submit"  name="do" onClick="if (document.getElementById('id_q').value=='Plz oder Ort') document.getElementById('id_q').value='';return true;" value="Standesämter anzeigen"></form></div></div><div style="font-size:10px"><a href="/">Startseite</a> > <a href="/Standesaemter-Saarland/12">Standesämter Saarland</a></div><div style="width:100%;valign:top"><div style="background:#fff;width:200px;float:left;"><div style="background:#fff;border: solid 1px #c3c3c3;width:100%;"><div style="background:#2ca4e3;padding:5px;color:#fff;"><h2>Standesämter Saarland</h2></div><div style="padding:5px;"> Wir haben aktuell <b>46 Standesämter</b> aus Saarland bei uns gelistet.</div></div></div><div style="min-height:400px;margin-left: 210px;padding-left:20px;font-size:14px;"><p><h1>Standesämter in Saarland</h1></p><br><p><a href="/Standesamt-Beckingen/4062">Standesamt Beckingen</a><br>Bergstr. 48, 66701 Beckingen</p><p><a href="/Standesamt-Bexbach/4089">Standesamt Bexbach</a><br>Rathausstr. 68, 66450 Bexbach</p><p><a href="/Standesamt-Blieskastel/4090">Standesamt Blieskastel</a><br>Paradeplatz 5, 66440 Blieskastel</p><p><a href="/Standesamt-Bous/4087">Standesamt Bous</a><br>Saarbrücker Str. 120, 66359 Bous</p><p><a href="/Standesamt-Dillingen--Saar/4076">Standesamt Dillingen / Saar</a><br>Merziger Str. 51, 66763 Dillingen</p><p><a href="/Standesamt-Eppelborn/4069">Standesamt Eppelborn</a><br>Rathausstr. 27, 66571 Eppelborn</p><p><a href="/Standesamt-Friedrichsthal/4106">Standesamt Friedrichsthal</a><br>Schmidtbornstr. 12a, 66299 Friedrichsthal</p><p><a href="/Standesamt-Heusweiler/4108">Standesamt Heusweiler</a><br>Saarbrücker Str. 35, 66265 Heusweiler</p><p><a href="/Standesamt-Homburg/4092">Standesamt Homburg</a><br>Am Forum 5, 66424 Homburg</p><p><a href="/Standesamt-I-Saarbruecken/4104">Standesamt I Saarbrücken</a><br>Rathausplatz 1, 66111 Saarbrücken</p><p><a href="/Standesamt-Ii-Saarbruecken/4105">Standesamt II Saarbrücken</a><br>Rathausstr. 5, 66125 Saarbrücken</p><p><a href="/Standesamt-Illingen/4070">Standesamt Illingen</a><br>Hauptstr. 84-86, 66557 Illingen</p><p><a href="/Standesamt-Kirkel/4093">Standesamt Kirkel</a><br>Hauptstr. 10, 66459 Kirkel</p><p><a href="/Standesamt-Kleinblittersdorf/4109">Standesamt Kleinblittersdorf</a><br>Rathausstr. 16-18, 66271 Kleinblittersdorf</p><p><a href="/Standesamt-Lebach/4077">Standesamt Lebach</a><br>Am Markt 1, 66822 Lebach</p><p><a href="/Standesamt-Losheim-Am-See/4063">Standesamt Losheim am See</a><br>Merziger Str. 3, 66679 Losheim am See</p><p><a href="/Standesamt-Mandelbachtal/4094">Standesamt Mandelbachtal</a><br>Theo-Carlen-Platz 2, 66399 Mandelbachtal</p><p><a href="/Standesamt-Marpingen/4097">Standesamt Marpingen</a><br>Urexweilerstr. 11, 66646 Marpingen</p><p><a href="/Standesamt-Merchweiler/4071">Standesamt Merchweiler</a><br>Hauptstr. 82, 66589 Merchweiler</p><p><a href="/Standesamt-Merzig/4064">Standesamt Merzig</a><br>Brauerstr. 5, 66663 Merzig</p><p><a href="/Standesamt-Mettlach/4065">Standesamt Mettlach</a><br>Freiherr-vom-Stein-Str. 64, 66693 Mettlach</p><p><a href="/Standesamt-Nalbach/4078">Standesamt Nalbach</a><br>Rathausplatz 1, 66809 Nalbach</p><p><a href="/Standesamt-Neunkirchen-saar/4072">Standesamt Neunkirchen (Saar)</a><br>Oberer Markt 16, 66538 Neunkirchen</p><p><a href="/Standesamt-Nohfelden/4099">Standesamt Nohfelden</a><br>An der Burg, 66625 Nohfelden</p><p><a href="/Standesamt-Nonnweiler/4100">Standesamt Nonnweiler</a><br>Trierer Str. 5, 66620 Nonnweiler</p><p><a href="/Standesamt-Ottweiler/4073">Standesamt Ottweiler</a><br>Illinger Straße 7, 66564 Ottweiler</p><p><a href="/Standesamt-Perl/4066">Standesamt Perl</a><br>Trierer Str. 28, 66706 Perl</p><p><a href="/Standesamt-Puettlingen/4110">Standesamt Püttlingen</a><br>Rathausplatz 1, 66346 Püttlingen</p><p><a href="/Standesamt-Quierschied/4111">Standesamt Quierschied</a><br>Rathausplatz 1, 66287 Quierschied</p><p><a href="/Standesamt-Rehlingen-Siersburg/4079">Standesamt Rehlingen-Siersburg</a><br>Bouzonviller Platz, 66780 Rehlingen-Siersburg</p><p><a href="/Standesamt-Riegelsberg/4112">Standesamt Riegelsberg</a><br>Saarbrücker Str. 31, 66292 Riegelsberg</p><p><a href="/Standesamt-Saarlouis/4080">Standesamt Saarlouis</a><br>Großer Markt 1, 66740 Saarlouis</p><p><a href="/Standesamt-Saarwellingen/4081">Standesamt Saarwellingen</a><br>Schlossplatz 1, 66793 Saarwellingen</p><p><a href="/Standesamt-Sankt-Ingbert/4095">Standesamt Sankt Ingbert</a><br>Am Markt 12, 66386 St. Ingbert</p><p><a href="/Standesamt-Schiffweiler/4074">Standesamt Schiffweiler</a><br>Rathausstr. 11, 66578 Schiffweiler</p><p><a href="/Standesamt-Schmelz/4082">Standesamt Schmelz</a><br>Rathausplatz 1, 66839 Schmelz</p><p><a href="/Standesamt-Schwalbach/4083">Standesamt Schwalbach</a><br>Hauptstr.92, 66773 Schwalbach</p><p><a href="/Standesamt-Spiesen-Elversberg/4075">Standesamt Spiesen-Elversberg</a><br>Hauptstr. 116, 66583 Spiesen-Elversberg</p><p><a href="/Standesamt-St-Wendel/4102">Standesamt St. Wendel</a><br>Fruchtmarkt 1, 66606 St. Wendel</p><p><a href="/Standesamt-Sulzbach--Saar/4113">Standesamt Sulzbach / Saar</a><br>Sulzbachtalstr. 81, 66280 Sulzbach / Saar</p><p><a href="/Standesamt-Tholey/4103">Standesamt Tholey</a><br>Im Kloster 1, 66636 Tholey</p><p><a href="/Standesamt-Ueberherrn/4084">Standesamt Überherrn</a><br>Rathausstr. 101, 66802 Überherrn</p><p><a href="/Standesamt-Voelklingen/4114">Standesamt Völklingen</a><br>Rathausplatz, 66333 Völklingen</p><p><a href="/Standesamt-Wadern/4067">Standesamt Wadern</a><br>Marktplatz 13, 66687 Wadern</p><p><a href="/Standesamt-Wadgassen/4085">Standesamt Wadgassen</a><br>Sengsterstr. 14, 66787 Wadgassen</p><p><a href="/Standesamt-Wallerfangen/4086">Standesamt Wallerfangen</a><br>Fabrikplatz, 66798 Wallerfangen</p></div></div><br><br><br><br><br></div><div id="container">
+<div id="content" style="border-top: solid 1px #eee;background:#fff;color:#9a9a9a;height:20px;text-align:right;font-size:10px">
+<a href="/agb.php" target="_blank">AGB</a>&nbsp;|&nbsp;<a href="/datenschutz.php" target="_blank">Datenschutz</a>&nbsp;|&nbsp;
+<a href="/hilfe.php" target="_blank">Hilfe</a>&nbsp;|&nbsp;
+<a href="/impressum.php" target="_blank">Impressum</a>&nbsp;|&nbsp;
+<a href="/kontakt.php" target="_blank">Kontakt</a>&nbsp;|&nbsp;
+<a href="/anb.php" target="_blank">Nutzungsbedingungen</a>
+&nbsp;|&nbsp;<a href="/preise.php" target="_blank">Preise</a>&nbsp;|&nbsp;<a href="/rhinweise.php" target="_blank">Rechtliches</a>
+&nbsp;|&nbsp;<a href="/rss.php" target="_blank"><img src="/images/rss.png" height=10 width=10></a>
+</div>
+</div></div></body>
+</html>
+<!--
+0,019491910934448
+0,0023341178894043
+0,021826028823853
+-->

@@ -176,7 +176,7 @@ public class DataParser {
 		return document.text();
 	}
 
-	public void setValue(String value, String property, Standesamt standesamt) {
+	public static void setValue(String value, String property, Standesamt standesamt) {
 		try {
 			String currentValue = BeanUtils.getProperty(standesamt, property);
 			if (!hasText(currentValue)) {

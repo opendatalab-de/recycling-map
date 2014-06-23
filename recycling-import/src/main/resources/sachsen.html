@@ -1,0 +1,504 @@
+<!DOCTYPE html><html><head><title>Standesämter in Sachsen</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta http-equiv="content-language" content="de"/><meta name="description" content="Verzeichnis zu Standesämtern in Sachsen" /><link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.standesamt.com/rss.php">
+<link href="/javascripts/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon">
+
+
+<style type=text/css>
+.lightTip                       { width: 342px; }.lightTip .content              { width: 310px; padding: 10px; border: 6px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #ffffff; color: #020202; }.lightTip .bottom               { height: 14px; background: url(../images/notch-white.png) top center no-repeat; } .yellowTip                      { width: 342px; }.yellowTip .content             { width: 310px; padding: 10px; border: 6px solid #f9e98e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbf7aa; color: #020202; }.yellowTip .bottom              { height: 14px; background: url(../images/notch-yellow.png) top center no-repeat; } .orangeTip                      { width: 342px; }.orangeTip .content             { width: 310px; padding: 10px; border: 6px solid #f9cd8e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbe3aa; color: #020202; }.orangeTip .bottom              { height: 14px; background: url(../images/notch-orange.png) top center no-repeat; } .redTip                         { width: 342px; }.redTip .content                { width: 310px; padding: 10px; border: 6px solid #ce6f6f; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #f79992; color: #020202; }.redTip .bottom                 { height: 14px; background: url(../images/notch-red.png) top center no-repeat; } .greenTip                       { width: 342px; }.greenTip .content              { width: 310px; padding: 10px; border: 6px solid #a9db66; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #cae8a2; color: #020202; }.greenTip .bottom               { height: 14px; background: url(../images/notch-green.png) top center no-repeat; } .blueTip                        { width: 342px; }.blueTip .content               { width: 310px; padding: 10px; border: 6px solid #36a4d9; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #90d8f0; color: #020202; }.blueTip .bottom                { height: 14px; background: url(../images/notch-blue.png) top center no-repeat; } .purpleTip                      { width: 342px; }.purpleTip .content             { width: 310px; padding: 10px; border: 6px solid #8671de; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #a290f0; color: #020202; }.purpleTip .bottom              { height: 14px; background: url(../images/notch-purple.png) top center no-repeat; } .darkTip                        { width: 342px; }.darkTip .content               { width: 310px; padding: 10px; border: 6px solid #303030; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #505050; color: #f8f8f8; }.darkTip .bottom                { height: 14px; background: url(../images/notch-dark.png) top center no-repeat; }
+
+/* simple css-based tooltip */
+ .tooltip {
+ 	background-color:#000;
+ 	border:1px solid #fff;
+ 	padding:10px 15px;
+ 	width:200px;
+ 	display:none;
+ 	color:#fff;
+ 	text-align:left;
+ 	font-size:14px;
+
+ 	/* outline radius for mozilla/firefox only */
+ 	-moz-box-shadow:0 0 10px #000;
+ 	-webkit-box-shadow:0 0 10px #000;
+ }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0px none;
+	outline: 0;
+	background: ;
+}
+.none {
+	display: none;
+}
+.break {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+:focus {
+	outline: none;
+}
+ul {
+	list-style-type: none;
+}
+ul.quicklinks li{margin-bottom:5px;padding-left:20px;background:url('/images/bullet_green.png') no-repeat top left;}
+.big {
+	font-size:14px;
+}
+/* Layout
+========================*/
+body {
+	background: #e6f8f8 url('/images/bg.jpg') repeat-x top left;
+	text-align: center;
+	font-style:normal; font-variant:normal; font-weight:normal; font-size:76.5%; font-family:Arial, Helvetica, sans-serif
+}
+
+h1{ font-size:18px;margin-top:0em; margin-bottom:0em;}
+h2{ font-size:16px;margin-top:0em; margin-bottom:0em;}
+h3{ font-size:14px;margin-top:0em; margin-bottom:0em;}
+
+a:link {color:#2ca4e8; text-decoration:none}
+a:hover {color:#2ca4e8; text-decoration:underline}
+
+.small{
+	font-size:12px;
+}
+
+.small_gray{
+	font-size:12px;
+	color:#606060;
+}
+.gray{
+	color:#606060;
+}
+
+#headline_black {
+	height: 5px;
+	width: 100%;
+	background:#000
+}
+
+#topmenu {
+	float: right;
+	margin-top: 0px;
+	height: 20px;
+	font-weight: bold;
+	color: #515151;
+	white-space: nowrap;
+	width: auto;
+	padding-right: 31px;
+	padding-left: 31px;
+	background: #000;
+}
+#topmenu span {
+	color: #fff;
+}
+#topmenu a {
+	color: #bebebe;
+	text-decoration: none;
+}
+#topmenu a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+#topmenu span.left {
+	width: 31px;
+	height: 20px;
+	display: block;
+	background:;
+	float: left
+}
+
+#container {
+	width: 960px;
+	height:100%;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+
+#container_bordered {
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	border: solid 1px #000;
+}
+
+#content {
+	width: 940px;
+	background: #fff;
+	clear: both;
+	padding-left:20px; padding-right:20px; padding-top:10px; padding-bottom:0px;
+	border: 1px solid #fff;
+}
+
+#header_blue{
+	background:#2ca4e3;
+	color:#fff;
+}
+#header_orange{
+	background:#ff770b;
+	color:#fff;
+}
+
+
+ul.steps { background: url('/images/steps-bg.png') no-repeat 0 0;display:block;height:207px;margin-bottom:10px;clear:both }
+  ul.steps li {color:#9AB5CF;float:left;font-size:32px;margin:20px 42px 20px 15px;width:260px;}
+    ul.steps li img { vertical-align:top;margin-left:20px;}
+    ul.steps li div { color:#010101;font-size:13px;text-align:center;width:260px;margin-top:10px; }
+    ul.steps li div.benefit_text { font-size: 15px; }
+    ul.steps li div.margin_top_0 { margin-top: 0px; }
+    ul.steps li div strong { font-weight:bold; }
+    ul.steps li.last_step { margin-right:0px; }
+
+.big_red{
+	font-size:22px;
+	color:#ff691f;
+	text-decoration: none;
+}
+
+#submenu1{
+	padding-top:15px;
+	width:920px;
+	height:40px;
+	background:#d2f2f3;
+}
+
+
+
+
+#submenu {
+	padding-top:15px;
+	height: 41px;
+	background:#d2f2f3;
+	margin-bottom: 20px
+}
+#submenu ul, #submenu p {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	display: inline;
+}
+#submenu ul li {
+	float: left;
+	margin-top: 3px;
+}
+
+
+#submenu ul li a {
+	border-bottom: 1px solid #cce8eb;
+	padding: 4px 10px 4px 10px;
+	text-decoration: none;
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #5c7e81;
+	background: #eaf7f8;
+	margin-right: 4px;
+	position: relative;
+	text-align: center;
+}
+#submenu ul li a:hover {
+	background: #fff;
+}
+#submenu ul li a.active {
+	background: #fff;
+	color: #396063;
+	border-bottom: 1px solid #c4e3e6;
+}
+#submenu ul li span {
+	position: absolute;
+	display: block;
+	background: url('/images/submenu_pointer.gif') no-repeat;
+	width: 21px;
+	height: 12px;
+	top: 30px;
+	left: 50%;
+	margin-left: -10px
+}
+
+
+
+input#searchField {
+	width: 225px;
+	background: #fff;
+	border: 1px solid #bbb;
+	border-bottom-color: #ddd;
+	border-right-color: #ddd;
+	color: #868686;
+	padding: 4px;
+}
+input#searchButton, input#loginButton, input#Button {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #ff691f;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+
+input#searchButtonRed, input#loginButtonRed, input#ButtonRed {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #c92f2e;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+#footer{
+	float: right;
+	color: #aaaaaa;
+}
+
+input.textbox,
+select.textbox,
+textarea,
+input[type=text],
+input[type=password] {
+  -moz-border-radius: 5px;
+  -webkit-border-radius:5px;
+  border:1px solid #E0E0E0;
+  padding:6px 10px;
+  border-color:#AFAFAF #E0E0E0 #E0E0E0;
+  border-style:solid;
+  border-width:1px 1px 1px;
+  font-size:13px;
+  color:#434343;
+  resize:none;
+  font-family:arial;
+  background-color: #F9F9F9;
+  vertical-align: middle;
+}
+
+textarea {
+  line-height: 1.5;
+  vertical-align: baseline;
+}
+
+select {
+  font-size:13px;
+  color:#434343;
+  background-color: #ffffff;
+}
+
+input.checkbox {
+  margin: 0 5px 0 0;
+}
+
+
+
+.accordion {
+	width: 280px;
+}
+.accordion span {
+	height:50px;
+	background: url(/images/help.png) no-repeat right 8px;
+	padding: 10px;
+	margin: 0;
+	cursor: pointer;
+}
+.accordion span.active {
+	background-position: right 8px;
+}
+.accordion p {
+	margin: 0;
+	padding: 5px 5px 5px;
+	border-top:1px dotted #000;
+	border-bottom:1px dotted #000;
+}
+
+
+.edit {
+	padding-top:5px;
+	float:right;
+	color:blue;
+	cursor: pointer;
+}
+
+##########rating ###################
+.rating {
+	cursor: pointer;
+	margin: 2em;
+	clear: both;
+	display: block;
+}
+.rating:after {
+	content: '.';
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+	visibility: hidden;
+}
+.cancel,
+.star {
+	float: left;
+	width: 17px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.star-left,
+.star-right {
+  width: 8px
+}
+.cancel,
+.cancel a {background: url('/images/rating-delete.gif') no-repeat 0 -16px;}
+
+.star,
+.star a {background: url('/images/rating-star.gif') no-repeat 0 0px;}
+.star-left,
+.star-left a {background: url('/images/rating-star-left.gif') no-repeat 0 0px;}
+.star-right,
+.star-right a {background: url('/images/rating-star-right.gif') no-repeat 0 0px;}
+
+.cancel a,
+.star a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: 0 0px;
+}
+
+div.rating div.on a {
+	background-position: 0 -16px;
+}
+div.rating div.hover a,
+div.rating div a:hover {
+	background-position: 0 -32px;
+}
+.buttonlink
+		{
+			background-image: url('/images/button-green.png') !important;
+			background-position: left top;
+
+			color: #fff;
+
+			height: 22px;
+			width: 146px;
+
+			padding: 10px 0 10px 0;
+			margin: 0 5px 0 0;
+
+			font-weight: bold;
+			display: block;
+			float: left;
+			text-align: center;
+
+			font-size: 16px;
+
+			text-shadow: 0 1px 1px #595;
+
+		}
+#buttonlinks
+{
+	padding: 10px;
+}
+
+
+.buttonlink:hover
+{
+	color: #fff;
+	background-position: left 80px;
+}
+
+.buttonlink:active
+{
+	color: #fff;
+	background-position: left 40px;
+}
+
+
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel, div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel, div.rating-cancel a{background:url('/rating/delete.gif') no-repeat 0 -16px; }
+div.star-rating, div.star-rating a{background:url('/rating/star.gif') no-repeat 0 0px; }
+div.rating-cancel a, div.star-rating a{display:block;width:16px;height:100%;background-position: 0 0px;border:0px none; }
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+
+
+google_afs_bigsize{padding:1px;}
+.google_afs_bigsize a {height:auto;text-decoration:none;display:inline;height:100%;}
+.google_afs_bigsize a:hover {text-decoration:none;background-color:#eee}
+.google_afs_bigsize a:activ {text-decoration:none;}
+.google_afs_bigsize a:visited {text-decoration:none;}
+.google_afs_bigsize a strong {text-decoration:underline;}
+.google_afs_bigsize span.visible_url {color:#555555;font-style:italic;}
+.google_afs_bigsize span.txt {color:#666666;}
+
+</style>
+<link type="text/css" href="/javascripts/jquery/themes/le-frog/jquery.ui.all.css" rel="stylesheet" /><script type="text/javascript" src="/javascripts/jquery/jquery.js"></script><script src="/javascripts/jquery/ui/jquery-ui-1.8.6.custom.js"></script><script src="/javascripts/facebox/facebox.js" type="text/javascript"></script><script type="text/javascript" src="/javascripts/tinytip/jquery.tinyTips.js"></script><link type="text/css" href="/javascripts/menu/menu.css" rel="stylesheet" /><script type="text/javascript" src="/javascripts/menu/menu.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20235868-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script></head><body ><div style="width:100%;height:20px;"></div><div id="container"><div id="content">
+<script src="/javascripts/jquery/ui/jquery.effects.blind.js"></script>
+<script>
+$(function() {
+		// run the currently selected effect
+		function runEffect() {
+			// most effect types need no options passed by default
+			var options = {}; 
+			// run the effect
+			$( "#menu1" ).show( 'blind', options, 500);
+		};
+ 
+		//callback function to bring a hidden box back
+		function callback() {
+			setTimeout(function() {
+				$( "#menu1:visible" ).removeAttr( "style" ).fadeOut();
+			}, 100 );
+		};
+ 
+		// set effect from select menu value
+		$( "#tab1" ).mouseover(function() {
+			runEffect();
+			return false;
+		});
+ 		
+ 		
+
+		$( "#menu1" ).hide();
+		
+	});
+	
+	
+			function testhide()
+			{
+				$( "#menu1" ).hide();
+		}
+	</script>
+<div style="height:110px;border-bottom: solid 1px #bbb;width:100%"><div style="width:100%;"><a href="/"><img src="/images/logo.png" title="Standesamt"></a></div><div style="width:100%;text-align:right;padding-top:0px"><form action="/search.php"><input type="text" style="border:solid 1px #000" size=50 name="q" id="id_q" value="Plz oder Ort" onClick="if (this.value=='Plz oder Ort') this.value='';"> <input type="hidden" name="key" value="hochzeit"><input type="submit"  name="do" onClick="if (document.getElementById('id_q').value=='Plz oder Ort') document.getElementById('id_q').value='';return true;" value="Standesämter anzeigen"></form></div></div><div style="font-size:10px"><a href="/">Startseite</a> > <a href="/Standesaemter-Sachsen/13">Standesämter Sachsen</a></div><div style="width:100%;valign:top"><div style="background:#fff;width:200px;float:left;"><div style="background:#fff;border: solid 1px #c3c3c3;width:100%;"><img src="http://www.standesamt.com/images/sachsen.jpg" width=200></div><br><div style="background:#fff;border: solid 1px #c3c3c3;width:100%;"><div style="background:#2ca4e3;padding:5px;color:#fff;"><h2>Standesämter Sachsen</h2></div><div style="padding:5px;">In Sachsen gibt es viel zu entdecken. Regionen aus Sachsen die man mal gesehen haben sollte sind Erzgebirge, Oberlausitz/ Niederschlesien, Sächsisches Burgen- und Heideland, Sächsisches Elbland, Sächsische Schweiz und das Vogtland. Wir haben aktuell <b>124 Standesämter</b> aus Sachsen bei uns gelistet.</div></div></div><div style="min-height:400px;margin-left: 210px;padding-left:20px;font-size:14px;"><p><h1>Standesämter in Sachsen</h1></p><br><p><a href="/Standesamt-Adorfvogtl/4323">Standesamt Adorf/Vogtl.</a><br>Markt 1, 08626 Adorf/Vogtl.</p><p><a href="/Standesamt-Altenberg/4341">Standesamt Altenberg</a><br>Platz des Bergmanns 2, 01773 Altenberg</p><p><a href="/Standesamt-Annaberg-Buchholz/4115">Standesamt Annaberg-Buchholz</a><br>Markt 1, 09456 Annaberg-Buchholz</p><p><a href="/Standesamt-Aue/4128">Standesamt Aue</a><br>Goethestr. 5, 08280 Aue</p><p><a href="/Standesamt-Auerbach-Vogtland/4324">Standesamt Auerbach Vogtland</a><br>Nicolaistr. 51, 08209 Auerbach Vogtl.</p><p><a href="/Standesamt-Augustusburg/4182">Standesamt Augustusburg</a><br>Marienberger Str. 24, 09573 Augustusburg</p><p><a href="/Standesamt-Bad-Dueben/4169">Standesamt Bad Düben</a><br>Markt 11, 04849 Bad Düben</p><p><a href="/Standesamt-Bad-Elster/4326">Standesamt Bad Elster</a><br>Kirchplatz 1, 08645 Bad Elster</p><p><a href="/Standesamt-Bad-Lausick/4217">Standesamt Bad Lausick</a><br>Markt 1, 04651 Bad Lausick</p><p><a href="/Standesamt-Bad-Muskau/4272">Standesamt Bad Muskau</a><br>Schloßstr. 1, 02953 Bad Muskau</p><p><a href="/Standesamt-Bad-Schlema/4137">Standesamt Bad Schlema</a><br>Joliot-Curie-Str. 13, 08301 Bad Schlema</p><p><a href="/Standesamt-Bautzen/4143">Standesamt Bautzen</a><br>Innere Lauenstraße 1, 02625 Bautzen</p><p><a href="/Standesamt-Bischofswerda/4144">Standesamt Bischofswerda</a><br>Altmarkt 1, 01877 Bischofswerda</p><p><a href="/Standesamt-Borna/4204">Standesamt Borna</a><br>Markt 11, 04552 Borna</p><p><a href="/Standesamt-Borsdorf/4263">Standesamt Borsdorf</a><br>Rathausstr. 1, 04451 Borsdorf</p><p><a href="/Standesamt-Brand-Erbisdorf/4184">Standesamt Brand-Erbisdorf</a><br>Markt 1, 09618 Brand-Erbisdorf</p><p><a href="/Standesamt-Brandis/4264">Standesamt Brandis</a><br>Markt 1-3, 04821 Brandis</p><p><a href="/Standesamt-Breitenbrunnerzgeb/4131">Standesamt Breitenbrunn/Erzgeb.</a><br>Hauptstr. 120, 08359 Breitenbrunn</p><p><a href="/Standesamt-Burgstaedt/4250">Standesamt Burgstädt</a><br>Brühl 1, 09217 Burgstädt</p><p><a href="/Standesamt-Chemnitz/4160">Standesamt Chemnitz</a><br>Bahnhofstr. 53, 09111 Chemnitz</p><p><a href="/Standesamt-Colditz/4265">Standesamt Colditz</a><br>Markt 1, 04680 Colditz</p><p><a href="/Standesamt-Coswig/4230">Standesamt Coswig</a><br>Karrasstr. 2, 01640 Coswig</p><p><a href="/Standesamt-Crimmitschau/4368">Standesamt Crimmitschau</a><br>Badergasse 2, 08451 Crimmitschau</p><p><a href="/Standesamt-Delitzsch/4170">Standesamt Delitzsch</a><br>Schloßstr. 31, 04509 Delitzsch</p><p><a href="/Standesamt-Dippoldiswalde/4342">Standesamt Dippoldiswalde</a><br>Markt 2, 01744 Dippoldiswalde</p><p><a href="/Standesamt-Doebeln/4177">Standesamt Döbeln</a><br>Obermarkt 1, 04720 Döbeln</p><p><a href="/Standesamt-Dohna/4305">Standesamt Dohna</a><br>Am Markt 11, 01809 Dohna</p><p><a href="/Standesamt-Dommitzsch/4317">Standesamt Dommitzsch</a><br>Markt 1, 04880 Dommitzsch</p><p><a href="/Standesamt-Dresden/4176">Standesamt Dresden</a><br>Goetheallee 55, 01309 Dresden</p><p><a href="/Standesamt-Duerrroehrsdorf-Dittersbach/4306">Standesamt Dürrröhrsdorf-Dittersbach</a><br>Hauptstr. 122, 01833 Dürrröhrsdorf-Dittersbach</p><p><a href="/Standesamt-Ebersbach/4286">Standesamt Ebersbach</a><br>Am Bahndamm 3, 01561 Ebersbach</p><p><a href="/Standesamt-Ebersbach--Sa/4219">Standesamt Ebersbach / Sa.</a><br>Weberstr. 22, 02730 Ebersbach/Sa.</p><p><a href="/Standesamt-Eilenburg/4171">Standesamt Eilenburg</a><br>Marktplatz 1, 04838 Eilenburg</p><p><a href="/Standesamt-Eppendorf/4185">Standesamt Eppendorf</a><br>Großwaltersdorfer Str. 8, 09575 Eppendorf</p><p><a href="/Standesamt-Floeha/4186">Standesamt Flöha</a><br>Augustusburger Str. 90, 09557 Flöha</p><p><a href="/Standesamt-Frankenbergsa/4253">Standesamt Frankenberg/Sa.</a><br>Markt 15, 09669 Frankenberg/Sa.</p><p><a href="/Standesamt-Frauenstein/4187">Standesamt Frauenstein</a><br>Markt 28, 09623 Frauenstein</p><p><a href="/Standesamt-Freiberg/4188">Standesamt Freiberg</a><br>Obermarkt 24, 09599 Freiberg</p><p><a href="/Standesamt-Freital/4343">Standesamt Freital</a><br>Dresdner Str. 56, 01705 Freital</p><p><a href="/Standesamt-Frohburg/4205">Standesamt Frohburg</a><br>Markt 13-15, 04654 Frohburg</p><p><a href="/Standesamt-Glauchau/4162">Standesamt Glauchau</a><br>Markt 1, 08371 Glauchau</p><p><a href="/Standesamt-Goerlitz/4199">Standesamt Görlitz</a><br>Untermarkt 6-8, 02826 Görlitz</p><p><a href="/Standesamt-Grimma/4266">Standesamt Grimma</a><br>Markt 16/17, 04668 Grimma</p><p><a href="/Standesamt-Groeditz/4287">Standesamt Gröditz</a><br>Reppiser Str. 10, 01609 Gröditz</p><p><a href="/Standesamt-Grossdubrau/4148">Standesamt Großdubrau</a><br>Ernst-Thälmann-Str. 9, 02694 Großdubrau</p><p><a href="/Standesamt-Grossenhain/4288">Standesamt Großenhain</a><br>Hauptmarkt 1, 01558 Großenhain</p><p><a href="/Standesamt-Grossroehrsdorf/4354">Standesamt Großröhrsdorf</a><br>Rathausplatz 1, 01900 Großröhrsdorf</p><p><a href="/Standesamt-Hainichen/4255">Standesamt Hainichen</a><br>Markt 1, 09661 Hainichen</p><p><a href="/Standesamt-Hartmannsdorf/4256">Standesamt Hartmannsdorf</a><br>Untere Hauptstr. 111, 09232 Hartmannsdorf</p><p><a href="/Standesamt-Heidenau/4307">Standesamt Heidenau</a><br>Dresdner Str. 47, 01809 Heidenau</p><p><a href="/Standesamt-Herrnhut/4222">Standesamt Herrnhut</a><br>Löbauer Straße 18, 02747 Herrnhut</p><p><a href="/Standesamt-Hohenstein-Ernstthal/4163">Standesamt Hohenstein-Ernstthal</a><br>Altmarkt 30, 09337 Hohenstein-Ernstthal</p><p><a href="/Standesamt-Hoyerswerda/4201">Standesamt Hoyerswerda</a><br>S.-G.-Frentzel-Straße 1, 02977 Hoyerswerda</p><p><a href="/Standesamt-Johanngeorgenstadt/4133">Standesamt Johanngeorgenstadt</a><br>Eibenstocker Str. 67, 08349 Johanngeorgenstadt</p><p><a href="/Standesamt-Kamenz/4356">Standesamt Kamenz</a><br>Markt 1, 01917 Kamenz</p><p><a href="/Standesamt-Kirchberg/4370">Standesamt Kirchberg</a><br>Neumarkt 2, 08107 Kirchberg</p><p><a href="/Standesamt-Klingenthal/4328">Standesamt Klingenthal</a><br>Kirchstr. 14, 08248 Klingenthal</p><p><a href="/Standesamt-Kodersdorf/4274">Standesamt Kodersdorf</a><br>Straße der Freundschaft 1, 02923 Kodersdorf</p><p><a href="/Standesamt-Kohren-Sahlis/4210">Standesamt Kohren-Sahlis</a><br>Markt 68, 04655 Kohren-Sahlis</p><p><a href="/Standesamt-Koenigstein/4309">Standesamt Königstein</a><br>Goethestr. 7, 01824 Königstein</p><p><a href="/Standesamt-Lauta/4358">Standesamt Lauta</a><br>Karl-Liebknecht-Str. 18, 02991 Lauta</p><p><a href="/Standesamt-Leipzig/4202">Standesamt Leipzig</a><br>Burgplatz 1, 04109 Leipzig</p><p><a href="/Standesamt-Leisnig/4179">Standesamt Leisnig</a><br>Markt 1, 04703 Leisnig</p><p><a href="/Standesamt-Lichtenau/4249">Standesamt Lichtenau</a><br>Auerswalder Hauptstr. 2, 09244 Lichtenau</p><p><a href="/Standesamt-Lichtenberg-erzgebirge/4191">Standesamt Lichtenberg (Erzgebirge)</a><br>Bahnhofstr. 3A, 09638 Lichtenberg / Erzgebirge</p><p><a href="/Standesamt-Lichtenstein/4164">Standesamt Lichtenstein</a><br>Badergasse 17, 09350 Lichtenstein</p><p><a href="/Standesamt-Limbach-Oberfrohna/4165">Standesamt Limbach-Oberfrohna</a><br>Rathausplatz 1, 09212 Limbach-Oberfrohna</p><p><a href="/Standesamt-Loebau/4223">Standesamt Löbau</a><br>Altmarkt 1, 02708 Löbau</p><p><a href="/Standesamt-Lommatzsch/4231">Standesamt Lommatzsch</a><br>Am Markt 1, 01623 Lommatzsch</p><p><a href="/Standesamt-Loessnitz/4135">Standesamt Lößnitz</a><br>Marktplatz 1, 08294 Lößnitz</p><p><a href="/Standesamt-Machern/4267">Standesamt Machern</a><br>Schloßplatz 9, 04827 Machern</p><p><a href="/Standesamt-Marienberg/4243">Standesamt Marienberg</a><br>Markt 1, 09496 Marienberg</p><p><a href="/Standesamt-Markkleeberg/4211">Standesamt Markkleeberg</a><br>Raschwitzer Straße 13, 04416 Markkleeberg</p><p><a href="/Standesamt-Markneukirchen/4330">Standesamt Markneukirchen</a><br>Am Rathaus 2, 08258 Markneukirchen</p><p><a href="/Standesamt-Markranstaedt/4212">Standesamt Markranstädt</a><br>Markt 1, 04420 Markranstädt</p><p><a href="/Standesamt-Meerane/4166">Standesamt Meerane</a><br>Loerracher Platz 1, 08393 Meerane</p><p><a href="/Standesamt-Meissen/4232">Standesamt Meißen</a><br>Markt 1, 01662 Meißen</p><p><a href="/Standesamt-Mittweida/4259">Standesamt Mittweida</a><br>Kapellengasse 8, 09648 Mittweida</p><p><a href="/Standesamt-Moritzburg/4233">Standesamt Moritzburg</a><br>Schloßallee 22, 01468 Moritzburg</p><p><a href="/Standesamt-Muelsen/4371">Standesamt Mülsen</a><br>St. Jacober Hauptstr. 128, 08132 Mülsen</p><p><a href="/Standesamt-Mylau/4332">Standesamt Mylau</a><br>Reichenbacher Str. 13, 08499 Mylau</p><p><a href="/Standesamt-Niesky/4276">Standesamt Niesky</a><br>Muskauer Str. 20-22, 02906 Niesky</p><p><a href="/Standesamt-Nossen/4234">Standesamt Nossen</a><br>Markt 31, 01683 Nossen</p><p><a href="/Standesamt-Nuenchritz/4289">Standesamt Nünchritz</a><br>Glaubitzer Str. 10, 01612 Nünchritz</p><p><a href="/Standesamt-Oelsnitz--Vogtland/4334">Standesamt Oelsnitz / Vogtland</a><br>Markt 1, 08606 Oelsnitz / Vogtl.</p><p><a href="/Standesamt-Olbernhau/4244">Standesamt Olbernhau</a><br>Grünthaler Str. 28, 09526 Olbernhau</p><p><a href="/Standesamt-Oschatz/4319">Standesamt Oschatz</a><br>Neumarkt 1, 04758 Oschatz</p><p><a href="/Standesamt-Ottendorf-Okrilla/4359">Standesamt Ottendorf-Okrilla</a><br>Radeburger Str. 34, 01458 Ottendorf-Okrilla</p><p><a href="/Standesamt-Panschwitz-Kuckau/4360">Standesamt Panschwitz-Kuckau</a><br>Poststr. 8, 01920 Panschwitz-Kuckau</p><p><a href="/Standesamt-Penig/4260">Standesamt Penig</a><br>Markt 6, 09322 Penig</p><p><a href="/Standesamt-Pirna/4312">Standesamt Pirna</a><br>Am Markt 1-2, 01796 Pirna</p><p><a href="/Standesamt-Plauen/4285">Standesamt Plauen</a><br>Unterer Graben 1, 08523 Plauen</p><p><a href="/Standesamt-Pulsnitz/4361">Standesamt Pulsnitz</a><br>Am Markt 1, 01896 Pulsnitz</p><p><a href="/Standesamt-Radeberg/4362">Standesamt Radeberg</a><br>Markt 19, 01454 Radeberg</p><p><a href="/Standesamt-Radebeul/4235">Standesamt Radebeul</a><br>Pestalozzistraße 4, 01445 Radebeul</p><p><a href="/Standesamt-Radeburg/4236">Standesamt Radeburg</a><br>Heinrich-Zille-Str. 6, 01471 Radeburg</p><p><a href="/Standesamt-Reichenbach-Vogtland/4335">Standesamt Reichenbach Vogtland</a><br>Markt 6, 08468 Reichenbach</p><p><a href="/Standesamt-Riesa/4290">Standesamt Riesa</a><br>Rathausplatz 1, 01589 Riesa</p><p><a href="/Standesamt-Rietschen/4278">Standesamt Rietschen</a><br>Forsthausweg 2, 02956 Rietschen</p><p><a href="/Standesamt-Rochlitz/4261">Standesamt Rochlitz</a><br>Markt 1, 09306 Rochlitz</p><p><a href="/Standesamt-Rodewisch/4336">Standesamt Rodewisch</a><br>Wernesgrüner Str. 32, 08228 Rodewisch</p><p><a href="/Standesamt-Rothenburgol/4279">Standesamt Rothenburg/O.L.</a><br>Marktplatz 1, 02929 Rothenburg</p><p><a href="/Standesamt-Schkeuditz/4174">Standesamt Schkeuditz</a><br>Rathausplatz 3, 04435 Schkeuditz</p><p><a href="/Standesamt-Schneeberg/4138">Standesamt Schneeberg</a><br>Markt 1, 08289 Schneeberg</p><p><a href="/Standesamt-Schoeneckvogtl/4337">Standesamt Schöneck/Vogtl.</a><br>Sonnenwirbel 3, 08261 Schöneck</p><p><a href="/Standesamt-Schwarzenberg-erzgebirge/4140">Standesamt Schwarzenberg (Erzgebirge)</a><br>Straße der Einheit 20, 08340 Schwarzenberg</p><p><a href="/Standesamt-Sebnitz/4313">Standesamt Sebnitz</a><br>Kirchstr. 5, 01855 Sebnitz</p><p><a href="/Standesamt-Stollberg--Erzgebirge/4301">Standesamt Stollberg / Erzgebirge</a><br>Hauptmarkt 1, 09366 Stollberg</p><p><a href="/Standesamt-Taucha/4175">Standesamt Taucha</a><br>Schloßstr. 13, 04425 Taucha</p><p><a href="/Standesamt-Torgau/4321">Standesamt Torgau</a><br>Markt 1, 04860 Torgau</p><p><a href="/Standesamt-Weinboehla/4237">Standesamt Weinböhla</a><br>Rathausplatz 2, 01689 Weinböhla</p><p><a href="/Standesamt-Weisswasserol/4282">Standesamt Weißwasser/O.L.</a><br>Karl-Marx-Straße 15, 02943 Weißwasser</p><p><a href="/Standesamt-Werdau/4373">Standesamt Werdau</a><br>Markt 10-18, 08412 Werdau</p><p><a href="/Standesamt-Wildensteingruenhainichen/4239">Standesamt Wildenstein/Grünhainichen</a><br>Chemnitzer Str. 41, 09579 Grünhainichen</p><p><a href="/Standesamt-Wilkau-Hasslau/4367">Standesamt Wilkau-Haßlau</a><br>Poststr. 1, 08112 Wilkau-Haßlau</p><p><a href="/Standesamt-Wilsdruff/4350">Standesamt Wilsdruff</a><br>Nossener Str. 20, 01723 Wilsdruff</p><p><a href="/Standesamt-Wilthen/4159">Standesamt Wilthen</a><br>Bahnhofstr. 5, 02681 Wilthen</p><p><a href="/Standesamt-Wittichenau/4364">Standesamt Wittichenau</a><br>Ticinplatz 2, 02997 Wittichenau</p><p><a href="/Standesamt-Wurzen/4271">Standesamt Wurzen</a><br>Friedrich-Ebert-Str. 2, 04808 Wurzen</p><p><a href="/Standesamt-Zittau/4229">Standesamt Zittau</a><br>Markt 1, 02763 Zittau</p><p><a href="/Standesamt-Zschopau/4248">Standesamt Zschopau</a><br>Altmarkt 2, 09405 Zschopau</p><p><a href="/Standesamt-Zwenkau/4216">Standesamt Zwenkau</a><br>Bürgermeister-Ahnert-Platz 1, 04442 Zwenkau</p><p><a href="/Standesamt-Zwickau/4365">Standesamt Zwickau</a><br>Neuberinplatz 1 A, 08056 Zwickau</p><p><a href="/Standesamt-Zwoenitz/4127">Standesamt Zwönitz</a><br>Markt 6, 08297 Zwönitz</p></div></div><br><br><br><br><br></div><div id="container">
+<div id="content" style="border-top: solid 1px #eee;background:#fff;color:#9a9a9a;height:20px;text-align:right;font-size:10px">
+<a href="/agb.php" target="_blank">AGB</a>&nbsp;|&nbsp;<a href="/datenschutz.php" target="_blank">Datenschutz</a>&nbsp;|&nbsp;
+<a href="/hilfe.php" target="_blank">Hilfe</a>&nbsp;|&nbsp;
+<a href="/impressum.php" target="_blank">Impressum</a>&nbsp;|&nbsp;
+<a href="/kontakt.php" target="_blank">Kontakt</a>&nbsp;|&nbsp;
+<a href="/anb.php" target="_blank">Nutzungsbedingungen</a>
+&nbsp;|&nbsp;<a href="/preise.php" target="_blank">Preise</a>&nbsp;|&nbsp;<a href="/rhinweise.php" target="_blank">Rechtliches</a>
+&nbsp;|&nbsp;<a href="/rss.php" target="_blank"><img src="/images/rss.png" height=10 width=10></a>
+</div>
+</div></div></body>
+</html>
+<!--
+0,020199060440063
+0,0034139156341553
+0,023612976074219
+-->

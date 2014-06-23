@@ -1,0 +1,504 @@
+<!DOCTYPE html><html><head><title>Standesämter in Thüringen</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta http-equiv="content-language" content="de"/><meta name="description" content="Verzeichnis zu Standesämtern in Thüringen" /><link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.standesamt.com/rss.php">
+<link href="/javascripts/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon">
+
+
+<style type=text/css>
+.lightTip                       { width: 342px; }.lightTip .content              { width: 310px; padding: 10px; border: 6px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #ffffff; color: #020202; }.lightTip .bottom               { height: 14px; background: url(../images/notch-white.png) top center no-repeat; } .yellowTip                      { width: 342px; }.yellowTip .content             { width: 310px; padding: 10px; border: 6px solid #f9e98e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbf7aa; color: #020202; }.yellowTip .bottom              { height: 14px; background: url(../images/notch-yellow.png) top center no-repeat; } .orangeTip                      { width: 342px; }.orangeTip .content             { width: 310px; padding: 10px; border: 6px solid #f9cd8e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbe3aa; color: #020202; }.orangeTip .bottom              { height: 14px; background: url(../images/notch-orange.png) top center no-repeat; } .redTip                         { width: 342px; }.redTip .content                { width: 310px; padding: 10px; border: 6px solid #ce6f6f; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #f79992; color: #020202; }.redTip .bottom                 { height: 14px; background: url(../images/notch-red.png) top center no-repeat; } .greenTip                       { width: 342px; }.greenTip .content              { width: 310px; padding: 10px; border: 6px solid #a9db66; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #cae8a2; color: #020202; }.greenTip .bottom               { height: 14px; background: url(../images/notch-green.png) top center no-repeat; } .blueTip                        { width: 342px; }.blueTip .content               { width: 310px; padding: 10px; border: 6px solid #36a4d9; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #90d8f0; color: #020202; }.blueTip .bottom                { height: 14px; background: url(../images/notch-blue.png) top center no-repeat; } .purpleTip                      { width: 342px; }.purpleTip .content             { width: 310px; padding: 10px; border: 6px solid #8671de; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #a290f0; color: #020202; }.purpleTip .bottom              { height: 14px; background: url(../images/notch-purple.png) top center no-repeat; } .darkTip                        { width: 342px; }.darkTip .content               { width: 310px; padding: 10px; border: 6px solid #303030; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #505050; color: #f8f8f8; }.darkTip .bottom                { height: 14px; background: url(../images/notch-dark.png) top center no-repeat; }
+
+/* simple css-based tooltip */
+ .tooltip {
+ 	background-color:#000;
+ 	border:1px solid #fff;
+ 	padding:10px 15px;
+ 	width:200px;
+ 	display:none;
+ 	color:#fff;
+ 	text-align:left;
+ 	font-size:14px;
+
+ 	/* outline radius for mozilla/firefox only */
+ 	-moz-box-shadow:0 0 10px #000;
+ 	-webkit-box-shadow:0 0 10px #000;
+ }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0px none;
+	outline: 0;
+	background: ;
+}
+.none {
+	display: none;
+}
+.break {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+:focus {
+	outline: none;
+}
+ul {
+	list-style-type: none;
+}
+ul.quicklinks li{margin-bottom:5px;padding-left:20px;background:url('/images/bullet_green.png') no-repeat top left;}
+.big {
+	font-size:14px;
+}
+/* Layout
+========================*/
+body {
+	background: #e6f8f8 url('/images/bg.jpg') repeat-x top left;
+	text-align: center;
+	font-style:normal; font-variant:normal; font-weight:normal; font-size:76.5%; font-family:Arial, Helvetica, sans-serif
+}
+
+h1{ font-size:18px;margin-top:0em; margin-bottom:0em;}
+h2{ font-size:16px;margin-top:0em; margin-bottom:0em;}
+h3{ font-size:14px;margin-top:0em; margin-bottom:0em;}
+
+a:link {color:#2ca4e8; text-decoration:none}
+a:hover {color:#2ca4e8; text-decoration:underline}
+
+.small{
+	font-size:12px;
+}
+
+.small_gray{
+	font-size:12px;
+	color:#606060;
+}
+.gray{
+	color:#606060;
+}
+
+#headline_black {
+	height: 5px;
+	width: 100%;
+	background:#000
+}
+
+#topmenu {
+	float: right;
+	margin-top: 0px;
+	height: 20px;
+	font-weight: bold;
+	color: #515151;
+	white-space: nowrap;
+	width: auto;
+	padding-right: 31px;
+	padding-left: 31px;
+	background: #000;
+}
+#topmenu span {
+	color: #fff;
+}
+#topmenu a {
+	color: #bebebe;
+	text-decoration: none;
+}
+#topmenu a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+#topmenu span.left {
+	width: 31px;
+	height: 20px;
+	display: block;
+	background:;
+	float: left
+}
+
+#container {
+	width: 960px;
+	height:100%;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+
+#container_bordered {
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	border: solid 1px #000;
+}
+
+#content {
+	width: 940px;
+	background: #fff;
+	clear: both;
+	padding-left:20px; padding-right:20px; padding-top:10px; padding-bottom:0px;
+	border: 1px solid #fff;
+}
+
+#header_blue{
+	background:#2ca4e3;
+	color:#fff;
+}
+#header_orange{
+	background:#ff770b;
+	color:#fff;
+}
+
+
+ul.steps { background: url('/images/steps-bg.png') no-repeat 0 0;display:block;height:207px;margin-bottom:10px;clear:both }
+  ul.steps li {color:#9AB5CF;float:left;font-size:32px;margin:20px 42px 20px 15px;width:260px;}
+    ul.steps li img { vertical-align:top;margin-left:20px;}
+    ul.steps li div { color:#010101;font-size:13px;text-align:center;width:260px;margin-top:10px; }
+    ul.steps li div.benefit_text { font-size: 15px; }
+    ul.steps li div.margin_top_0 { margin-top: 0px; }
+    ul.steps li div strong { font-weight:bold; }
+    ul.steps li.last_step { margin-right:0px; }
+
+.big_red{
+	font-size:22px;
+	color:#ff691f;
+	text-decoration: none;
+}
+
+#submenu1{
+	padding-top:15px;
+	width:920px;
+	height:40px;
+	background:#d2f2f3;
+}
+
+
+
+
+#submenu {
+	padding-top:15px;
+	height: 41px;
+	background:#d2f2f3;
+	margin-bottom: 20px
+}
+#submenu ul, #submenu p {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	display: inline;
+}
+#submenu ul li {
+	float: left;
+	margin-top: 3px;
+}
+
+
+#submenu ul li a {
+	border-bottom: 1px solid #cce8eb;
+	padding: 4px 10px 4px 10px;
+	text-decoration: none;
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #5c7e81;
+	background: #eaf7f8;
+	margin-right: 4px;
+	position: relative;
+	text-align: center;
+}
+#submenu ul li a:hover {
+	background: #fff;
+}
+#submenu ul li a.active {
+	background: #fff;
+	color: #396063;
+	border-bottom: 1px solid #c4e3e6;
+}
+#submenu ul li span {
+	position: absolute;
+	display: block;
+	background: url('/images/submenu_pointer.gif') no-repeat;
+	width: 21px;
+	height: 12px;
+	top: 30px;
+	left: 50%;
+	margin-left: -10px
+}
+
+
+
+input#searchField {
+	width: 225px;
+	background: #fff;
+	border: 1px solid #bbb;
+	border-bottom-color: #ddd;
+	border-right-color: #ddd;
+	color: #868686;
+	padding: 4px;
+}
+input#searchButton, input#loginButton, input#Button {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #ff691f;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+
+input#searchButtonRed, input#loginButtonRed, input#ButtonRed {
+	width:80px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #c92f2e;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+#footer{
+	float: right;
+	color: #aaaaaa;
+}
+
+input.textbox,
+select.textbox,
+textarea,
+input[type=text],
+input[type=password] {
+  -moz-border-radius: 5px;
+  -webkit-border-radius:5px;
+  border:1px solid #E0E0E0;
+  padding:6px 10px;
+  border-color:#AFAFAF #E0E0E0 #E0E0E0;
+  border-style:solid;
+  border-width:1px 1px 1px;
+  font-size:13px;
+  color:#434343;
+  resize:none;
+  font-family:arial;
+  background-color: #F9F9F9;
+  vertical-align: middle;
+}
+
+textarea {
+  line-height: 1.5;
+  vertical-align: baseline;
+}
+
+select {
+  font-size:13px;
+  color:#434343;
+  background-color: #ffffff;
+}
+
+input.checkbox {
+  margin: 0 5px 0 0;
+}
+
+
+
+.accordion {
+	width: 280px;
+}
+.accordion span {
+	height:50px;
+	background: url(/images/help.png) no-repeat right 8px;
+	padding: 10px;
+	margin: 0;
+	cursor: pointer;
+}
+.accordion span.active {
+	background-position: right 8px;
+}
+.accordion p {
+	margin: 0;
+	padding: 5px 5px 5px;
+	border-top:1px dotted #000;
+	border-bottom:1px dotted #000;
+}
+
+
+.edit {
+	padding-top:5px;
+	float:right;
+	color:blue;
+	cursor: pointer;
+}
+
+##########rating ###################
+.rating {
+	cursor: pointer;
+	margin: 2em;
+	clear: both;
+	display: block;
+}
+.rating:after {
+	content: '.';
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+	visibility: hidden;
+}
+.cancel,
+.star {
+	float: left;
+	width: 17px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.star-left,
+.star-right {
+  width: 8px
+}
+.cancel,
+.cancel a {background: url('/images/rating-delete.gif') no-repeat 0 -16px;}
+
+.star,
+.star a {background: url('/images/rating-star.gif') no-repeat 0 0px;}
+.star-left,
+.star-left a {background: url('/images/rating-star-left.gif') no-repeat 0 0px;}
+.star-right,
+.star-right a {background: url('/images/rating-star-right.gif') no-repeat 0 0px;}
+
+.cancel a,
+.star a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: 0 0px;
+}
+
+div.rating div.on a {
+	background-position: 0 -16px;
+}
+div.rating div.hover a,
+div.rating div a:hover {
+	background-position: 0 -32px;
+}
+.buttonlink
+		{
+			background-image: url('/images/button-green.png') !important;
+			background-position: left top;
+
+			color: #fff;
+
+			height: 22px;
+			width: 146px;
+
+			padding: 10px 0 10px 0;
+			margin: 0 5px 0 0;
+
+			font-weight: bold;
+			display: block;
+			float: left;
+			text-align: center;
+
+			font-size: 16px;
+
+			text-shadow: 0 1px 1px #595;
+
+		}
+#buttonlinks
+{
+	padding: 10px;
+}
+
+
+.buttonlink:hover
+{
+	color: #fff;
+	background-position: left 80px;
+}
+
+.buttonlink:active
+{
+	color: #fff;
+	background-position: left 40px;
+}
+
+
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel, div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel, div.rating-cancel a{background:url('/rating/delete.gif') no-repeat 0 -16px; }
+div.star-rating, div.star-rating a{background:url('/rating/star.gif') no-repeat 0 0px; }
+div.rating-cancel a, div.star-rating a{display:block;width:16px;height:100%;background-position: 0 0px;border:0px none; }
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+
+
+google_afs_bigsize{padding:1px;}
+.google_afs_bigsize a {height:auto;text-decoration:none;display:inline;height:100%;}
+.google_afs_bigsize a:hover {text-decoration:none;background-color:#eee}
+.google_afs_bigsize a:activ {text-decoration:none;}
+.google_afs_bigsize a:visited {text-decoration:none;}
+.google_afs_bigsize a strong {text-decoration:underline;}
+.google_afs_bigsize span.visible_url {color:#555555;font-style:italic;}
+.google_afs_bigsize span.txt {color:#666666;}
+
+</style>
+<link type="text/css" href="/javascripts/jquery/themes/le-frog/jquery.ui.all.css" rel="stylesheet" /><script type="text/javascript" src="/javascripts/jquery/jquery.js"></script><script src="/javascripts/jquery/ui/jquery-ui-1.8.6.custom.js"></script><script src="/javascripts/facebox/facebox.js" type="text/javascript"></script><script type="text/javascript" src="/javascripts/tinytip/jquery.tinyTips.js"></script><link type="text/css" href="/javascripts/menu/menu.css" rel="stylesheet" /><script type="text/javascript" src="/javascripts/menu/menu.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20235868-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script></head><body ><div style="width:100%;height:20px;"></div><div id="container"><div id="content">
+<script src="/javascripts/jquery/ui/jquery.effects.blind.js"></script>
+<script>
+$(function() {
+		// run the currently selected effect
+		function runEffect() {
+			// most effect types need no options passed by default
+			var options = {}; 
+			// run the effect
+			$( "#menu1" ).show( 'blind', options, 500);
+		};
+ 
+		//callback function to bring a hidden box back
+		function callback() {
+			setTimeout(function() {
+				$( "#menu1:visible" ).removeAttr( "style" ).fadeOut();
+			}, 100 );
+		};
+ 
+		// set effect from select menu value
+		$( "#tab1" ).mouseover(function() {
+			runEffect();
+			return false;
+		});
+ 		
+ 		
+
+		$( "#menu1" ).hide();
+		
+	});
+	
+	
+			function testhide()
+			{
+				$( "#menu1" ).hide();
+		}
+	</script>
+<div style="height:110px;border-bottom: solid 1px #bbb;width:100%"><div style="width:100%;"><a href="/"><img src="/images/logo.png" title="Standesamt"></a></div><div style="width:100%;text-align:right;padding-top:0px"><form action="/search.php"><input type="text" style="border:solid 1px #000" size=50 name="q" id="id_q" value="Plz oder Ort" onClick="if (this.value=='Plz oder Ort') this.value='';"> <input type="hidden" name="key" value="hochzeit"><input type="submit"  name="do" onClick="if (document.getElementById('id_q').value=='Plz oder Ort') document.getElementById('id_q').value='';return true;" value="Standesämter anzeigen"></form></div></div><div style="font-size:10px"><a href="/">Startseite</a> > <a href="/Standesaemter-Thueringen/16">Standesämter Thüringen</a></div><div style="width:100%;valign:top"><div style="background:#fff;width:200px;float:left;"><div style="background:#fff;border: solid 1px #c3c3c3;width:100%;"><div style="background:#2ca4e3;padding:5px;color:#fff;"><h2>Standesämter Thüringen</h2></div><div style="padding:5px;"> Wir haben aktuell <b>82 Standesämter</b> aus Thüringen bei uns gelistet.</div></div></div><div style="min-height:400px;margin-left: 210px;padding-left:20px;font-size:14px;"><p><h1>Standesämter in Thüringen</h1></p><br><p><a href="/Standesamt-Altenburg/1">Standesamt Altenburg</a><br>Spalatinpromenade 8, 04600 Altenburg</p><p><a href="/Standesamt-Apolda/159">Standesamt Apolda</a><br>Unterm Schloß 3, 99510 Apolda</p><p><a href="/Standesamt-Arnstadt/53">Standesamt Arnstadt</a><br>Markt 1, 99310 Arnstadt</p><p><a href="/Standesamt-Artern-unstrut/62">Standesamt Artern (Unstrut)</a><br>Markt 14, 06556 Artern</p><p><a href="/Standesamt-Auma/37">Standesamt Auma</a><br>Marktberg 9, 07955 Auma</p><p><a href="/Standesamt-Bad-Berka/156">Standesamt Bad Berka</a><br>Am Markt 10, 99438 Bad Berka</p><p><a href="/Standesamt-Bad-Frankenhausen-kyffh/63">Standesamt Bad Frankenhausen (Kyffh.)</a><br>Markt 1, 06567 Bad Frankenhausen</p><p><a href="/Standesamt-Bad-Langensalza/131">Standesamt Bad Langensalza</a><br>Mühlhäuser Str. 40, 99947 Bad Langensalza</p><p><a href="/Standesamt-Bad-Liebenstein/139">Standesamt Bad Liebenstein</a><br>Bahnhofstr. 22, 36448 Bad Liebenstein</p><p><a href="/Standesamt-Bad-Salzungen/140">Standesamt Bad Salzungen</a><br>Kirchplatz 8b, 36433 Bad Salzungen</p><p><a href="/Standesamt-Bad-Tennstedt/132">Standesamt Bad Tennstedt</a><br>Markt 1, 99955 Bad Tennstedt</p><p><a href="/Standesamt-Bleicherode/72">Standesamt Bleicherode</a><br>Hauptstr. 37, 99752 Bleicherode</p><p><a href="/Standesamt-Bodenrode-Westhausen/6">Standesamt Bodenrode-Westhausen</a><br>Hauptstr. 73, 37308 Bodenrode-Westhausen</p><p><a href="/Standesamt-Breitenworbis/7">Standesamt Breitenworbis</a><br>Weststr. 2, 37339 Breitenworbis</p><p><a href="/Standesamt-Dingelstaedt/8">Standesamt Dingelstädt</a><br>Geschwister-Scholl-Str. 28, 37351 Dingelstädt</p><p><a href="/Standesamt-Ebeleben/64">Standesamt Ebeleben</a><br>Rathausstr. 2, 99713 Ebeleben</p><p><a href="/Standesamt-Eisenach/165">Standesamt Eisenach</a><br>Markt 2, 99817 Eisenach</p><p><a href="/Standesamt-Eisenberg/80">Standesamt Eisenberg</a><br>Markt 27, 07607 Eisenberg / Thüringen</p><p><a href="/Standesamt-Erfurt/18">Standesamt Erfurt</a><br>Große Arche 6, 99084 Erfurt</p><p><a href="/Standesamt-Friedrichroda/25">Standesamt Friedrichroda</a><br>Gartenstr. 9, 99894 Friedrichroda</p><p><a href="/Standesamt-Friemar/26">Standesamt Friemar</a><br>Dr.-Külz-Str. 4, 99869 Friemar</p><p><a href="/Standesamt-Gebesee-Vg-Gera-Aue/21">Standesamt Gebesee VG Gera-Aue</a><br>Marktplatz 13, 99189 Gebesee</p><p><a href="/Standesamt-Gefell/92">Standesamt Gefell</a><br>Markt 11, 07926 Gefell</p><p><a href="/Standesamt-Geisa/145">Standesamt Geisa</a><br>Marktplatz 27, 36419 Geisa</p><p><a href="/Standesamt-Gemeinde-Wolfsberg/60">Standesamt Gemeinde Wolfsberg</a><br>Marktplatz 6, 98704 Gräfinau-Angstedt</p><p><a href="/Standesamt-Georgenthal/27">Standesamt Georgenthal</a><br>Tambacher Str. 2, 99887 Georgenthal</p><p><a href="/Standesamt-Gera/24">Standesamt Gera</a><br>Markt 6, 07545 Gera</p><p><a href="/Standesamt-Goessnitz/2">Standesamt Gößnitz</a><br>Freiheitsplatz 1, 04639 Gößnitz</p><p><a href="/Standesamt-Gotha/28">Standesamt Gotha</a><br>Hauptmarkt 1, 99867 Gotha</p><p><a href="/Standesamt-Greiz/40">Standesamt Greiz</a><br>Marienstr. 2, 07973 Greiz</p><p><a href="/Standesamt-Greussen/65">Standesamt Greußen</a><br>Bahnhofstr. 13a, 99718 Greußen</p><p><a href="/Standesamt-Guenthersleben-Wechmar/33">Standesamt Günthersleben-Wechmar</a><br>Friedrich-Seitz-Weg 1, 99869 Günthersleben-Wechmar</p><p><a href="/Standesamt-Heiligenstadt/9">Standesamt Heiligenstadt</a><br>Wilhelmstr. 50, 37308 Heilbad Heiligenstadt</p><p><a href="/Standesamt-Hirschberg/85">Standesamt Hirschberg</a><br>Marktstr. 2, 07927 Hirschberg</p><p><a href="/Standesamt-Hohengandern/10">Standesamt Hohengandern</a><br>Steingraben 49, 37318 Hohengandern</p><p><a href="/Standesamt-Ilmenau/57">Standesamt Ilmenau</a><br>Am Markt 7, 98693 Ilmenau</p><p><a href="/Standesamt-Jena/61">Standesamt Jena</a><br>Markt 1, 07743 Jena</p><p><a href="/Standesamt-Kahla/82">Standesamt Kahla</a><br>Markt 10, 07768 Kahla</p><p><a href="/Standesamt-Koelleda/128">Standesamt Kölleda</a><br>Markt 1, 99625 Kölleda</p><p><a href="/Standesamt-Kuellstedt/11">Standesamt Küllstedt</a><br>Neue Str. 16, 37359 Küllstedt</p><p><a href="/Standesamt-Leinefelde-Worbis/17">Standesamt Leinefelde-Worbis</a><br>Rossmarkt 2, 37339 Leinefelde-Worbis</p><p><a href="/Standesamt-Lucka/3">Standesamt Lucka</a><br>Pegauer Str. 17, 04613 Lucka</p><p><a href="/Standesamt-Meiningen/114">Standesamt Meiningen</a><br>Schloßplatz 1, 98617 Meiningen</p><p><a href="/Standesamt-Meuselwitz/4">Standesamt Meuselwitz</a><br>Rathausstr. 1, 04610 Meuselwitz</p><p><a href="/Standesamt-Muehlhausen-thueringen/136">Standesamt Mühlhausen (Thüringen)</a><br>Ratsstr. 19, 99974 Mühlhausen/Thüringen</p><p><a href="/Standesamt-Neudietendorf/19">Standesamt Neudietendorf</a><br>Zinzendorfstr. 1, 99192 Nesse-Apfelstädt OT Neudietendorf</p><p><a href="/Standesamt-Neuhaus-Am-Rennweg/121">Standesamt Neuhaus am Rennweg</a><br>Kirchweg 2, 98724 Neuhaus/Rwg.</p><p><a href="/Standesamt-Niederorschel/12">Standesamt Niederorschel</a><br>Marktplatz 2, 37355 Niederorschel</p><p><a href="/Standesamt-Nordhausen/4379125">Standesamt Nordhausen</a><br>Markt 15, 99734 Nordhausen</p><p><a href="/Standesamt-Oberhof/52">Standesamt Oberhof</a><br>Zellaer Str. 10, 98559 Oberhof</p><p><a href="/Standesamt-Ohrdruf/29">Standesamt Ohrdruf</a><br>Marktplatz 1, 99885 Ohrdruf</p><p><a href="/Standesamt-Poessneck/88">Standesamt Pößneck</a><br>Markt 1, 07381 Pößneck</p><p><a href="/Standesamt-Ranis/89">Standesamt Ranis</a><br>Pößnecker Straße 2, 07389 Ranis</p><p><a href="/Standesamt-Roemhild/48">Standesamt Römhild</a><br>Griebelstraße 28, 98631 Römhild</p><p><a href="/Standesamt-Rudolstadt/103">Standesamt Rudolstadt</a><br>Markt 7, 07407 Rudolstadt</p><p><a href="/Standesamt-Saalfeldsaale/104">Standesamt Saalfeld/Saale</a><br>Markt 1, 07318 Saalfeld/Saale</p><p><a href="/Standesamt-Schimberg/15">Standesamt Schimberg</a><br>Kreisstr. 4, 37308 Schimberg</p><p><a href="/Standesamt-Schleiz/90">Standesamt Schleiz</a><br>Bahnhofstr. 1, 07907 Schleiz</p><p><a href="/Standesamt-Schleusingen/50">Standesamt Schleusingen</a><br>Markt 9, 98553 Schleusingen</p><p><a href="/Standesamt-Schlossvippach/23">Standesamt Schloßvippach</a><br>Erfurter Str. 6, 99195 Schloßvippach</p><p><a href="/Standesamt-Schlotheim/138">Standesamt Schlotheim</a><br>Markt 1, 99994 Schlotheim</p><p><a href="/Standesamt-Schmalkalden/115">Standesamt Schmalkalden</a><br>Altmarkt 1, 98574 Schmalkalden</p><p><a href="/Standesamt-Schmoelln/5">Standesamt Schmölln</a><br>Markt 1, 04626 Schmölln</p><p><a href="/Standesamt-Soemmerda/129">Standesamt Sömmerda</a><br>Marktplatz 3-4, 99610 Sömmerda</p><p><a href="/Standesamt-Sondershausen/69">Standesamt Sondershausen</a><br>Markt 7, 99706 Sondershausen</p><p><a href="/Standesamt-Sonneberg/123">Standesamt Sonneberg</a><br>Bahnhofsplatz 1, 96515 Sonneberg</p><p><a href="/Standesamt-Stadtilm/59">Standesamt Stadtilm</a><br>Straße der Einheit 1, 99326 Stadtilm</p><p><a href="/Standesamt-Steinbach-Hallenberg/116">Standesamt Steinbach-Hallenberg</a><br>Rathausplatz 2, 98587 Steinbach-Hallenberg</p><p><a href="/Standesamt-Suhl/125">Standesamt Suhl</a><br>Friedrich-Koenig-Str. 42, 98527 Suhl</p><p><a href="/Standesamt-Tambach-Dietharz/30">Standesamt Tambach-Dietharz</a><br>Burgstallstr. 31a, 99897 Tambach-Dietharz</p><p><a href="/Standesamt-Teistungen/16">Standesamt Teistungen</a><br>Hauptstr. 17, 37339 Teistungen</p><p><a href="/Standesamt-Themar/51">Standesamt Themar</a><br>Markt 1, 98660 Themar</p><p><a href="/Standesamt-Tonna/31">Standesamt Tonna</a><br>Markt 7, 99958 Tonna OT Gräfentonna</p><p><a href="/Standesamt-Treffurt/152">Standesamt Treffurt</a><br>Rathausstr. 12, 99830 Treffurt</p><p><a href="/Standesamt-Uder/13">Standesamt Uder</a><br>Siedlung 14, 37318 Uder</p><p><a href="/Standesamt-Vacha/153">Standesamt Vacha</a><br>Markt 4, 36404 Vacha</p><p><a href="/Standesamt-Waltershausen/32">Standesamt Waltershausen</a><br>Markt 1, 99880 Waltershausen</p><p><a href="/Standesamt-Weida/43">Standesamt Weida</a><br>Markt 1, 07570 Weida</p><p><a href="/Standesamt-Weimar/155">Standesamt Weimar</a><br>Schwanseestr. 17, 99423 Weimar</p><p><a href="/Standesamt-Weissensee/130">Standesamt Weißensee</a><br>Marktplatz 26, 99631 Weißensee</p><p><a href="/Standesamt-Zella-Mehlis/120">Standesamt Zella-Mehlis</a><br>Rathausstr. 4, 98544 Zella-Mehlis</p><p><a href="/Standesamt-Zeulenroda-Triebes/44">Standesamt Zeulenroda-Triebes</a><br>Markt 1, 07937 Zeulenroda-Triebes</p></div></div><br><br><br><br><br></div><div id="container">
+<div id="content" style="border-top: solid 1px #eee;background:#fff;color:#9a9a9a;height:20px;text-align:right;font-size:10px">
+<a href="/agb.php" target="_blank">AGB</a>&nbsp;|&nbsp;<a href="/datenschutz.php" target="_blank">Datenschutz</a>&nbsp;|&nbsp;
+<a href="/hilfe.php" target="_blank">Hilfe</a>&nbsp;|&nbsp;
+<a href="/impressum.php" target="_blank">Impressum</a>&nbsp;|&nbsp;
+<a href="/kontakt.php" target="_blank">Kontakt</a>&nbsp;|&nbsp;
+<a href="/anb.php" target="_blank">Nutzungsbedingungen</a>
+&nbsp;|&nbsp;<a href="/preise.php" target="_blank">Preise</a>&nbsp;|&nbsp;<a href="/rhinweise.php" target="_blank">Rechtliches</a>
+&nbsp;|&nbsp;<a href="/rss.php" target="_blank"><img src="/images/rss.png" height=10 width=10></a>
+</div>
+</div></div></body>
+</html>
+<!--
+0,023886203765869
+0,0028879642486572
+0,026774168014526
+-->
