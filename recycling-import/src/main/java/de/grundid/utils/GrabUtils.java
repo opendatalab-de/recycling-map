@@ -36,12 +36,16 @@ public class GrabUtils {
 		try {
 			String currentValue = BeanUtils.getProperty(bean, property);
 			if (!hasText(currentValue)) {
-				String trimmed = StringUtils.trimWhitespace(StringEscapeUtils.unescapeHtml4(value));
+				String trimmed = trimAndUnescape(value);
 				BeanUtils.setProperty(bean, property, trimmed);
 			}
 		}
 		catch (Exception e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	public static String trimAndUnescape(String value) {
+		return StringUtils.trimWhitespace(StringEscapeUtils.unescapeHtml4(value));
 	}
 }
