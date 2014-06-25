@@ -41,16 +41,16 @@ public class DirectParser {
 						if (node.nodeName().equals("a")) {
 							stm.setSource("http://www.standesamt.com" + node.attr("href"));
 							Node childNode = node.childNode(0);
-							DataParser.setValue(childNode.toString(), "name", stm);
+							GrabUtils.setValue(childNode.toString(), "name", stm);
 						}
 						else if (node.nodeName().equals("#text")) {
 							String[] streetZipCity = node.toString().split(",");
-							DataParser.setValue(streetZipCity[0], "street", stm);
+							GrabUtils.setValue(streetZipCity[0], "street", stm);
 							String zipCity = streetZipCity[1].trim();
 							int pos = zipCity.indexOf(' ');
 							if (pos != -1) {
-								DataParser.setValue(zipCity.substring(0, pos), "zip", stm);
-								DataParser.setValue(zipCity.substring(pos), "city", stm);
+								GrabUtils.setValue(zipCity.substring(0, pos), "zip", stm);
+								GrabUtils.setValue(zipCity.substring(pos), "city", stm);
 							}
 						}
 					}

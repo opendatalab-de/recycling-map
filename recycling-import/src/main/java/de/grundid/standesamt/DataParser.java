@@ -12,8 +12,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.regex.Pattern;
 
-import org.apache.commons.beanutils.BeanUtils;
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -22,7 +20,6 @@ import org.jsoup.select.Elements;
 import org.junit.Test;
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.ScriptableObject;
-import org.springframework.util.StringUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.MapType;
@@ -88,7 +85,7 @@ public class DataParser {
 				for (Element element : allElements) {
 					String nodeName = element.nodeName().toLowerCase();
 					if (nodeName.equals("h1")) {
-						setValue(element.text(), "name", standesamt);
+						GrabUtils.setValue(element.text(), "name", standesamt);
 					}
 					else if (nodeName.equals("h3")) {
 						if (element.text().toLowerCase().trim().contains("adresse")) {
@@ -100,7 +97,7 @@ public class DataParser {
 						if (script.contains("prefix")) {
 							doc.reset();
 							cx.evaluateString(scope, script, "script", 0, null);
-							setValue(extractTagContent(doc.getContent()), "mail", standesamt);
+							GrabUtils.setValue(extractTagContent(doc.getContent()), "mail", standesamt);
 						}
 					}
 					else if (nodeName.equals("p")) {
@@ -111,7 +108,7 @@ public class DataParser {
 						else if (phoneStart) {
 							String possiblePhone = element.text().trim();
 							if (PHONE.matcher(possiblePhone).matches()) {
-								setValue(possiblePhone, "phone", standesamt);
+								GrabUtils.setValue(possiblePhone, "phone", standesamt);
 							}
 							phoneStart = false;
 						}
@@ -119,7 +116,7 @@ public class DataParser {
 					else if (nodeName.equals("a")) {
 						String href = element.attr("href").trim();
 						if (href.startsWith("http")) {
-							setValue(href, "homepage", standesamt);
+							GrabUtils.setValue(href, "homepage", standesamt);
 						}
 					}
 				}
@@ -150,7 +147,7 @@ public class DataParser {
 				String possibleStreet = addressNode.toString();
 				if (!possibleStreet.contains("Standesamt") && !possibleStreet.contains("Bezirk")
 						&& !possibleStreet.startsWith("B ") && !possibleStreet.startsWith("BA ")) {
-					setValue(possibleStreet, "street", standesamt);
+					GrabUtils.setValue(possibleStreet, "street", standesamt);
 				}
 			}
 			else {
@@ -159,11 +156,11 @@ public class DataParser {
 				if (pos != -1) {
 					String zip = zipCity.substring(0, pos);
 					String city = zipCity.substring(pos);
-					setValue(zip, "zip", standesamt);
-					setValue(city, "city", standesamt);
+					GrabUtils.setValue(zip, "zip", standesamt);
+					GrabUtils.setValue(city, "city", standesamt);
 				}
 				else {
-					setValue(zipCity, "city", standesamt);
+					GrabUtils.setValue(zipCity, "city", standesamt);
 				}
 				result = true;
 			}
@@ -174,19 +171,6 @@ public class DataParser {
 	private String extractTagContent(String value) {
 		Document document = Jsoup.parse(value);
 		return document.text();
-	}
-
-	public static void setValue(String value, String property, Standesamt standesamt) {
-		try {
-			String currentValue = BeanUtils.getProperty(standesamt, property);
-			if (!hasText(currentValue)) {
-				String trimmed = StringUtils.trimWhitespace(StringEscapeUtils.unescapeHtml4(value));
-				BeanUtils.setProperty(standesamt, property, trimmed);
-			}
-		}
-		catch (Exception e) {
-			throw new RuntimeException(e);
-		}
 	}
 
 	public static void main(String[] args) {
