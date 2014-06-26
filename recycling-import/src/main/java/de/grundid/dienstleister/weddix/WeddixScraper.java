@@ -1,10 +1,14 @@
 package de.grundid.dienstleister.weddix;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
+import org.apache.commons.io.IOUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -13,10 +17,12 @@ import org.junit.Test;
 
 import de.grundid.dienstleister.ServiceProvider;
 import de.grundid.dienstleister.UrlWithCategory;
+import de.grundid.utils.AddressParser;
 import de.grundid.utils.GrabUtils;
 
 public class WeddixScraper {
 
+	private static final Pattern ZIP_PATTERN = Pattern.compile("^\\d\\d\\d\\d\\d .*");
 	private static final String MAIN_NAV = "<div class=\"leftNavContainer\">\n"
 			+ "	<div class=\"leftNavRoot top\">"
 			+ "<a class=\"leftNavLink selected\" href=\"http://www.weddix.de/branchenbuch-brautfrisur-brautschmuck.html\">Brautfrisur &amp; Beauty</a></div>"
@@ -61,12 +67,12 @@ public class WeddixScraper {
 			+ "<tr>\n"
 			+ "<td colspan=\"2\"><img src=\"/weddix2-img/d.gif\" style=\"width: 1px; height: 10px;\" alt=\"\"></td>\n"
 			+ "</tr>\n" + "</tbody></table>";
-	private static final String DETAILS = "<td valign=\"top\" align=\"left\">\n"
+	private static final String DETAILS = "<table><tr><td valign=\"top\" align=\"left\">\n"
 			+ "<h2>emanuel hendrik / individuelle Brautmode</h2><br>\n" + "<div>Prinz-Georg-Straße 114\n" + "</div>\n"
 			+ "<div>40479 Düsseldorf\n" + "</div>\n" + "<div>\n" + "Deutschland\n" + "</div><br>\n"
 			+ "<div>Tel.: (0211) 36 77 78 44</div>\n" + "<div>\n"
 			+ "<a class=\"pageNavLink\" target=\"_blank\" href=\"http://www.emanuelhendrik.com\">\n"
-			+ "www.emanuelhendrik.com\n" + "</a>\n" + "</div>\n" + "<br>\n" + "</td>";
+			+ "www.emanuelhendrik.com\n" + "</a>\n" + "</div>\n" + "<br>\n" + "</td></tr></table>";
 
 	@Test
 	public void itShouldFindCategories() throws Exception {
@@ -137,6 +143,83 @@ public class WeddixScraper {
 		GrabUtils.setValue(descElement.text(), "description", sp);
 	}
 
+	@Test
+	public void itShouldPopulateDetails() throws Exception {
+		Document document = Jsoup.parse(DETAILS);
+		Elements elementsByClass = document.getElementsByTag("td");
+		ServiceProvider sp = new ServiceProvider();
+		populateDetails(sp, elementsByClass.first());
+		assertEquals("Prinz-Georg-Straße 114", sp.getStreet());
+		assertEquals("40479", sp.getZip());
+		assertEquals("Düsseldorf", sp.getCity());
+		assertEquals("(0211) 36 77 78 44", sp.getPhone());
+		assertEquals("http://www.emanuelhendrik.com", sp.getHomepage());
+	}
+
 	public static void populateDetails(ServiceProvider sp, Element element) {
+		Elements divs = element.getElementsByTag("div");
+		for (Element div : divs) {
+			String value = div.text().trim();
+			if (ZIP_PATTERN.matcher(value).matches()) {
+				AddressParser.splitZipCity(value, sp);
+			}
+			else if (value.startsWith("Tel")) {
+				int pos = value.indexOf(':');
+				String phone = value.substring(pos + 1);
+				GrabUtils.setValue(phone, "phone", sp);
+			}
+			else {
+				GrabUtils.setValue(value, "street", sp);
+			}
+		}
+		Elements ahref = element.getElementsByClass("pageNavLink");
+		if (!ahref.isEmpty()) {
+			GrabUtils.setValue(ahref.first().attr("href"), "homepage", sp);
+		}
+	}
+
+	@Test
+	public void itShouldFindSpTable() throws Exception {
+		Document document = Jsoup.parse(readFully("/weddix-test.html"));
+		Elements tables = findServiceProviderTables(document);
+		assertNotNull(tables);
+		assertEquals(20, tables.size());
+	}
+
+	public static Elements findServiceProviderTables(Document document) {
+		Element worksheet = document.getElementById("worksheet");
+		Elements listViewBoxes = worksheet.getElementsByClass("changeListViewBox");
+		Element listViewBox = listViewBoxes.first();
+		if (listViewBox != null) {
+			Element parent = listViewBox.parent().parent().nextElementSibling();
+			return parent.getElementsByTag("table");
+		}
+		return null;
+	}
+
+	@Test
+	public void itShouldFindDetailsCell() throws Exception {
+		Document document = Jsoup.parse(readFully("/weddix-details.html"));
+		Element detailsCell = findDetailsCell(document);
+		assertNotNull(detailsCell);
+		assertEquals(
+				"Krause & Sohn GmbH Kaufbacher Ring 2 01723 Kesselsdorf Deutschland Tel.: (035204) 794 040 Fax: (035204) 794 041 www.karneval-feuerwerk.de",
+				detailsCell.text());
+	}
+
+	private String readFully(String filename) throws IOException {
+		StringBuilder sb = new StringBuilder();
+		List<String> lines = IOUtils.readLines(Weddix.class.getResourceAsStream(filename), "UTF-8");
+		for (String string : lines) {
+			sb.append(string).append("\n");
+		}
+		return sb.toString();
+	}
+
+	public static Element findDetailsCell(Document document) {
+		Element map = document.getElementById("map_canvas");
+		Element parentTr = map.parent().parent();
+		Element myTr = parentTr.previousElementSibling().previousElementSibling();
+		return myTr.getElementsByTag("td").first();
 	}
 }

@@ -43,16 +43,7 @@ public class AddressParser {
 				}
 				else {
 					String zipCity = addressNode.toString().trim();
-					int pos = zipCity.indexOf(' ');
-					if (pos != -1) {
-						String zip = zipCity.substring(0, pos);
-						String city = zipCity.substring(pos);
-						GrabUtils.setValue(zip, "zip", bean);
-						GrabUtils.setValue(city, "city", bean);
-					}
-					else {
-						GrabUtils.setValue(zipCity, "city", bean);
-					}
+					splitZipCity(zipCity, bean);
 					result = true;
 				}
 			}
@@ -61,6 +52,19 @@ public class AddressParser {
 			throw new RuntimeException(e);
 		}
 		return result;
+	}
+
+	public static void splitZipCity(String zipCity, Object bean) {
+		int pos = zipCity.indexOf(' ');
+		if (pos != -1) {
+			String zip = zipCity.substring(0, pos);
+			String city = zipCity.substring(pos);
+			GrabUtils.setValue(zip, "zip", bean);
+			GrabUtils.setValue(city, "city", bean);
+		}
+		else {
+			GrabUtils.setValue(zipCity, "city", bean);
+		}
 	}
 
 	private boolean isStreetOk(String possibleStreet) {
