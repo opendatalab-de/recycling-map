@@ -27,6 +27,7 @@ public class Weddix {
 			Elements serviceProviderTables = WeddixScraper.findServiceProviderTables(document);
 			for (Element table : serviceProviderTables) {
 				ServiceProvider sp = new ServiceProvider();
+				sp.setCategory(url.getCategory());
 				WeddixScraper.populateData(sp, table);
 				System.out.println("Loading: " + sp.getSource());
 				Document details = Jsoup.parse(new URL(sp.getSource()), 10000);
@@ -43,7 +44,7 @@ public class Weddix {
 
 	private void run() {
 		//		collectUrls();
-		//		processUrls();
+		processUrls();
 	}
 
 	private void processUrls() {
