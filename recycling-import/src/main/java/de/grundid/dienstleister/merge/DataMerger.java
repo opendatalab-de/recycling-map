@@ -7,8 +7,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -19,30 +22,43 @@ import org.supercsv.io.ICsvBeanWriter;
 import org.supercsv.prefs.CsvPreference;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.MapType;
+import com.fasterxml.jackson.databind.type.SimpleType;
 
 import de.grundid.dienstleister.ServiceProvider;
 import de.grundid.recycling.ResourceUtils;
+import de.grundid.utils.GrabUtils;
 
 public class DataMerger {
 
-	private static final String[] SOURCE_FILES = { "service-provider-complete.json", "weddix-service-provider.json" };
+	private static final String[] SOURCE_FILES = { "service-provider-complete.json", "weddix-service-provider.json",
+			"azh-service-provider-decoded.json" };
+	private Set<String> categories = new TreeSet<String>();
+	private Map<String, String> categoryMap;
+
+	public DataMerger() {
+		initCategoryMap();
+	}
 
 	private List<ServiceProvider> loadData() {
 		List<ServiceProvider> result = new ArrayList<ServiceProvider>();
+		for (String source : SOURCE_FILES) {
+			result.addAll(GrabUtils.loadData(source));
+		}
+		return result;
+	}
+
+	private void initCategoryMap() {
 		try {
 			ObjectMapper objectMapper = new ObjectMapper();
-			for (String source : SOURCE_FILES) {
-				ServiceProvider[] sp = objectMapper.readValue(ResourceUtils.getResourceAsString(source, "UTF-8"),
-						ServiceProvider[].class);
-				for (ServiceProvider serviceProvider : sp) {
-					result.add(serviceProvider);
-				}
-			}
+			categoryMap = objectMapper.readValue(
+					ResourceUtils.getResourceAsString("categories-mapping.json", "UTF-8"),
+					MapType.construct(HashMap.class, SimpleType.construct(String.class),
+							SimpleType.construct(String.class)));
 		}
 		catch (Exception e) {
 			throw new RuntimeException(e);
 		}
-		return result;
 	}
 
 	private String convertPhone(String s) {
@@ -97,10 +113,34 @@ public class DataMerger {
 		System.out.println("Above: " + above);
 	}
 
-	private void exportCsv(Iterable<ServiceProvider> allSp) {
+	private List<ServiceProvider> mergeCategories(List<ServiceProvider> allSp) {
+		List<ServiceProvider> myCopy = new ArrayList<ServiceProvider>(allSp);
+		List<ServiceProvider> result = new ArrayList<ServiceProvider>();
+		ServiceProviderComparator comparator = new ServiceProviderComparator();
+		for (Iterator<ServiceProvider> it = myCopy.iterator(); it.hasNext();) {
+			ServiceProvider serviceProvider = it.next();
+			Set<String> categorySet = serviceProvider.getCategorySet();
+			if (categorySet == null) {
+				categorySet = new HashSet<String>();
+				serviceProvider.setCategorySet(categorySet);
+			}
+			categorySet.add(serviceProvider.getCategory());
+			it.remove();
+			result.add(serviceProvider);
+			for (ServiceProvider serviceProvider2 : myCopy) {
+				if (comparator.compare(serviceProvider, serviceProvider2) == 0) {
+					categorySet.add(serviceProvider.getCategory());
+					categorySet.add(serviceProvider2.getCategory());
+				}
+			}
+		}
+		return result;
+	}
+
+	public static void exportCsv(Iterable<ServiceProvider> allSp) {
 		ICsvBeanWriter beanWriter = null;
 		try {
-			beanWriter = new CsvBeanWriter(new FileWriter("serviceprovider.csv"), CsvPreference.STANDARD_PREFERENCE);
+			beanWriter = new CsvBeanWriter(new FileWriter("serviceprovider-azh.csv"), CsvPreference.STANDARD_PREFERENCE);
 			final String[] header = new String[] { "name", "street", "zip", "city", "phone", "mail", "homepage",
 					"description", "category", "source" };
 			beanWriter.writeHeader(header);
@@ -140,16 +180,67 @@ public class DataMerger {
 		}
 	}
 
+	private void collectCategories(Iterable<ServiceProvider> serviceProviders) {
+		for (ServiceProvider serviceProvider : serviceProviders) {
+			if (serviceProvider.getCategorySet() != null)
+				categories.addAll(serviceProvider.getCategorySet());
+		}
+		for (String category : categories) {
+			System.out.println(category);
+		}
+		System.out.println("Kategorien: " + categories.size());
+	}
+
+	private void mapCategories(Iterable<ServiceProvider> serviceProviders) {
+		for (ServiceProvider serviceProvider : serviceProviders) {
+			serviceProvider.setCategory(null);
+			if (serviceProvider.getCategorySet() != null) {
+				Set<String> mappedCategories = new HashSet<String>();
+				for (String category : serviceProvider.getCategorySet()) {
+					String mappedCategory = categoryMap.get(category);
+					if (hasText(mappedCategory))
+						mappedCategories.add(mappedCategory);
+					else
+						System.out.println("Unknown category: [" + category + "]");
+				}
+				serviceProvider.setCategorySet(mappedCategories);
+				//				if (mappedCategories.size() > 2) {
+				//					System.out.print("Categories: " + mappedCategories.size() + " " + serviceProvider.getName() + " ");
+				//					System.out.println(StringUtils.collectionToCommaDelimitedString(mappedCategories));
+				//				}
+				//				if (mappedCategories.isEmpty()) {
+				//					System.out.println("NO Categories: " + serviceProvider.getName());
+				//				}
+			}
+		}
+	}
+
+	private void countFeatures(Collection<ServiceProvider> serviceProviders) {
+		int counter = 0;
+		for (ServiceProvider serviceProvider : serviceProviders) {
+			if (!hasText(serviceProvider.getHomepage())) {
+				counter++;
+			}
+		}
+		System.out.println("Features: No ZIP " + counter);
+	}
+
 	private void run() {
 		List<ServiceProvider> allSp = loadData();
 		System.out.println("All: " + allSp.size());
-		preprocessData(allSp);
+		//		preprocessData(allSp);
+		List<ServiceProvider> merged = mergeCategories(allSp);
+		System.out.println("Merged: " + merged.size());
 		Set<ServiceProvider> unique = new TreeSet<ServiceProvider>(new ServiceProviderComparator());
 		unique.addAll(allSp);
 		System.out.println("Unique: " + unique.size());
-		checkUrls(unique);
-		System.out.println("With homepage: " + unique.size());
-		exportCsv(unique);
+		//		collectCategories(unique);
+		mapCategories(unique);
+		//		checkUrls(unique);
+		//	System.out.println("With homepage: " + unique.size());
+		//		exportCsv(unique);
+		countFeatures(unique);
+		GrabUtils.writeJsonObject(unique, "all-service-provider.json");
 	}
 
 	private void preprocessData(List<ServiceProvider> allSp) {

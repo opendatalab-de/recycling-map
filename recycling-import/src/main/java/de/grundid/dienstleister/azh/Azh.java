@@ -1,6 +1,5 @@
 package de.grundid.dienstleister.azh;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -14,7 +13,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import de.grundid.dienstleister.ServiceProvider;
 import de.grundid.dienstleister.UrlWithCategory;
-import de.grundid.recycling.ResourceUtils;
 import de.grundid.utils.GrabUtils;
 
 public class Azh {
@@ -39,11 +37,9 @@ public class Azh {
 				DetailScraper.populatePhone(sp, firstTable.nextElementSibling());
 				spAll.add(sp);
 			}
-			catch (IOException e) {
+			catch (Exception e) {
 				System.out.println(urlWithCategory.getUrl() + " => " + e.getMessage());
 			}
-			if (counter > 200)
-				break;
 		}
 		GrabUtils.writeJsonObject(spAll, "azh-service-provider.json");
 	}
@@ -52,7 +48,7 @@ public class Azh {
 		try {
 			ObjectMapper objectMapper = new ObjectMapper();
 			UrlWithCategory[] urls = objectMapper.readValue(
-					ResourceUtils.getResourceAsString("azh-links.json", "UTF-8"), UrlWithCategory[].class);
+					GrabUtils.readFully(Azh.class.getResourceAsStream("/azh-links.json")), UrlWithCategory[].class);
 			System.out.println("Loaded: " + urls.length);
 			Set<UrlWithCategory> uniqueUrls = new HashSet<UrlWithCategory>();
 			for (UrlWithCategory urlWithCategory : urls) {

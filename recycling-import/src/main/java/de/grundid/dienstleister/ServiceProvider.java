@@ -1,5 +1,12 @@
 package de.grundid.dienstleister;
 
+import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+@JsonInclude(Include.NON_NULL)
 public class ServiceProvider {
 
 	private String name;
@@ -9,10 +16,23 @@ public class ServiceProvider {
 	private String phone;
 	private String mail;
 	private String homepage;
+	private Double lat;
+	private Double lng;
+	@JsonIgnore
 	private String originalData;
 	private String description;
 	private String category;
+	private Set<String> categorySet;
+	@JsonIgnore
 	private String source;
+
+	public Set<String> getCategorySet() {
+		return categorySet;
+	}
+
+	public void setCategorySet(Set<String> categorySet) {
+		this.categorySet = categorySet;
+	}
 
 	public String getSource() {
 		return source;
@@ -100,5 +120,21 @@ public class ServiceProvider {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public Double getLat() {
+		return lat;
+	}
+
+	public void setLat(Double lat) {
+		this.lat = lat;
+	}
+
+	public Double getLng() {
+		return lng;
+	}
+
+	public void setLng(Double lng) {
+		this.lng = lng;
 	}
 }
