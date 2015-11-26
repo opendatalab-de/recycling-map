@@ -1,0 +1,16 @@
+{
+  "name": "recycling-map",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Felix Ebert <felix.ebert@if-core.de>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/opendatalab-de/recycling-map",
+  "moduleType": [],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "underscore": "~1.8.3",
+    "moment": "~2.10.6"
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="rc">
 <head>
 	<title>Öffnungszeiten aller Recyclinghöfe und Müllabfuhrtermine im LK Heilbronn</title>
 	<meta name="description" content="Tagesaktuelle Anzeige der Öffnungszeiten und Adressen aller Recyclinghöfe in Stadt und Landkreis Heilbronn mit Darstellung auf einer Karte und mobiler Suche in meiner Nähe">
@@ -42,8 +42,8 @@
 
 	<div id="map"></div>
 
-	<div class="amenity-list">
-	</div>
+	<amenity-list class="amenity-list">
+	</amenity-list>
 	
 	<script id="list-template" type="text/x-handlebars-template">
 		<div class="alert alert-info hidden-xs"><span class="glyphicon glyphicon-info-sign"></span> Abfuhrtermine werden beim Klick auf eine Gemeindefläche angezeigt.</div>
@@ -189,8 +189,15 @@
 		L_DISABLE_3D = true;
 	</script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="components/angular/angular.js"></script>
+	<script type="text/javascript" src="js/rc.js"></script>
+	<script type="text/javascript" src="js/amenityListDirective.js"></script>
+	<script type="text/javascript" src="js/timeFilter.js"></script>
+	<script type="text/javascript" src="js/timeAgoDirective.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/underscore.js"></script>
+	<script type="text/javascript" src="components/underscore/underscore.js"></script>
+	<script type="text/javascript" src="components/moment/moment.js"></script>
+	<script type="text/javascript" src="components/moment/locale/de.js"></script>
 	<script type="text/javascript" src="js/handlebars.js"></script>
 	<script type="text/javascript" src="js/leaflet-src.js"></script>
 	<script type="text/javascript" src="js/leaflet.awesome-markers.js"></script>

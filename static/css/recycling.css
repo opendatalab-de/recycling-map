@@ -12,6 +12,9 @@ a {
 	cursor: pointer;
 }
 
+.uppercase{
+	text-transform: capitalize;
+}
 .amenity-list {
 		padding: 0 8px;
 }

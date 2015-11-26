@@ -80,7 +80,7 @@
 		init: function() {
 			rc.openingHours.init();
 			template = Handlebars.compile(document.getElementById('list-template').innerHTML);
-			render();
+			//render();
 
 			if (L.Browser.mobile) {
 				this.locateMe();
