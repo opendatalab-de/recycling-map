@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 					'Gruntfile.js'],
 				recursive: true,
 				compareMode: 'checksum',
-				ssh: true,
+				ssh: true
 			},
 			toPrdDry: {
 				options: {
