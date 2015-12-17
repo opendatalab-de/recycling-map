@@ -17,7 +17,7 @@
 	<link type="text/css" href="css/bootstrap.css" rel="stylesheet" />
 	<link type="text/css" href="css/bootstrap-theme.css" rel="stylesheet" />
 	<link type="text/css" href="css/recycling.css" rel="stylesheet" />
-	<link type="text/css" href="css/leaflet.awesome-markers.css" rel="stylesheet">
+	<link type="text/css" href="components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css" rel="stylesheet">
 	<link href="https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css" rel="stylesheet" />
 </head>
 <body>
@@ -40,8 +40,7 @@
 		</div>
 	</nav>
 
-	<div id="map"></div>
-
+	<map></map>
 	<amenity-list class="amenity-list">
 	</amenity-list>
 	
@@ -192,15 +191,16 @@
 	<script type="text/javascript" src="components/angular/angular.js"></script>
 	<script type="text/javascript" src="js/rc.js"></script>
 	<script type="text/javascript" src="js/amenityListDirective.js"></script>
+	<script type="text/javascript" src="js/mapDirective.js"></script>
 	<script type="text/javascript" src="js/timeFilter.js"></script>
 	<script type="text/javascript" src="js/timeAgoDirective.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="components/underscore/underscore.js"></script>
 	<script type="text/javascript" src="components/moment/moment.js"></script>
 	<script type="text/javascript" src="components/moment/locale/de.js"></script>
+	<script type="text/javascript" src="components/leaflet/dist/leaflet-src.js"></script>
+	<script type="text/javascript" src="components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
 	<script type="text/javascript" src="js/handlebars.js"></script>
-	<script type="text/javascript" src="js/leaflet-src.js"></script>
-	<script type="text/javascript" src="js/leaflet.awesome-markers.js"></script>
 	<script type="text/javascript" src="js/heilbronn.js"></script>
 	<script type="text/javascript" src="js/gemeinden.js"></script>
 	<script type="text/javascript" src="js/recycling.js"></script>
@@ -210,7 +210,6 @@
 	<script type="text/javascript" src="js/recycling.map.js"></script>
 	<script type="text/javascript" src="js/recycling.list.js"></script>
 	<script type="text/javascript">
-		rc.map.init();
 		rc.list.init();
 	</script>
 </body>
