@@ -8,8 +8,8 @@
                 openingHours: "=",
                 name: '='
             },
-            template: "<span ng-if='isCurrentlyOpen'>Schließt {{opensIn}}</span>" +
-            "<span ng-if='!isCurrentlyOpen'>Öffnet {{opensIn}}</span>  ",
+            template: "<span class='opens-in' ng-if='isCurrentlyOpen'>Schließt {{opensIn}}</span>" +
+            "<span class='opens-in' ng-if='!isCurrentlyOpen'>Öffnet {{opensIn}}</span>  ",
             link: function (scope) {
                 var calculatedResult = rc.calculateOpeningHours(scope.openingHours);
                 scope.isCurrentlyOpen = calculatedResult.isCurrentlyOpen;

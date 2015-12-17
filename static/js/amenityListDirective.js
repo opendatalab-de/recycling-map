@@ -12,7 +12,7 @@
             '<div class="panel-heading">' +
             '<h3 class="panel-title">{{amenity.properties.name}}</h3>' +
             '</div><div class="panel-body">' +
-            '<ul class="compact-offer list-unstyled"><li ng-repeat="(day,segments) in amenity.properties.openingHours"><span class="uppercase">{{day | limitTo:2}}</span> von <span ng-repeat="segment in segments"><span ng-if="$index !== 0"> und von </span>{{segment.from | time}} - {{segment.to | time}} Uhr</span></li>' +
+            '<ul class="compact-offer list-unstyled"><li ng-repeat="(day,segments) in amenity.properties.openingHours"><span class="uppercase">{{day | limitTo:2}}</span> von <span class="opening-time" ng-repeat="segment in segments"><span ng-if="$index !== 0"> und von </span>{{segment.from | time}} - {{segment.to | time}} Uhr</span></li>' +
             '</ul><time-ago opening-hours="amenity.properties.openingHours" name="amenity.properties.name"></time-ago></div></div>',
             link: function (scope) {
                 $http.get('http://api.grundid.de/recycling?month=' + getCurrentMonth()).success(function(data) {

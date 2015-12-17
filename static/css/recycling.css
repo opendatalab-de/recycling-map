@@ -51,8 +51,8 @@ a {
 	margin: .25em 0 0 0;
 }
 .compact-offer {
-	margin: 0;
-}
+ 	margin: 0;
+ }
 .timeline-container {
 	position: relative;
 	width: 246px;
@@ -123,3 +123,9 @@ div.timeline-sa {
 .leaflet-popup-content a {
 	color: #FFF !important;
 }
+.opens-in {
+ 	color:red;
+ }
+ .opening-time {
+    font-weight:700;
+ }
