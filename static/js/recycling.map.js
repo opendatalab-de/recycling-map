@@ -130,7 +130,6 @@
 			this.setCenter(this.markerMap[amenityId].getLatLng());
 		},
 		on: function(eventName, handler) {
-			this.map.on(eventName, handler);
 		}
 	};
 }(rc, _, L));
