@@ -15,7 +15,7 @@
 
     function calculateOpeningHours(openingHours) {
         var result = {};
-        var currentMoment = moment().subtract(5,'hours');
+        var currentMoment = moment(); //.subtract(5,'hours')
         var currentDay = getWeekday(currentMoment);
 
         // loop weekdays, starting with current day

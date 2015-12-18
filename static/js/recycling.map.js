@@ -83,6 +83,8 @@
 				}
 			}
 		},
+
+		//Das hier ist der zu übernehmende Code
 		createGemeindenLayer: function() {
 			var that = this;
 			return L.geoJson(gemeinden, {

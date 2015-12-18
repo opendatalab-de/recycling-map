@@ -28,6 +28,7 @@
                     markerColor: 'green'
                 });
 
+                //Icons über den Recycling Höfen
                 $http.get('http://api.grundid.de/recycling?month=' + getCurrentMonth()).success(function (data) {
                     L.geoJson(data, {
                         pointToLayer: function (feature, latlng) {
@@ -60,6 +61,60 @@
                         }
                     }).addTo(map);
                 });
+
+
+                //Unsicher ob ich das brauchen werde
+                var weekdayColors = {
+                     "Mo": "#BE3030",
+                     "Di": "#849E71",
+                     "Mi": "#DF8430",
+                     "Do": "#488C13",
+                     "Fr": "#4A6D87",
+                     "Sa": "#1B55C0",
+                     "So": "#E9B104"
+                };
+
+                function findGemeindeGarbage(name){
+                    for ( var x = 0; x < garbage.length; x++) {
+                    	if (garbage[x].name == name) {
+                    		return garbage[x];
+                    	}
+                    }
+                }
+
+                //Das hier ist der zu übernehmende Code
+                function createGemeindenLayer(){
+                    return L.geoJson(gemeinden, {
+                    style: function(feature) {
+                    	var garbage = findGemeindeGarbage(feature.properties.Name);
+                    	if (garbage) {
+                    		return {
+                    			color: weekdayColors[garbage.rm],
+                    			weight: 1
+                    		};
+                    		} else
+                    		    return {
+                    				color: '#000000',
+                    				stroke: false
+                    				};
+                    			},
+                    			onEachFeature: function(feature, layer) {
+                    			var garbage = findGemeindeGarbage(feature.properties.Name);
+                    			var popup = "<p><strong>" + feature.properties.Name + "</p></strong>";
+                    			if (garbage) {
+                    				// popup += "<p>Abfuhrtage:<br />Restmüll <b>" +
+                    				// garbage.rm + "</b><br />Biomüll <b>" + garbage.bm +
+                    				// "</b></p>";
+                    				popup += "<p><a href='http://www.landkreis-heilbronn.de/sixcms/media.php/103/" + garbage.download
+                    						+ "' class='btn btn-primary' target='_blank'><span class='glyphicon glyphicon-time'></span> " + "Müllabfuhrkalender</a></p>";
+                    				}
+
+                    				layer.bindPopup(popup);
+                    			}
+                    }).addTo(map);
+                }
+
+                createGemeindenLayer();
             }
         }
     });
