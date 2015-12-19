@@ -13,6 +13,11 @@
         return currentMoment.format('dddd').toLowerCase() + 's';
     }
 
+    function getCurrentWeekday(){
+        console.log(moment().format('dddd').toLowerCase());
+        return moment().format('dddd').toLowerCase();
+    }
+
     function calculateOpeningHours(openingHours) {
         var result = {};
         var currentMoment = moment(); //.subtract(5,'hours')
@@ -65,5 +70,6 @@
     }
 
     rc.calculateOpeningHours = calculateOpeningHours;
+    rc.getCurrentWeekday = getCurrentWeekday;
 
 })();

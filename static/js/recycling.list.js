@@ -78,6 +78,7 @@
 
 	rc.list = {
 		init: function() {
+		    //Die Stelle könnte wichtig sein
 			rc.openingHours.init();
 			template = Handlebars.compile(document.getElementById('list-template').innerHTML);
 			//render();
@@ -95,6 +96,8 @@
 				render(rc.map.getCenter());
 			});
 		},
+
+		//Code für das Positionsbestmmen
 		locateMe: function() {
 			var onSuccessHandler = function(position) {
 				rc.map.setCenter(new L.LatLng(position.coords.latitude, position.coords.longitude));

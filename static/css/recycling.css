@@ -117,6 +117,9 @@ div.timeline-sa {
 .timeline-sa-bar {
 	left: 205px;
 }
+.timeline-durationBox{
+    color: green;
+}
 .highlight {
 	background-color: #FBFFD6 !important;
 }
