@@ -1,3 +1,4 @@
+//Written by GityUpNow
 (function () {
     'use strict';
 
@@ -13,6 +14,15 @@
 
     var openingHours;
 
+    //Checks if it is Sunday
+    function cursorVisible(){
+        var currentDay = moment().day();
+        if(currentDay > 0)
+            return 'visible';
+        else
+            return 'hidden';
+    }
+
     function getCurrentMonth() {
         return (new Date()).getMonth() + 1;
     }
@@ -23,9 +33,6 @@
         var currentDay = moment().day();
         if(currentDay < 7)
             return widthPerMin * minutesSinceMid() + (widthPerMin * 1440 * (moment().day() - 1));
-        else
-            //TODO: Bessere Lösung überlegen, außerhalb des sichtbaren Bereichs zu schicken ist nicht das beste
-            return 1000;
     }
 
     //Returns the time since midnight in minutes
@@ -38,25 +45,27 @@
          return widthPerMin * minutes;
     }
 
+    function timelineBox(left, width){
+        this.left = left;
+        this.width = width;
+    }
+
     //Iterate through all days of the opening hours
     function iterateOpeningHours(){
-        var result = [];
+        var temp = [];
         for (var property in openingHours) {
              if (openingHours.hasOwnProperty(property)) {
                    openingHours[property].forEach(function (Array) {
-                       result += '<div class="timeline-durationBox" style="left:' + Math.round(calcuateWidth(Array.from) + (days[property] - 1) *  41) + 'px;width:' + Math.round(calcuateWidth(Array.to - Array.from)) + 'px;"></div>';
-                       console.log(property);
-                       console.log(days[property]);
-                       console.log((calcuateWidth(Array.from) + (days[property] - 1) *  41));
+                        var tempBox = new timelineBox(Math.round(calcuateWidth(Array.from) + (days[property] - 1) *  41) ,Math.round(calcuateWidth(Array.to - Array.from)));
+                        temp.push(tempBox);
                    });
              }
         }
 
-        console.log(result);
-        return result;
+        return temp;
     }
 
-    angular.module('rc').directive('timeline', function () {
+    angular.module('rc').directive('timeline', function ($compile) {
         return {
             restrict: 'E',
             scope: {
@@ -72,13 +81,15 @@
                        		'<div class="timeline-fr">Fr</div>' +
                        		'<div class="timeline-sa">Sa</div>' +
                        		'<div class="timeline-sa-bar"></div>' +
-                       		iterateOpeningHours() +
-                       		'<div class="timeline-current" style="left:' + currentWidth() + 'px;"></div>' +
+                       		'<div ng-repeat="x in result" class ="timeline-durationBox" style="left:{{x.left}}px;width:{{x.width}}px;"></div>' +
+                       		'<div class="timeline-current" style="left:' + currentWidth() + 'px;visibility:' + cursorVisible() + '"></div>' +
                        	'</div>',
 
             link: function (scope) {
                 openingHours = scope.openingHours;
-                iterateOpeningHours();
+                var temp = [];
+                temp = iterateOpeningHours();
+                scope.result = temp;
             }
         }
     });
