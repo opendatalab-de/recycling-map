@@ -1,4 +1,4 @@
-(function(rc, Handlebars, L) {
+/*(function(rc, Handlebars, L) {
 	"use strict";
 
 	var timelineHelper = {
@@ -120,4 +120,4 @@
 			});
 		}
 	};
-}(rc, Handlebars, L));
+}(rc, Handlebars, L));*/

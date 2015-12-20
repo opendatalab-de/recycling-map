@@ -1,4 +1,4 @@
-(function(rc, _, L) {
+/*(function(rc, _, L) {
 	"use strict";
 
 	var defaultIcon = L.AwesomeMarkers.icon({
@@ -126,12 +126,12 @@
 			return this.map.getBounds();
 		},
 		setCenter: function(latlng) {
-			return this.map.setView(latlng, 14);
-		},
+          	return this.map.setView(latlng, 14);
+        },
 		focusOnMarker: function(amenityId) {
 			this.setCenter(this.markerMap[amenityId].getLatLng());
 		},
 		on: function(eventName, handler) {
 		}
 	};
-}(rc, _, L));
+}(rc, _, L));*/

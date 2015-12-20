@@ -32,7 +32,7 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="visible-xs"><a id="toggleView"><i class="glyphicon glyphicon-map-marker"></i> Kartenansicht</a></li>
-					<li><a id="locateMe"><i class="glyphicon glyphicon-screenshot"></i> in meiner Nähe</a></li>
+					<li><a id="locateMe"><locateMe ng-click="Broad()"><i class="glyphicon glyphicon-screenshot"></i> in meiner Nähe</locateMe></a></li>
 					<li><a href="kalender/"><i class="glyphicon glyphicon-calendar"></i> Kalender</a></li>
 					<li><a href="http://blog.opendatalab.de/imprint.html"><i class="glyphicon glyphicon-info-sign"></i> Impressum</a></li>
 				</ul>
@@ -211,6 +211,7 @@
 	<script type="text/javascript" src="js/recycling.list.js"></script>
 	<script type="text/javascript" src="js/calculateOpeningHours.js"></script>
 	<script type="text/javascript" src="js/timelineDirective.js"></script>
+	<script type="text/javascript" src="js/locateMeDirective.js"></script>
 	<script type="text/javascript">
 		rc.list.init();
 	</script>
