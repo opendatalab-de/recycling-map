@@ -1,3 +1,5 @@
+ var rc = {};
+
 (function () {
     'use strict';
 

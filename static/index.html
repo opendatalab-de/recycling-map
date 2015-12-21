@@ -43,146 +43,6 @@
 	<map></map>
 	<amenity-list class="amenity-list">
 	</amenity-list>
-	
-	<script id="list-template" type="text/x-handlebars-template">
-		<div class="alert alert-info hidden-xs"><span class="glyphicon glyphicon-info-sign"></span> Abfuhrtermine werden beim Klick auf eine Gemeindefläche angezeigt.</div>
-
-		{{#each amenities}}
-			<div class="amenity panel {{{panelClass openingHours}}}" id="{{id}}">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-					<a class="recycling-name" data-amenity-id="{{id}}"><strong class="amenity-name">
-						{{#if keyValues.name}}
-							{{keyValues.name}}
-						{{else}}
-							Recycling
-								{{#if keyValues.city}}
-									in {{keyValues.city}}
-								{{/if}}
-							{{/if}}
-						</strong>
-					</h3>
-				</div>
-				<div class="panel-body">
-					<a class="pull-right" href="http://maps.google.com/maps?q={{lat}},{{lon}}&z=15" target="gmap" title="Zu Google Maps"><img src="img/map-link.png" alt="zu Google Maps" /></a>
-
-					{{{compactOffer openingHours}}}
-					{{{countdown openingHours}}}
-					<div class="timeline-container">
-						<div class="timeline-mo">Mo</div>
-						<div class="timeline-tu">Di</div>
-						<div class="timeline-tu-bar"></div>
-						<div class="timeline-we">Mi</div>
-						<div class="timeline-th">Do</div>
-						<div class="timeline-th-bar"></div>
-						<div class="timeline-fr">Fr</div>
-						<div class="timeline-sa">Sa</div>
-						<div class="timeline-sa-bar"></div>
-						{{{timelineWeeklyIntervals openingHours}}}
-						{{{timelineHighlightCurrent}}}
-					</div>
-				</div>
-			</div>
-		{{/each}}
-		<p><a href="http://blog.opendatalab.de/imprint.html">Impressum</a></p>
-	</script>
-	<script id="compact-offer-template" type="text/x-handlebars-template">
-		{{#if wI}}
-			<ul class="compact-offer list-unstyled">
-				{{#each wI}}
-					<li>
-						{{#if highlight}}
-							<strong>
-						{{/if}}
-						
-						<span class="days">{{#foreach cW}}{{#unless isFirst}}{{#if range}}&#8201;–&#8201;{{else}}, {{/if}}{{/unless}}{{weekday}}{{/foreach}}</span>
-						<span class="time-intervals">{{> timeIntervals}}</span>
-						
-						{{#if highlight}}
-							</strong>
-						{{/if}}
-					</li>
-				{{/each}}
-			</ul>
-		{{else}}
-			{{#unless note}}keine eingetragen{{/unless}}
-		{{/if}}
-	</script>
-	<script id="service-hours-today-template" type="text/x-handlebars-template">
-		{{#if hasData}}
-			{{#if hasDataForToday}}
-				{{#if isClosedToday}}
-					heute geschlossen
-				{{else}}
-					heute {{> timeIntervals}}
-				{{/if}}
-			{{else}}
-				unvollständige Daten für heute
-			{{/if}}
-		{{else}}
-			keine Daten eingetragen
-		{{/if}}
-	</script>
-	<script id="timeintervals-template" type="text/x-handlebars-template">
-		{{#foreach tI}}
-			{{#if ../printMicrodata}}
-				<time itemprop="openingHours" datetime="{{microdata}}">
-			{{/if}}
-			
-			{{#if to}}
-				von <strong>{{from}}</strong>&#8201;–&#8201;<strong>{{to}}</strong>
-			{{else}}
-				ab <strong>{{from}}</strong>
-			{{/if}}
-			
-			{{#if ../printMicrodata}}
-				</time>
-			{{/if}}
-			
-			{{#if hasNext}}
-				und
-			{{/if}}
-		{{/foreach}}
-	</script>
-	<script id="countdown-template" type="text/x-handlebars-template">
-		{{#if isActive}}
-			<span class="countdown text-success">
-				{{#if nonstop}}
-					durchgehend geöffnet
-				{{else}}
-					noch {{> countdownMinutes}} offen
-				{{/if}}
-			</span>
-		{{else}}
-			<span class="countdown text-danger">
-				{{#if getsActiveToday}}
-					öffnet in {{> countdownMinutes}}
-				{{else}}
-					{{#if getsActiveTomorrow}}
-						öffnet morgen
-					{{else}}
-						{{#if getsActiveDayAfterTomorrow}}
-							öffnet übermorgen
-						{{else}}
-							öffnet in {{getsActiveInDays}} Tagen
-						{{/if}}
-					{{/if}}
-					um {{getsActiveAt}}
-				{{/if}}
-			</span>
-		{{/if}}
-	</script>
-	<script id="countdown-minutes-template" type="text/x-handlebars-template">
-		{{#if hours}}
-			{{hours}}{{#if compact}}h{{else}} Stunden{{/if}}
-			{{#if minutes}}
-				und
-			{{/if}}
-		{{/if}}
-		{{#if minutes}}
-			{{minutes}}{{#if compact}}min{{else}} Minuten{{/if}}
-		{{/if}}
-	</script>
 
 	<script type="text/javascript">
 		L_DISABLE_3D = true;
@@ -195,25 +55,14 @@
 	<script type="text/javascript" src="js/timeFilter.js"></script>
 	<script type="text/javascript" src="js/timeAgoDirective.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="components/underscore/underscore.js"></script>
 	<script type="text/javascript" src="components/moment/moment.js"></script>
 	<script type="text/javascript" src="components/moment/locale/de.js"></script>
 	<script type="text/javascript" src="components/leaflet/dist/leaflet-src.js"></script>
 	<script type="text/javascript" src="components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
-	<script type="text/javascript" src="js/handlebars.js"></script>
 	<script type="text/javascript" src="js/heilbronn.js"></script>
 	<script type="text/javascript" src="js/gemeinden.js"></script>
-	<script type="text/javascript" src="js/recycling.js"></script>
-	<script type="text/javascript" src="js/recycling.openingHours.js"></script>
-	<script type="text/javascript" src="js/recycling.countdown.js"></script>
-	<script type="text/javascript" src="js/recycling.data.js"></script>
-	<script type="text/javascript" src="js/recycling.map.js"></script>
-	<script type="text/javascript" src="js/recycling.list.js"></script>
 	<script type="text/javascript" src="js/calculateOpeningHours.js"></script>
 	<script type="text/javascript" src="js/timelineDirective.js"></script>
 	<script type="text/javascript" src="js/locateMeDirective.js"></script>
-	<script type="text/javascript">
-		rc.list.init();
-	</script>
 </body>
 </html>
