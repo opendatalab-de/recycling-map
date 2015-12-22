@@ -102,9 +102,6 @@
                     			var garbage = findGemeindeGarbage(feature.properties.Name);
                     			var popup = "<p><strong>" + feature.properties.Name + "</p></strong>";
                     			if (garbage) {
-                    				// popup += "<p>Abfuhrtage:<br />Restmüll <b>" +
-                    				// garbage.rm + "</b><br />Biomüll <b>" + garbage.bm +
-                    				// "</b></p>";
                     				popup += "<p><a href='http://www.landkreis-heilbronn.de/sixcms/media.php/103/" + garbage.download
                     						+ "' class='btn btn-primary' target='_blank'><span class='glyphicon glyphicon-time'></span> " + "Müllabfuhrkalender</a></p>";
                     				}
@@ -114,25 +111,9 @@
                     }).addTo(map);
                 }
 
-                scope.$on("locateMe", function(){
-                    var onSuccessHandler = function(position) {
-                        map.setView(new L.LatLng(position.coords.latitude, position.coords.longitude));
-                    };
-
-                    var onErrorHandler = function(error) {
-                        if (error.code == 1) {
-                            alert("Zugriff auf die Position nicht erlaubt.");
-                        } else if (error.code == 2) {
-                            alert("Position konnte vom Browser nicht ermittelt werden. " + "Bitte prüfen Sie, ob Sie den Zugriff auf das GPS aktiviert haben.");
-                        } else if (error.core == 3) {
-                            alert("Der Browser hat nach 120 Sekunden keine Position geliefert.");
-                        }
-                    };
-
-                    navigator.geolocation.getCurrentPosition(onSuccessHandler, onErrorHandler, {
-                        timeout: 120000,
-                        maximumAge: 600000
-                    });
+                scope.$on("locateMe", function(event, position){
+                    console.log("TEST");
+                    map.setView(new L.LatLng(position.latitude, position.longitude));
                 });
 
                 createGemeindenLayer();

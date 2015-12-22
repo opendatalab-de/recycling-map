@@ -132,3 +132,6 @@ div.timeline-sa {
  .opening-time {
     font-weight:700;
  }
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}

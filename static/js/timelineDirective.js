@@ -87,9 +87,7 @@
 
             link: function (scope) {
                 openingHours = scope.openingHours;
-                var temp = [];
-                temp = iterateOpeningHours();
-                scope.result = temp;
+                scope.result = iterateOpeningHours();;
             }
         }
     });
