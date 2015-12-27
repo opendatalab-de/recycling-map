@@ -112,7 +112,6 @@
                 }
 
                 scope.$on("locateMe", function(event, position){
-                    console.log("TEST");
                     map.setView(new L.LatLng(position.latitude, position.longitude));
                 });
 
