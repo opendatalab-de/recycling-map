@@ -55,7 +55,7 @@
                             else {
                                 prefix = "Öffnet "
                             }
-                            layer.bindPopup("<p><strong>Recyclinghof " + feature.properties.name +
+                            layer.bindPopup("<p><strong>" + feature.properties.name +
                                 "</strong></p>" + feature.properties.address.street+
                             "<br>"+prefix+OpeningHours.opensIn);
                         }
