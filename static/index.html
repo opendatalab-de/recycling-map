@@ -17,6 +17,13 @@
 	<link type="text/css" href="css/bootstrap.css" rel="stylesheet" />
 	<link type="text/css" href="css/bootstrap-theme.css" rel="stylesheet" />
 	<link type="text/css" href="css/recycling.css" rel="stylesheet" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet"
+		  href="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/dist/L.Control.Locate.min.css"/>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet"
+		  href="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/dist/L.Control.Locate.ie.min.css"/>
+	<![endif]-->
 	<link type="text/css" href="components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css" rel="stylesheet">
 	<link href="https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css" rel="stylesheet" />
 </head>
@@ -27,12 +34,11 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<span class="navbar-brand" current-year ng-cloak>Recyclinghöfe / Abfuhrtermine Heilbronn {{currentYear}}</span>
+				<span class="navbar-brand" current-year ng-cloak>Recyclinghöfe HN {{currentYear}}</span>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="visible-xs"><a id="toggleView"><i class="glyphicon glyphicon-map-marker"></i> Kartenansicht</a></li>
-					<li><a id="locateMe" locate-me><i class="glyphicon glyphicon-screenshot"></i> in meiner Nähe</a></li>
+					<li class="visible-xs"><a id="toggleView" kartenansicht><i class="glyphicon glyphicon-map-marker"></i> Kartenansicht</a></li>
 					<li><a href="kalender/"><i class="glyphicon glyphicon-calendar"></i> Kalender</a></li>
 					<li><a href="http://blog.opendatalab.de/imprint.html"><i class="glyphicon glyphicon-info-sign"></i> Impressum</a></li>
 				</ul>
@@ -40,9 +46,11 @@
 		</div>
 	</nav>
 
-	<map></map>
+	<div class="mapNavbarIcon" listenansicht>X</div>
+
 	<amenity-list class="amenity-list">
 	</amenity-list>
+	<map></map>
 
 	<script type="text/javascript">
 		L_DISABLE_3D = true;
@@ -63,7 +71,9 @@
 	<script type="text/javascript" src="js/gemeinden.js"></script>
 	<script type="text/javascript" src="js/calculateOpeningHours.js"></script>
 	<script type="text/javascript" src="js/timelineDirective.js"></script>
-	<script type="text/javascript" src="js/locateMeDirective.js"></script>
 	<script type="text/javascript" src="js/currentYearDirective.js"></script>
+	<script type="text/javascript" src="js/kartenansichtDirective.js"></script>
+	<script type="text/javascript" src="js/listenansichtDirective.js"></script>
+	<script src="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/dist/L.Control.Locate.min.js"></script>
 </body>
 </html>

@@ -135,3 +135,16 @@ div.timeline-sa {
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
 	display: none !important;
 }
+.mapNavbarIcon{
+	position: absolute;
+	z-index: 100;
+	right: 10%;
+	top: 6%;
+	display: none;
+	background: rgba(255, 255, 255, 0.7);
+	border: 1px solid gray;
+	padding: 10px;
+	font-size: 20px;
+	font-family: monospace;
+	border-radius: 6px;
+}

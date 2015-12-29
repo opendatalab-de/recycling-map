@@ -111,10 +111,11 @@
                     }).addTo(map);
                 }
 
-                scope.$on("locateMe", function(event, position){
-                    map.setView(new L.LatLng(position.latitude, position.longitude));
+                scope.$on("reposition", function (event) {
+                    map.invalidateSize(true);
                 });
 
+                L.control.locate().addTo(map);
                 createGemeindenLayer();
             }
         }
