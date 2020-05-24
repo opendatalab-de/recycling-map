@@ -9,13 +9,19 @@
         return {
             restrict: 'E',
             link: function (scope, element) {
-                var cloudmadeLayer = L.tileLayer('https://{s}.tiles.mapbox.com/v3/codeforheilbronn.i4fciif2/{z}/{x}/{y}.png', {
-                    'maxZoom': 18
+                $('#myModal').modal();
+
+                var cloudmadeLayer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                    'maxZoom': 18,
+                    'attribution': 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    'id': 'mapbox/light-v10',
+                    'tileSize': 512,
+                    'zoomOffset': -1,
+                    'accessToken': 'pk.eyJ1IjoiY29kZWZvcmhlaWxicm9ubiIsImEiOiJaVW1RaEhzIn0.dTT9PWOqjBbzpw7S--GnAA'
                 });
 
                 var map = L.map(element[0], {
                     maxZoom: 18,
-                    attributionControl: false,
                     layers: [cloudmadeLayer]
                 }).setView([49.15, 9.22], 11);
 

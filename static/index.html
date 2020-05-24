@@ -12,7 +12,7 @@
 	<meta property="og:url" content="http://opendatalab.de/recycling-map"/>
 	<meta property="og:image" content="http://opendatalab.de/recycling-map/screen.jpg"/>
 	<meta property="og:description" content="Tagesaktuelle Anzeige der Öffnungszeiten und Adressen aller Recyclinghöfe in Stadt und Landkreis Heilbronn mit Darstellung auf einer Karte und mobiler Suche in meiner Nähe."/>
-	
+
 	<link type="text/css" href="css/leaflet.css" rel="stylesheet" />
 	<link type="text/css" href="css/bootstrap.css" rel="stylesheet" />
 	<link type="text/css" href="css/bootstrap-theme.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<span class="navbar-brand" current-year ng-cloak>Recyclinghöfe HN {{currentYear}}</span>
+				<span class="navbar-brand" current-year ng-cloak>Recyclinghöfe HN 2015</span>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav">
@@ -48,6 +48,25 @@
 	<amenity-list class="amenity-list">
 	</amenity-list>
 	<map></map>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Achtung: Nicht aktuell!</h4>
+				</div>
+				<div class="modal-body">
+					<p>Die aktuell gültigen Öffnungszeiten finden Sie bei Ihrem Stadt-/Landkreis:</p>
+					<p>
+						<a href="https://www.landkreis-heilbronn.de/recyclinghoefe.1013.htm">Recyclinghöfe Landkreis Heilbronn</a><br>
+						<a href="https://www.heilbronn.de/no_cache/rathaus/buergerservice-a-z/inhalt/recyclinghoefe.html">Recyclinghöfe Stadt Heilbronn</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script type="text/javascript">
 		L_DISABLE_3D = true;
